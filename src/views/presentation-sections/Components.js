@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Iframe from 'react-iframe'
-import Grid from '@material-ui/core/Grid';
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -24,48 +23,17 @@ function Components() {
                 </small>
               </h2>
               </Col>
-              {/* <Grid container spacing={2}>
-                <Grid item md={6}>
+              <Col className="ml-auto mr-auto" md="8">
                   <Iframe
                     src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
-                    maxWidth="100%"
-                    height="170px" 
+                    width="100%"
+                    height="400px" 
                     frameBorder="0"
                     scrolling="auto"
-                    // style={{ maxHeight: "100%" }}
                     allowFullscreen
                   >
                   </Iframe>
-                </Grid>
-                <Grid item md={6}>
-                  <Iframe
-                    src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
-                    maxWidth="100%"
-                    height="170px" 
-                    frameBorder="0"
-                    scrolling="auto"
-                    // style={{ maxHeight: "100%" }}
-                    allowFullscreen
-                  >
-                  </Iframe>
-                </Grid>
-              </Grid>
-              <div className="space-50"></div> */}
-              <Col className="ml-auto mr-auto" md="8"> 
-                <Iframe 
-              src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html" 
-              width="100%"
-              height="auto"
-              frameBorder="0" 
-              scrolling="auto" 
-              position="relative"
-              overflow="hidden"
-              display="flex"
-              allowFullScreen
-              >
-                </Iframe> 
-                
-            </Col>
+              </Col> 
           </Row>
           <Row>
             <Col md="3">

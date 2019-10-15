@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Iframe from 'react-iframe'
 import Grid from '@material-ui/core/Grid';
 
@@ -16,14 +16,15 @@ function Components() {
       >
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto" md="8">
+            <Col className="ml-auto mr-auto" lg="12">
               <h2 className="text-center title">
                 Balboa: <br></br>
                 <small className="description">
                   Let Us Help You Travel
                 </small>
               </h2>
-              <Grid container spacing={2}>
+              </Col>
+              {/* <Grid container spacing={2}>
                 <Grid item md={6}>
                   <Iframe
                     src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
@@ -49,7 +50,21 @@ function Components() {
                   </Iframe>
                 </Grid>
               </Grid>
-              <div className="space-50"></div>
+              <div className="space-50"></div> */}
+              <Col className="ml-auto mr-auto" md="8"> 
+                <Iframe 
+              src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html" 
+              width="100%"
+              height="auto"
+              frameBorder="0" 
+              scrolling="auto" 
+              position="relative"
+              overflow="hidden"
+              display="flex"
+              allowFullScreen
+              >
+                </Iframe> 
+                
             </Col>
           </Row>
           <Row>

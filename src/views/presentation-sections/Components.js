@@ -79,53 +79,6 @@ function Components() {
                     </div>
                   </a>
                 </CardHeader>
-                <Collapse isOpen={collapses.includes(2)}>
-               <Row className="" xl="12">
-                    <Card className="text-center">
-                      <CardHeader>
-                        <Nav className="justify-content-center" tabs>
-                          <NavItem>
-                            <NavLink
-                              className="active"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              Active
-                            </NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                              Link
-                            </NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <NavLink
-                              className="disabled"
-                              href="#pablo"
-                              onClick={e => e.preventDefault()}
-                            >
-                              Disabled
-                            </NavLink>
-                          </NavItem>
-                        </Nav>
-                      </CardHeader>
-                      <CardBody>
-                        <CardTitle tag="h4">Special title treatment</CardTitle>
-                        <CardText>
-                          With supporting text below as a natural lead-in to additional
-                          content.
-                        </CardText>
-                        <Button
-                          color="primary"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          Go somewhere
-                        </Button>
-                      </CardBody>
-                    </Card>
-                  </Row>
-                </Collapse>
               </Card>
             </Col>
             <Col md="3">
@@ -171,7 +124,58 @@ function Components() {
               </div>
             </Col>
           </Row>
-          
+          <Row>
+          <Collapse isOpen={collapses.includes(2)}>
+              
+              <Card className="text-center">
+                <CardHeader>
+                  <Nav className="justify-content-center" tabs>
+                    <NavItem>
+                      <NavLink
+                        className="active"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        Active
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink 
+                        className="active"
+                        href="#pablo" 
+                        onClick={e => e.preventDefault()}>
+                        Link
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className="active"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        Disabled
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                </CardHeader>
+                <CardBody>
+                  <CardTitle tag="h4">Special title treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to additional
+                    content.
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Go somewhere
+                  </Button>
+                </CardBody>
+              </Card>
+            
+          </Collapse>
+          </Row>
         </Container>
       </div>
     </>

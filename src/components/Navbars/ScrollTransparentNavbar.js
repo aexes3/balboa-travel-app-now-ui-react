@@ -95,7 +95,9 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons design_app"></i>
+                  <i className="now-ui-icons design_app"
+                     aria-hidden={true}
+                  ></i>
                   <p>Components</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
@@ -136,6 +138,10 @@ function ScrollTransparentNavbar() {
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="now-ui-icons shopping_box"></i>
                   Concur Login
+                  </DropdownItem>
+                  <DropdownItem to="/" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
                   </DropdownItem>
                   <DropdownItem to="/sections#features" tag={Link}>
                     <i className="now-ui-icons ui-2_settings-90"></i>

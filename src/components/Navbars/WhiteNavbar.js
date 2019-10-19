@@ -105,7 +105,7 @@ function WhiteNavbar() {
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="now-ui-icons shopping_box"></i>
-                    Headers
+                    TEst
                   </DropdownItem>
                   <DropdownItem to="/sections#features" tag={Link}>
                     <i className="now-ui-icons ui-2_settings-90"></i>

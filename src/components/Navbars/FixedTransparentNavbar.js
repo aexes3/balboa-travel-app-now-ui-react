@@ -65,7 +65,7 @@ function FixedTransparentNavbar() {
                   onClick={e => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app"></i>
-                  <p>Components</p>
+                  <p>Home</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/" tag={Link}>

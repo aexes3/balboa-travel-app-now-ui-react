@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from 'react-iframe'
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -12,7 +13,7 @@ function Cards() {
         <Container>
           <Row>
             <Col className="text-center ml-auto mr-auto" md="8">
-              <div className="section-description">
+              {/* <div className="section-description">
                 <h2 className="title">Beautiful Cards</h2>
                 <h6 className="category">One Card for Every Problem</h6>
                 <h5 className="description">
@@ -22,7 +23,22 @@ function Cards() {
                   that stands out. We have gone above and beyond with options
                   for you to organise your information.
                 </h5>
-              </div>
+              </div> */}
+               <h2 className="text-center title">
+                Balboa: <br></br>
+                <small className="description">
+                  Let Us Help You Travel
+                </small>
+              </h2>
+              <Iframe
+                    src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
+                    width="100%"
+                    height="400px" 
+                    frameBorder="0"
+                    scrolling="auto"
+                    allowFullscreen
+                  >
+                  </Iframe>
             </Col>
           </Row>
           <Row>

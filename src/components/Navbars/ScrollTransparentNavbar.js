@@ -85,7 +85,39 @@ function ScrollTransparentNavbar() {
           </div>
           <Collapse isOpen={collapseOpen} navbar>
             <Nav className="ml-auto" id="ceva" navbar>
-              
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink1"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  <i className="now-ui-icons design_app"
+                     aria-hidden={true}
+                  ></i>
+                  <p>Components</p>
+                </DropdownToggle>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
+                  <DropdownItem to="/" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36"></i>
+                    All components
+                  </DropdownItem>
+                  <DropdownItem
+                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons design_bullet-list-67"></i>
+                    Documentation
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -100,91 +132,47 @@ function ScrollTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
                   ></i>
-                  <p>Balboa Travel</p>
+                  <p>GoPro</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  
-                  <DropdownItem to="/#presentation" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Home
-                  </DropdownItem>
-
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="now-ui-icons shopping_box"></i>
-                  Information
+                  Concur Login
                   </DropdownItem>
-
+                  <DropdownItem to="/" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
+                  </DropdownItem>
                   <DropdownItem to="/sections#features" tag={Link}>
                     <i className="now-ui-icons ui-2_settings-90"></i>
-                   Extra offers
+                    GoPro Agencies
                   </DropdownItem>
-
-                  {/* <DropdownItem to="/sections#blogs" tag={Link}>
+                  <DropdownItem to="/sections#blogs" tag={Link}>
                     <i className="now-ui-icons text_align-left"></i>
                     Airlines
-                  </DropdownItem> */}
-
+                  </DropdownItem>
                   <DropdownItem to="/sections#teams" tag={Link}>
                     <i className="now-ui-icons sport_user-run"></i>
-                    Ground Transportion
+                    Ground Transport
                   </DropdownItem>
-
                   <DropdownItem to="/sections#projects" tag={Link}>
                     <i className="now-ui-icons education_paper"></i>
                     Hotel Directory
                   </DropdownItem>
-
-                  {/* <DropdownItem to="/sections#pricing" tag={Link}>
+                  <DropdownItem to="/sections#pricing" tag={Link}>
                     <i className="now-ui-icons business_money-coins"></i>
                     TRavel Promotions
-                  </DropdownItem> */}
-
+                  </DropdownItem>
                   <DropdownItem to="/sections#testimonials" tag={Link}>
                     <i className="now-ui-icons ui-2_chat-round"></i>
-                    What People Say
+                    Visa/Passport
                   </DropdownItem>
-
                   <DropdownItem to="/sections#contact-us" tag={Link}>
                     <i className="now-ui-icons tech_mobile"></i>
-                    Contact Us
-                  </DropdownItem>
-                </DropdownMenu>
-
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink1"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app"
-                     aria-hidden={true}
-                  ></i>
-                  <p>Angency Contact</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Can add phone number(s) here
-                  </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    Add emails here
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
+                    Airbinb
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -199,67 +187,56 @@ function ScrollTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons design_image"
                   ></i>
-                  <p>Quick Links/Before you Fly</p>
+                  <p>Examples</p>
                 </DropdownToggle>
-
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/about-us">
                     <i className="now-ui-icons business_bulb-63"></i>
-                    Phone # / Emails here
+                    About-us
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/blog-post">
                     <i className="now-ui-icons text_align-left"></i>
-                    Print Invoice
+                    Blog Post
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/blog-posts">
                     <i className="now-ui-icons design_bullet-list-67"></i>
-                    Flight Status
+                    Blog Posts
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/contact-us">
                     <i className="now-ui-icons location_pin"></i>
-                    Weather
+                    Contact Us
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/landing-page">
                     <i className="now-ui-icons education_paper"></i>
-                    Online Check-In
+                    Landing Page
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/login-page">
                     <i className="now-ui-icons users_circle-08"></i>
                     Login Page
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/pricing">
                     <i className="now-ui-icons business_money-coins"></i>
                     Pricing
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/e-commerce">
                     <i className="now-ui-icons shopping_shop"></i>
                     Ecommerce Page
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/product-page">
                     <i className="now-ui-icons shopping_bag-16"></i>
                     Product Page
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/profile-page">
                     <i className="now-ui-icons users_single-02"></i>
                     Profile Page
                   </DropdownItem>
-
                   <DropdownItem tag={Link} to="/sign-up">
                     <i className="now-ui-icons tech_mobile"></i>
                     Signup Page
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              {/* <NavItem>
+              <NavItem>
                 <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
@@ -268,7 +245,7 @@ function ScrollTransparentNavbar() {
                 >
                   <p>Buy Now</p>
                 </Button>
-              </NavItem> */}
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>

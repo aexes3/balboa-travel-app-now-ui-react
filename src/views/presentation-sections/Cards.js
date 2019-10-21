@@ -12,7 +12,7 @@ function Cards() {
       <div className="section section-cards">
         <Container>
           <Row>
-            <Col className="text-center ml-auto mr-auto" md="8">
+            <Col>
               {/* <div className="section-description">
                 <h2 className="title">Beautiful Cards</h2>
                 <h6 className="category">One Card for Every Problem</h6>
@@ -31,17 +31,17 @@ function Cards() {
                 </small>
               </h2>
               <Iframe
-                    src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
-                    width="100%"
-                    height="400px" 
-                    frameBorder="0"
-                    scrolling="auto"
-                    allowFullscreen
-                  >
-                  </Iframe>
+                className="embed-responsive jwplayer"
+                src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
+                // width="100%"
+                // height="410px" 
+                // frameBorder="0"
+                allowFullscreen
+              >
+              </Iframe>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col md="12">
               <div className="images-container">
                 <div className="image-container1 mr-1">
@@ -76,7 +76,7 @@ function Cards() {
                 </div>
               </div>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </div>
     </>

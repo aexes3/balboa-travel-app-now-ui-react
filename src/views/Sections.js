@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 
 // core components
-import WhiteNavbar from "components/Navbars/WhiteNavbar.js";
+import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 // sections for this page
@@ -12,7 +12,7 @@ import Features from "./sections-sections/Features.js";
 // import Blogs from "./sections-sections/Blogs.js";
 import Teams from "./sections-sections/Teams.js";
 import Projects from "./sections-sections/Projects.js";
-// import Presentation from "./Presentation";
+import Presentation from "./Presentation";
 import Testimonials from "./sections-sections/Testimonials.js";
 import ContactUs from "./sections-sections/ContactUs.js";
 
@@ -39,10 +39,10 @@ function Sections() {
   });
   return (
     <>
-      <WhiteNavbar />
+      <ScrollTransparentNavbar />
       <div className="wrapper">
         <div className="section-space"></div>
-        {/* <Presentation /> */}
+        <Presentation />
         <Headers />
         <Features />
         {/* <Blogs /> */}

@@ -10,15 +10,15 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
 import Components from "./presentation-sections/Components.js";
-import BasicComponents from "./presentation-sections/BasicComponents.js";
 import Cards from "./presentation-sections/Cards.js";
-import Content from "./presentation-sections/Content.js";
-import Sections from "./presentation-sections/Sections.js";
-import Examples from "./presentation-sections/Examples.js";
-import FreeDemo from "./presentation-sections/FreeDemo.js";
-import Icons from "./presentation-sections/Icons.js";
+// import BasicComponents from "./presentation-sections/BasicComponents.js";
+// import Content from "./presentation-sections/Content.js";
+// import Sections from "./presentation-sections/Sections.js";
+// import Examples from "./presentation-sections/Examples.js";
+// import FreeDemo from "./presentation-sections/FreeDemo.js";
+// import Icons from "./presentation-sections/Icons.js";
+// import Testimonials from "./presentation-sections/Testimonials.js";
 import Image from "./presentation-sections/Image.js";
-import Testimonials from "./presentation-sections/Testimonials.js";
 import Pricing from "./presentation-sections/Pricing.js";
 
 function Presentation() {
@@ -63,7 +63,7 @@ function Presentation() {
         <Components />
         {/* <BasicComponents /> */}
         {/* <Content /> */}
-        <Sections />
+        {/* <Sections /> */}
         {/* <Examples /> */}
         {/* <FreeDemo /> */}
         {/* <Icons /> */}

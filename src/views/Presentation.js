@@ -69,7 +69,7 @@ function Presentation() {
         {/* <Image /> */}
         <BasicComponents />
         {/* <Testimonials /> */}
-        <Pricing />
+        {/* <Pricing /> */}
         <FooterBlack />
       </div>
     </>

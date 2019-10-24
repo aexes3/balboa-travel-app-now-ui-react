@@ -132,44 +132,40 @@ function ScrollTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
                   ></i>
-                  <p>GoPro</p>
+                  <p>Sections</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
                     <i className="now-ui-icons shopping_box"></i>
-                  Concur Login
-                  </DropdownItem>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Presentation
+                  Home
                   </DropdownItem>
                   <DropdownItem to="/sections#features" tag={Link}>
                     <i className="now-ui-icons ui-2_settings-90"></i>
-                    GoPro Agencies
+                    Travel Locations
                   </DropdownItem>
-                  <DropdownItem to="/sections#blogs" tag={Link}>
+                  {/* <DropdownItem to="/sections#blogs" tag={Link}>
                     <i className="now-ui-icons text_align-left"></i>
                     Airlines
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <DropdownItem to="/sections#teams" tag={Link}>
                     <i className="now-ui-icons sport_user-run"></i>
-                    Ground Transport
+                    Directory
                   </DropdownItem>
-                  <DropdownItem to="/sections#projects" tag={Link}>
+                  {/* <DropdownItem to="/sections#projects" tag={Link}>
                     <i className="now-ui-icons education_paper"></i>
                     Hotel Directory
-                  </DropdownItem>
-                  <DropdownItem to="/sections#pricing" tag={Link}>
+                  </DropdownItem> */}
+                  {/* <DropdownItem to="/sections#pricing" tag={Link}>
                     <i className="now-ui-icons business_money-coins"></i>
                     TRavel Promotions
-                  </DropdownItem>
+                  </DropdownItem> */}
                   <DropdownItem to="/sections#testimonials" tag={Link}>
                     <i className="now-ui-icons ui-2_chat-round"></i>
-                    Visa/Passport
+                    Testimonials
                   </DropdownItem>
                   <DropdownItem to="/sections#contact-us" tag={Link}>
                     <i className="now-ui-icons tech_mobile"></i>
-                    Airbinb
+                    Contact Us
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

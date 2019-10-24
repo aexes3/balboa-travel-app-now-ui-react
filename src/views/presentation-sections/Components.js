@@ -244,14 +244,16 @@ export default function Components() {
                       <i className="fa fa-phone"></i>
                     </Button>
                     <Button
-                      className="btn-round ml-1"
-                      color="linkedin"
-                      href="tel:877-208-1396"
-                      // onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="fa fa-phone"></i>
-                    </Button>
+        className="btn-round mr-1"
+        color="facebook"
+        onClick={e => {
+          e.preventDefault();
+          window.location.href = "mailto: test@test.com";
+        }}
+        size="sm"
+      >
+        <i className="fa fa-envelope" />
+      </Button>
                     <Button
                       className="btn-round ml-1"
                       color="linkedin"

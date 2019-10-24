@@ -1,5 +1,7 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import { Link,
+  //  Route
+   } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -12,21 +14,18 @@ function Sections() {
         <Container>
           <Col className="ml-auto mr-auto" md="8">
             <div className="section-description text-center">
-              <h2 className="title">Sections you will love</h2>
+              <h2 className="title">While you are there</h2>
               <h5 className="description">
-                Build pages in no time using pre-made sections! From headers to
-                footers, you will be able to choose the best combination for
-                your project. We have created multiple sections for you to put
-                together and customise into pixel perfect example pages.
+                Check on important links about your travel desitation and trips along the way.
               </h5>
-              <Button
+              {/* <Button
                 className="btn-round"
                 to="/sections"
                 color="info"
                 tag={Link}
               >
                 View All Sections
-              </Button>
+              </Button> */}
             </div>
           </Col>
         </Container>
@@ -53,7 +52,7 @@ function Sections() {
                 <a href="//balboa.com">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/balboa.png")}
+                  src={require("assets/img/presentation-page/weather.jpg")}
                 ></img>
                 </a>
                 {/* <img
@@ -66,7 +65,7 @@ function Sections() {
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/header4.jpg")}
+                  src={require("assets/img/presentation-page/travel-warning.jpg")}
                 ></img>
               </Col>
             </Row>
@@ -74,25 +73,25 @@ function Sections() {
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features1.jpg")}
+                  src={require("assets/img/presentation-page/passport.jpg")}
                 ></img>
               </Col>
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features2.jpg")}
+                  src={require("assets/img/presentation-page/internationaltele.jpg")}
                 ></img>
               </Col>
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features3.jpg")}
+                  src={require("assets/img/presentation-page/cdc-travel-health.jpg")}
                 ></img>
               </Col>
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features4.jpg")}
+                  src={require("assets/img/presentation-page/embassy.jpg")}
                 ></img>
               </Col>
             </Row>
@@ -100,7 +99,7 @@ function Sections() {
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features5.jpg")}
+                  src={require("assets/img/presentation-page/customs.jpg")}
                 ></img>
                 {/* <img
                   alt="..."
@@ -112,19 +111,19 @@ function Sections() {
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features6.jpg")}
+                  src={require("assets/img/presentation-page/international-calling-codes.jpg")}
                 ></img>
               </Col>
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features7.jpg")}
+                  src={require("assets/img/presentation-page/opentable.jpg")}
                 ></img>
               </Col>
               <Col md="3">
                 <img
                   alt="..."
-                  src={require("assets/img/presentation-page/features8.jpg")}
+                  src={require("assets/img/presentation-page/balboa.png")}
                 ></img>
               </Col>
             </Row>

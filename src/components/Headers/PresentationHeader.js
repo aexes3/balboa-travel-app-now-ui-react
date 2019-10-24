@@ -29,7 +29,7 @@ function PresentationHeader() {
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/balboaparkt.png") +
+                require("assets/img/presentation-page/nuk-pro-buildings.png") +
                 ")"
             }}
           ></div>

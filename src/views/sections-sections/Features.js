@@ -186,7 +186,7 @@ function Features() {
               </Col>
             </Row>
           </Container>
-        </div> */}
+        </div> 
         <div className="features-4">
           <Container>
             <Row>
@@ -289,7 +289,7 @@ function Features() {
             </Row>
           </Container>
         </div>
-        {/* <div className="features-5">
+         <div className="features-5">
           <Container>
             <Row>
               <Col md="5">
@@ -344,7 +344,7 @@ function Features() {
               </Col>
             </Row>
           </Container>
-        </div> */}
+        </div> 
         <div className="features-6">
           <Container>
             <Row>
@@ -422,7 +422,7 @@ function Features() {
             </Row>
           </Container>
         </div>
-        {/* <div
+        <div
           className="features-7 section-image"
           style={{
             backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")"

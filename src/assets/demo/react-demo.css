@@ -34,4 +34,5 @@
 }
 .presentation-page [data-background-color="dark-blue"], .index-page [data-background-color="dark-blue"] {
     background: #031425;
+    margin-bottom: 5%;
 }

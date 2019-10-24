@@ -205,7 +205,7 @@ function Teams() {
               </Col>
             </Row>
           </Container>
-        </div> */}
+        </div> 
         <div className="team-2">
           <Container>
             <Row>
@@ -342,7 +342,7 @@ function Teams() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> 
         <div
           className="team-3 section-image"
           style={{
@@ -476,7 +476,7 @@ function Teams() {
             </Row>
           </Container>
         </div>
-        {/* <div className="team-4">
+        <div className="team-4">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">

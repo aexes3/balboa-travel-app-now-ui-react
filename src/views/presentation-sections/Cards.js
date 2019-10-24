@@ -2,7 +2,7 @@ import React from "react";
 import Iframe from 'react-iframe'
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+// import { Container, Row, Col } from "reactstrap";
 
 // core components
 
@@ -10,9 +10,9 @@ function Cards() {
   return (
     <>
       <div className="section section-cards">
-        <Container>
+        {/* <Container>
           <Row>
-            <Col>
+            <Col> */}
               {/* <div className="section-description">
                 <h2 className="title">Beautiful Cards</h2>
                 <h6 className="category">One Card for Every Problem</h6>
@@ -24,23 +24,23 @@ function Cards() {
                   for you to organise your information.
                 </h5>
               </div> */}
-               <h2 className="text-center title">
+               {/* <h2 className="text-center title">
                 Balboa: <br></br>
                 <small className="description">
                   Let Us Help You Travel
                 </small>
-              </h2>
+              </h2> */}
               <Iframe
                 className="embed-responsive jwplayer"
                 src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
-                // width="100%"
-                // height="410px" 
-                // frameBorder="0"
+                width="100%"
+                height="850px" 
+                frameBorder="0"
                 allowFullscreen
               >
               </Iframe>
-            </Col>
-          </Row>
+            {/* </Col>
+          </Row> */}
           {/* <Row>
             <Col md="12">
               <div className="images-container">
@@ -77,7 +77,7 @@ function Cards() {
               </div>
             </Col>
           </Row> */}
-        </Container>
+        {/* </Container> */}
       </div>
     </>
   );

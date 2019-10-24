@@ -9,11 +9,11 @@ function BasicComponents() {
   return (
     <>
       <div className="section section-basic-components">
-        <Container>
+        <Container >
           <Row>
             <Col className="ml-auto mr-auto" lg="5" md="7">
-              <h2 className="title">Basic Elements</h2>
-              <h6 className="category">The core elements of your website</h6>
+              <h2 className="title">Balboa Preferred!</h2>
+              <h6 className="category">Let us help</h6>
               <h5 className="description">
                 We re-styled every Bootstrap 4 element to match the Now UI Kit
                 style. All the Bootstrap 4 components that you need in a
@@ -33,7 +33,7 @@ function BasicComponents() {
                 <img
                   alt="..."
                   className="table-img"
-                  src={require("assets/img/presentation-page/table.jpg")}
+                  src={require("assets/img/presentation-page/hotel-directory.jpg")}
                 ></img>
                 <img
                   alt="..."
@@ -43,22 +43,22 @@ function BasicComponents() {
                 <img
                   alt="..."
                   className="coloured-card-btn-img"
-                  src={require("assets/img/presentation-page/coloured-card-with-btn.jpg")}
+                  src={require("assets/img/presentation-page/preferred-supplier.jpg")}
                 ></img>
                 <img
                   alt="..."
                   className="coloured-card-img"
-                  src={require("assets/img/presentation-page/coloured-card.jpg")}
+                  src={require("assets/img/presentation-page/policies.png")}
                 ></img>
                 <img
                   alt="..."
                   className="social-img"
-                  src={require("assets/img/presentation-page/social-row.jpg")}
+                  src={require("assets/img/presentation-page/faq.png")}
                 ></img>
                 <img
                   alt="..."
                   className="linkedin-btn-img"
-                  src={require("assets/img/presentation-page/linkedin-btn.jpg")}
+                  src={require("assets/img/presentation-page/docs-and-forms.png")}
                 ></img>
               </div>
             </Col>

@@ -4,100 +4,100 @@ import React from "react";
 import {
   Card,
   CardBody,
-  CardFooter,
+  // CardFooter,
   CardTitle,
   Container,
   Row,
   Col,
-  Carousel,
-  CarouselItem
+  // Carousel,
+  // CarouselItem
 } from "reactstrap";
 
 // core components
 
-const items = [
-  {
-    src: "0",
-    altText: "",
-    caption: "",
-    content: (
-      <Card className="card-testimonial card-plain">
-        <div className="card-avatar">
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            <img
-              alt="..."
-              className="img img-raised rounded"
-              src={require("assets/img/james.jpg")}
-            ></img>
-          </a>
-        </div>
-        <CardBody>
-          <h5 className="card-description">
-            "Take up one idea. Make that one idea your life - think of it, dream
-            of it, live on that idea. Let the brain, muscles, nerves, every part
-            of your body, be full of that idea, and just leave every other idea
-            alone. This is the way to success. A single rose can be my garden...
-            a single friend, my world."
-          </h5>
-          <CardTitle tag="h3">Isaac Hunter</CardTitle>
-          <CardFooter>
-            <h6 className="category text-info">Human Resource Director</h6>
-          </CardFooter>
-        </CardBody>
-      </Card>
-    )
-  },
-  {
-    src: "1",
-    altText: "",
-    caption: "",
-    content: (
-      <Card className="card-testimonial card-plain">
-        <div className="card-avatar">
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            <img
-              alt="..."
-              className="img img-raised rounded"
-              src={require("assets/img/olivia.jpg")}
-            ></img>
-          </a>
-        </div>
-        <CardBody>
-          <h5 className="card-description">
-            "When we are no longer able to change a situation - we are
-            challenged to change ourselves. Spread love everywhere you go. Let
-            no one ever come to you without leaving happier. Problems are not
-            stop signs, they are guidelines."
-          </h5>
-          <CardTitle tag="h3">Alexa Hailey</CardTitle>
-          <CardFooter>
-            <h6 className="category text-info">Human Resource Director</h6>
-          </CardFooter>
-        </CardBody>
-      </Card>
-    )
-  }
-];
+// const items = [
+//   {
+//     src: "0",
+//     altText: "",
+//     caption: "",
+//     content: (
+//       <Card className="card-testimonial card-plain">
+//         <div className="card-avatar">
+//           <a href="#pablo" onClick={e => e.preventDefault()}>
+//             <img
+//               alt="..."
+//               className="img img-raised rounded"
+//               src={require("assets/img/james.jpg")}
+//             ></img>
+//           </a>
+//         </div>
+//         <CardBody>
+//           <h5 className="card-description">
+//             "Take up one idea. Make that one idea your life - think of it, dream
+//             of it, live on that idea. Let the brain, muscles, nerves, every part
+//             of your body, be full of that idea, and just leave every other idea
+//             alone. This is the way to success. A single rose can be my garden...
+//             a single friend, my world."
+//           </h5>
+//           <CardTitle tag="h3">Isaac Hunter</CardTitle>
+//           <CardFooter>
+//             <h6 className="category text-info">Human Resource Director</h6>
+//           </CardFooter>
+//         </CardBody>
+//       </Card>
+//     )
+//   },
+//   {
+//     src: "1",
+//     altText: "",
+//     caption: "",
+//     content: (
+//       <Card className="card-testimonial card-plain">
+//         <div className="card-avatar">
+//           <a href="#pablo" onClick={e => e.preventDefault()}>
+//             <img
+//               alt="..."
+//               className="img img-raised rounded"
+//               src={require("assets/img/olivia.jpg")}
+//             ></img>
+//           </a>
+//         </div>
+//         <CardBody>
+//           <h5 className="card-description">
+//             "When we are no longer able to change a situation - we are
+//             challenged to change ourselves. Spread love everywhere you go. Let
+//             no one ever come to you without leaving happier. Problems are not
+//             stop signs, they are guidelines."
+//           </h5>
+//           <CardTitle tag="h3">Alexa Hailey</CardTitle>
+//           <CardFooter>
+//             <h6 className="category text-info">Human Resource Director</h6>
+//           </CardFooter>
+//         </CardBody>
+//       </Card>
+//     )
+//   }
+// ];
 
 function Testimonials() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
-  const onExiting = () => {
-    setAnimating(true);
-  };
-  const onExited = () => {
-    setAnimating(false);
-  };
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
+  // const [activeIndex, setActiveIndex] = React.useState(0);
+  // const [animating, setAnimating] = React.useState(false);
+  // const onExiting = () => {
+  //   setAnimating(true);
+  // };
+  // const onExited = () => {
+  //   setAnimating(false);
+  // };
+  // const next = () => {
+  //   if (animating) return;
+  //   const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+  //   setActiveIndex(nextIndex);
+  // };
+  // const previous = () => {
+  //   if (animating) return;
+  //   const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+  //   setActiveIndex(nextIndex);
+  // };
   return (
     <>
       <div className="cd-section" id="testimonials">

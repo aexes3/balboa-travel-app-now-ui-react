@@ -1,11 +1,11 @@
 import React from "react";
 // react plugin used to create google maps
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker
-} from "react-google-maps";
+// import {
+//   withScriptjs,
+//   withGoogleMap,
+//   GoogleMap,
+//   Marker
+// } from "react-google-maps";
 // reactstrap components
 import {
   Button,

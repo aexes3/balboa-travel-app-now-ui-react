@@ -256,14 +256,14 @@ function DropdownScrollNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <Button
+                {/* <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
                   href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-dropdown-scroll-navbar"
                   target="_blank"
                 >
                   <p>Buy Now</p>
-                </Button>
+                </Button> */}
               </NavItem>
             </Nav>
           </Collapse>

@@ -75,7 +75,7 @@ ReactDOM.render(
       />
       <Route path="/sections" render={props => <Sections {...props} />} />
       <Route path="/sign-up" render={props => <SignupPage {...props} />} />
-      <Redirect to="/presentation" />
+      <Redirect to="/sections#headers" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

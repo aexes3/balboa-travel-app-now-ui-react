@@ -32,7 +32,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.presentation-page [data-background-color="dark-blue"], .index-page [data-background-color="dark-blue"] {
+.presentation-page [data-background-color="dark-blue"], 
+.index-page [data-background-color="dark-blue"] {
     background: #031425;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }

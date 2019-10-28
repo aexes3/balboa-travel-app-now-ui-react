@@ -89,12 +89,6 @@ function Sections() {
         <Testimonials />
         <ContactUs />
         <Footer />
-        <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js">
-
-        </script>
-        
-          window.FrontChat('init', {chatId: '49f31fe36f22c709c08636dbe0a6354f', useDefaultLauncher: true});
-        
       </div>
     </>
   );

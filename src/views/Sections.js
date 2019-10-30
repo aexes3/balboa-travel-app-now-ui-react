@@ -5,7 +5,7 @@ import Rellax from "rellax";
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import Footer from "components/Footers/Footer.js";
+import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
@@ -79,8 +79,8 @@ function Sections() {
         {/* <Presentation /> */}
         <Headers /> {/*Large Pic of city - no Balboa words */}
         <Cards /> {/*IFram video*/}
-        <Components />
-        <SectionsCards />
+        <Components /> {/* 4 pop-up cards*/}
+        <SectionsCards /> {/*12 cards*/}
         <Features /> {/* Hawaiian Airlines*/}
         <BasicComponents /> {/*Ipad with floating images */}
         <Teams />
@@ -88,7 +88,7 @@ function Sections() {
         {/* <Pricing /> */}
         <Testimonials />
         <ContactUs />
-        <Footer />
+        <FooterBlack />
       </div>
     </>
   );

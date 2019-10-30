@@ -85,39 +85,7 @@ function ScrollTransparentNavbar() {
           </div>
           <Collapse isOpen={collapseOpen} navbar>
             <Nav className="ml-auto" id="ceva" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink1"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app"
-                     aria-hidden={true}
-                  ></i>
-                  <p>Components</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Presentation
-                  </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -132,7 +100,7 @@ function ScrollTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
                   ></i>
-                  <p>Sections</p>
+                  <p>Home</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem to="/sections#headers" tag={Link}>
@@ -169,6 +137,41 @@ function ScrollTransparentNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink1"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  <i className="now-ui-icons design_app"
+                     aria-hidden={true}
+                  ></i>
+                  <p>Balboa</p>
+                </DropdownToggle>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
+                  <DropdownItem to="/" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36"></i>
+                    All components
+                  </DropdownItem>
+                  <DropdownItem
+                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons design_bullet-list-67"></i>
+                    Documentation
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -183,7 +186,7 @@ function ScrollTransparentNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons design_image"
                   ></i>
-                  <p>Examples</p>
+                  <p>Quick Links</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/about-us">

@@ -59,15 +59,15 @@ function Presentation() {
       <ScrollTransparentNavbar />
       <div className="wrapper">
         <Headers />
-        <Cards />
-        <Components />
+        {/* <Cards /> */}
+        {/* <Components /> */}
         {/* <Content /> */}
-        <Sections />
+        {/* <Sections /> */}
         {/* <Examples /> */}
         {/* <FreeDemo /> */}
         {/* <Icons /> */}
         {/* <Image /> */}
-        <BasicComponents />
+        {/* <BasicComponents /> */}
         {/* <Testimonials /> */}
         {/* <Pricing /> */}
         <FooterBlack />

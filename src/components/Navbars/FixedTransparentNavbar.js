@@ -54,38 +54,7 @@ function FixedTransparentNavbar() {
           </div>
           <Collapse isOpen={collapseOpen} navbar>
             <Nav className="ml-auto" id="ceva" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink1"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app"></i>
-                  <p>Home</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Presentation
-                  </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-fixed-transparent-navbar"
-                    target="_blank"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -137,6 +106,40 @@ function FixedTransparentNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink1"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  <i className="now-ui-icons design_app"></i>
+                  <p>Home</p>
+                </DropdownToggle>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
+                  <DropdownItem to="/" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36"></i>
+                    All components
+                  </DropdownItem>
+                  <DropdownItem
+                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-fixed-transparent-navbar"
+                    target="_blank"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons design_bullet-list-67"></i>
+                    Documentation
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret

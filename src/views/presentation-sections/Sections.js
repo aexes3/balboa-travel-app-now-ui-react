@@ -145,7 +145,7 @@ function Sections() {
                   src={require("assets/img/presentation-page/opentable.jpg")}
                 ></img> */}
                 <Iframe 
-                src="http://embed.flightaware.com/commercial/integrated/web/delay_map.rvt" 
+                src="https://embed.flightaware.com/commercial/integrated/web/delay_map.rvt" 
                 width="100%"
                 height="100%" 
                 frameborder="0" 

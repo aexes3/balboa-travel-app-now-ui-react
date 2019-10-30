@@ -9,9 +9,10 @@ function BasicComponents() {
   return (
     <>
       <div className="section section-basic-components">
+            Balboa Preferred!
         <Container >
           <Row>
-            <Col className="ml-auto mr-auto" lg="5" md="7">
+            {/* <Col className="ml-auto mr-auto" lg="5" md="7">
               <h2 className="title">Balboa Preferred!</h2>
               <h6 className="category">Let us help</h6>
               <h5 className="description">
@@ -22,7 +23,7 @@ function BasicComponents() {
                 classes. All these items will help you take your project to the
                 next level.
               </h5>
-            </Col>
+            </Col> */}
             <Col lg="6" md="12">
               <div className="image-container">
                 <img

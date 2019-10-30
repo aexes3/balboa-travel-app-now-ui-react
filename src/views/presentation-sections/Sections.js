@@ -1,10 +1,9 @@
 import React from "react";
-import { Link,
-  //  Route
-   } from "react-router-dom";
-// reactstrap components
-import { Button, Container, Row, Col } from "reactstrap";
 
+// reactstrap components
+import { Container, Row, Col } from "reactstrap";
+
+import Iframe from 'react-iframe'
 // core components
 
 function Sections() {
@@ -41,19 +40,33 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
-                <a href="//google.com/maps/">
+                {/* <a href="//google.com/maps/">
                 <img
                   alt="..."
                   src={require("assets/img/presentation-page/maps.jpg")}
                 ></img>
-                </a>
+                </a> */}
+                <Iframe 
+                  alt="..."
+                  // className="rellax"
+                  // data-rellax-speed="5"
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">
+                </Iframe>
               </Col>
               <Col md="3">
                 <a href="//balboa.com">
-                <img
+                <a href="https://weather.com/">
+                  <img
                   alt="..."
                   src={require("assets/img/presentation-page/weather.jpg")}
                 ></img>
+                  </a>
                 </a>
                 {/* <img
                   alt="..."
@@ -63,30 +76,38 @@ function Sections() {
                 ></img> */}
               </Col>
               <Col md="3">
-                <img
+                <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/">
+                  <img
                   alt="..."
                   src={require("assets/img/presentation-page/travel-warning.jpg")}
                 ></img>
+                  </a>
               </Col>
             </Row>
             <Row>
               <Col md="3">
-                <img
+                <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html">
+                  <img
                   alt="..."
                   src={require("assets/img/presentation-page/passport.jpg")}
                 ></img>
+                  </a>
               </Col>
               <Col md="3">
-                <img
+                <a href="https://countrycode.org/">
+                  <img
                   alt="..."
-                  src={require("assets/img/presentation-page/internationaltele.jpg")}
+                  src={require("assets/img/presentation-page/international-calling-codes.jpg")}
                 ></img>
+                  </a>
               </Col>
               <Col md="3">
-                <img
+                <a href="https://www.cdc.gov">
+                  <img
                   alt="..."
                   src={require("assets/img/presentation-page/cdc-travel-health.jpg")}
                 ></img>
+                  </a>
               </Col>
               <Col md="3">
                 <img
@@ -97,10 +118,12 @@ function Sections() {
             </Row>
             <Row>
               <Col md="3">
-                <img
+                <a href="https://www.cbp.gov/">
+                  <img
                   alt="..."
                   src={require("assets/img/presentation-page/customs.jpg")}
                 ></img>
+                  </a>
                 {/* <img
                   alt="..."
                   className="rellax"
@@ -109,22 +132,40 @@ function Sections() {
                 ></img> */}
               </Col>
               <Col md="3">
-                <img
+                <a href="https://www.howtocallabroad.com/">
+                  <img
                   alt="..."
-                  src={require("assets/img/presentation-page/international-calling-codes.jpg")}
+                  src={require("assets/img/presentation-page/internationaltele.jpg")}
                 ></img>
+                  </a>
               </Col>
               <Col md="3">
-                <img
+                {/* <img
                   alt="..."
                   src={require("assets/img/presentation-page/opentable.jpg")}
-                ></img>
+                ></img> */}
+                <Iframe 
+                src="http://embed.flightaware.com/commercial/integrated/web/delay_map.rvt" 
+                width="100%"
+                height="100%" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+              </Iframe>
               </Col>
               <Col md="3">
-                <img
+                {/* <img
                   alt="..."
                   src={require("assets/img/presentation-page/balboa.png")}
-                ></img>
+                ></img> */}
+                 <Iframe
+                    src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html" 
+                    width="100%" 
+                    height="100%"
+                    frameborder="0" 
+                    scrolling="auto" 
+                    allowfullscreen>
+                  </Iframe>
               </Col>
             </Row>
             {/* <Row>

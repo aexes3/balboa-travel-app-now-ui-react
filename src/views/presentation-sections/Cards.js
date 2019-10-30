@@ -1,5 +1,5 @@
 import React from "react";
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
 
 // reactstrap components
 // import { Container, Row, Col } from "reactstrap";
@@ -34,7 +34,7 @@ function Cards() {
                 className="embed-responsive jwplayer"
                 src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html"
                 width="100%"
-                height="850px" 
+                height="100%" 
                 frameBorder="0"
                 allowFullscreen=""
               >

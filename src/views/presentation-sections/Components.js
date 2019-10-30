@@ -10,20 +10,18 @@ import {
   Tabs,
   Typography, 
 } from '@material-ui/core'
-
+// reactstrap components
 import {
   Button,
   Container,
   Col,
   Collapse,
-  Card,
-  CardHeader,
   Row,
 } from "reactstrap";
 
+// core components
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <Typography
       component="div"
@@ -60,7 +58,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Components() {
+function Components() {
   const [collapses, setCollapses] = React.useState([1]);
   const changeCollapse = collapse => {
     if (collapses.includes(collapse)) {
@@ -84,8 +82,8 @@ export default function Components() {
         <Container>
           <Row>
             <Col md="3">
-              <Card className="card-refine card-plain card-container first-card">
-                <CardHeader className="card-component">
+              <div className="card-container first-card">
+                <div className="card-component">
                   <a
                     className="text-info"
                     aria-expanded={collapses.includes(2)}
@@ -95,7 +93,8 @@ export default function Components() {
                     onClick={e => {
                       e.preventDefault();
                       changeCollapse(2);
-                    }}>
+                    }}
+                  >
                     <div className="front">
                       <img
                         alt="..."
@@ -103,12 +102,12 @@ export default function Components() {
                       ></img>
                     </div>
                   </a>
-                </CardHeader>
-              </Card>
+                </div>
+              </div>
             </Col>
             <Col md="3">
-              <Card className="card-refine card-plain card-container second-card">
-                <CardHeader className="card-component">
+              <div className="card-container second-card">
+                <div className="card-component">
                   <a
                     className="text-info"
                     aria-expanded={collapses.includes(2)}
@@ -118,7 +117,8 @@ export default function Components() {
                     onClick={e => {
                       e.preventDefault();
                       changeCollapse(2);
-                    }}>
+                    }}
+                  >
                     <div className="front">
                       <img
                         alt="..."
@@ -126,12 +126,12 @@ export default function Components() {
                       ></img>
                     </div>
                   </a>
-                </CardHeader>
-              </Card>
+                </div>
+              </div>
             </Col>
             <Col md="3">
-              <Card className="card-refine card-plain card-container third-card">
-                <CardHeader className="card-component">
+              <div className="card-container third-card">
+                <div className="card-component">
                   <a
                     className="text-info"
                     aria-expanded={collapses.includes(2)}
@@ -141,7 +141,8 @@ export default function Components() {
                     onClick={e => {
                       e.preventDefault();
                       changeCollapse(2);
-                    }}>
+                    }}
+                  >
                     <div className="front">
                       <img
                         alt="..."
@@ -149,13 +150,13 @@ export default function Components() {
                       ></img>
                     </div>
                   </a>
-                </CardHeader>
-              </Card>
+                </div>
+              </div>
             </Col>
             <Col md="3">
-              <Card className="card-refine card-plain card-container fourth-card">
-                <CardHeader className="card-component">
-                  <a
+              <div className="card-container fourth-card">
+                <div className="card-component">
+                  <a 
                     className="text-info"
                     aria-expanded={collapses.includes(2)}
                     data-toggle="collapse"
@@ -164,7 +165,8 @@ export default function Components() {
                     onClick={e => {
                       e.preventDefault();
                       changeCollapse(2);
-                    }}>
+                    }}
+                  >
                     <div className="front">
                       <img
                         alt="..."
@@ -172,25 +174,9 @@ export default function Components() {
                       ></img>
                     </div>
                   </a>
-                </CardHeader>
-              </Card>
-            </Col>
-
-            {/* <Col md="3">
-              <div className="card-container second-card">
-                <div className="card-component">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <div className="front">
-                      <img
-                        alt="..."
-                        src={require("assets/img/presentation-page/cards_thumb.jpg")}
-                      ></img>
-                    </div>
-                  </a>
                 </div>
               </div>
-            </Col> */}
-           
+            </Col>
           </Row>
           <Row>
             <Col className="ml-auto mr-auto" xl="12">
@@ -207,19 +193,33 @@ export default function Components() {
                   <TabPanel value={value} index={0} className={classes.root}>
                     Qualify:
                   <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                  </ul>
+                      <li>Elite Qualifying Miles (EQM) 25000</li>
+                      <li>Elite Qualifying Segments (EQS) 30</li>
+                      <li>Elite Qualifying Dollars (EQD) $3000</li>
+                    </ul>
                     Benefits:
                   <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Priority Check in</li>
-                    <li>1 free checked bag</li>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk 
+                      <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                      <li>Earn/Purchase 500 mile upgrades</li>
+                      <li>40% Elite Mile Bonus</li>
+                      <li>Priority Check in</li>
+                      <li>1 free checked bag</li>
+                      <li>Complimentary same day standby</li>
+                      <li>Exclusive Service desk
+                    <Button
+                          className="btn-round ml-1"
+                          color="linkedin"
+                          href="tel:877-208-1396"
+                          // onClick={e => e.preventDefault()}
+                          size="sm"
+                        >
+                          <i className="fa fa-phone"></i>
+                        </Button>
+                      </li>
+                      <li>Preferred Seating</li>
+                      <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                      <li> Award processing change waived</li>
+                    </ul>
                     <Button
                       className="btn-round ml-1"
                       color="linkedin"
@@ -229,31 +229,17 @@ export default function Components() {
                     >
                       <i className="fa fa-phone"></i>
                     </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                  </ul>
-                  <Button
-                      className="btn-round ml-1"
-                      color="linkedin"
-                      href="tel:877-208-1396"
-                      // onClick={e => e.preventDefault()}
+                    <Button
+                      className="btn-round mr-1"
+                      color="facebook"
+                      onClick={e => {
+                        e.preventDefault();
+                        window.location.href = "mailto: test@test.com";
+                      }}
                       size="sm"
                     >
-                      <i className="fa fa-phone"></i>
+                      <i className="fa fa-envelope" />
                     </Button>
-                    <Button
-        className="btn-round mr-1"
-        color="facebook"
-        onClick={e => {
-          e.preventDefault();
-          window.location.href = "mailto: test@test.com";
-        }}
-        size="sm"
-      >
-        <i className="fa fa-envelope" />
-      </Button>
                     <Button
                       className="btn-round ml-1"
                       color="linkedin"
@@ -265,84 +251,84 @@ export default function Components() {
                     </Button>
                   </TabPanel>
                   <TabPanel value={value} index={1} className={classes.root}>
-                  Qualify:
+                    Qualify:
                   <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                  </ul>
+                      <li>Elite Qualifying Miles (EQM) 25000</li>
+                    </ul>
                     Benefits:
                   <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk 
+                      <li>Complimentary same day standby</li>
+                      <li>Exclusive Service desk
                     <Button
-                      className="btn-round ml-1"
-                      color="linkedin"
-                      href="tel:877-208-1396"
-                      // onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="fa fa-phone"></i>
-                    </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                  </ul>
+                          className="btn-round ml-1"
+                          color="linkedin"
+                          href="tel:877-208-1396"
+                          // onClick={e => e.preventDefault()}
+                          size="sm"
+                        >
+                          <i className="fa fa-phone"></i>
+                        </Button>
+                      </li>
+                      <li>Preferred Seating</li>
+                      <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                      <li> Award processing change waived</li>
+                    </ul>
                   </TabPanel>
                   <TabPanel value={value} index={2} className={classes.root}>
-                  Qualify:
+                    Qualify:
                   <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                  </ul>
+                      <li>Elite Qualifying Miles (EQM) 25000</li>
+                      <li>Elite Qualifying Segments (EQS) 30</li>
+                      <li>Elite Qualifying Dollars (EQD) $3000</li>
+                    </ul>
                     Benefits:
                   <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Exclusive Service desk 
+                      <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                      <li>Earn/Purchase 500 mile upgrades</li>
+                      <li>40% Elite Mile Bonus</li>
+                      <li>Exclusive Service desk
                     <Button
-                      className="btn-round ml-1"
-                      color="linkedin"
-                      href="tel:877-208-1396"
-                      // onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="fa fa-phone"></i>
-                    </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                  </ul>
+                          className="btn-round ml-1"
+                          color="linkedin"
+                          href="tel:877-208-1396"
+                          // onClick={e => e.preventDefault()}
+                          size="sm"
+                        >
+                          <i className="fa fa-phone"></i>
+                        </Button>
+                      </li>
+                      <li>Preferred Seating</li>
+                      <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                      <li> Award processing change waived</li>
+                    </ul>
                   </TabPanel>
                   <TabPanel value={value} index={3} className={classes.root}>
-                  Qualify:
+                    Qualify:
                   <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                  </ul>
+                      <li>Elite Qualifying Miles (EQM) 25000</li>
+                      <li>Elite Qualifying Segments (EQS) 30</li>
+                      <li>Elite Qualifying Dollars (EQD) $3000</li>
+                    </ul>
                     Benefits:
                   <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Priority Check in</li>
-                    <li>1 free checked bag</li>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk 
+                      <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                      <li>Earn/Purchase 500 mile upgrades</li>
+                      <li>40% Elite Mile Bonus</li>
+                      <li>Priority Check in</li>
+                      <li>1 free checked bag</li>
+                      <li>Complimentary same day standby</li>
+                      <li>Exclusive Service desk
                     <Button
-                      className="btn-round ml-1"
-                      color="linkedin"
-                      href="tel:877-208-1396"
-                      // onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="fa fa-phone"></i>
-                    </Button>
-                    </li>
-                  </ul>
+                          className="btn-round ml-1"
+                          color="linkedin"
+                          href="tel:877-208-1396"
+                          // onClick={e => e.preventDefault()}
+                          size="sm"
+                        >
+                          <i className="fa fa-phone"></i>
+                        </Button>
+                      </li>
+                    </ul>
                   </TabPanel>
                 </div>
               </Collapse>
@@ -353,4 +339,6 @@ export default function Components() {
     </>
   );
 }
+
+export default Components;
 

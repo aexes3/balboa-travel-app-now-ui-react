@@ -17,6 +17,7 @@ import SectionsCards from "./presentation-sections/Sections";
 import Testimonials from "./sections-sections/Testimonials.js";
 import ContactUs from "./sections-sections/ContactUs.js";
 import BasicComponents from "./presentation-sections/BasicComponents.js";
+import Projects from './sections-sections/Projects'
 
 function Sections() {
   React.useEffect(() => {
@@ -78,13 +79,13 @@ function Sections() {
         <div className="section-space"></div>
         {/* <Presentation /> */}
         <Headers /> {/*Large Pic of city - no Balboa words */}
-        <Cards /> {/*IFram video*/}
+        <Cards /> {/*IFrame video news feed*/}
         <Components /> {/* 4 pop-up cards*/}
-        <SectionsCards /> {/*12 cards*/}
-        <Features /> {/* Hawaiian Airlines*/}
+        <SectionsCards /> {/*12 card links*/}
+        <Features /> {/* Carousel*/}
         <BasicComponents /> {/*Ipad with floating images */}
+        <Projects /> {/* Concur login images with ipad(s) */}
         <Teams />
-        {/* <Projects /> */}
         {/* <Pricing /> */}
         <Testimonials />
         <ContactUs />

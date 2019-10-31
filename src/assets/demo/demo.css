@@ -415,10 +415,10 @@
 }
 
 .presentation-page .section-basic-components .image-container .components-macbook {
-  width: auto;
+  width: 550px;
   left: 100px;
   top: 0;
-  height: auto;
+  height: 550px;
   position: absolute;
 }
 
@@ -436,23 +436,23 @@
 }
 
 .presentation-page .section-basic-components .image-container .table-img {
-  left: 65%;
-  top: 23%;
-  height: 175px;
+  left: 45%;
+  top: 25%;
+  height: 235px;
   border-radius: 3px;
 }
 
 .presentation-page .section-basic-components .image-container .share-btn-img {
-  left: 83%;
+  left: 45%;
   top: 95%;
-  height: 25px;
+  height: 50px;
   border-radius: 10px;
 }
 
 .presentation-page .section-basic-components .image-container .coloured-card-img {
-  left: 50%;
-  top: -11%;
-  height: 102px;
+  left: 40%;
+  top: -20%;
+  height: 160px;
   border-radius: 3px;
 }
 
@@ -466,13 +466,13 @@
 .presentation-page .section-basic-components .image-container .social-img {
   left: -4%;
   top: 95%;
-  height: 57px;
+  height: 65px;
 }
 
 .presentation-page .section-basic-components .image-container .linkedin-btn-img {
   left: 3%;
   top: -3%;
-  height: 50px;
+  height: 85px;
   border-radius: 10px;
 }
 

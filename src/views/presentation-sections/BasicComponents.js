@@ -9,21 +9,15 @@ function BasicComponents() {
   return (
     <>
       <div className="section section-basic-components">
-            Balboa Preferred!
         <Container >
-          <Row>
-            {/* <Col className="ml-auto mr-auto" lg="5" md="7">
+          <Row className="ml-auto mr-auto" lg="5" md="7"
+          >
               <h2 className="title">Balboa Preferred!</h2>
-              <h6 className="category">Let us help</h6>
+              {/* <h6 className="category">Let us help</h6> */}
               <h5 className="description">
-                We re-styled every Bootstrap 4 element to match the Now UI Kit
-                style. All the Bootstrap 4 components that you need in a
-                development have been re-design with the new look. Besides the
-                numerous basic elements, we have also created additional
-                classes. All these items will help you take your project to the
-                next level.
+           
               </h5>
-            </Col> */}
+              </Row>
             <Col lg="6" md="12">
               <div className="image-container">
                 <img
@@ -62,8 +56,7 @@ function BasicComponents() {
                   src={require("assets/img/presentation-page/docs-and-forms.png")}
                 ></img>
               </div>
-            </Col>
-          </Row>
+          </Col>
         </Container>
       </div>
     </>

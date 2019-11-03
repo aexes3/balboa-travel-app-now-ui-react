@@ -17,7 +17,8 @@ import SectionsCards from "./presentation-sections/Sections";
 import Testimonials from "./sections-sections/Testimonials.js";
 import ContactUs from "./sections-sections/ContactUs.js";
 import BasicComponents from "./presentation-sections/BasicComponents.js";
-import Projects from './sections-sections/Projects'
+import Projects from './sections-sections/Projects';
+import NewsFlash from './sections-sections/NewsFlash';
 
 function Sections() {
   React.useEffect(() => {
@@ -80,9 +81,10 @@ function Sections() {
         {/* <Presentation /> */}
         <Headers /> {/*Large Pic of city - no Balboa words */}
         <Cards /> {/*IFrame video news feed*/}
+        <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Components /> {/* 4 pop-up cards*/}
         <SectionsCards /> {/*12 card links*/}
-        <Features /> {/* Carousel*/}
+        {/* <Features /> Carousel */}
         <BasicComponents /> {/*Ipad with floating images */}
         <Projects /> {/* Concur login images with ipad(s) */}
         <Teams />

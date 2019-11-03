@@ -3,12 +3,14 @@
 .carousel-item-prev,
 .carousel-item.active{
     display: block;
+    padding-top: 0;
 }
 
 .carousel{
     .carousel-inner{
         box-shadow: $box-shadow-raised;
         border-radius: $border-radius-small;
+        height: 350px;
     }
 
     .card {
@@ -16,4 +18,5 @@
         margin: 60px auto;
         display: block;
     }
+    
 }

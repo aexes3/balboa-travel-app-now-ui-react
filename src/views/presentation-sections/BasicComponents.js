@@ -15,7 +15,7 @@ function BasicComponents() {
               <h2 className="title">Balboa Preferred!</h2>
               {/* <h6 className="category">Let us help</h6> */}
               <h5 className="description">
-           
+              <h2 className="title">Balboa Preferred!</h2>
               </h5>
               </Row>
             <Col lg="6" md="12">

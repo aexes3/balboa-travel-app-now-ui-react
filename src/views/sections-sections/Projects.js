@@ -17,11 +17,12 @@ function Features() {
           }}
         >
           <Col className="mr-auto ml-auto text-center" md="8">
-            <h2 className="title">Working is a pleasure</h2>
+            <h2 className="title">Concur Login</h2>
             <h4 className="description">
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
             </h4>
           </Col>
           <Container fluid>
@@ -29,41 +30,65 @@ function Features() {
               <Col className="px-0" md="6">
                 <Col sm="12">
                   <div className="info info-horizontal">
-                    <div className="icon">
-                      <i className="now-ui-icons design-2_html5"></i>
+                  <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
+                      <div className="icon">
+                      <i className="fa fa-calendar"></i>
                     </div>
+                  </a>
                     <div className="description">
-                      <h5 className="info-title">For Developers</h5>
+                    <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
+                      <h5 className="info-title">Online Booking Tool Login</h5>
+                    </a>
                       <p className="description">
-                        The moment you use Now UI Kit, you know you’ve never
-                        felt anything like it. With a single use, this powerfull
-                        UI Kit lets you do more than ever before.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
                       </p>
                     </div>
                   </div>
                   <div className="info info-horizontal">
-                    <div className="icon">
-                      <i className="now-ui-icons design_palette"></i>
+                  <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
+                      <div className="icon">
+                      <i className="fa fa-laptop"></i>
                     </div>
+                    </a>
                     <div className="description">
-                      <h5 className="info-title">For Designers</h5>
+                    <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
+                      <h5 className="info-title">Online Tool Training</h5>
+                    </a>
                       <p className="description">
-                        The moment you use Now UI Kit, you know you’ve never
-                        felt anything like it. With a single use, this powerfull
-                        UI Kit lets you do more than ever before.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse.
                       </p>
                     </div>
                   </div>
                   <div className="info info-horizontal">
+                    <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
                     <div className="icon">
-                      <i className="now-ui-icons design-2_ruler-pencil"></i>
+                      <i className="fas fa-mobile-alt"></i>
                     </div>
+                    </a>
                     <div className="description">
-                      <h5 className="info-title">For Artists</h5>
+                    <a href="#pablo"
+                     onClick={e => {
+                      e.preventDefault();}}
+                    >
+                      <h5 className="info-title">Concur Mobile</h5>
+                    </a>
                       <p className="description">
-                        The moment you use Now UI Kit, you know you’ve never
-                        felt anything like it. With a single use, this powerfull
-                        UI Kit lets you do more than ever before.
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa.
                       </p>
                     </div>
                   </div>
@@ -78,7 +103,7 @@ function Features() {
           </Container>
         </div>
         
-        <div className="features-5">
+        {/* <div className="features-5">
           <Container>
             <Row>
               <Col md="5">
@@ -133,7 +158,7 @@ function Features() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
 
       </div>
     </>

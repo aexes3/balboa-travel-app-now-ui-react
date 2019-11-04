@@ -4,12 +4,6 @@ import React from "react";
 import {
   Alert,
   Button,
-  Collapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
   Row,
   Col,
@@ -23,26 +17,25 @@ const items = [
   {
     src: "url(" + require("assets/img/bg20.jpg") + ")",
     content: (
-      <Row>
-        <Col className="ml-auto mr-auto text-right" md="4">
-        <h2 className="title">On the run tour.</h2>
-          <h4 className="description">
-            On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which
-            documents the September 12 and 13, 2014, shows of American singers
-            {"'"}
-            Beyoncé and Jay-Z joint co-headlining venture On the Run Tour.
-          </h4>
-        </Col>
-        <Col className="ml-auto mr-auto text-right" md="4">
-          <h2 className="title">On the run tour.</h2>
-          <h4 className="description">
-            On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which
-            documents the September 12 and 13, 2014, shows of American singers
-            {"'"}
-            Beyoncé and Jay-Z joint co-headlining venture On the Run Tour.
-          </h4>
-        </Col>
-      </Row>
+      <div className="newsflash">
+        <ul>
+          <li>
+            <h2>Title #1</h2>
+            <p>Text Content #1</p>
+          </li>
+          <li>
+            <h2>Title #2</h2>
+            <p>Text Content #2</p>
+          </li>
+          <li>
+
+            <h2>Title #3</h2>
+            <p>Text Content #3</p>
+
+          </li>
+          
+        </ul>
+      </div>
     ),
     altText: "",
     caption: ""
@@ -50,60 +43,49 @@ const items = [
   {
     src: "url(" + require("assets/img/bg15.jpg") + ")",
     content: (
-      <Row>
-        <Col className="ml-auto mr-auto text-center" md="6">
-          <h2 className="title">Island of legends.</h2>
-          <h4 className="description">
-            The islands of Malta and Gozo are brilliant for a family holiday,
-            packed with fun places to visit whatever your children’s ages. The
-            islands’ small size means everywhere is within easy reach.
-          </h4>
-        </Col>
-        <Col className="ml-auto mr-auto text-center" md="6">
-          <h2 className="title">Island of legends.</h2>
-          <h4 className="description">
-            The islands of Malta and Gozo are brilliant for a family holiday,
-            packed with fun places to visit whatever your children’s ages. The
-            islands’ small size means everywhere is within easy reach.
-          </h4>
-        </Col>
-      </Row>
+      <div className="newsflash">
+        <ul>
+          <li>
+            <h2>Title #1</h2>
+            <p>Text Content #1</p>
+          </li>
+          <li>
+            <h2>Title #2</h2>
+            <p>Text Content #2</p>
+          </li>
+          <li>
+
+            <h2>Title #3</h2>
+            <p>Text Content #3</p>
+
+          </li>
+          
+        </ul>
+      </div>
     )
   },
   {
     src: "url(" + require("assets/img/bg17.jpg") + ")",
     content: (
-      <Row>
-        <Col className="text-left" md="6">
-          <h2 className="title">Arctic Sea ice.</h2>
-          <h4 className="description">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted Scambos, NSIDC lead scientist, puts the potentially record low
-            maximum sea ice extent this year down to low ice extent in the
-            Pacific and a late drop in ice extent in the Barents Sea.
-          </h4>
-          <br></br>
-          <div className="buttons">
-            <Button
-              className="btn-neutral mr-1"
-              color="info"
-              href="#pablo"
-              onClick={e => e.preventDefault()}
-              size="lg"
-            >
-              <i className="now-ui-icons files_single-copy-04"></i> Read More..
-            </Button>
-            <Button
-              color="info"
-              href="#pablo"
-              onClick={e => e.preventDefault()}
-              size="lg"
-            >
-              <i className="now-ui-icons arrows-1_share-66"></i> Subscribe
-            </Button>
-          </div>
-        </Col>
-      </Row>
+      <div className="newsflash">
+        <ul>
+          <li>
+            <h2>Title #1</h2>
+            <p>Text Content #1</p>
+          </li>
+          <li>
+            <h2>Title #2</h2>
+            <p>Text Content #2</p>
+          </li>
+          <li>
+
+            <h2>Title #3</h2>
+            <p>Text Content #3</p>
+
+          </li>
+          
+        </ul>
+      </div>
     ),
     altText: "",
     caption: ""

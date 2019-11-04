@@ -9,12 +9,12 @@ import Headers from "../views/sections-sections/Headers";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
-import Components from "./presentation-sections/Components.js";
-import Cards from "./presentation-sections/Cards.js";
-import Sections from "./presentation-sections/Sections.js";
+// import Components from "./presentation-sections/Components.js";
+// import Cards from "./presentation-sections/Cards.js";
+// import Sections from "./presentation-sections/Sections.js";
 // import Image from "./presentation-sections/Image.js";
-import Pricing from "./presentation-sections/Pricing.js";
-import BasicComponents from "./presentation-sections/BasicComponents.js";
+// import Pricing from "./presentation-sections/Pricing.js";
+// import BasicComponents from "./presentation-sections/BasicComponents.js";
 // import Content from "./presentation-sections/Content.js";
 // import Examples from "./presentation-sections/Examples.js";
 // import FreeDemo from "./presentation-sections/FreeDemo.js";

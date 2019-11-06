@@ -19,6 +19,8 @@ import ContactUs from "./sections-sections/ContactUs.js";
 import BasicComponents from "./presentation-sections/BasicComponents.js";
 import Projects from './sections-sections/Projects';
 import NewsFlash from './sections-sections/NewsFlash';
+import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
+import Vacations from "./sections-sections/Vacations.js";
 
 function Sections() {
   React.useEffect(() => {
@@ -85,7 +87,9 @@ function Sections() {
         <Components /> {/* 4 pop-up cards*/}
         <SectionsCards /> {/*12 card links*/}
         {/* <Features /> Carousel */}
-        <BasicComponents /> {/*Ipad with floating images */}
+        <MeetingIncentives />
+        <Vacations />
+        {/* <BasicComponents /> Ipad with floating images */}
         <Projects /> {/* Concur login images with ipad(s) */}
         <Teams />
         {/* <Pricing /> */}

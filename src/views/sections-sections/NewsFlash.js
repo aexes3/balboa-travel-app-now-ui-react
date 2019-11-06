@@ -3,7 +3,8 @@ import React from "react";
 // reactstrap components
 import {
   Alert,
-  Button,
+  Card,
+  CardBody,
   Container,
   Row,
   Col,
@@ -33,7 +34,18 @@ const items = [
             <p>Text Content #3</p>
 
           </li>
-          
+          <li>
+            <h2>Title #4</h2>
+            <p>Text Content #4</p>
+          </li>
+          <li>
+            <h2>Title #5</h2>
+            <p>Text Content #5</p>
+          </li>
+          <li>
+            <h2>Title #6</h2>
+            <p>Text Content #6</p>
+          </li>
         </ul>
       </div>
     ),
@@ -43,49 +55,35 @@ const items = [
   {
     src: "url(" + require("assets/img/bg15.jpg") + ")",
     content: (
-      <div className="newsflash">
-        <ul>
-          <li>
-            <h2>Title #1</h2>
-            <p>Text Content #1</p>
-          </li>
-          <li>
-            <h2>Title #2</h2>
-            <p>Text Content #2</p>
-          </li>
-          <li>
-
-            <h2>Title #3</h2>
-            <p>Text Content #3</p>
-
-          </li>
-          
-        </ul>
-      </div>
+      <Card>
+      <CardBody>
+        <blockquote className="blockquote blockquote-primary mb-0">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            posuere erat a ante.
+          </p>
+          <footer className="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </footer>
+        </blockquote>
+      </CardBody>
+    </Card>
     )
   },
   {
-    src: "url(" + require("assets/img/bg17.jpg") + ")",
+    
     content: (
-      <div className="newsflash">
-        <ul>
-          <li>
-            <h2>Title #1</h2>
-            <p>Text Content #1</p>
-          </li>
-          <li>
-            <h2>Title #2</h2>
-            <p>Text Content #2</p>
-          </li>
-          <li>
-
-            <h2>Title #3</h2>
-            <p>Text Content #3</p>
-
-          </li>
-          
-        </ul>
-      </div>
+      <Row>
+        <Col className="ml-auto mr-auto text-right" md="6">
+          <h1 className="title">On the run tour.</h1>
+          <h4 className="description">
+            On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which
+            documents the September 12 and 13, 2014, shows of American singers
+            {"'"}
+            Beyoncé and Jay-Z joint co-headlining venture On the Run Tour.
+          </h4>
+        </Col>
+      </Row>
     ),
     altText: "",
     caption: ""
@@ -120,7 +118,7 @@ function NewsFlash() {
     <>
       
       <div className="cd-section" id="headers">
-      <Alert className="alert" color="danger"><h3>ALERTS! ALERTS! ALERTS! ALERTS! ALERTS! ALERTS! ALERTS! ALERTS! ALERTS!</h3>
+      <Alert className="alert" color="danger">
       </Alert>
         <div className="header-3">
 
@@ -181,6 +179,8 @@ function NewsFlash() {
             </a>
           </Carousel>
         </div>
+        <Alert className="alert" color="danger">
+      </Alert>
       </div>
     </>
   );

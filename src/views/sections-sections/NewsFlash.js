@@ -118,8 +118,8 @@ function NewsFlash() {
     <>
       
       <div className="cd-section" id="headers">
-      <Alert className="alert" color="danger">
-      </Alert>
+      {/* <Alert className="alert" color="danger">
+      </Alert> */}
         <div className="header-3">
 
           <Carousel activeIndex={activeIndex} next={next} previous={previous}>
@@ -179,8 +179,8 @@ function NewsFlash() {
             </a>
           </Carousel>
         </div>
-        <Alert className="alert" color="danger">
-      </Alert>
+        {/* <Alert className="alert" color="danger">
+      </Alert> */}
       </div>
     </>
   );

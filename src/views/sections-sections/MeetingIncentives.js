@@ -19,7 +19,7 @@ function MeetingIncentives() {
                 <h2 className="title">MEETING &amp; INCENTIVES</h2>
                 <h4 className="description">
                 Balboa Meeting &amp; Incentives Solutions is a full service meeting 
-                and incentive event management division of balboa travel. 
+                and incentive event management division of Balboa Travel. 
                 We provide the expertise and resources to seamlessly plan and execute 
                 all phases of your next corporate meeting or incentive travel program.
                 </h4>

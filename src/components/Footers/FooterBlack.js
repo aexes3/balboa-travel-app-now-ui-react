@@ -1,127 +1,161 @@
+/*eslint-disable*/
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-const FooterBlack = () => {
+// reactstrap components
+import { Container, Row, Col } from "reactstrap";
+import Logo from '../../assets/img/presentation-page/logo-white.png'
+
+// core components
+
+function FooterBlack() {
   return (
-    <MDBFooter color="mdb-color" className="font-small pt-4 mt-4">
-      <MDBContainer className="text-center text-md-left">
-        <MDBRow className="text-center text-md-left mt-3 pb-3">
-        <hr className="w-100 clearfix d-md-none" />
-          <MDBCol md="2" lg="2" xl="2" className="mx-auto mt-3">
-            <h6 className="text-uppercase mb-4 font-weight-bold">About Us</h6>
-            <p>
-              <a href="#!">Company Overview</a>
-            </p>
-            <p>
-              <a href="#!">Our Team</a>
-            </p>
-            <p>
-              <a href="#!">Affiliations</a>
-            </p>
-            <p>
-              <a href="#!">Testimonials</a>
-            </p>
-          </MDBCol>
-          <hr className="w-100 clearfix d-md-none" />
-          <MDBCol md="2" lg="2" xl="2" className="mx-auto mt-3">
-            <h6 className="text-uppercase mb-4 font-weight-bold">Corporate Travel</h6>
-            <p>
-              <a href="#!">Corbporate Travel Management</a>
-            </p>
-            <p>
-              <a href="#!">Service Offerings</a>
-            </p>
-            <p>
-              <a href="#!">Online Booking Solutions</a>
-            </p>
-            <p>
-              <a href="#!">technology</a>
-            </p>
-            <p>
-              <a href="#!">Account Management</a>
-            </p>
-            <p>
-              <a href="#!">Global Solutions</a>
-            </p>
-            <p>
-              <a href="#!">Industry Relations Team</a>
-            </p>
-            <p>
-              <a href="#!">White Papers</a>
-            </p>
-          </MDBCol>
-          <hr className="w-100 clearfix d-md-none" />
-          <MDBCol md="3" lg="2" xl="2" className="mx-auto mt-3">
-            <h6 className="text-uppercase mb-4 font-weight-bold">
-              Useful links
+    <>
+      <footer className="footer" data-background-color="black">
+        <Container className="text-center text-md-left">
+          <Row className="text-center text-md-left mt-3 pb-3 footer-font-size">
+            <hr className="w-100 clearfix d-md-none" />
+            <Col md="2" lg="2" xl="2" className="mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">About Us</h6>
+              <p >
+                <a href="#!">Company Overview</a>
+              </p>
+              <p>
+                <a href="#!">Our Team</a>
+              </p>
+              <p>
+                <a href="#!">Affiliations</a>
+              </p>
+              <p>
+                <a href="#!">Testimonials</a>
+              </p>
+            </Col>
+            <hr className="w-100 clearfix d-md-none" />
+            <Col md="2" lg="2" xl="2" className="mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Corporate Travel</h6>
+              <p>
+                <a href="https://www.balboa.com/corporate-travel-management">Corbporate Travel Management</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/service-offerings">Service Offerings</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/online-booking-solutions">Online Booking Solutions</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/technology">technology</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/account-management">Account Management</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/global-solutions">Global Solutions</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/industry-relations">Industry Relations Team</a>
+              </p>
+              <p>
+                <a href="https://www.balboa.com/white-papers">White Papers</a>
+              </p>
+            </Col>
+            <hr className="w-100 clearfix d-md-none" />
+            <Col md="3" lg="2" xl="2" className="mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                Meeting &amp; Events
             </h6>
-            <p>
-              <a href="#!">Your Account</a>
+              <p>
+                <a href="#!">Meeting &amp; Event Management</a>
+              </p>
+              <p>
+                <a href="#!">Site Selection</a>
+              </p>
+              <p>
+                <a href="#!">Online Registraion Service</a>
+              </p>
+              <hr className="w-100 clearfix d-md-none" />
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                Leisure Travel
+              </h6>
+              <p>
+                <a href="#!">Balboa Vacation</a>
+              </p>
+              <p>
+                <a href="#!">Travelbreaks</a>
+              </p>
+            </Col>
+            <hr className="w-100 clearfix d-md-none" />
+            <Col md="3" lg="2" xl="2" className="mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                Career
+            </h6>
+              <p>
+                <a href="#!">Employee Development</a>
+              </p>
+              <p>
+                <a href="#!">Job Opportunities</a>
+              </p>
+              <hr className="w-100 clearfix d-md-none" />
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                News
+              </h6>
+              <hr className="w-100 clearfix d-md-none" />
+              <h6 className="text-uppercase mb-4 font-weight-bold">
+                Resources
+              </h6>
+            </Col>
+            <hr className="w-100 clearfix d-md-none" />
+            <Col md="4" lg="3" xl="3" className="mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i className="fa fa-home mr-3" /> California Sellers License Number: CST#2013711
             </p>
-            <p>
-              <a href="#!">Become an Affiliate</a>
+              <p>
+                <i className="fa fa-envelope mr-3" /> res541414@balboa.com
             </p>
-            <p>
-              <a href="#!">Shipping Rates</a>
+              <p>
+                <i className="fa fa-phone mr-3" /> 858-678-3779
             </p>
-            <p>
-              <a href="#!">Help</a>
+              <p>
+                <i className="fa fa-print mr-3" /> + 01 234 567 89
             </p>
-          </MDBCol>
-          <hr className="w-100 clearfix d-md-none" />
-          <MDBCol md="4" lg="3" xl="3" className="mx-auto mt-3">
-            <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p>
-              <i className="fa fa-home mr-3" /> California Sellers License Number: CST#2013711
-            </p>
-            <p>
-              <i className="fa fa-envelope mr-3" /> res541414@balboa.com
-            </p>
-            <p>
-              <i className="fa fa-phone mr-3" /> 858-678-3779
-            </p>
-            <p>
-              <i className="fa fa-print mr-3" /> + 01 234 567 89
-            </p>
-          </MDBCol>
-        </MDBRow>
-        <hr />
-        <MDBRow className="d-flex align-items-center">
-          <MDBCol md="8" lg="8">
-            <p className="text-center text-md-left grey-text">
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-            </p>
-          </MDBCol>
-          <MDBCol md="4" lg="4" className="ml-lg-0">
-            <div className="text-center text-md-right">
-              <ul className="list-unstyled list-inline">
-                <li className="list-inline-item">
-                  <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                    <i className="fab fa-google-plus" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-floating btn-sm rgba-white-slight mx-1">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-    </MDBFooter>
+            </Col>
+          </Row>
+          <hr />
+          <Row >
+            <Col md="8" lg="8">
+              <p className="text-center text-md-left grey-text">
+              <a href="https://www.balboa.com"><img src={Logo} alt="logo" /></a>
+              </p>
+            </Col>
+            <Col md="4" lg="4" className="ml-lg-0">
+              <div className="text-center text-md-right">
+                <ul className="list-unstyled list-inline">
+                  <li className="list-inline-item">
+                    <a href="https://www.facebook.com/balboatravel/" className="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="https://twitter.com/BalboaTravel" className="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i className="fab fa-twitter" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a className="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i className="fab fa-google-plus" />
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="https://www.linkedin.com/company/balboa-travel-management/" className="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i className="fab fa-linkedin-in" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+    </>
   );
 }
 

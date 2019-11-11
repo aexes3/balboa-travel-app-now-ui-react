@@ -2,12 +2,11 @@ import React from "react";
 
 // reactstrap components
 import {
-  Alert,
   Card,
   CardBody,
   Container,
-  Row,
-  Col,
+  CardFooter,
+  CardTitle,
   Carousel,
   CarouselItem,
   CarouselIndicators
@@ -16,56 +15,48 @@ import {
 // core components
 const items = [
   {
-    src: "url(" + require("assets/img/bg20.jpg") + ")",
     content: (
-      <div className="newsflash">
-        <ul>
-          <li>
-            <h2>Title #1</h2>
-            <p>Text Content #1</p>
-          </li>
-          <li>
-            <h2>Title #2</h2>
-            <p>Text Content #2</p>
-          </li>
-          <li>
-
-            <h2>Title #3</h2>
-            <p>Text Content #3</p>
-
-          </li>
-          <li>
-            <h2>Title #4</h2>
-            <p>Text Content #4</p>
-          </li>
-          <li>
-            <h2>Title #5</h2>
-            <p>Text Content #5</p>
-          </li>
-          <li>
-            <h2>Title #6</h2>
-            <p>Text Content #6</p>
-          </li>
-        </ul>
-      </div>
+      <Card className="blockquote">
+      <CardBody>
+        <h6 className="category text-danger">
+          <i className="fa fa-info-circle"></i>
+          &nbsp;Alert!
+        </h6>
+        <CardTitle>
+          <a href="#pablo" onClick={e => e.preventDefault()}>
+            Lack of transportation in New York
+          </a>
+        </CardTitle>
+        <p className="card-description">
+          We're as confused as anyone. New York has run out of taxi's and busses..
+          By foot is the only means of transportation at this time. 
+        </p>
+        
+      </CardBody>
+    </Card>
     ),
     altText: "",
     caption: ""
   },
   {
-    src: "url(" + require("assets/img/bg15.jpg") + ")",
     content: (
-      <Card>
+      <Card className="blockquote">
       <CardBody>
-        <blockquote className="blockquote blockquote-primary mb-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.
-          </p>
-          <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
+        <h6 className="category text-danger">
+          <i className="fa fa-info-circle"></i>
+          &nbsp;Alert!
+        </h6>
+        <CardTitle>
+          <a href="#pablo" onClick={e => e.preventDefault()}>
+            Here Be Dragons
+          </a>
+        </CardTitle>
+        <p className="card-description">
+          An immersive production studio focused on virtual reality content,
+          has closed a $10 million Series A round led by Discovery
+          Communications
+        </p>
+        
       </CardBody>
     </Card>
     )
@@ -73,17 +64,25 @@ const items = [
   {
     
     content: (
-      <Row>
-        <Col className="ml-auto mr-auto text-right" md="6">
-          <h1 className="title">On the run tour.</h1>
-          <h4 className="description">
-            On the Run Tour: Beyoncé and Jay Z is a 2014 concert special which
-            documents the September 12 and 13, 2014, shows of American singers
-            {"'"}
-            Beyoncé and Jay-Z joint co-headlining venture On the Run Tour.
-          </h4>
-        </Col>
-      </Row>
+      <Card className="blockquote">
+      <CardBody>
+        <h6 className="category text-danger">
+          <i className="fa fa-info-circle"></i>
+          &nbsp;Alert!
+        </h6>
+        <CardTitle>
+          <a href="#pablo" onClick={e => e.preventDefault()}>
+            Stay tuned
+          </a>
+        </CardTitle>
+        <p className="card-description">
+          Snowy weather is happing in Austin, Tx. The whole city is shut down due to
+          unfamiliarity with these conditions and proper driving lessons. Austin is 
+          already known for their bad drivers, and this isn't helping!
+        </p>
+        
+      </CardBody>
+    </Card>
     ),
     altText: "",
     caption: ""
@@ -117,10 +116,13 @@ function NewsFlash() {
   return (
     <>
       
-      <div className="cd-section" id="headers">
-      {/* <Alert className="alert" color="danger">
-      </Alert> */}
-        <div className="header-3">
+      <div className="cd-section" id="headers" >
+      <div
+          className="header-3 section-image"
+          style={{
+            backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")"
+          }}
+        >
 
           <Carousel activeIndex={activeIndex} next={next} previous={previous}>
             <CarouselIndicators
@@ -179,11 +181,10 @@ function NewsFlash() {
             </a>
           </Carousel>
         </div>
-        {/* <Alert className="alert" color="danger">
-      </Alert> */}
       </div>
     </>
   );
 }
 
 export default NewsFlash;
+

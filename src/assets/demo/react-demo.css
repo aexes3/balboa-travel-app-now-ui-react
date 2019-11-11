@@ -21,8 +21,14 @@
     -webkit-transform: translate(50px, 0px);
   }
 }
+
+/* news flash background color */
 .presentation-page .page-header, .index-page .page-header {
-  background: #83c1d8;
+  /* background-image: url("../img/bg15.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background: rgba(255, 255, 255, 0);
 }
 .presentation-page .rellax-text-container .h1-seo, .index-page .rellax-text-container .h1-seo{
   background: #eaf3ff;

@@ -316,7 +316,7 @@
 } */
 
 .presentation-page .page-header+.section-components {
-  padding-top: 300px;
+  /* padding-top: 300px; */
 }
 
 .presentation-page .colors {
@@ -1125,7 +1125,7 @@
     top: -80px;
   }
   .presentation-page .section-content .image-container {
-    height: 400px;
+    /* height: 400px; */
   }
   .presentation-page .section-content .image-container img {
     position: absolute;
@@ -1781,3 +1781,10 @@
   font-size: .8em;
 }
 
+.blockquote {
+  border-left: none;
+  /* border: 1px solid #888888; */
+  /* margin: 200px; */
+  font-size: 1rem;
+  /* line-height: 1.8; */
+}

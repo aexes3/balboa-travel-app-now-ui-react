@@ -14,9 +14,9 @@ import Cards from "./presentation-sections/Cards.js";
 import Teams from "./sections-sections/Teams.js";
 import Components from "./presentation-sections/Components";
 import SectionsCards from "./presentation-sections/Sections";
-import Testimonials from "./sections-sections/Testimonials.js";
+import Managers from "./sections-sections/Managers.js";
 import ContactUs from "./sections-sections/ContactUs.js";
-import BasicComponents from "./presentation-sections/BasicComponents.js";
+import Faq from "./sections-sections/Faq.js";
 import Projects from './sections-sections/Projects';
 import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
@@ -81,19 +81,19 @@ function Sections() {
       <div className="wrapper">
         <div className="section-space"></div>
         {/* <Presentation /> */}
-        <Headers /> {/*Large Pic of city - no Balboa words */}
+        <Headers /> {/*Large Pic of city */}
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Components /> {/* 4 pop-up cards*/}
         <SectionsCards /> {/*12 card links*/}
+        <Faq />
         {/* <Features /> Carousel */}
         <MeetingIncentives />
         <Vacations />
         {/* <BasicComponents /> Ipad with floating images */}
         <Projects /> {/* Concur login images with ipad(s) */}
         <Teams />
-        {/* <Pricing /> */}
-        <Testimonials />
+        <Managers /> 
         <ContactUs />
         <FooterBlack />
       </div>

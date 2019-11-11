@@ -20,6 +20,7 @@
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
     "react-select": "3.0.4",
+    "react-swipeable-views": "^0.13.3",
     "react-tagsinput": "3.19.0",
     "reactstrap": "8.0.1",
     "rellax": "1.10.0"

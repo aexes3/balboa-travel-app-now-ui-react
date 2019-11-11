@@ -18,185 +18,6 @@ function Teams() {
   return (
     <>
       <div className="cd-section" id="teams">
-      <div className="team-2">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Balboa Executive Travel Managers</h2>
-                <h4 className="description">
-                  Lorum ipsum 
-                </h4>
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-image">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/denise.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Denise Jackson</CardTitle>
-                    <h6 className="category">Account Manager</h6>
-                    <CardFooter>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="twitter"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="facebook"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook-square"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="dribbble"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </Button>
-                    </CardFooter>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-image">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/dan.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Dan Wise</CardTitle>
-                    <h6 className="category">Aerospace Engineer</h6>
-                    <CardFooter>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="dribbble"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="facebook"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook-square"></i>
-                      </Button>
-                    </CardFooter>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-image">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/tracy.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
-                    <h6 className="category">Photographer</h6>
-                    <CardFooter>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="linkedin"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-linkedin"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="twitter"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="dribbble"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </Button>
-                    </CardFooter>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4"></Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-image">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/andrew.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Andrew Robles</CardTitle>
-                    <h6 className="category">Senior Director of Travel Technology</h6>
-                    <CardFooter>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="linkedin"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-linkedin"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="twitter"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </Button>
-                      <Button
-                        className="btn-icon btn-round"
-                        color="dribbble"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </Button>
-                    </CardFooter>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div> 
 
         <div
           className="team-3 section-image"
@@ -223,7 +44,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/olivia.jpg")}
+                            src={require("assets/img/dan.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -250,7 +71,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/james.jpg")}
+                            src={require("assets/img/tracy.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -279,7 +100,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/michael.jpg")}
+                            src={require("assets/img/andrew.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -308,7 +129,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/emily.jpg")}
+                            src={require("assets/img/denise.jpg")}
                           ></img>
                         </a>
                       </div>

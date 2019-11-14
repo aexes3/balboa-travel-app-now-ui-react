@@ -92,8 +92,8 @@ p{
 .description,
 .card-description,
 .footer-big p{
-    color: $dark-gray;
-    font-weight: $font-weight-light;
+    color: $black-color;
+    font-weight: $font-weight-normal;
 }
 .category{
     text-transform: capitalize;
@@ -155,7 +155,7 @@ p{
         color: $white-color;
 
         small{
-            color: $opacity-8;
+            color: $opacity-1;
         }
     }
 }

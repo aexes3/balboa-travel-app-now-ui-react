@@ -17,23 +17,23 @@ function FooterBlack() {
             <Col md="2" lg="2" xl="2" className="mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">About Us</h6>
               <p >
-                <a href="#!">Company Overview</a>
+                <a href="https://www.balboa.com/company-overview">Company Overview</a>
               </p>
               <p>
-                <a href="#!">Our Team</a>
+                <a href="https://www.balboa.com/our-team">Our Team</a>
               </p>
               <p>
-                <a href="#!">Affiliations</a>
+                <a href="https://www.balboa.com/affiliations">Affiliations</a>
               </p>
               <p>
-                <a href="#!">Testimonials</a>
+                <a href="https://www.balboa.com/testimonials">Testimonials</a>
               </p>
             </Col>
             <hr className="w-100 clearfix d-md-none" />
             <Col md="2" lg="2" xl="2" className="mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Corporate Travel</h6>
               <p>
-                <a href="https://www.balboa.com/corporate-travel-management">Corbporate Travel Management</a>
+                <a href="https://www.balboa.com/corporate-travel-management">Corporate Travel Management</a>
               </p>
               <p>
                 <a href="https://www.balboa.com/service-offerings">Service Offerings</a>
@@ -63,23 +63,23 @@ function FooterBlack() {
                 Meeting &amp; Events
             </h6>
               <p>
-                <a href="#!">Meeting &amp; Event Management</a>
+                <a href="https://www.balboa.com/meeting-and-event-management">Meeting &amp; Event Management</a>
               </p>
               <p>
-                <a href="#!">Site Selection</a>
+                <a href="https://www.balboa.com/site-selection">Site Selection</a>
               </p>
               <p>
-                <a href="#!">Online Registraion Service</a>
+                <a href="https://www.balboa.com/online-registration-service">Online Registraion Service</a>
               </p>
               <hr className="w-100 clearfix d-md-none" />
               <h6 className="text-uppercase mb-4 font-weight-bold">
                 Leisure Travel
               </h6>
               <p>
-                <a href="#!">Balboa Vacation</a>
+                <a href="https://www.balboa.com/balboa-vacations">Balboa Vacation</a>
               </p>
               <p>
-                <a href="#!">Travelbreaks</a>
+                <a href="https://www.balboa.com/travelbreaks">Travelbreaks</a>
               </p>
             </Col>
             <hr className="w-100 clearfix d-md-none" />
@@ -88,18 +88,18 @@ function FooterBlack() {
                 Career
             </h6>
               <p>
-                <a href="#!">Employee Development</a>
+                <a href="https://www.balboa.com/balboa-vacations">Employee Development</a>
               </p>
               <p>
-                <a href="#!">Job Opportunities</a>
+                <a href="https://www.balboa.com/job-opportunities">Job Opportunities</a>
               </p>
               <hr className="w-100 clearfix d-md-none" />
               <h6 className="text-uppercase mb-4 font-weight-bold">
-                News
+                <a href="https://www.balboa.com/news">News</a>
               </h6>
               <hr className="w-100 clearfix d-md-none" />
               <h6 className="text-uppercase mb-4 font-weight-bold">
-                Resources
+                <a href="https://www.balboa.com/resources">Resources</a>
               </h6>
             </Col>
             <hr className="w-100 clearfix d-md-none" />
@@ -114,9 +114,9 @@ function FooterBlack() {
               <p>
                 <i className="fa fa-phone mr-3" /> 858-678-3779
             </p>
-              <p>
+              {/* <p>
                 <i className="fa fa-print mr-3" /> + 01 234 567 89
-            </p>
+            </p> */}
             </Col>
           </Row>
           <hr />
@@ -139,11 +139,11 @@ function FooterBlack() {
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
-                  <li className="list-inline-item">
+                  {/* <li className="list-inline-item">
                     <a className="btn-floating btn-sm rgba-white-slight mx-1">
                       <i className="fab fa-google-plus" />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="list-inline-item">
                     <a href="https://www.linkedin.com/company/balboa-travel-management/" className="btn-floating btn-sm rgba-white-slight mx-1">
                       <i className="fab fa-linkedin-in" />

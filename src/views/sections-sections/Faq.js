@@ -51,9 +51,8 @@ function Faq() {
               </Col>
             </Row>
             <Row>
-              <Col className="ml-auto" md="4">
-              <div className={classes.root}>
-      <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+              <Col className="ml-auto" md="12">
+              <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -120,13 +119,17 @@ function Faq() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-    </div>
               </Col> 
             </Row>
         </Container>
       </div>
     </div>
+    
     </>
+     
+         
+            
+       
   );
 }
 

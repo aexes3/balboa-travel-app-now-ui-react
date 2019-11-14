@@ -1,20 +1,17 @@
 import React from "react";
-
-// reactstrap components
 import {
   Card,
   CardBody,
   Container,
-  CardFooter,
   CardTitle,
   Carousel,
   CarouselItem,
-  CarouselIndicators
+  CarouselIndicators,
 } from "reactstrap";
 
-// core components
 const items = [
   {
+    
     content: (
       <Card className="blockquote">
       <CardBody>
@@ -26,6 +23,7 @@ const items = [
           <a href="#pablo" onClick={e => e.preventDefault()}>
             Lack of transportation in New York
           </a>
+
         </CardTitle>
         <p className="card-description">
           We're as confused as anyone. New York has run out of taxi's and busses..
@@ -118,7 +116,7 @@ function NewsFlash() {
       
       <div className="cd-section" id="headers" >
       <div
-          className="header-3 section-image"
+          className="header-3 news-flash"
           style={{
             backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")"
           }}

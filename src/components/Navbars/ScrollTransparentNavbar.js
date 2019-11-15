@@ -86,7 +86,7 @@ function ScrollTransparentNavbar() {
           <Collapse isOpen={collapseOpen} navbar>
             <Nav className="ml-auto" id="ceva" navbar>
               
-              <UncontrolledDropdown nav>
+            <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -98,7 +98,7 @@ function ScrollTransparentNavbar() {
                 >
                   <i
                     aria-hidden={true}
-                    className="now-ui-icons files_paper"
+                    className="fab fa-home"
                   ></i>
                   <p>Home</p>
                 </DropdownToggle>
@@ -138,7 +138,7 @@ function ScrollTransparentNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
 
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -170,7 +170,7 @@ function ScrollTransparentNavbar() {
                     Documentation
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
 
               <UncontrolledDropdown nav>
                 <DropdownToggle
@@ -184,44 +184,44 @@ function ScrollTransparentNavbar() {
                 >
                   <i
                     aria-hidden={true}
-                    className="now-ui-icons design_image"
+                    className="fab fa-staylinked"
                   ></i>
                   <p>Quick Links</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem tag={Link} to="/about-us">
-                    <i className="now-ui-icons business_bulb-63"></i>
-                    About-us
+                  <DropdownItem href="https://balboa.graspdata.com//Public/PrintInvoice.aspx?agency=1D71F7ED791B4A05801516457400D2CC&filtermode=booking" target="_blank">
+                    <i className="fa fa-print"></i>
+                    Print My Invoice
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/blog-post">
-                    <i className="now-ui-icons text_align-left"></i>
-                    Blog Post
+                  <DropdownItem href="https://www.concursolutions.com/nui/signin" target="_blank">
+                    <i className="fa fa-calendar-alt"></i>
+                    Online Booking
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/blog-posts">
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Blog Posts
+                  <DropdownItem href="https://www.flightstats.com/v2/" target="_blank">
+                    <i className="fas fa-plane-departure"></i>
+                    Flight Status
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/contact-us">
-                    <i className="now-ui-icons location_pin"></i>
-                    Contact Us
+                  <DropdownItem href="https://www.balboa.com/airline-online-check-in" target="_blank">
+                    <i className="fa fa-map-marker-alt"></i>
+                    Online Check-In
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/landing-page">
-                    <i className="now-ui-icons education_paper"></i>
-                    Landing Page
+                  <DropdownItem href="tel:858-678-3300" target="_blank">
+                    <i className="fa fa-phone"></i>
+                    858-678-3300 M-F 6a - 6p
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/login-page">
-                    <i className="now-ui-icons users_circle-08"></i>
-                    Login Page
+                  <DropdownItem href="tel:888-888-8888" target="_blank">
+                    <i className="fa fa-phone"></i>
+                    800-800-8888 Afterhours
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/pricing">
-                    <i className="now-ui-icons business_money-coins"></i>
-                    Pricing
+                  <DropdownItem href="mailto:travel@balboa.com" target="_blank">
+                    <i className="fa fa-envelope"></i>
+                    travel@babloa.com
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/e-commerce">
-                    <i className="now-ui-icons shopping_shop"></i>
-                    Ecommerce Page
+                  <DropdownItem href="#!" target="_blank">
+                    <i className="fa fa-question-circle"></i>
+                    General Questions
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/product-page">
+                  {/* <DropdownItem href="#!" target="_blank">
                     <i className="now-ui-icons shopping_bag-16"></i>
                     Product Page
                   </DropdownItem>
@@ -232,9 +232,42 @@ function ScrollTransparentNavbar() {
                   <DropdownItem tag={Link} to="/sign-up">
                     <i className="now-ui-icons tech_mobile"></i>
                     Signup Page
-                  </DropdownItem>
+                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
+
+              <UncontrolledDropdown
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  <i
+                    aria-hidden={true}
+                    className="fa fa-comment"
+                  ></i>
+                  <p>Chat</p>
+                </UncontrolledDropdown>
+
+                <UncontrolledDropdown
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  <i
+                    aria-hidden={true}
+                    className="fa fa-sms"
+                  ></i>
+                  <p>Send Text</p>
+                </UncontrolledDropdown>
+
               <NavItem>
                 {/* <Button
                   className="nav-link btn-default"

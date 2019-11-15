@@ -51,7 +51,7 @@ function FooterBlack() {
                 <a href="https://www.balboa.com/global-solutions">Global Solutions</a>
               </p>
               <p>
-                <a href="https://www.balboa.com/industry-relations">Industry Relations Team</a>
+                <a href="https://www.balboa.com/industry-relations-team">Industry Relations Team</a>
               </p>
               <p>
                 <a href="https://www.balboa.com/white-papers">White Papers</a>
@@ -88,7 +88,7 @@ function FooterBlack() {
                 Career
             </h6>
               <p>
-                <a href="https://www.balboa.com/balboa-vacations">Employee Development</a>
+                <a href="https://www.balboa.com/employee-development">Employee Development</a>
               </p>
               <p>
                 <a href="https://www.balboa.com/job-opportunities">Job Opportunities</a>
@@ -109,10 +109,14 @@ function FooterBlack() {
                 <i className="fa fa-home mr-3" /> California Sellers License Number: CST#2013711
             </p>
               <p>
-                <i className="fa fa-envelope mr-3" /> res541414@balboa.com
+                <a href="mailto:res541414@balboa.com">
+                  <i className="fa fa-envelope mr-3" /> res541414@balboa.com
+                </a>
             </p>
               <p>
-                <i className="fa fa-phone mr-3" /> 858-678-3779
+                <a href="tel:858-678-3779">
+                  <i className="fa fa-phone mr-3" /> 858-678-3779
+                </a>
             </p>
               {/* <p>
                 <i className="fa fa-print mr-3" /> + 01 234 567 89

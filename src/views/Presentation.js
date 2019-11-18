@@ -5,8 +5,8 @@ import Rellax from "rellax";
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import Headers from "../views/sections-sections/Headers";
-import FooterBlack from "components/Footers/FooterBlack.js";
+// import Headers from "../views/sections-sections/Headers";
+// import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
 // import Components from "./presentation-sections/Components.js";
@@ -58,7 +58,7 @@ function Presentation() {
     <>
       <ScrollTransparentNavbar />
       <div className="wrapper">
-        <Headers />
+        {/* <Headers /> */}
         {/* <Cards /> */}
         {/* <Components /> */}
         {/* <Content /> */}
@@ -70,7 +70,7 @@ function Presentation() {
         {/* <BasicComponents /> */}
         {/* <Testimonials /> */}
         {/* <Pricing /> */}
-        <FooterBlack />
+        {/* <FooterBlack /> */}
       </div>
     </>
   );

@@ -9,7 +9,7 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
-import Features from "./sections-sections/Features.js";
+// import Features from "./sections-sections/Features.js";
 import Cards from "./presentation-sections/Cards.js";
 import Teams from "./sections-sections/Teams.js";
 import Components from "./presentation-sections/Components";
@@ -21,6 +21,7 @@ import Projects from './sections-sections/Projects';
 import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
+import Airlines from "./sections-sections/Airlines.js";
 
 function Sections() {
   React.useEffect(() => {
@@ -84,7 +85,8 @@ function Sections() {
         <Headers /> {/*Large Pic of city */}
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
-        <Components /> {/* 4 pop-up cards*/}
+        <Airlines />
+        {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         <Faq />
         {/* <Features /> Carousel */}

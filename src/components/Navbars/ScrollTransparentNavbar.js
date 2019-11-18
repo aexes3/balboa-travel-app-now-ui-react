@@ -138,7 +138,7 @@ function ScrollTransparentNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
 
-              {/* <UncontrolledDropdown nav>
+              <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -151,26 +151,31 @@ function ScrollTransparentNavbar() {
                   <i className="now-ui-icons design_app"
                      aria-hidden={true}
                   ></i>
-                  <p>Balboa</p>
+                  <p>Get in Touch</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Presentation
+                  <DropdownItem>
+                     <i className="fa fa-comment"></i>
+                     Chat
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
+                  <DropdownItem>
+                    <i className="fa fa-sms"></i>
+                    Send a Text
                   </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
-                  </DropdownItem>
+                  <DropdownItem href="tel:858-678-3300" target="_blank">
+                      <i className="fa fa-phone"></i>
+                      858-678-3300 M-F 6a - 6p
+                    </DropdownItem>
+                    <DropdownItem href="tel:888-888-8888" target="_blank">
+                      <i className="fa fa-phone"></i>
+                      800-800-8888 Afterhours
+                    </DropdownItem>
+                    <DropdownItem href="mailto:travel@balboa.com" target="_blank">
+                      <i className="fa fa-envelope"></i>
+                      travel@babloa.com
+                    </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown> */}
+              </UncontrolledDropdown>
 
               <UncontrolledDropdown nav>
                 <DropdownToggle
@@ -205,18 +210,6 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-map-marker-alt"></i>
                     Online Check-In
                   </DropdownItem>
-                  <DropdownItem href="tel:858-678-3300" target="_blank">
-                    <i className="fa fa-phone"></i>
-                    858-678-3300 M-F 6a - 6p
-                  </DropdownItem>
-                  <DropdownItem href="tel:888-888-8888" target="_blank">
-                    <i className="fa fa-phone"></i>
-                    800-800-8888 Afterhours
-                  </DropdownItem>
-                  <DropdownItem href="mailto:travel@balboa.com" target="_blank">
-                    <i className="fa fa-envelope"></i>
-                    travel@babloa.com
-                  </DropdownItem>
                   <DropdownItem href="#!" target="_blank">
                     <i className="fa fa-question-circle"></i>
                     General Questions
@@ -235,38 +228,6 @@ function ScrollTransparentNavbar() {
                   </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
-
-              <UncontrolledDropdown
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i
-                    aria-hidden={true}
-                    className="fa fa-comment"
-                  ></i>
-                  <p>Chat</p>
-                </UncontrolledDropdown>
-
-                <UncontrolledDropdown
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i
-                    aria-hidden={true}
-                    className="fa fa-sms"
-                  ></i>
-                  <p>Send Text</p>
-                </UncontrolledDropdown>
 
               <NavItem>
                 {/* <Button

@@ -370,7 +370,7 @@
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: relative;
-  height: 500px;
+  height: 75px;
 }
 
 .presentation-page .card-component .front {

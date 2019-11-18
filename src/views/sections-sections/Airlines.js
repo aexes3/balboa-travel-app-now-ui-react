@@ -7,10 +7,12 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import PhoneIcon from '@material-ui/icons/Phone';
-import image from 'assets/img/presentation-page/flying-pig.png'
-import image2 from 'assets/img/presentation-page/AA-LOGO.JPG'
-import image3 from 'assets/img/presentation-page/SW-LOGO.jpg'
-import image4 from 'assets/img/presentation-page/ALASKA-LOGO.jpg'
+import image from 'assets/img/presentation-page/DA-LOGO2.jpg'
+import image2 from 'assets/img/presentation-page/AA-LOGO2.jpg'
+import image3 from 'assets/img/presentation-page/SW-LOGO2.jpg'
+import image4 from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
+import image5 from 'assets/img/presentation-page/VA-LOGO.jpg'
+
 import {
     Button,
     Col,
@@ -55,13 +57,11 @@ function a11yProps(index) {
     };
 }
 
-const alStyles = makeStyles(theme => ({
+const daStyles = makeStyles(theme => ({
     root: {
-        //   flexGrow: 1,
-        backgroundImage: `url(${image4})`,
-        color: 'white',
-        //   opacity: 0.7,
-    },
+        backgroundImage: `url(${image})`,
+        color: 'white'
+    }
 }));
 
 const aaStyles = makeStyles(theme => ({
@@ -76,6 +76,24 @@ const swStyles = makeStyles(theme => ({
         backgroundImage: `url(${image3})`,
         color: 'white'
     }
+}));
+
+const alStyles = makeStyles(theme => ({
+    root: {
+        //   flexGrow: 1,
+        backgroundImage: `url(${image4})`,
+        color: 'white',
+        //   opacity: 0.7,
+    },
+}));
+
+const vaStyles = makeStyles(theme => ({
+    root: {
+        //   flexGrow: 1,
+        backgroundImage: `url(${image5})`,
+        color: 'white',
+        //   opacity: 0.7,
+    },
 }));
 
 export default function Airlines(props) {
@@ -98,7 +116,7 @@ export default function Airlines(props) {
             <div>
                 <Container>
                     <Row>
-                        <Col md="3">
+                        <Col>
                             <Link to="/american">
                                 <div className="card-container first-card">
                                     <div className="card-component">
@@ -114,7 +132,7 @@ export default function Airlines(props) {
                                 </div>
                             </Link>
                         </Col>
-                        <Col md="3">
+                        <Col>
                             <Link to="/delta">
                                 <div className="card-container second-card">
                                     <div className="card-component">
@@ -129,7 +147,7 @@ export default function Airlines(props) {
                                 </div>
                             </Link>
                         </Col>
-                        <Col md="3">
+                        <Col>
                             <Link to="/southwest">
                             <div className="card-container third-card">
                                     <div className="card-component">
@@ -144,7 +162,7 @@ export default function Airlines(props) {
                                 </div>
                             </Link>
                         </Col>
-                        <Col md="3">
+                        <Col>
                             <Link to="/alaska">
                             <div className="card-container fourth-card">
                                     <div className="card-component">
@@ -159,9 +177,25 @@ export default function Airlines(props) {
                                 </div>
                             </Link>
                         </Col>
+                        <Col>
+                            <Link to="/virgin">
+                                <div className="card-container fith-card">
+                                    <div className="card-component">
+
+                                        <div className="front">
+                                            <img
+                                                alt="..."
+                                                src={require("assets/img/presentation-page/valogo.png")}
+                                            ></img>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </Link>
+                        </Col>
                     </Row>
                 </Container>
-
+<hr />
 
                 <Switch>
                     <Route path="/american">
@@ -175,6 +209,9 @@ export default function Airlines(props) {
                     </Route>
                     <Route path="/alaska">
                         <Alaska />
+                    </Route>
+                    <Route path="/virgin">
+                        <Virgin />
                     </Route>
                 </Switch>
             </div>
@@ -347,9 +384,162 @@ function American() {
 }
 
 function Delta() {
+    const dalogo = daStyles();
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
     return (
-        <div>
-            <h2>Delta info goes here</h2>
+        <div className={dalogo.root}>
+            <AppBar position="static" className="text-center">
+                <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
+                    <Tab icon={<PhoneIcon />} label="Gold" {...a11yProps(0)} />
+                    <Tab label="Platinum" {...a11yProps(1)} />
+                    <Tab label="Platinum Pro" {...a11yProps(2)} />
+                    <Tab label="Executive Platunum" {...a11yProps(3)} />
+                </Tabs>
+            </AppBar>
+            <TabPanel value={value} index={0} className={dalogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Priority Check in</li>
+                    <li>1 free checked bag</li>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+                <Button
+                    className="btn-round ml-1"
+                    color="linkedin"
+                    href="tel:877-208-1396"
+                    // onClick={e => e.preventDefault()}
+                    size="sm"
+                >
+                    <i className="fa fa-phone"></i>
+                </Button>
+                <Button
+                    className="btn-round mr-1"
+                    color="facebook"
+                    onClick={e => {
+                        e.preventDefault();
+                        window.location.href = "mailto: test@test.com";
+                    }}
+                    size="sm"
+                >
+                    <i className="fa fa-envelope" />
+                </Button>
+                <Button
+                    className="btn-round ml-1"
+                    color="linkedin"
+                    href="tel:877-208-1396"
+                    // onClick={e => e.preventDefault()}
+                    size="sm"
+                >
+                    <i className="fa fa-phone"></i>
+                </Button>
+            </TabPanel>
+            <TabPanel value={value} index={1} className={dalogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+            </TabPanel>
+            <TabPanel value={value} index={2} className={dalogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+            </TabPanel>
+            <TabPanel value={value} index={3} className={dalogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Priority Check in</li>
+                    <li>1 free checked bag</li>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                </ul>
+            </TabPanel>
         </div>
     );
 }
@@ -645,6 +835,167 @@ function Alaska() {
                 </ul>
             </TabPanel>
             <TabPanel value={value} index={3} className={aalogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Priority Check in</li>
+                    <li>1 free checked bag</li>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                </ul>
+            </TabPanel>
+        </div>
+    );
+}
+
+function Virgin() {
+    const valogo = vaStyles();
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+    return (
+        <div className={valogo.root}>
+            <AppBar position="static" className="text-center">
+                <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
+                    <Tab icon={<PhoneIcon />} label="Gold" {...a11yProps(0)} />
+                    <Tab label="Platinum" {...a11yProps(1)} />
+                    <Tab label="Platinum Pro" {...a11yProps(2)} />
+                    <Tab label="Executive Platunum" {...a11yProps(3)} />
+                </Tabs>
+            </AppBar>
+            <TabPanel value={value} index={0} className={valogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Priority Check in</li>
+                    <li>1 free checked bag</li>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+                <Button
+                    className="btn-round ml-1"
+                    color="linkedin"
+                    href="tel:877-208-1396"
+                    // onClick={e => e.preventDefault()}
+                    size="sm"
+                >
+                    <i className="fa fa-phone"></i>
+                </Button>
+                <Button
+                    className="btn-round mr-1"
+                    color="facebook"
+                    onClick={e => {
+                        e.preventDefault();
+                        window.location.href = "mailto: test@test.com";
+                    }}
+                    size="sm"
+                >
+                    <i className="fa fa-envelope" />
+                </Button>
+                <Button
+                    className="btn-round ml-1"
+                    color="linkedin"
+                    href="tel:877-208-1396"
+                    // onClick={e => e.preventDefault()}
+                    size="sm"
+                >
+                    <i className="fa fa-phone"></i>
+                </Button>
+            </TabPanel>
+            <TabPanel value={value} index={1} className={valogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary same day standby</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+            </TabPanel>
+            <TabPanel value={value} index={2} className={valogo.root}>
+                Qualify:
+                  <ul>
+                    <li>Elite Qualifying Miles (EQM) 25000</li>
+                    <li>Elite Qualifying Segments (EQS) 30</li>
+                    <li>Elite Qualifying Dollars (EQD) $3000</li>
+                </ul>
+                Benefits:
+                  <ul>
+                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
+                    <li>Earn/Purchase 500 mile upgrades</li>
+                    <li>40% Elite Mile Bonus</li>
+                    <li>Exclusive Service desk
+                    <Button
+                            className="btn-round ml-1"
+                            color="linkedin"
+                            href="tel:877-208-1396"
+                            // onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            <i className="fa fa-phone"></i>
+                        </Button>
+                    </li>
+                    <li>Preferred Seating</li>
+                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
+                    <li> Award processing change waived</li>
+                </ul>
+            </TabPanel>
+            <TabPanel value={value} index={3} className={valogo.root}>
                 Qualify:
                   <ul>
                     <li>Elite Qualifying Miles (EQM) 25000</li>

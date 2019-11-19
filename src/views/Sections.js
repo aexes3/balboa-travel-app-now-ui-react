@@ -22,6 +22,7 @@ import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
 import Airlines from "./sections-sections/Airlines.js";
+import AirlinesAccordian from './sections-sections/AirlinesAccordian.js';
 
 function Sections() {
   React.useEffect(() => {
@@ -86,6 +87,7 @@ function Sections() {
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
+        <AirlinesAccordian />
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         <Faq />

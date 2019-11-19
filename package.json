@@ -23,7 +23,8 @@
     "react-swipeable-views": "^0.13.3",
     "react-tagsinput": "3.19.0",
     "reactstrap": "8.0.1",
-    "rellax": "1.10.0"
+    "rellax": "1.10.0",
+    "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -118,79 +118,27 @@ export default function Airlines(props) {
                     <Row>
                         <Col>
                             <Link to="/american">
-                                <div className="card-container first-card">
-                                    <div className="card-component">
-
-                                        <div className="front">
-                                            <img
-                                                alt="..."
-                                                src={require("assets/img/presentation-page/aalogo.png")}
-                                            ></img>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                American Airlines
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/delta">
-                                <div className="card-container second-card">
-                                    <div className="card-component">
-                                        <div className="front">
-                                            <img
-                                                alt="..."
-                                                src={require("assets/img/presentation-page/dalogo.png")}
-                                            >
-                                            </img>
-                                        </div>
-                                    </div>
-                                </div>
+                                Delta
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/southwest">
-                            <div className="card-container third-card">
-                                    <div className="card-component">
-                                        <div className="front">
-                                            <img
-                                                alt="..."
-                                                src={require("assets/img/presentation-page/swlogo.jpg")}
-                                            >
-                                            </img>
-                                        </div>
-                                    </div>
-                                </div>
+                            Southwest Airlines
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/alaska">
-                            <div className="card-container fourth-card">
-                                    <div className="card-component">
-                                        <div className="front">
-                                            <img
-                                                alt="..."
-                                                src={require("assets/img/presentation-page/allogo.jpg")}
-                                            >
-                                            </img>
-                                        </div>
-                                    </div>
-                                </div>
+                            Alaska Airlines
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/virgin">
-                                <div className="card-container fith-card">
-                                    <div className="card-component">
-
-                                        <div className="front">
-                                            <img
-                                                alt="..."
-                                                src={require("assets/img/presentation-page/valogo.png")}
-                                            ></img>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                Virgin Atlantic
                             </Link>
                         </Col>
                     </Row>

@@ -87,7 +87,7 @@ function Sections() {
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
-        <AirlinesAccordian />
+        {/* <AirlinesAccordian /> */}
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         <Faq />

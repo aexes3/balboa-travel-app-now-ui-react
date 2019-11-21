@@ -1788,3 +1788,8 @@
   font-size: 1rem;
   line-height: 1.8;
 } */
+
+.MuiListItem-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}

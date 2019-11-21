@@ -18,8 +18,8 @@ import { Col, Row } from 'reactstrap';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import image from 'assets/img/presentation-page/AA-LOGO.JPG'
 import image2 from 'assets/img/presentation-page/aaavitar.png'
-import image from 'assets/img/presentation-page/aaavitar.png'
 import image3 from 'assets/img/presentation-page/United-gold-card.jpeg'
 
 const useStyles = makeStyles(theme => ({
@@ -130,16 +130,16 @@ export default function RecipeReviewCard() {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             Gold
-          </Typography>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             Qualify:
-                  <ul>
+                                            <ul>
                                                 <li>Elite Qualifying Miles (EQM) 25000</li>
                                                 <li>Elite Qualifying Segments (EQS) 30</li>
                                                 <li>Elite Qualifying Dollars (EQD) $3000</li>
                                             </ul>
                                             Benefits:
-                  <ul>
+                                            <ul>
                                                 <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
                                                 <li>Earn/Purchase 500 mile upgrades</li>
                                                 <li>40% Elite Mile Bonus</li>
@@ -147,7 +147,7 @@ export default function RecipeReviewCard() {
                                                 <li>1 free checked bag</li>
                                                 <li>Complimentary same day standby</li>
                                                 <li>Exclusive Service desk
-                    <Button
+                                                    <Button
                                                         className="btn-round ml-1"
                                                         color="linkedin"
                                                         href="tel:877-208-1396"

@@ -1,18 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import PhoneIcon from '@material-ui/icons/Phone';
 import image from 'assets/img/presentation-page/DA-LOGO2.jpg'
 import image2 from 'assets/img/presentation-page/AA-LOGO2.jpg'
 import image3 from 'assets/img/presentation-page/SW-LOGO2.jpg'
 import image4 from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
 import image5 from 'assets/img/presentation-page/VA-LOGO.jpg'
-
+import clsx from 'clsx';
+import { red } from '@material-ui/core/colors';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import ShareIcon from '@material-ui/icons/Share';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+// import LoyaltyCard from 'Air-cards/LoyaltyCard.js';
+import Gold from '../sections-sections/Air-cards/American-Airlines/Gold.js';
+import Platinum from '../sections-sections/Air-cards/American-Airlines/Platinum.js';
+import PlatinumPro from '../sections-sections/Air-cards/American-Airlines/PlatinumPro.js';
+import ExecutivePlat from '../sections-sections/Air-cards/American-Airlines/ExecutivePlat.js';
+import {
+    Avatar,
+    AppBar,
+    // Button,
+    Box,
+    Card,
+    CardHeader,
+    CardMedia,
+    CardContent,
+    CardActions,
+    CardActionArea,
+    Collapse,
+    IconButton,
+    Tab,
+    Tabs,
+    Typography,
+} 
+from '@material-ui/core';
 import {
     Button,
     Col,
@@ -26,6 +49,29 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
+const useStyles = makeStyles(theme => ({
+    card: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 0,
+      paddingTop: '56.25%', // 16:9
+    },
+    expand: {
+      transform: 'rotate(0deg)',
+      marginLeft: 'auto',
+      transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+      }),
+    },
+    expandOpen: {
+      transform: 'rotate(180deg)',
+    },
+    avatar: {
+      backgroundColor: red[500],
+    },
+  }));
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -118,32 +164,51 @@ export default function Airlines(props) {
                     <Row>
                         <Col>
                             <Link to="/american">
-                                American Airlines
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/aalogo.png")}
+                                ></img>
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/delta">
-                                Delta
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/dalogo.png")}
+                                >
+                                </img>
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/southwest">
-                            Southwest Airlines
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/swlogo.jpg")}
+                                >
+                                </img>
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/alaska">
-                            Alaska Airlines
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/allogo.jpg")}
+                                >
+                                </img>
                             </Link>
                         </Col>
                         <Col>
                             <Link to="/virgin">
-                                Virgin Atlantic
+                                <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/valogo.png")}
+                                ></img>
                             </Link>
                         </Col>
                     </Row>
                 </Container>
-<hr />
+                
+                            <hr />
 
                 <Switch>
                     <Route path="/american">
@@ -173,22 +238,27 @@ export default function Airlines(props) {
 function American() {
     const aalogo = aaStyles();
     const [value, setValue] = React.useState(0);
-
     const handleChange = (event, newValue) => {
         setValue(newValue);
+    };
+    const classes = useStyles();
+    const [expanded, setExpanded] = React.useState(false);
+  
+    const handleExpandClick = () => {
+      setExpanded(!expanded);
     };
     return (
         <div className={aalogo.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab icon={<PhoneIcon />} label="Gold" {...a11yProps(0)} />
-                    <Tab label="Platinum" {...a11yProps(1)} />
-                    <Tab label="Platinum Pro" {...a11yProps(2)} />
-                    <Tab label="Executive Platunum" {...a11yProps(3)} />
+                    <Tab label="Loyalty" {...a11yProps(0)} />
+                    <Tab label="Check-In" {...a11yProps(1)} />
+                    <Tab label="Misc" {...a11yProps(2)} />
+                    <Tab label="Promotions" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0} className={aalogo.root}>
-                Qualify:
+                {/* Qualify:
                   <ul>
                     <li>Elite Qualifying Miles (EQM) 25000</li>
                     <li>Elite Qualifying Segments (EQS) 30</li>
@@ -245,7 +315,27 @@ function American() {
                     size="sm"
                 >
                     <i className="fa fa-phone"></i>
-                </Button>
+                </Button> */}
+                
+              <Row>
+                <Col>
+                    <Gold />                
+                </Col>
+
+                <Col>
+                    <Platinum />
+                </Col>
+                
+                <Col>
+                    <PlatinumPro />
+                </Col>
+
+                <Col>
+                    <ExecutivePlat />
+                </Col>
+
+              </Row>
+
             </TabPanel>
             <TabPanel value={value} index={1} className={aalogo.root}>
                 Qualify:

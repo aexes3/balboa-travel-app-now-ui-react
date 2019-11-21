@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -19,7 +18,7 @@ import {
 function DropdownScrollNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [navbarColor, setNavbarColor] = React.useState(" navbar-transparent");
-  const [buyButtonColor, setBuyButtonColor] = React.useState("neutral");
+  const [, setBuyButtonColor] = React.useState("neutral");
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (

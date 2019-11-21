@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -7,30 +7,19 @@ import image2 from 'assets/img/presentation-page/AA-LOGO2.jpg'
 import image3 from 'assets/img/presentation-page/SW-LOGO2.jpg'
 import image4 from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
 import image5 from 'assets/img/presentation-page/VA-LOGO.jpg'
-import clsx from 'clsx';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-// import LoyaltyCard from 'Air-cards/LoyaltyCard.js';
 import Gold from '../sections-sections/Air-cards/American-Airlines/Gold.js';
 import Platinum from '../sections-sections/Air-cards/American-Airlines/Platinum.js';
 import PlatinumPro from '../sections-sections/Air-cards/American-Airlines/PlatinumPro.js';
 import ExecutivePlat from '../sections-sections/Air-cards/American-Airlines/ExecutivePlat.js';
+import PromotionOne from '../sections-sections/Promotions/American-Airlines/PromotionOne.js';
+import PromotionTwo from '../sections-sections/Promotions/American-Airlines/PromotionTwo.js';
+import PromotionThree from '../sections-sections/Promotions/American-Airlines/PromotionThree.js';
+// import PromotionFour from '../sections-sections/Promotions/American-Airlines/PromotionFour.js';
 import {
-    Avatar,
     AppBar,
     // Button,
     Box,
-    Card,
-    CardHeader,
-    CardMedia,
-    CardContent,
-    CardActions,
-    CardActionArea,
-    Collapse,
-    IconButton,
     Tab,
     Tabs,
     Typography,
@@ -257,86 +246,24 @@ function American() {
                     <Tab label="Promotions" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
+            
             <TabPanel value={value} index={0} className={aalogo.root}>
-                {/* Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Priority Check in</li>
-                    <li>1 free checked bag</li>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
-                <Button
-                    className="btn-round ml-1"
-                    color="linkedin"
-                    href="tel:877-208-1396"
-                    // onClick={e => e.preventDefault()}
-                    size="sm"
-                >
-                    <i className="fa fa-phone"></i>
-                </Button>
-                <Button
-                    className="btn-round mr-1"
-                    color="facebook"
-                    onClick={e => {
-                        e.preventDefault();
-                        window.location.href = "mailto: test@test.com";
-                    }}
-                    size="sm"
-                >
-                    <i className="fa fa-envelope" />
-                </Button>
-                <Button
-                    className="btn-round ml-1"
-                    color="linkedin"
-                    href="tel:877-208-1396"
-                    // onClick={e => e.preventDefault()}
-                    size="sm"
-                >
-                    <i className="fa fa-phone"></i>
-                </Button> */}
-                
               <Row>
                 <Col>
                     <Gold />                
                 </Col>
-
                 <Col>
                     <Platinum />
                 </Col>
-                
                 <Col>
                     <PlatinumPro />
                 </Col>
-
                 <Col>
                     <ExecutivePlat />
                 </Col>
-
               </Row>
-
             </TabPanel>
+
             <TabPanel value={value} index={1} className={aalogo.root}>
                 Qualify:
                   <ul>
@@ -361,6 +288,7 @@ function American() {
                     <li> Award processing change waived</li>
                 </ul>
             </TabPanel>
+
             <TabPanel value={value} index={2} className={aalogo.root}>
                 Qualify:
                   <ul>
@@ -389,33 +317,22 @@ function American() {
                     <li> Award processing change waived</li>
                 </ul>
             </TabPanel>
+
             <TabPanel value={value} index={3} className={aalogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Priority Check in</li>
-                    <li>1 free checked bag</li>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                </ul>
+            <Row>
+                <Col>
+                    <PromotionOne />                
+                </Col>
+                <Col>
+                    <PromotionTwo />
+                </Col>
+                <Col>
+                    <PromotionThree />
+                </Col>
+                {/* <Col>
+                    <PromotionOne />
+                </Col> */}
+              </Row>
             </TabPanel>
         </div>
     );

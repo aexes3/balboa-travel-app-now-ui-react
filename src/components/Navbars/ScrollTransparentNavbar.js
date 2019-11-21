@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Image from '../../assets/img/presentation-page/balboalogo.png';
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -24,7 +23,7 @@ function ScrollTransparentNavbar() {
       ? ""
       : " navbar-transparent"
   );
-  const [buyButtonColor, setBuyButtonColor] = React.useState(
+  const [, setBuyButtonColor] = React.useState(
     (document.documentElement.scrollTop > 499 || document.body.scrollTop) > 499
       ? "info"
       : "neutral"

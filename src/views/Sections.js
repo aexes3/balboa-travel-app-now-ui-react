@@ -12,7 +12,6 @@ import Headers from "./sections-sections/Headers.js";
 // import Features from "./sections-sections/Features.js";
 import Cards from "./presentation-sections/Cards.js";
 import Teams from "./sections-sections/Teams.js";
-import Components from "./presentation-sections/Components";
 import SectionsCards from "./presentation-sections/Sections";
 import Managers from "./sections-sections/Managers.js";
 import ContactUs from "./sections-sections/ContactUs.js";
@@ -22,7 +21,6 @@ import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
 import Airlines from "./sections-sections/Airlines.js";
-import AirlinesAccordian from './sections-sections/AirlinesAccordian.js';
 
 function Sections() {
   React.useEffect(() => {
@@ -82,12 +80,10 @@ function Sections() {
       <ScrollTransparentNavbar />
       <div className="wrapper">
         <div className="section-space"></div>
-        {/* <Presentation /> */}
         <Headers /> {/*Large Pic of city */}
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
-        {/* <AirlinesAccordian /> */}
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         <Faq />

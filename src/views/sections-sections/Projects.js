@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Card, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 // core components
 

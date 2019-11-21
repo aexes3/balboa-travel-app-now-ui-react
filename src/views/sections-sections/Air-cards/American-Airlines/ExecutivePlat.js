@@ -19,7 +19,7 @@ import Image from '../../../../assets/img/presentation-page/aaexecpro.jpg';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 220,
+    maxWidth: 345,
   },
   media: {
     height: 0,
@@ -122,7 +122,7 @@ export default function ExecutivePlat (props) {
                         &#45; 3 checked bag fees waived
                     </ListItem>
                     <ListItem>
-                        &345; Priority bag delivery
+                        &#345; Priority bag delivery
                     </ListItem>
                     <ListItem>
                         &#45; Complimentary same-day standby

@@ -18,8 +18,8 @@ import PromotionThree from '../sections-sections/Promotions/American-Airlines/Pr
 // import PromotionFour from '../sections-sections/Promotions/American-Airlines/PromotionFour.js';
 import {
     AppBar,
-    // Button,
     Box,
+    Paper,
     Tab,
     Tabs,
     Typography,
@@ -60,6 +60,11 @@ const useStyles = makeStyles(theme => ({
     avatar: {
       backgroundColor: red[500],
     },
+    root: {
+        flexGrow: 1,
+        width: '100%',
+        backgroundImage: `url(${image2})`,
+      },
   }));
 
 function TabPanel(props) {
@@ -70,8 +75,8 @@ function TabPanel(props) {
             component="div"
             role="tabpanel"
             hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
+            id={`scrollable-force-tabpanel-${index}`}
+            aria-labelledby={`scrollable-force-tabpanel-${index}`}
             {...other}
         >
             <Box p={3}>{children}</Box>
@@ -87,8 +92,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
     return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
+        id: `scrollable-force-tab-${index}`,
+        'aria-controls': `scrollable-force-tabpanel-${index}`,
     };
 }
 
@@ -101,6 +106,8 @@ const daStyles = makeStyles(theme => ({
 
 const aaStyles = makeStyles(theme => ({
     root: {
+        flexGrow: 1,
+        width: '100%',
         backgroundImage: `url(${image2})`,
         color: 'white'
     }
@@ -140,16 +147,37 @@ export default function Airlines(props) {
             setCollapses([...collapses, collapse]);
         }
     };
-
     const [value, setValue] = React.useState(0);
-
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+    const classes = useStyles();
     return (
         <Router>
-            <div>
-                <Container>
+            <div className={classes.root}>
+                
+                    <AppBar position="static" className={classes.root}>
+                        <Tabs 
+                        Value={value}
+                        varient="scrollable"
+                        scrollButtons="on"
+                        // inicatorColor="primary"
+                        // textColor="primary"
+                        aria-label="scrollable force tabs example"
+                        >
+                            <Tab className={aaStyles.root} label="American" to='/american' component={Link} {...a11yProps(0)} />
+                            <Tab label="Delta" to='/delta' component={Link} {...a11yProps(1)} />
+                            <Tab label="Southwest" to='/southwest' component={Link} {...a11yProps(2)} />
+                            <Tab label="Alaska" to='/alaska' component={Link} {...a11yProps(3)} />
+                            <Tab label="Virgin" to='/virgin' component={Link} {...a11yProps(4)} />
+                        </Tabs>
+                    </AppBar>
+                    
+      
+
+                    <hr />
+
+
                     <Row>
                         <Col>
                             <Link to="/american">
@@ -195,7 +223,7 @@ export default function Airlines(props) {
                             </Link>
                         </Col>
                     </Row>
-                </Container>
+              
                 
                             <hr />
 

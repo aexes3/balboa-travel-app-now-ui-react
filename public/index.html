@@ -54,22 +54,19 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    
+    <div id="cibtWidgetHolder"></div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+      var widgetHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "stats.g.doubleclick.net/dc.js' type='text/javascript'%3E%3C/script%3E"));
+      document.write(unescape("%3Cscript src='"+ widgetHost + "cibtvisas.com/widget/widgetv2.js?method=js&cibtCitizenship=USA&cibtCode=65490&cibtURL=balboa.com&cibtBG=e1f0f2&cibtHeader=1c171c&lang=en&cibtWidgetVersion=3' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+    
+    <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
+    <script> window.FrontChat('init', {chatId: '49f31fe36f22c709c08636dbe0a6354f', useDefaultLauncher: true}); </script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <!-- This is to initialise the github buttons. -->
-    <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"> 
-    </script>
-    <script>
-      window.FrontChat('init', {chatId: '49f31fe36f22c709c08636dbe0a6354f', useDefaultLauncher: true});
-    </script>
+
   </body>
 </html>

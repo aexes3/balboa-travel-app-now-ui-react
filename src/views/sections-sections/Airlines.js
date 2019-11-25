@@ -19,7 +19,7 @@ import PromotionThree from '../sections-sections/Promotions/American-Airlines/Pr
 import {
     AppBar,
     Box,
-    Paper,
+    Grid,
     Tab,
     Tabs,
     Typography,
@@ -62,8 +62,8 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
         flexGrow: 1,
-        width: '100%',
         backgroundImage: `url(${image2})`,
+        textAlign: 'center',
       },
   }));
 
@@ -131,22 +131,27 @@ const alStyles = makeStyles(theme => ({
 
 const vaStyles = makeStyles(theme => ({
     root: {
-        //   flexGrow: 1,
+          flexGrow: 1,
         backgroundImage: `url(${image5})`,
-        color: 'white',
-        //   opacity: 0.7,
+    /* Full height */
+        height: '100%', 
+
+    /* Center and scale the image nicely */
+        //  backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
 }));
 
 export default function Airlines(props) {
-    const [collapses, setCollapses] = React.useState([1]);
-    const changeCollapse = collapse => {
-        if (collapses.includes(collapse)) {
-            setCollapses(collapses.filter(prop => prop !== collapse));
-        } else {
-            setCollapses([...collapses, collapse]);
-        }
-    };
+    // const [collapses, setCollapses] = React.useState([1]);
+    // const changeCollapse = collapse => {
+    //     if (collapses.includes(collapse)) {
+    //         setCollapses(collapses.filter(prop => prop !== collapse));
+    //     } else {
+    //         setCollapses([...collapses, collapse]);
+    //     }
+    // };
     const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -156,76 +161,52 @@ export default function Airlines(props) {
         <Router>
             <div className={classes.root}>
                 
-                    <AppBar position="static" className={classes.root}>
-                        <Tabs 
-                        Value={value}
-                        varient="scrollable"
-                        scrollButtons="on"
-                        // inicatorColor="primary"
-                        // textColor="primary"
-                        aria-label="scrollable force tabs example"
-                        >
-                            <Tab className={aaStyles.root} label="American" to='/american' component={Link} {...a11yProps(0)} />
-                            <Tab label="Delta" to='/delta' component={Link} {...a11yProps(1)} />
-                            <Tab label="Southwest" to='/southwest' component={Link} {...a11yProps(2)} />
-                            <Tab label="Alaska" to='/alaska' component={Link} {...a11yProps(3)} />
-                            <Tab label="Virgin" to='/virgin' component={Link} {...a11yProps(4)} />
-                        </Tabs>
-                    </AppBar>
-                    
-      
-
-                    <hr />
-
-
-                    <Row>
-                        <Col>
-                            <Link to="/american">
-                                <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/aalogo.png")}
-                                ></img>
-                            </Link>
-                        </Col>
-                        <Col>
-                            <Link to="/delta">
-                                <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/dalogo.png")}
-                                >
-                                </img>
-                            </Link>
-                        </Col>
-                        <Col>
-                            <Link to="/southwest">
-                                <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/swlogo.jpg")}
-                                >
-                                </img>
-                            </Link>
-                        </Col>
-                        <Col>
-                            <Link to="/alaska">
-                                <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/allogo.jpg")}
-                                >
-                                </img>
-                            </Link>
-                        </Col>
-                        <Col>
-                            <Link to="/virgin">
-                                <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/valogo.png")}
-                                ></img>
-                            </Link>
-                        </Col>
-                    </Row>
-              
                 
-                            <hr />
+                        <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                            <Grid item xs={12}>Air Travel</Grid>
+                            <Grid item xs={4} spacing={2}>
+                                <Link to='/american' component={Link} {...a11yProps(0)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/aalogo.png")} />
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Link to='/delta' component={Link} {...a11yProps(1)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/dalogo.png")} />
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                            <Link to='/southwest' component={Link} {...a11yProps(2)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/swlogo.jpg")} />
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                            <Link to='/alaska' component={Link} {...a11yProps(3)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/allogo.jpg")} />
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                            <Link to='/virgin' component={Link} {...a11yProps(4)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/valogo.png")} />
+                                </Link>
+                            </Grid>
+                            <Grid item xs={4}>
+                            <Link to='/delta' component={Link} {...a11yProps(5)}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/dalogo.png")} />
+                                </Link>
+                            </Grid>
+                        </Grid>
 
                 <Switch>
                     <Route path="/american">

@@ -178,14 +178,10 @@ function Sections() {
                 </Iframe>
               </Col>
               <Col md="3">
-              <Iframe 
-                frameborder="0" 
-                width="100%" 
-                height="675" 
-                src="https://www.agentmaxonline.com/agentmaxweb/widgets/quotetool.html?widgetid=131371&amp;accam=F201784&amp;code=ABIYU4TLWGBGTNHC6ZWLRSKAR65GB6C5JLBJOIXR7QY3M6I5HDDOM7E6GKF5AIHAZXAKHPJZZG2XGRZJWNGQY5D4Q74233PO2HLMLBIRRMNN6R626STJESNDQZAFLDQC">
-                </Iframe>
+              <div id="cibtWidgetHolder"></div>
               </Col>
             </Row>
+            <div id="cibtWidgetHolder"></div>
             {/* <Row>
               <Col md="3">
                 <img
@@ -348,6 +344,8 @@ function Sections() {
                 ></img>
               </Col>
             </Row> */}
+
+
           </div>
         </Container>
       </div>

@@ -102,11 +102,13 @@ function Features() {
             </Row>
           </Container>
         </div>
+
+
         <div className="features-5">
           <Container>
-            <Row>
-              <Col md="5">
                 <h2 className="title">Travel Policy Forms</h2>
+            <Row>
+              <Col md="4">
                 <div className="info info-horizontal">
                   <div className="icon icon-info icon-circle">
                     <i className="now-ui-icons location_world"></i>
@@ -114,9 +116,7 @@ function Features() {
                   <div className="description">
                     <h4 className="info-title">Hundreds of Components</h4>
                     <p>
-                      The moment you use Now UI Kit, you know you’ve never felt
-                      anything like it. With a single use lets you do more than
-                      ever before.
+                      The moment 
                     </p>
                   </div>
                 </div>
@@ -127,9 +127,7 @@ function Features() {
                   <div className="description">
                     <h4 className="info-title">Easy to Use</h4>
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature.
+                      Divide details 
                     </p>
                   </div>
                 </div>
@@ -140,14 +138,136 @@ function Features() {
                   <div className="description">
                     <h4 className="info-title">Fast Prototyping</h4>
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature.
+                      Divide details 
                     </p>
                   </div>
                 </div>
               </Col>
-              <Col md="7">
+              <Col md="4">
+                <div className="tablet-container">
+                  <img
+                    alt="..."
+                    src={require("assets/img/ipad2.png")}
+                  ></img>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons location_world"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Hundreds of Components</h4>
+                    <p>
+                      The moment 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons sport_user-run"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Easy to Use</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons ui-2_time-alarm"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Fast Prototyping</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              
+            </Row>
+          </Container>
+        </div>
+
+
+
+        <div className="features-5">
+          <Container>
+                <h2 className="title">Travel Policy Forms</h2>
+            <Row>
+              <Col md="4">
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons location_world"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Hundreds of Components</h4>
+                    <p>
+                      The moment 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons media-1_camera-compact"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Easy to Use</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons media-1_button-power"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Fast Prototyping</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons ui-2_like"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Hundreds of Components</h4>
+                    <p>
+                      The moment 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons gestures_tap-01"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Easy to Use</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+                <div className="info info-horizontal">
+                  <div className="icon icon-info icon-circle">
+                    <i className="now-ui-icons loader_refresh"></i>
+                  </div>
+                  <div className="description">
+                    <h4 className="info-title">Fast Prototyping</h4>
+                    <p>
+                      Divide details 
+                    </p>
+                  </div>
+                </div>
+              </Col>
+              <Col md="4">
                 <div className="tablet-container">
                   <img
                     alt="..."

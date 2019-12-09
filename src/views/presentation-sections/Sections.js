@@ -30,43 +30,31 @@ function Sections() {
         </Container>
         <Container fluid>
           <div className="section-cols">
-              <Row>
+
+
+            <Row>
               <Col md="3">
-                <a href="//yelp.com">
+                <a href="https://www.cbp.gov/">
                   <img
                     alt="..."
-                    src={require("assets/img/presentation-page/yelpreview.jpg")}
-                  />
+                    src={require("assets/img/presentation-page/customs.jpg")}
+                  ></img>
                 </a>
               </Col>
               <Col md="3">
-                {/* <a href="//google.com/maps/">
-                <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/maps.jpg")}
-                ></img>
-                </a> */}
-                <Iframe 
-                  alt="..."
-                  // className="rellax"
-                  // data-rellax-speed="5"
-                  width="100%" 
-                  height="100%" 
-                  frameborder="0" 
-                  scrolling="no" 
-                  marginheight="0" 
-                  marginwidth="0"
-                  src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">
-                </Iframe>
+                <a href="https://www.howtocallabroad.com/">
+                  <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/internationaltele.jpg")}
+                  ></img>
+                </a>
               </Col>
               <Col md="3">
-                <a href="//balboa.com">
                 <a href="https://weather.com/">
                   <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/weather.jpg")}
-                ></img>
-                  </a>
+                    alt="..."
+                    src={require("assets/img/presentation-page/weather.jpg")}
+                  ></img>
                 </a>
                 {/* <img
                   alt="..."
@@ -78,36 +66,38 @@ function Sections() {
               <Col md="3">
                 <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/">
                   <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/travel-warning.jpg")}
-                ></img>
-                  </a>
+                    alt="..."
+                    src={require("assets/img/presentation-page/travel-warning.jpg")}
+                  ></img>
+                </a>
               </Col>
             </Row>
+
+
             <Row>
               <Col md="3">
                 <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html">
                   <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/passport.jpg")}
-                ></img>
-                  </a>
+                    alt="..."
+                    src={require("assets/img/presentation-page/passport.jpg")}
+                  ></img>
+                </a>
               </Col>
               <Col md="3">
                 <a href="https://countrycode.org/">
                   <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/international-calling-codes.jpg")}
-                ></img>
-                  </a>
+                    alt="..."
+                    src={require("assets/img/presentation-page/international-calling-codes.jpg")}
+                  ></img>
+                </a>
               </Col>
               <Col md="3">
                 <a href="https://www.cdc.gov">
                   <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/cdc-travel-health.jpg")}
-                ></img>
-                  </a>
+                    alt="..."
+                    src={require("assets/img/presentation-page/cdc-travel-health.jpg")}
+                  ></img>
+                </a>
               </Col>
               <Col md="3">
                 <img
@@ -116,14 +106,10 @@ function Sections() {
                 ></img>
               </Col>
             </Row>
+
+
             <Row>
               <Col md="3">
-                <a href="https://www.cbp.gov/">
-                  <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/customs.jpg")}
-                ></img>
-                  </a>
                 {/* <img
                   alt="..."
                   className="rellax"
@@ -132,53 +118,52 @@ function Sections() {
                 ></img> */}
               </Col>
               <Col md="3">
-                <a href="https://www.howtocallabroad.com/">
-                  <img
-                  alt="..."
-                  src={require("assets/img/presentation-page/internationaltele.jpg")}
-                ></img>
-                  </a>
               </Col>
               <Col md="3">
                 {/* <img
                   alt="..."
                   src={require("assets/img/presentation-page/opentable.jpg")}
                 ></img> */}
-                <Iframe 
-                src="https://embed.flightaware.com/commercial/integrated/web/delay_map.rvt" 
-                width="100%"
-                height="100%" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-              </Iframe>
               </Col>
               <Col md="3">
                 {/* <img
                   alt="..."
                   src={require("assets/img/presentation-page/balboa.png")}
                 ></img> */}
-                 <Iframe
-                    src="https://cdn.jwplayer.com/players/kTsbOTTs-AmppdRxw.html" 
-                    width="100%" 
-                    height="100%"
-                    frameborder="0" 
-                    scrolling="auto" 
-                    allowfullscreen>
-                  </Iframe>
               </Col>
             </Row>
+
+
             <Row>
               <Col md="3">
-              <Iframe 
-                frameborder="0" 
-                width="100%" 
-                height="675" 
-                src="https://www.agentmaxonline.com/agentmaxweb/widgets/quotetool.html?widgetid=131371&amp;accam=F201784&amp;code=ABIYU4TLWGBGTNHC6ZWLRSKAR65GB6C5JLBJOIXR7QY3M6I5HDDOM7E6GKF5AIHAZXAKHPJZZG2XGRZJWNGQY5D4Q74233PO2HLMLBIRRMNN6R626STJESNDQZAFLDQC">
+                <Iframe
+                  frameborder="0"
+                  width="100%"
+                  height="675"
+                  src="https://www.agentmaxonline.com/agentmaxweb/widgets/quotetool.html?widgetid=131371&amp;accam=F201784&amp;code=ABIYU4TLWGBGTNHC6ZWLRSKAR65GB6C5JLBJOIXR7QY3M6I5HDDOM7E6GKF5AIHAZXAKHPJZZG2XGRZJWNGQY5D4Q74233PO2HLMLBIRRMNN6R626STJESNDQZAFLDQC">
                 </Iframe>
               </Col>
               <Col md="3">
-              <div id="cibtWidgetHolder"></div>
+                <Iframe
+                  alt="..."
+                  // className="rellax"
+                  // data-rellax-speed="5"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed">
+                </Iframe>
+              </Col>
+              <Col md="6">
+                <Iframe className="flightaware"
+                  src="https://embed.flightaware.com/commercial/integrated/web/delay_map.rvt"
+                  width="100%"
+                  height="100%"
+                >
+                </Iframe>
               </Col>
             </Row>
             <div id="cibtWidgetHolder"></div>

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import image from 'assets/img/presentation-page/AA-LOGO2.jpg'
+import image from 'assets/img/presentation-page/AIRLINEBG.jpg'
 import JetBlue from '../sections-sections/Air-cards/JetBlue.js'
 import United from '../sections-sections/Air-cards/United.js'
 import Cathay from '../sections-sections/Air-cards/Cathay.js'
@@ -97,18 +97,18 @@ function a11yProps(index) {
 }
 
 export default function Airlines(props) {
-    // const [collapses, setCollapses] = React.useState([1]);
-    // const changeCollapse = collapse => {
-    //     if (collapses.includes(collapse)) {
-    //         setCollapses(collapses.filter(prop => prop !== collapse));
-    //     } else {
-    //         setCollapses([...collapses, collapse]);
-    //     }
-    // };
-    const [value, setValue] = React.useState(0);
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
+    const [collapses, setCollapses] = React.useState([1]);
+    const changeCollapse = collapse => {
+        if (collapses.includes(collapse)) {
+            setCollapses(collapses.filter(prop => prop !== collapse));
+        } else {
+            setCollapses([...collapses, collapse]);
+        }
     };
+    // const [value, setValue] = React.useState(0);
+    // const handleChange = (event, newValue) => {
+    //     setValue(newValue);
+    // };
     const classes = useStyles();
     return (
         <Router>
@@ -124,6 +124,18 @@ export default function Airlines(props) {
                                 </Paper>
                             </Grid>
                             <Grid item xs={4} spacing={2}>
+                            <a
+                              className="text-info"
+                              aria-expanded={collapses.includes(2)}
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#pablo"
+                              onClick={e => {
+                                e.preventDefault();
+                                changeCollapse(2);
+                              }}
+                            >
+                            </a>
                                 <Link to='/american' component={Link} {...a11yProps(0)}>
                                     <img
                                     alt="..."

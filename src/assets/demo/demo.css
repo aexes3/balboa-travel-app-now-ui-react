@@ -1805,3 +1805,8 @@
     padding-left: 15px;
     text-align: -webkit-center;
 }
+
+.flightaware {
+  display: block;
+  border: none;
+}

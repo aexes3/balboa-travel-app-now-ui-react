@@ -14,13 +14,14 @@ import Cards from "./presentation-sections/Cards.js";
 import Teams from "./sections-sections/Teams.js";
 import SectionsCards from "./presentation-sections/Sections";
 import Managers from "./sections-sections/Managers.js";
-import ContactUs from "./sections-sections/ContactUs.js";
+// import ContactUs from "./sections-sections/ContactUs.js";
 import Faq from "./sections-sections/Faq.js";
 import Projects from './sections-sections/Projects';
 import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
 import Airlines from "./sections-sections/Airlines.js";
+import GroundTravel from "./sections-sections/GroundTravel.js";
 
 function Sections() {
   React.useEffect(() => {
@@ -84,6 +85,7 @@ function Sections() {
         <Cards /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
+        <GroundTravel />
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         <Faq />

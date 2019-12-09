@@ -94,7 +94,7 @@ function Sections() {
         <Projects /> {/* Concur login images with ipad(s) */}
         <Teams />
         <Managers /> 
-        <ContactUs />
+        {/* <ContactUs /> */}
         <FooterBlack />
       </div>
     </>

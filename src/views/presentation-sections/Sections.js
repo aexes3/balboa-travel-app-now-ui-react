@@ -134,7 +134,7 @@ function Sections() {
             </Row>
 
 
-            <Row>
+            {/* <Row>
               <Col md="3">
                 <Iframe
                   frameborder="0"
@@ -166,7 +166,7 @@ function Sections() {
                 </Iframe>
               </Col>
             </Row>
-            <div id="cibtWidgetHolder"></div>
+            <div id="cibtWidgetHolder"></div> */}
             {/* <Row>
               <Col md="3">
                 <img

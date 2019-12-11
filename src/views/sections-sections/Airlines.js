@@ -38,20 +38,6 @@ import {
 
 
 const useStyles = makeStyles(theme => ({
-    media: {
-      height: 0,
-      paddingTop: '56.25%', // 16:9
-    },
-    expand: {
-      transform: 'rotate(0deg)',
-      marginLeft: 'auto',
-      transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-      }),
-    },
-    expandOpen: {
-      transform: 'rotate(180deg)',
-    },
     root: {
         flexGrow: 1,
         height: '100%',
@@ -74,11 +60,11 @@ function TabPanel(props) {
             component="div"
             role="tabpanel"
             hidden={value !== index}
-            id={`scrollable-force-tabpanel-${index}`}
-            aria-labelledby={`scrollable-force-tabpanel-${index}`}
+            id={`scrollable-auto-tabpanel-${index}`}
+            aria-labelledby={`scrollable-auto-tab-${index}`}
             {...other}
-        >
-            <Box p={3}>{children}</Box>
+    >
+            {value === index && <Box p={3}>{children}</Box>}
         </Typography>
     );
 }
@@ -91,20 +77,20 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
     return {
-        id: `scrollable-force-tab-${index}`,
-        'aria-controls': `scrollable-force-tabpanel-${index}`,
+      id: `scrollable-auto-tab-${index}`,
+      'aria-controls': `scrollable-auto-tabpanel-${index}`,
     };
-}
+  }
 
 export default function Airlines(props) {
-    const [collapses, setCollapses] = React.useState([1]);
-    const changeCollapse = collapse => {
-        if (collapses.includes(collapse)) {
-            setCollapses(collapses.filter(prop => prop !== collapse));
-        } else {
-            setCollapses([...collapses, collapse]);
-        }
-    };
+    // const [collapses, setCollapses] = React.useState([1]);
+    // const changeCollapse = collapse => {
+    //     if (collapses.includes(collapse)) {
+    //         setCollapses(collapses.filter(prop => prop !== collapse));
+    //     } else {
+    //         setCollapses([...collapses, collapse]);
+    //     }
+    // };
     // const [value, setValue] = React.useState(0);
     // const handleChange = (event, newValue) => {
     //     setValue(newValue);
@@ -116,26 +102,14 @@ export default function Airlines(props) {
                 
                 
                         <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
-                            <Grid item xs={12}>
+                            {/* <Grid item xs={12}>
                                 <Paper className={classes.paper}>
                                     <Typography variant="h5" component="h3">
                                         Air Travel
                                     </Typography>
                                 </Paper>
-                            </Grid>
+                            </Grid> */}
                             <Grid item xs={4} spacing={2}>
-                            <a
-                              className="text-info"
-                              aria-expanded={collapses.includes(2)}
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#pablo"
-                              onClick={e => {
-                                e.preventDefault();
-                                changeCollapse(2);
-                              }}
-                            >
-                            </a>
                                 <Link to='/american' component={Link} {...a11yProps(0)}>
                                     <img
                                     alt="..."

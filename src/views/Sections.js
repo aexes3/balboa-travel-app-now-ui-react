@@ -22,6 +22,8 @@ import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
 import Airlines from "./sections-sections/Airlines.js";
 import GroundTravel from "./sections-sections/GroundTravel.js";
+import Hotel from "./sections-sections/Hotel.js";
+import Widgets from "./sections-sections/Widgets.js";
 
 function Sections() {
   React.useEffect(() => {
@@ -86,8 +88,10 @@ function Sections() {
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
         <GroundTravel />
+        <Hotel />
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
+        <Widgets />
         <Faq />
         {/* <Features /> Carousel */}
         <MeetingIncentives />

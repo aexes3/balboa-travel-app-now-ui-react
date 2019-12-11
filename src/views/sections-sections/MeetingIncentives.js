@@ -18,10 +18,21 @@ function MeetingIncentives() {
               <Col className="mr-auto ml-auto" md="8">
                 <h2 className="title">MEETING &amp; INCENTIVES</h2>
                 <h4 className="description">
-                Balboa Meeting &amp; Incentives Solutions is a full service meeting 
-                and incentive event management division of Balboa Travel. 
-                We provide the expertise and resources to seamlessly plan and execute 
-                all phases of your next corporate meeting or incentive travel program.
+                Balboa can assist in planning your upcoming group event whether a meeting of 15, 
+                or a meeting of 5,000+ our seasoned team of professionals has decades of meeting 
+                and event experience. We can assist in planning and operating meetings and events 
+                worldwide including: Business Meetings, Training Events, Conferences, Incentive 
+                Travel Programs, Product Launches, etc. <br />
+                And include this link: embed the text within a white oval and make text a little 
+                bigger than the rest of the paragraph for emphasis. Meetings and  Incentives
+
+                <hr />
+                <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank">
+                Scoping Questionnaire
+                </a>
+                <div href="mailto:meeting&amp;eventsolutions@balboa.com" target="_blank">
+                    <i className="fas fa-envelope" /> : meeting&amp;eventsolutions@balboa.com
+                  </div>
                 </h4>
               </Col>
             </Row>

@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import image from 'assets/img/presentation-page/GROUNDTRAVEL.jpeg'
-import Avis from '../sections-sections/ground-travel/Avis.js'
-import Budget from '../sections-sections/ground-travel/Budget.js'
-import Hertz from '../sections-sections/ground-travel/Hertz.js'
-import National from '../sections-sections/ground-travel/National.js'
-import Alamo from '../sections-sections/ground-travel/Alamo.js'
-import Enterprise from '../sections-sections/ground-travel/Enterprise.js'
+import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
+import Marriott from '../sections-sections/hotels/Marriott.js'
+import Hilton from '../sections-sections/hotels/Hilton.js'
+import InterContinental from '../sections-sections/hotels/InterContinental.js'
+import Radisson from '../sections-sections/hotels/Radisson.js'
+import Hyatt from '../sections-sections/hotels/Hyatt.js'
+import Fairmont from '../sections-sections/hotels/Fairmont.js'
 
 import {
     AppBar,
@@ -98,69 +98,68 @@ export default function GroundTravel(props) {
                 
                 
                         <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
-                            
                             <Grid item xs={4} spacing={2}>
-                                <Link to='/avis' component={Link} {...a11yProps(0)}>
+                                <Link to='/marriott' component={Link} {...a11yProps(0)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/avislogo.png")} />
+                                    src={require("assets/img/presentation-page/marrlogo.JPG")} />
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                                <Link to='/budget' component={Link} {...a11yProps(1)}>
+                                <Link to='/hilton' component={Link} {...a11yProps(1)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/budglogo.png")} />
+                                    src={require("assets/img/presentation-page/hiltlogo.JPG")} />
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/hertz' component={Link} {...a11yProps(2)}>
+                            <Link to='/intercontinental' component={Link} {...a11yProps(2)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/hertlogo.jpg")} />
+                                    src={require("assets/img/presentation-page/interlogo.jpg")} />
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/national' component={Link} {...a11yProps(3)}>
+                            <Link to='/radisson' component={Link} {...a11yProps(3)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/natilogo.jpg")} />
+                                    src={require("assets/img/presentation-page/radilogo.png")} />
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/alamo' component={Link} {...a11yProps(4)}>
+                            <Link to='/hyatt' component={Link} {...a11yProps(4)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/alamlogo.png")} />
+                                    src={require("assets/img/presentation-page/hyatlogo.png")} />
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/enterprise' component={Link} {...a11yProps(5)}>
+                            <Link to='/fairmont' component={Link} {...a11yProps(5)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/entelogo.jpg")} />
+                                    src={require("assets/img/presentation-page/fairlogo.jpg")} />
                                 </Link>
                             </Grid>
                         </Grid>
 
                 <Switch>
-                    <Route path="/avis">
-                        <Avis />
+                    <Route path="/marriott">
+                        <Marriott />
                     </Route>
-                    <Route path="/budget">
-                        <Budget />
+                    <Route path="/hilton">
+                        <Hilton />
                     </Route>
-                    <Route path="/hertz">
-                        <Hertz />
+                    <Route path="/intercontinental">
+                        <InterContinental />
                     </Route>
-                    <Route path="/national">
-                        <National />
+                    <Route path="/radisson">
+                        <Radisson />
                     </Route>
-                    <Route path="/alamo">
-                        <Alamo />
+                    <Route path="/hyatt">
+                        <Hyatt />
                     </Route>
-                    <Route path="/enterprise">
-                        <Enterprise />
+                    <Route path="/fairmont">
+                        <Fairmont />
                     </Route>
                 </Switch>
             </div>

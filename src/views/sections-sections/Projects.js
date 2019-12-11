@@ -39,9 +39,9 @@ function Features() {
                     </div>
                   </a>
                     <div className="description">
-                    <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                    <a href="https://www.concursolutions.com/nui/signin"
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <h5 className="info-title">Online Booking Tool Login</h5>
                     </a>
@@ -96,102 +96,17 @@ function Features() {
               </Col>
               <Col md="6">
                 <div className="image-container">
-                  <img alt="..." src={require("assets/img/ipad3.png")}></img>
+                  <a href="https://www.concursolutions.com/nui/signin"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                  >
+                    <img alt="..." src={require("assets/img/ipad3.png")}></img>
+                  </a>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
-
-
-        <div className="features-5">
-          <Container>
-                <h2 className="title">Travel Policy Forms</h2>
-            <Row>
-              <Col md="4">
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons location_world"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Hundreds of Components</h4>
-                    <p>
-                      The moment 
-                    </p>
-                  </div>
-                </div>
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons sport_user-run"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Easy to Use</h4>
-                    <p>
-                      Divide details 
-                    </p>
-                  </div>
-                </div>
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons ui-2_time-alarm"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Fast Prototyping</h4>
-                    <p>
-                      Divide details 
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col md="4">
-                <div className="tablet-container">
-                  <img
-                    alt="..."
-                    src={require("assets/img/ipad2.png")}
-                  ></img>
-                </div>
-              </Col>
-              <Col md="4">
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons location_world"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Hundreds of Components</h4>
-                    <p>
-                      The moment 
-                    </p>
-                  </div>
-                </div>
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons sport_user-run"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Easy to Use</h4>
-                    <p>
-                      Divide details 
-                    </p>
-                  </div>
-                </div>
-                <div className="info info-horizontal">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons ui-2_time-alarm"></i>
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Fast Prototyping</h4>
-                    <p>
-                      Divide details 
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              
-            </Row>
-          </Container>
-        </div>
-
-
 
         <div className="features-5">
           <Container>

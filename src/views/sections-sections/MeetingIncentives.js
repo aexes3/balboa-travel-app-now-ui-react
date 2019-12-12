@@ -22,9 +22,7 @@ function MeetingIncentives() {
                 or a meeting of 5,000+ our seasoned team of professionals has decades of meeting 
                 and event experience. We can assist in planning and operating meetings and events 
                 worldwide including: Business Meetings, Training Events, Conferences, Incentive 
-                Travel Programs, Product Launches, etc. <br />
-                And include this link: embed the text within a white oval and make text a little 
-                bigger than the rest of the paragraph for emphasis. Meetings and  Incentives
+                Travel Programs, Product Launches, etc. 
 
                 <hr />
                 <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank">

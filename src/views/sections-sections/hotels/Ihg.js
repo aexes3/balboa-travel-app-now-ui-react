@@ -78,7 +78,7 @@ const vaStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Hilton() {
+export default function Ihg() {
     const valogo = vaStyles();
     const [value, setValue] = React.useState(0);
 

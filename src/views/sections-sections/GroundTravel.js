@@ -37,7 +37,8 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         height: '100%',
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
+        backgroundColor: '#9b9c9d',
         textAlign: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

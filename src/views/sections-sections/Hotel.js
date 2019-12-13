@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
 import Marriott from '../sections-sections/hotels/Marriott.js'
 import Hilton from '../sections-sections/hotels/Hilton.js'
-import InterContinental from '../sections-sections/hotels/InterContinental.js'
+import Ihg from '../sections-sections/hotels/Ihg.js'
 import Radisson from '../sections-sections/hotels/Radisson.js'
 import Hyatt from '../sections-sections/hotels/Hyatt.js'
 import Fairmont from '../sections-sections/hotels/Fairmont.js'
@@ -37,7 +37,8 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         height: '100%',
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
+        backgroundColor: '#424242',
         textAlign: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -113,7 +114,7 @@ export default function GroundTravel(props) {
                                 </Link>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/intercontinental' component={Link} {...a11yProps(2)}>
+                            <Link to='/ihg' component={Link} {...a11yProps(2)}>
                                     <img
                                     alt="..."
                                     src={require("assets/img/presentation-page/interlogo.jpg")} />
@@ -149,8 +150,8 @@ export default function GroundTravel(props) {
                     <Route path="/hilton">
                         <Hilton />
                     </Route>
-                    <Route path="/intercontinental">
-                        <InterContinental />
+                    <Route path="/ihg">
+                        <Ihg />
                     </Route>
                     <Route path="/radisson">
                         <Radisson />

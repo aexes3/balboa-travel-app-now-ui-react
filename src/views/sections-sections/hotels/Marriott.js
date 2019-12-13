@@ -7,7 +7,7 @@ import MarrGoldStatus from './marriott/MarrGoldStatus.js';
 import MarrPlatStatus from './marriott/MarrPlatStatus.js';
 import MarrTitanStatus from './marriott/MarrTitanStatus.js';
 import MarrAmbassStatus from './marriott/MarrAmbassStatus.js'
-import image from 'assets/img/presentation-page/MARR-LOGO.jpg'
+import image from 'assets/img/presentation-page/MARR-LOGO.png'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
@@ -68,6 +68,7 @@ const vaStyles = makeStyles(theme => ({
     root: {
           flexGrow: 1,
         backgroundImage: `url(${image})`,
+        // backgroundColor: "#e32121",
     /* Full height */
         height: '100%', 
 
@@ -91,9 +92,9 @@ export default function Marriott() {
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Check-in" {...a11yProps(1)} />
+                    <Tab label="Misc" {...a11yProps(1)} />
                     <Tab label="Promotions" {...a11yProps(2)} />
-                    <Tab label="Misc" {...a11yProps(3)} />
+                    {/* <Tab label="Misc" {...a11yProps(3)} /> */}
                 </Tabs>
             </AppBar>
 
@@ -147,8 +148,9 @@ export default function Marriott() {
                     <li> Award processing change waived</li>
                 </ul>
             </TabPanel>
+
+
             <TabPanel value={value} index={2} className={valogo.root}>
-            
             <Row>
                 <Col>
                     <PromotionOne />                
@@ -163,11 +165,12 @@ export default function Marriott() {
                     <PromotionOne />
                 </Col> */}
               </Row>
-            
             </TabPanel>
-            <TabPanel value={value} index={3} className={valogo.root}>
+
+
+            {/* <TabPanel value={value} index={3} className={valogo.root}>
               
-            </TabPanel>
+            </TabPanel> */}
         </div>
     );
 }

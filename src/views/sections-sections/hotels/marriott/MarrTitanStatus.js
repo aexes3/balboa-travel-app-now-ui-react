@@ -19,6 +19,7 @@ import Image from '../../../../assets/img/presentation-page/marrtitanstatus.jpg'
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -78,10 +79,36 @@ export default function MarrTitanStatus (props) {
         image={Image}
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary">
-            <div href="tel:888-236-2427" target="_blank">
-                <i className="fas fa-phone" /> : 888-236-2427
-            </div>  
+        <Typography variant="caption" color="textSecondary">
+        <div className="info info-horizontal">
+                  <a href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
+                     rel="noopener noreferrer"
+                     target="_blank"
+                    >
+                      <div className="icon">
+                      <i className="fa fa-laptop"></i>
+                    </div>
+                  </a>
+                    <div className="description">
+                    <a href=" https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h5 className="info-title">Sign-up Online</h5>
+                    </a>
+                    </div>
+
+                    <a href="tel:888-236-2427" >
+                    <div className="icon description">
+                      <i className="fas fa-phone"></i>
+                    </div>
+                    </a>
+                    <div className="description">
+                        <a href="tel: 888-236-2427">
+                            <h5 className="info-title">888-236-2427</h5>
+                        </a>
+                    </div>
+                  </div>   
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

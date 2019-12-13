@@ -14,7 +14,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/marrgoldstatus.jpg';
+import Image from '../../../../assets/img/presentation-page/hiltmember.png';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#d6b474',
+    backgroundColor: '#83cfe0',
   },
   root: {
     width: '100%',
@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function MarrGoldStatus (props) {
+export default function HiltMember (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -63,7 +63,7 @@ export default function MarrGoldStatus (props) {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            GS
+            MS
           </Avatar>
         }
         action={
@@ -71,8 +71,8 @@ export default function MarrGoldStatus (props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Marriott"
-        subheader="Gold Status"
+        title="Hilton"
+        subheader="Member Status"
       />
       <CardMedia
         className={classes.media}
@@ -80,8 +80,8 @@ export default function MarrGoldStatus (props) {
       />
       <CardContent>
         <Typography variant="caption" color="textSecondary">
-        <div className="info info-horizontal">
-                  <a href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
+            <div className="info info-horizontal">
+                  <a href="https://www.hilton.com/en/hilton-honors/join/?OCODE=MEHJW"
                      rel="noopener noreferrer"
                      target="_blank"
                     >
@@ -90,25 +90,25 @@ export default function MarrGoldStatus (props) {
                     </div>
                   </a>
                     <div className="description">
-                    <a href=" https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
+                    <a href="https://www.hilton.com/en/hilton-honors/join/?OCODE=MEHJW"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <h5 className="info-title">Sign-up Online</h5>
+                      <h5 className="info-title">Join Now</h5>
                     </a>
                     </div>
 
-                    <a href="tel:888-236-2427" >
+                    <a href="tel:1-800-446-6677" >
                     <div className="icon description">
                       <i className="fas fa-phone"></i>
                     </div>
                     </a>
                     <div className="description">
-                        <a href="tel: 888-236-2427">
-                            <h5 className="info-title">888-236-2427</h5>
+                        <a href="tel:1-800-446-6677">
+                            <h5 className="info-title">1-800-4HONORS</h5>
                         </a>
                     </div>
-                  </div>  
+                  </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -131,32 +131,35 @@ export default function MarrGoldStatus (props) {
                     <u><b>Overview:</b></u>
                     
                     <ListItem>
-                        30 Brands, more than 7,000 hotels.
+                    Lowest Price Anywhere   
                     </ListItem>
                     <ListItem>
-                    Find info about all of the brands  &nbsp;
-                        <a href="https://www.marriott.com/marriott-brands.mi" target="_blank" rel="noopener noreferrer" >here</a>
+                    Free WiFi
                     </ListItem>
+                    <ListItem>
+                    Digital Check-In
+                    </ListItem>
+                    <ListItem>
+                    Points Toward Free Nights
+                    </ListItem>
+                    
 
                     <u><b>Benfits:</b></u>
 
                     <ListItem>
-                    Stay 25 or more nights/year
+                    all Member, Silver, and Gold benefits plus
                     </ListItem>
                     <ListItem>
-                    25% Bonus Points on Stays
+                    Executive Lounge access
                     </ListItem>
                     <ListItem>
-                    Enhanced Room Upgrade
+                    Diamond Status extension
                     </ListItem>
                     <ListItem>
-                    2 p.m. Late Checkout
+                    48-hour room guarantee
                     </ListItem>
                     <ListItem>
-                    Welcome Gift of Points (250-500 points, varies by brand)
-                    </ListItem>
-                    <ListItem>
-                    Complimentary Enhanced In-Room Internet Access
+                    Elite status gifting
                     </ListItem>
                 </List>
           </Typography>

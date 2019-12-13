@@ -26,9 +26,9 @@ function MeetingIncentives() {
 
                 <hr />
                 <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank">
-                Scoping Questionnaire
+                Meeting Request Form
                 </a>
-                <div href="mailto:meeting&amp;eventsolutions@balboa.com" target="_blank">
+                  <div onClick={ e => window.location.href = `mailto: meeting&eventsolutions@balboa.com`}>
                     <i className="fas fa-envelope" /> : meeting&amp;eventsolutions@balboa.com
                   </div>
                 </h4>

@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import  { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,6 +19,7 @@ import Image from '../../../../assets/img/presentation-page/cpgreen.jpg';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -35,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#2e736e',
   },
   root: {
     width: '100%',
@@ -72,11 +73,9 @@ export default function CPGreen (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,25 +85,30 @@ export default function CPGreen (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 2 complimentary checked bags (70 lbs./32 kg)
+                    Enrollment fee of $100, valid for 12 month membership
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus at booking
+                    can check-in at Premium Economy counter
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Gold Status
+                    Priority boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 8x miles earned on every flight
+                    Up to 2 free checked bags when traveling in Economy, Premium Economy, or Business Class.  Up to 3 pieces when traveling in First Class
+                    </ListItem>
+                    <ListItem>
+                    One business class lounge pass after earning 200 club points
                     </ListItem>
                 </List>
           </Typography>

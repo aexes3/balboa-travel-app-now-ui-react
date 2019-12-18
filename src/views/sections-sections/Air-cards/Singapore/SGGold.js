@@ -96,44 +96,44 @@ export default function UnitedGold (props) {
 
                     <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn miles when you fly with Singapore Airlines, 
+                         Earn miles when you fly with Singapore Airlines, 
                         SilkAir, Scoot, Star Alliance and other partner airlines.
                     </ListItem>
                     <ListItem>
-                        &#45; Redeem miles for flights and upgrades on Singapore Airlines, 
+                         Redeem miles for flights and upgrades on Singapore Airlines, 
                         SilkAir, Scoot, Star Alliance and other partner airlines. 
                         Or for hotel stays, shopping, everyday purchases and more.
                     </ListItem>
                     <ListItem>
-                        &#45; Enjoy exclusive KrisFlyer privileges such as personalised 
+                         Enjoy exclusive KrisFlyer privileges such as personalised 
                         KrisWorld content and members-only deals and discounts. The more miles you earn, 
                         the more rewarding your journeys will become.
                     </ListItem>
    
                     <u><b>Gold:</b></u>
                     <ListItem>
-                        &#45; Achieve after flying 50,000 miles within 12 consecutive months
+                         Achieve after flying 50,000 miles within 12 consecutive months
                     </ListItem>
                     <ListItem>
-                        &#45; Access to extensive network of airport lounges
+                         Access to extensive network of airport lounges
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Gold Status
+                         Star Alliance Gold Status
                     </ListItem>
                     <ListItem>
-                        &#45; Extra check-in baggage allowance
+                         Extra check-in baggage allowance
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary Forward Zone and Standard Seats when you fly in in Economy Class
+                         Complimentary Forward Zone and Standard Seats when you fly in in Economy Class
                     </ListItem>
                     <ListItem>
-                        &#45; Priority airport check-in and boarding
+                         Priority airport check-in and boarding
                     </ListItem>
                     <ListItem>
-                        &#45; Priority baggage handling
+                         Priority baggage handling
                     </ListItem>
                     <ListItem>
-                        &#45; Waived or discounted service fees
+                         Waived or discounted service fees
                     </ListItem>
                 </List>
           </Typography>

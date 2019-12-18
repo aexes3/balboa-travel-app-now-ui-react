@@ -6,7 +6,7 @@ import Iframe from 'react-iframe';
 
 // core components
 
-function Cards() {
+function BalbaoVideo() {
   return (
     <>
       <div className="section section-cards" id="Container">
@@ -83,7 +83,7 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default BalbaoVideo;
 
 
 

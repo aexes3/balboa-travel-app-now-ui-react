@@ -11,16 +11,22 @@ import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -52,13 +58,26 @@ function a11yProps(index) {
     };
 }
 
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
+
 const alStyles = makeStyles(theme => ({
     root: {
+        flexGrow: 1,
         backgroundImage: `url(${image})`,
-        color: 'white',
+        height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-    }
+        color: 'white',
+    },
+    paper: {
+        padding: theme.spacing(3, 2),
+        maxWidth: 345,
+        display: 'inline',
+        // flex: 1
+        // backgroundImage: `url(${image3})`,
+    },
 }));
 
 export default function Alaska() {
@@ -80,17 +99,44 @@ export default function Alaska() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={allogo.root}>
-                <Row>
-                    <Col>
+            <Container>
+                    <Row className="justify-content-md-center">
+                    <Col md="4" sm="6">
                         <Almvp />                
                     </Col>
-                    <Col>
+                    <Col md="4" sm="6">
                         <AlmvpGold />
                     </Col>
-                    <Col>
+                    <Col md="4" sm="6">
                         <AlmvpGold75k />
                     </Col>
                 </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                                <List component="nav" classname="justify-content-center"> 
+                                    <ListItem>
+                                        <ListItemLink href="www.alaskaair.com" rel="noopener noreferrer" target="_blank">
+                                             <Fab size="medium" color="primary" variant="fab">
+                                                <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Find our More" />
+                                            </Fab>
+                                        </ListItemLink>
+                                        </ListItem>
+                                        <ListItem>
+                                        <ListItemLink href="tel:tel:800-252-7522" rel="noopener noreferrer">
+                                            <Fab size="medium" color="primary" variant="fab">
+                                                <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-252-7522" />
+                                            </Fab>
+                                        </ListItemLink>
+                                    </ListItem>
+                                </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={allogo.root}>

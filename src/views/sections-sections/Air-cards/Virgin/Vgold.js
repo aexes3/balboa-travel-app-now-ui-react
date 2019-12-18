@@ -93,79 +93,79 @@ export default function UnitedGold (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn miles on every flight
+                         Earn miles on every flight
                     </ListItem>
                     <ListItem>
-                        &#45; 60% bonus miles on every flight
+                         60% bonus miles on every flight
                     </ListItem>
                     <ListItem>
-                        &#45; Reward flights
+                         Reward flights
                     </ListItem>
                     <ListItem>
-                        &#45; Miles Plus Money
+                         Miles Plus Money
                     </ListItem>
                     <ListItem>
-                        &#45; Free seat selection ahead of your flight in Economy Light
+                         Free seat selection ahead of your flight in Economy Light
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary Exit row seats in Economy Classic
+                         Complimentary Exit row seats in Economy Classic
                     </ListItem>
                     <ListItem>
-                        &#45; Extra hand and hold baggage
+                         Extra hand and hold baggage
                     </ListItem>
                     <ListItem>
-                        &#45; Upper Class Check In flying in any cabin
+                         Upper Class Check In flying in any cabin
                     </ListItem>
                     <ListItem>
-                        &#45; Exclusive Clubhouse passes for you plus one guest
+                         Exclusive Clubhouse passes for you plus one guest
                     </ListItem>
                     <ListItem>
-                        &#45; Priority waitlist for flights
+                         Priority waitlist for flights
                     </ListItem>
                     <ListItem>
-                        &#45; One complimentary Clubhouse spa treatment plus 10% off thereafter
+                         One complimentary Clubhouse spa treatment plus 10% off thereafter
                     </ListItem>
                     <ListItem>
-                        &#45; Access to London Heathrow Revivals Lounge
+                         Access to London Heathrow Revivals Lounge
                     </ListItem>
                     <ListItem>
-                        &#45; Tier renewal bonus
+                         Tier renewal bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Enroll your children without any age restrictions
+                         Enroll your children without any age restrictions
                     </ListItem>
                     <ListItem>
-                        &#45; Household account linking up to nine flyers
+                         Household account linking up to nine flyers
                     </ListItem>
                     <ListItem>
-                        &#45; 2,000 bonus birthday miles
+                         2,000 bonus birthday miles
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary companion ticket upon yearly renewal of Gold Tier
+                         Complimentary companion ticket upon yearly renewal of Gold Tier
                     </ListItem>
                     <ListItem>
-                        &#45; Clubhouse passes for you to keep or share when you earn 1,500 
+                         Clubhouse passes for you to keep or share when you earn 1,500 
                                 Tier Points within your membership year
                     </ListItem>
                     <ListItem>
-                        &#45; Cabin Upgrade Reward when you earn 2,000 Tier Points within your membership year
+                         Cabin Upgrade Reward when you earn 2,000 Tier Points within your membership year
                     </ListItem>
                     <ListItem>
-                        &#45; Supplementary Silver membership for a friend
+                         Supplementary Silver membership for a friend
                     </ListItem>
                     <ListItem>
-                        &#45; Guaranteed Economy seat on any flight
+                         Guaranteed Economy seat on any flight
                     </ListItem>
                     <ListItem>
-                        &#45; Priority waitlist for flights
+                         Priority waitlist for flights
                     </ListItem>
                     <ListItem>
-                        &#45; Maternity and paternity membership pause
+                         Maternity and paternity membership pause
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated Flying Club phone line
+                         Dedicated Flying Club phone line
                     </ListItem>
                 </List>
           </Typography>

@@ -93,47 +93,47 @@ export default function LufFrequent (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Make booking a flight easier by storing your details and using your service card.
+                         Make booking a flight easier by storing your details and using your service card.
                     </ListItem>
                     <ListItem>
-                        &#45; Climb to a higher status and get exclusive privileges.
+                         Climb to a higher status and get exclusive privileges.
                     </ListItem>
                     <ListItem>
-                        &#45; Earn award miles with almost 40 airline partners.
+                         Earn award miles with almost 40 airline partners.
                     </ListItem>
                     <ListItem>
-                        &#45; Earn award miles every day – for example when you shop or book a hotel.
+                         Earn award miles every day – for example when you shop or book a hotel.
                     </ListItem>
                     <ListItem>
-                        &#45; Spend your valuable award miles on flights or with many other partners.
+                         Spend your valuable award miles on flights or with many other partners.
                     </ListItem>
-                    <u><b>Frequent Traveler Benfits:</b></u>
+                    <u><b>Frequent Traveler Benefits:</b></u>
                     <ListItem>
-                        &#45; Qualify at 35,000 status miles or 30 scheduled flights in one calendar year
-                    </ListItem>
-                    <ListItem>
-                        &#45; Award miles do not expire as long as you remain a status member
+                         Qualify at 35,000 status miles or 30 scheduled flights in one calendar year
                     </ListItem>
                     <ListItem>
-                        &#45; Earn 50% more award miles and 25% more Status, Select and HON Circle miles
+                         Award miles do not expire as long as you remain a status member
                     </ListItem>
                     <ListItem>
-                        &#45; Third highest waiting list priority
+                         Earn 50% more award miles and 25% more Status, Select and HON Circle miles
                     </ListItem>
                     <ListItem>
-                        &#45; Business Class check-in with Miles &amp; More airline partners
+                         Third highest waiting list priority
                     </ListItem>
                     <ListItem>
-                        &#45; Free Baggage: 1 additional piece of baggage in Economy Class, 
+                         Business Class check-in with Miles &amp; More airline partners
+                    </ListItem>
+                    <ListItem>
+                         Free Baggage: 1 additional piece of baggage in Economy Class, 
                                 a total of 2 pieces in Premium Economy Class and Business Class, 3 pieces in First Class
                     </ListItem>
                     <ListItem>
-                        &#45; Business Lounge access
+                         Business Lounge access
                     </ListItem>
                     <ListItem>
-                        &#45; Exclusive service hotline
+                         Exclusive service hotline
                     </ListItem>
                     <ListItem>
           

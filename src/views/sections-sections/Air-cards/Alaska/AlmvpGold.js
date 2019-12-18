@@ -7,18 +7,23 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import {Avatar, Fab} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/almvpgold.png';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import PhoneIcon from '@material-ui/icons/Phone';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import Image from '../../../../assets/img/presentation-page/almvpgold2.png';
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -35,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#204068',
   },
   root: {
     width: '100%',
@@ -72,11 +77,9 @@ export default function SWAListPreferred (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent >
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,7 +89,9 @@ export default function SWAListPreferred (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -94,75 +99,75 @@ export default function SWAListPreferred (props) {
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
                     
-                    <u><b>Milage Plan:</b></u>
+                    <u><b>Mileage Plan:</b></u>
                     
                     <ListItem>
-                        &#45; Fly a mile. Earn a mile.  Earn one mile for every mile flown on Alaska, even on the lowest fare.
+                         Fly a mile. Earn a mile.  Earn one mile for every mile flown on Alaska, even on the lowest fare.
                     </ListItem>
                     <ListItem>
-                        &#45; With award travel starting at 5,000 miles, that's enough for a one-way nonstop flight 
+                         With award travel starting at 5,000 miles, that's enough for a one-way nonstop flight 
                         from San Diego to Northern California. Plus, use miles with Alaska and our Global Partners 
                         to fly to destinations around the world.
                     </ListItem>
                     <ListItem>
-                        &#45; Elite status begins at 20,000 miles
+                         Elite status begins at 20,000 miles
                     </ListItem>
 
-                    <u><b>MVP Benfits:</b></u>
+                    <u><b>MVP Gold Benefits:</b></u>
 
                     <ListItem>
-                        &#45; Qualify after earning 40,000 miles
+                         Qualify after earning 40,000 miles
                     </ListItem>
                     <ListItem>
-                        &#45; earn 100% mileage bonus
+                         earn 100% mileage bonus
                     </ListItem>
                     <ListItem>
-                        &#45; First class upgrades at time of booking for Y, S, B, M, or Z Fares
+                         First class upgrades at time of booking for Y, S, B, M, or Z Fares
                     </ListItem>
                     <ListItem>
-                        &#45; Premium class upgrades at time of booking for Y, S, B, M, H, Q, L, V, N, K, or Z fares
+                         Premium class upgrades at time of booking for Y, S, B, M, H, Q, L, V, N, K, or Z fares
                     </ListItem>
                     <ListItem>
-                        &#45; First and Premium Class upgrades on Alaska non-qualifying fares 48 hours before departure
+                         First and Premium Class upgrades on Alaska non-qualifying fares 48 hours before departure
                     </ListItem>
                     <ListItem>
-                        &#45; Companion upgrades to First and Premium Classes
+                         Companion upgrades to First and Premium Classes
                     </ListItem>
                     <ListItem>
-                        &#45; 4 one-way First Class guest upgrades
+                         4 one-way First Class guest upgrades
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary premium beverage in Main Cabin
+                         Complimentary premium beverage in Main Cabin
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in and boarding
+                         Priority check-in and boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 2 free checked bags
+                         2 free checked bags
                     </ListItem>
                     <ListItem>
-                        &#45; Preferred seating
+                         Preferred seating
                     </ListItem>
                     <ListItem>
-                        &#45; $100 off Alaska Lounge membership
+                         $100 off Alaska Lounge membership
                     </ListItem>
                     <ListItem>
-                        &#45; Standby and wait list for full flights
+                         Standby and wait list for full flights
                     </ListItem>
                     <ListItem>
-                        &#45; Express security line at select airports
+                         Express security line at select airports
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated phone lines for reservations
+                         Dedicated phone lines for reservations
                     </ListItem>
                     <ListItem>
-                        &#45; Elite Leave for new parents
+                         Elite Leave for new parents
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary same-day flight changes
+                         Complimentary same-day flight changes
                     </ListItem>
                     <ListItem>
-                        &#45; Waived ticket change fees
+                         Waived ticket change fees
                     </ListItem>
                 </List>
           </Typography>

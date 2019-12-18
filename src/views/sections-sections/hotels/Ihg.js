@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import HiltMember from './hilton/HiltMember.js';
-import HiltSilverMember from './hilton/HiltSilverMember.js';
-import HiltGoldMember from './hilton/HiltGoldMember.js';
-import HiltDiamondMember from './hilton/HiltDiamondMember.js';
-import image from 'assets/img/presentation-page/HILT-LOGO.jpeg'
+import IhgClub from './ihg/IhgClub.js';
+import IhgGold from './ihg/IhgGold.js';
+import IhgPlatinum from './ihg/IhgPlatinum';
+import IhgSpire from './ihg/IhgSpire.js';
+import image from 'assets/img/presentation-page/IHG-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
@@ -99,17 +99,17 @@ export default function Ihg() {
             <TabPanel value={value} index={0} className={valogo.root}>
                 <Row>
                     <Col>
-                        <HiltMember /> 
+                        <IhgClub /> 
                                      
                     </Col>
                     <Col>
-                        <HiltSilverMember />   
+                        <IhgGold />   
                     </Col>
                     <Col>
-                        <HiltGoldMember />   
+                        <IhgPlatinum />   
                     </Col>
                     <Col>
-                        <HiltDiamondMember />                
+                        <IhgSpire />                
                     </Col>
                 </Row>
             </TabPanel>

@@ -1,35 +1,16 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
+// import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
 import Marriott from '../sections-sections/hotels/Marriott.js'
 import Hilton from '../sections-sections/hotels/Hilton.js'
 import Ihg from '../sections-sections/hotels/Ihg.js'
 import Radisson from '../sections-sections/hotels/Radisson.js'
 import Hyatt from '../sections-sections/hotels/Hyatt.js'
 import Fairmont from '../sections-sections/hotels/Fairmont.js'
+import {Grid} from '@material-ui/core';
 
 import {
-    AppBar,
-    Box,
-    Grid,
-    Paper,
-    Tab,
-    Tabs,
-    Typography,
-} 
-from '@material-ui/core';
-import {
-    Button,
-    Col,
-    Row,
-}
-    from 'reactstrap';
-import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
 } from "react-router-dom";
 
 
@@ -38,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         height: '100%',
         // backgroundImage: `url(${image})`,
-        backgroundColor: '#424242',
+        backgroundColor: '#d9dee1',
         textAlign: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -49,120 +30,88 @@ const useStyles = makeStyles(theme => ({
     },  
   }));
 
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
 
-    return (
-        <Typography
-            component="div"
-            role="tabpanel"
-            hidden={value !== index}
-            id={`scrollable-auto-tabpanel-${index}`}
-            aria-labelledby={`scrollable-auto-tab-${index}`}
-            {...other}
-    >
-            {value === index && <Box p={3}>{children}</Box>}
-        </Typography>
-    );
-}
+export default function Hotel(props) {
+    const [hotel, setHotel] = React.useState("");
 
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.any.isRequired,
-    value: PropTypes.any.isRequired,
-};
-
-function a11yProps(index) {
-    return {
-      id: `scrollable-auto-tab-${index}`,
-      'aria-controls': `scrollable-auto-tabpanel-${index}`,
-    };
-  }
-
-export default function GroundTravel(props) {
-    // const [collapses, setCollapses] = React.useState([1]);
-    // const changeCollapse = collapse => {
-    //     if (collapses.includes(collapse)) {
-    //         setCollapses(collapses.filter(prop => prop !== collapse));
-    //     } else {
-    //         setCollapses([...collapses, collapse]);
-    //     }
-    // };
-    // const [value, setValue] = React.useState(0);
-    // const handleChange = (event, newValue) => {
-    //     setValue(newValue);
-    // };
+    function handleChange(newHotel) {
+        if(hotel === newHotel) {
+            setHotel('');
+        } else {
+            setHotel(newHotel);
+        }
+    }
+    function renderHotel(param) {
+        switch(param) {
+            case 'marriott':
+                return (<div><Marriott /></div>)
+            case 'hilton':
+                return(<div><Hilton /></div>)
+            case 'ihg':
+                return(<div><Ihg /></div>)
+            case 'radisson':
+                return (<div><Radisson /></div>)
+            case 'hyatt':
+                return (<div><Hyatt /></div>)
+            case 'fairmont':
+                return (<div><Fairmont /></div>)
+            default:
+                return (<div>
+                </div>)
+        }
+    }
     const classes = useStyles();
     return (
         <Router>
             <div className={classes.root}>
                 
-                
                         <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                            {/* <Grid item xs={12}>
+                                <Paper className={classes.paper}>
+                                    <Typography variant="h5" component="h3">
+                                        Air Travel
+                                    </Typography>
+                                </Paper>
+                            </Grid> */}
                             <Grid item xs={4} spacing={2}>
-                                <Link to='/marriott' component={Link} {...a11yProps(0)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/marrlogo.JPG")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/marrlogo.JPG")} 
+                                    onClick={() => handleChange("marriott")} />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link to='/hilton' component={Link} {...a11yProps(1)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/hiltlogo.JPG")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/hiltlogo.JPG")}
+                                    onClick={() => handleChange("hilton")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/ihg' component={Link} {...a11yProps(2)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/interlogo.jpg")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/interlogo.jpg")}
+                                    onClick={() => handleChange("ihg")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/radisson' component={Link} {...a11yProps(3)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/radilogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/radilogo.png")}
+                                    onClick={() => handleChange("radisson")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/hyatt' component={Link} {...a11yProps(4)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/hyatlogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/hyatlogo.png")}
+                                    onClick={() => handleChange("hyatt")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/fairmont' component={Link} {...a11yProps(5)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/fairlogo.jpg")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/fairlogo.jpg")} 
+                                    onClick={() => handleChange("fiarmont")}/>
                             </Grid>
                         </Grid>
 
-                <Switch>
-                    <Route path="/marriott">
-                        <Marriott />
-                    </Route>
-                    <Route path="/hilton">
-                        <Hilton />
-                    </Route>
-                    <Route path="/ihg">
-                        <Ihg />
-                    </Route>
-                    <Route path="/radisson">
-                        <Radisson />
-                    </Route>
-                    <Route path="/hyatt">
-                        <Hyatt />
-                    </Route>
-                    <Route path="/fairmont">
-                        <Fairmont />
-                    </Route>
-                </Switch>
+                {renderHotel(hotel)}
             </div>
         </Router>
     );

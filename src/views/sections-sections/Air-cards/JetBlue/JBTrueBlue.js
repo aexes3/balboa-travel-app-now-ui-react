@@ -95,43 +95,43 @@ export default function JBTrueBlue (props) {
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
                     <u><b>TrueBlue Frequent Flyer Program</b></u><br />
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn 2X TrueBlue points when booking on jetblue.com
+                         Earn 2X TrueBlue points when booking on jetblue.com
                     </ListItem>
                     <ListItem>
-                        &#45; Use points whenever, wherever.  Points do not expire and can be redeemed for any seat, any time (no blackout dates.)
+                         Use points whenever, wherever.  Points do not expire and can be redeemed for any seat, any time (no blackout dates.)
                     </ListItem>
                     <ListItem>
-                        &#45; Pool points with other.  Earn and share points with friends and family with Points Pooling.
+                         Pool points with other.  Earn and share points with friends and family with Points Pooling.
                     </ListItem>
                   <u><b>True Blue Mosaic Status:</b></u>
                     <ListItem>
-                        &#45; Qualify by achieving either <br />
-                        &#32;&#42; Earning 15,000 base flight points within a calendar year <br />
-                        &#32;&#42; Flying 30 segments plus 12,000 base flights points within a calendar year <br />
+                         Qualify by achieving either <br />
+                        &#176; Earning 15,000 base flight points within a calendar year <br />
+                        &#176; Flying 30 segments plus 12,000 base flights points within a calendar year <br />
                     </ListItem>
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn 3-5X TrueBlue points for all bookings
-                    </ListItem>
-                    <ListItem>
-                        &#45; No change/cancel fees
+                         Earn 3-5X TrueBlue points for all bookings
                     </ListItem>
                     <ListItem>
-                         &#45; First 2 checked bags are free
+                         No change/cancel fees
                     </ListItem>
                     <ListItem>
-                         &#45; Expedited security checkpoint
+                          First 2 checked bags are free
                     </ListItem>
                     <ListItem>
-                        &#45; Early boarding
+                          Expedited security checkpoint
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated customer service line available 24/7
+                         Early boarding
                     </ListItem>
                     <ListItem>
-                        &#345; Complimentary alcoholic beverages onboard
+                         Dedicated customer service line available 24/7
+                    </ListItem>
+                    <ListItem>
+                         Complimentary alcoholic beverages onboard
                     </ListItem>
                 </List>
           </Typography>

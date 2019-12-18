@@ -93,21 +93,21 @@ export default function EmBlue (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Personal preferences remembered
+                         Personal preferences remembered
                     </ListItem>
                     <ListItem>
-                        &#45; Waitlist priority
+                         Waitlist priority
                     </ListItem>
                     <ListItem>
-                        &#45; Buy instant upgrades with Miles at check-in
+                         Buy instant upgrades with Miles at check-in
                     </ListItem>
                     <ListItem>
-                        &#45; Paid lounge access
+                         Paid lounge access
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary or discount Wi-Fi on board
+                         Complimentary or discount Wi-Fi on board
                     </ListItem>
                 </List>
           </Typography>

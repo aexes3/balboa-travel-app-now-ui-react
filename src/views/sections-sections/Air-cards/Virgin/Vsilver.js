@@ -93,39 +93,39 @@ export default function UnitedGold (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn miles on every flight
+                         Earn miles on every flight
                     </ListItem>
                     <ListItem>
-                        &#45; Reward flights
+                         Reward flights
                     </ListItem>
                     <ListItem>
-                        &#45; Miles Plus Money
+                         Miles Plus Money
                     </ListItem>
                     <ListItem>
-                        &#45; 30% additional bonus miles on every flight
+                         30% additional bonus miles on every flight
                     </ListItem>
                     <ListItem>
-                        &#45; Free seat selection ahead of your flight in Economy Light
+                         Free seat selection ahead of your flight in Economy Light
                     </ListItem>
                     <ListItem>
-                        &#45; Premium Check In flying in any cabin
+                         Premium Check In flying in any cabin
                     </ListItem>
                     <ListItem>
-                        &#45; Tier renewal bonus
+                         Tier renewal bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Enroll your children without any age restrictions
+                         Enroll your children without any age restrictions
                     </ListItem>
                     <ListItem>
-                        &#45; Priority waitlist for flights
+                         Priority waitlist for flights
                     </ListItem>
                     <ListItem>
-                        &#45; Maternity and paternity membership pause
+                         Maternity and paternity membership pause
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated Flying Club phone line
+                         Dedicated Flying Club phone line
                     </ListItem>
                 </List>
           </Typography>

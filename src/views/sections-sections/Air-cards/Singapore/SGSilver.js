@@ -96,32 +96,32 @@ export default function UnitedGold (props) {
 
                     <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn miles when you fly with Singapore Airlines, 
+                         Earn miles when you fly with Singapore Airlines, 
                         SilkAir, Scoot, Star Alliance and other partner airlines.
                     </ListItem>
                     <ListItem>
-                        &#45; Redeem miles for flights and upgrades on Singapore Airlines, 
+                         Redeem miles for flights and upgrades on Singapore Airlines, 
                         SilkAir, Scoot, Star Alliance and other partner airlines. 
                         Or for hotel stays, shopping, everyday purchases and more.
                     </ListItem>
                     <ListItem>
-                        &#45; Enjoy exclusive KrisFlyer privileges such as personalised 
+                         Enjoy exclusive KrisFlyer privileges such as personalised 
                         KrisWorld content and members-only deals and discounts. The more miles you earn, 
                         the more rewarding your journeys will become.
                     </ListItem>
    
                     <u><b>Silver:</b></u>
                     <ListItem>
-                        &#45; achieve after flying 25,000 miles within 12 consecutive months
+                         achieve after flying 25,000 miles within 12 consecutive months
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Silver Status
+                         Star Alliance Silver Status
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary Standard Seats when you fly in in Economy Class
+                         Complimentary Standard Seats when you fly in in Economy Class
                     </ListItem>
                     <ListItem>
-                        &#45; Priority waitlists and standby
+                         Priority waitlists and standby
                     </ListItem>
                 </List>
           </Typography>

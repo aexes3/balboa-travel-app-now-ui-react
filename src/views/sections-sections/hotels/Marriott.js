@@ -14,16 +14,26 @@ import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -55,40 +65,36 @@ function a11yProps(index) {
     };
 }
 
-// const alStyles = makeStyles(theme => ({
-//     root: {
-//         backgroundImage: `url(${image})`,
-//         color: 'white',
-//         backgroundRepeat: 'no-repeat',
-//         backgroundSize: 'cover',
-//     }
-// }));
-
-const vaStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
-          flexGrow: 1,
+        flexGrow: 1,
         backgroundImage: `url(${image})`,
-        // backgroundColor: "#e32121",
-    /* Full height */
-        height: '100%', 
-
-    /* Center and scale the image nicely */
-        //  backgroundPosition: 'center',
+        height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         color: 'white',
     },
+    paper: {
+        padding: theme.spacing(3, 2),
+        maxWidth: 345,
+        display: 'inline',
+        // flex: 1
+        // backgroundImage: `url(${image3})`,
+    },
+    align: {
+        textAlign: 'center',
+    },
 }));
 
 export default function Marriott() {
-    const valogo = vaStyles();
+    const styles = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={valogo.root}>
+        <div className={styles.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
@@ -98,33 +104,61 @@ export default function Marriott() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={valogo.root}>
-                <Row>
-                    <Col>
-                        <Marrstatus /> 
-                                     
-                    </Col>
-                    <Col>
-                        <MarrSilverStatus />   
-                    </Col>
-                    <Col>
-                        <MarrGoldStatus />   
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <MarrPlatStatus />                
-                    </Col>
-                    <Col>
-                        <MarrTitanStatus />   
-                    </Col>
-                    <Col>
-                        <MarrAmbassStatus />   
-                    </Col>
-                </Row>
+            <TabPanel value={value} index={0} className={styles.root}>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <Marrstatus />
+                        </Col>
+                        <Col md="4">
+                            <MarrSilverStatus />
+                        </Col>
+                        <Col md="4">
+                            <MarrGoldStatus />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="4">
+                            <MarrPlatStatus />
+                        </Col>
+                        <Col md="4">
+                            <MarrTitanStatus />
+                        </Col>
+                        <Col md="4">
+                            <MarrAmbassStatus />
+                        </Col>
+                    </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                                <List component="nav" classname="justify-content-center"> 
+                                    <ListItem>
+                                        <ListItemLink href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi" rel="noopener noreferrer" target="_blank">
+                                             <Fab size="medium" color="primary" variant="fab">
+                                                <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Sign-up Online" />
+                                            </Fab>
+                                        </ListItemLink>
+                                        </ListItem>
+                                        <ListItem>
+                                        <ListItemLink href="tel:tel:888-236-2427" rel="noopener noreferrer">
+                                            <Fab size="medium" color="primary" variant="fab">
+                                                <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 888-236-2427" />
+                                            </Fab>
+                                        </ListItemLink>
+                                    </ListItem>
+                                </List>
+                        </Col>
+                    </Row>
+                </Container>
+
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={valogo.root}>
+            <TabPanel value={value} index={1} className={styles.root}>
                 Qualify:
                   <ul>
                     <li>Elite Qualifying Miles (EQM) 25000</li>
@@ -150,25 +184,25 @@ export default function Marriott() {
             </TabPanel>
 
 
-            <TabPanel value={value} index={2} className={valogo.root}>
-            <Row>
-                <Col>
-                    <PromotionOne />                
-                </Col>
-                <Col>
-                    <PromotionTwo />
-                </Col>
-                <Col>
-                    <PromotionThree />
-                </Col>
-                {/* <Col>
+            <TabPanel value={value} index={2} className={styles.root}>
+                <Row>
+                    <Col>
+                        <PromotionOne />
+                    </Col>
+                    <Col>
+                        <PromotionTwo />
+                    </Col>
+                    <Col>
+                        <PromotionThree />
+                    </Col>
+                    {/* <Col>
                     <PromotionOne />
                 </Col> */}
-              </Row>
+                </Row>
             </TabPanel>
 
 
-            {/* <TabPanel value={value} index={3} className={valogo.root}>
+            {/* <TabPanel value={value} index={3} className={styles.root}>
               
             </TabPanel> */}
         </div>

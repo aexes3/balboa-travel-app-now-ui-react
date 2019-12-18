@@ -93,19 +93,19 @@ export default function UnitedPlatinum (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 6 Global Premier Upgrades and 2 Regional Premier Upgrades
-                        &#42; Upgrades changing to PlusPoints in December 2019 - equivalent is 280 PlusPoints
+                         6 Global Premier Upgrades and 2 Regional Premier Upgrades
+                        &#176; Upgrades changing to PlusPoints in December 2019 - equivalent is 280 PlusPoints
                     </ListItem>
                     <ListItem>
-                        &#45; Pre-boarding
+                         Pre-boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 1 free drink and snack in Economy
+                         1 free drink and snack in Economy
                     </ListItem>
                     <ListItem>
-                        &#45; 11x miles earned on every flight
+                         11x miles earned on every flight
                     </ListItem>
                 </List>
           </Typography>

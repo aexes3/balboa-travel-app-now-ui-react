@@ -97,41 +97,41 @@ export default function SWAListPreferred (props) {
                     <u><b>Overview:</b></u>
                     
                     <ListItem>
-                        &#45; No blackout dates
+                         No blackout dates
                     </ListItem>
                     <ListItem>
-                        &#45; Points do not expire
+                         Points do not expire
                     </ListItem>
                     <ListItem>
-                        &#45; Earning points: The amount and type of fare you choose determines how many points you earn.
+                         Earning points: The amount and type of fare you choose determines how many points you earn.
                     </ListItem>
 
-                    <u><b>A-List Benfits:</b></u>
+                    <u><b>A-List Benefits:</b></u>
 
                     <ListItem>
-                        &#45; As an A-List Preferred member, you will receive all of the standard 
+                         As an A-List Preferred member, you will receive all of the standard 
                                 A-List benefits and the added benefits listed below.
                     </ListItem>
                     <ListItem>
-                        &#45; Fly 50 qualifying one-way flights or earn 70,000 tier qualifying points* in one calendar year.
+                         Fly 50 qualifying one-way flights or earn 70,000 tier qualifying points* in one calendar year.
                     </ListItem>
                     <ListItem>
-                        &#45; Priority boarding
+                         Priority boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 25% earning bonus
+                         25% earning bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Free same-day standby
+                         Free same-day standby
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in and security lane access***
+                         Priority check-in and security lane access
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated A-List member phone line
+                         Dedicated A-List member phone line
                     </ListItem>
                     <ListItem>
-                        &#45; Free inflight WiFi****
+                         Free inflight WiFi*
                     </ListItem>
                 </List>
           </Typography>

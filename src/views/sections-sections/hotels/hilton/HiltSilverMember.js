@@ -144,7 +144,7 @@ export default function HiltMember (props) {
                     </ListItem>
                     
 
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
 
                     <ListItem>
                     all member benefits plus

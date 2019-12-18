@@ -93,21 +93,21 @@ export default function UnitedGold (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Earn miles on every flight
+                         Earn miles on every flight
                     </ListItem>
                     <ListItem>
-                        &#45; Reward flights
+                         Reward flights
                     </ListItem>
                     <ListItem>
-                        &#45; Miles Plus Money
+                         Miles Plus Money
                     </ListItem>
                     <ListItem>
-                        &#45; Enroll your children without any age restrictions
+                         Enroll your children without any age restrictions
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated Flying Club phone line
+                         Dedicated Flying Club phone line
                     </ListItem>
                 </List>
           </Typography>

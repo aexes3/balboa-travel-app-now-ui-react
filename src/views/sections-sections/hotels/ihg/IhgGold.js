@@ -14,11 +14,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/lufsen.jpg';
+import Image from '../../../../assets/img/presentation-page/ihggold.jpg';
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -41,10 +42,15 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+    
   },
+  text: {
+      align: "center",
+      textAlign: "center",
+  }
 }));
 
-export default function LufHon (props) {
+export default function HiltMember (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -57,7 +63,7 @@ export default function LufHon (props) {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            S
+            CM
           </Avatar>
         }
         action={
@@ -65,16 +71,44 @@ export default function LufHon (props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Lufthansa"
-        subheader="Senator"
+        title="IHG"
+        subheader="Club Member"
       />
       <CardMedia
         className={classes.media}
         image={Image}
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
+        <Typography variant="caption" color="textSecondary">
+            <div className="info info-horizontal">
+                  <a href="www.ihg.com"
+                     rel="noopener noreferrer"
+                     target="_blank"
+                    >
+                      <div className="icon">
+                      <i className="fa fa-laptop"></i>
+                    </div>
+                  </a>
+                    <div className="description">
+                    <a href="www.ihg.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <h5 className="info-title">Learn More Here</h5>
+                    </a>
+                    </div>
+
+                    <a href="tel:877-424-2449" >
+                    <div className="icon description">
+                      <i className="fas fa-phone"></i>
+                    </div>
+                    </a>
+                    <div className="description">
+                        <a href="tel:877-424-2449">
+                            <h5 className="info-title">877-424-2449</h5>
+                        </a>
+                    </div>
+                  </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -91,72 +125,65 @@ export default function LufHon (props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography variant="body2" color="textSecondary">
-                <List className="MuiListItem-gutters">
+          <Typography variant="body2" color="textSecondary" >
+                <List className="MuiListItem-gutters" >
+                    
+                    <u><b>Redeem Points for just about anything:</b></u>
+                    
+                    <ListItem>
+                    Reward Nights  
+                    </ListItem>
+                    <ListItem>
+                    <a href="https://www.ihg.com/content/ihg/hotels/en_US/brand/deals/member-offers/pointsandcash.html">Points &amp; Cash</a> &nbsp;bookings
+                    </ListItem>
+                    <ListItem>
+                    Gift Certificates
+                    </ListItem>
+                    <ListItem>
+                    Airline Miles
+                    </ListItem>
+                    <ListItem>
+                    Brand Name Merchandise
+                    </ListItem>
+                    <ListItem>
+                    InterContinental® Ambassador Memberships
+                    </ListItem>
+                    <ListItem>
+                    Digital Rewards
+                    </ListItem>
+                    <ListItem>
+                    IHG® Foundation
+                    </ListItem>
+                    <ListItem>
+                    Rewards Concierge
+                    </ListItem>
+                    <ListItem>
+                    Gift Cards to Amazon, Starbucks and more
+                    </ListItem>
+                    <ListItem>
+                    TSA Precheck
+                    </ListItem>
+                    <ListItem>
+                    And more of your favorite rewards
+                    </ListItem>
+                    
+
                     <u><b>Benefits:</b></u>
+
                     <ListItem>
-                         Make booking a flight easier by storing your details and using your service card.
+                    In addition to Club Member benefits, also includes
                     </ListItem>
                     <ListItem>
-                         Climb to a higher status and get exclusive privileges.
+                    Earn 10% Bonus Points with Your Rate
                     </ListItem>
                     <ListItem>
-                         Earn award miles with almost 40 airline partners.
+                    Extended Check-Out
                     </ListItem>
                     <ListItem>
-                         Earn award miles every day – for example when you shop or book a hotel.
+                    Priority Check-In
                     </ListItem>
                     <ListItem>
-                         Spend your valuable award miles on flights or with many other partners.
-                    </ListItem>
-                    <u><b>Senator Benefits:</b></u>
-                    <ListItem>
-                         Qualify at 100,000 status miles in the calendar year
-                    </ListItem>
-                    <ListItem>
-                         Award miles do not expire as long as you remain a status member
-                    </ListItem>
-                    <ListItem>
-                         Earn 50% more award miles and 25% more Status, Select and HON Circle miles
-                    </ListItem>
-                    <ListItem>
-                         2 upgrade vouchers
-                    </ListItem>
-                    <ListItem>
-                         Guaranteed booking availability up to 48 hours before departure in the 
-                              booking classes of the highest value in Business Class, 
-                              Premium Economy Class and Economy Class
-                    </ListItem>
-                    <ListItem>
-                         Second Highest waiting list priority
-                    </ListItem>
-                    <ListItem>
-                         First Class Check-in, Premium check-in
-                    </ListItem>
-                    <ListItem>
-                         Extra 20 kg bag allowance
-                    </ListItem>
-                    <ListItem>
-                         Free Baggage: 2 pieces of baggage or 3 pieces on certain routes in Economy Class, 
-                              3 pieces in Premium Economy Class and Business Class, 4 pieces in First Class
-                    </ListItem>
-                    <ListItem>
-                         Free carriage of an additional golf bag
-                    </ListItem>
-                    <ListItem>
-                         Preferential baggage handling
-                    </ListItem>
-                    <ListItem>
-                         Senator and Star Gold Lounge access
-                    </ListItem>
-                    <ListItem>
-                         Senator Premium Award
-                    </ListItem>
-                    <ListItem>
-                         Companion Award
-                    </ListItem>
-                    <ListItem>
-                         Exclusive service hotline
+                    Welcome Amenity
                     </ListItem>
                 </List>
           </Typography>

@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -78,39 +78,9 @@ export default function MarrGoldStatus (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="caption" color="textSecondary">
-        <div className="info info-horizontal">
-                  <a href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
-                     rel="noopener noreferrer"
-                     target="_blank"
-                    >
-                      <div className="icon">
-                      <i className="fa fa-laptop"></i>
-                    </div>
-                  </a>
-                    <div className="description">
-                    <a href=" https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <h5 className="info-title">Sign-up Online</h5>
-                    </a>
-                    </div>
-
-                    <a href="tel:888-236-2427" >
-                    <div className="icon description">
-                      <i className="fas fa-phone"></i>
-                    </div>
-                    </a>
-                    <div className="description">
-                        <a href="tel: 888-236-2427">
-                            <h5 className="info-title">888-236-2427</h5>
-                        </a>
-                    </div>
-                  </div>  
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -120,7 +90,9 @@ export default function MarrGoldStatus (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -138,7 +110,7 @@ export default function MarrGoldStatus (props) {
                         <a href="https://www.marriott.com/marriott-brands.mi" target="_blank" rel="noopener noreferrer" >here</a>
                     </ListItem>
 
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
 
                     <ListItem>
                     Stay 25 or more nights/year

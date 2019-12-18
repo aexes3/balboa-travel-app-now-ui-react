@@ -10,13 +10,13 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
 // import Features from "./sections-sections/Features.js";
-import Cards from "./presentation-sections/Cards.js";
+import BalbaoVideo from "./presentation-sections/BalbaoVideo.js";
 import Teams from "./sections-sections/Teams.js";
 import SectionsCards from "./presentation-sections/Sections";
 import Managers from "./sections-sections/Managers.js";
 // import ContactUs from "./sections-sections/ContactUs.js";
 import Faq from "./sections-sections/Faq.js";
-import Projects from './sections-sections/Projects';
+import Clients from './sections-sections/Clients.js';
 import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
@@ -24,6 +24,7 @@ import Airlines from "./sections-sections/Airlines.js";
 import GroundTravel from "./sections-sections/GroundTravel.js";
 import Hotel from "./sections-sections/Hotel.js";
 import Widgets from "./sections-sections/Widgets.js";
+import { isProperty } from "@babel/types";
 
 function Sections() {
   React.useEffect(() => {
@@ -84,7 +85,7 @@ function Sections() {
       <div className="wrapper">
         <div className="section-space"></div>
         <Headers /> {/*Large Pic of city */}
-        <Cards /> {/*IFrame video news feed*/}
+        <BalbaoVideo /> {/*IFrame video news feed*/}
         <NewsFlash /> {/*This section has the carousel with sicky alerts */}
         <Airlines />
         <GroundTravel />
@@ -97,7 +98,7 @@ function Sections() {
         <MeetingIncentives />
         <Vacations />
         {/* <BasicComponents /> Ipad with floating images */}
-        <Projects /> {/* Concur login images with ipad(s) */}
+        <Clients /> {/* Concur login images with ipad(s) */}
         <Teams />
         <Managers /> 
         {/* <ContactUs /> */}

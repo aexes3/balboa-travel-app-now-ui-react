@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 
 // core components
 
-function Features() {
+function Clients() {
   return (
     <>
       <div className="cd-section" id="features">
@@ -198,4 +198,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default Clients;

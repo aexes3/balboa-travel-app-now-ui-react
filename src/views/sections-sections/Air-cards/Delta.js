@@ -12,16 +12,26 @@ import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -81,20 +91,47 @@ export default function Delta() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={dalogo.root}>
-                <Row>
-                    <Col>
+            <Container>
+                    <Row className="justify-content-md-center">
+                    <Col lg="3" md="6" sm="6">
                         <DASilver />                
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="6">
                         <DAGold />
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="6">
                         <DAPlatinum />
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="6">
                         <DADiamond />
                     </Col>
                 </Row>
+            </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                                <List component="nav" classname="justify-content-center"> 
+                                    <ListItem>
+                                        <ListItemLink href="https://www.delta.com/login/loginPage" rel="noopener noreferrer" target="_blank">
+                                             <Fab size="medium" color="primary" variant="fab">
+                                                <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Log In" />
+                                            </Fab>
+                                        </ListItemLink>
+                                        </ListItem>
+                                        <ListItem>
+                                        <ListItemLink href="tel:tel:800-323-2323" rel="noopener noreferrer">
+                                            <Fab size="medium" color="primary" variant="fab">
+                                                <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-323-2323" />
+                                            </Fab>
+                                        </ListItemLink>
+                                    </ListItem>
+                                </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={dalogo.root}>

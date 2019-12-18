@@ -97,34 +97,34 @@ export default function SWAList (props) {
                     <u><b>Overview:</b></u>
 
                     <ListItem>
-                        &#45; No blackout dates
+                         No blackout dates
                     </ListItem>
                     <ListItem>
-                        &#45; Points do not expire
+                         Points do not expire
                     </ListItem>
                     <ListItem>
-                        &#45; Earning points: The amount and type of fare you choose determines how many points you earn.
+                         Earning points: The amount and type of fare you choose determines how many points you earn.
                     </ListItem>
                    
-                    <u><b>A-List Benfits:</b></u>
+                    <u><b>A-List Benefits:</b></u>
 
                     <ListItem>
-                        &#45; Fly 25 qualifying one-way flights or earn 35,000 tier qualifying points* in a calendar year
+                         Fly 25 qualifying one-way flights or earn 35,000 tier qualifying points* in a calendar year
                     </ListItem>
                     <ListItem>
-                        &#45; Priority boarding
+                         Priority boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 25% earning bonus
+                         25% earning bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Free same-day standby
+                         Free same-day standby
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in and security lane access***
+                         Priority check-in and security lane access
                     </ListItem>
                     <ListItem>
-                        &#45; Dedicated A-List member phone line
+                         Dedicated A-List member phone line
                     </ListItem>
                 </List>
           </Typography>

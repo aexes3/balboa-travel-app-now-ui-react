@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,6 +19,7 @@ import Image from '../../../../assets/img/presentation-page/aaplatpro.jpg';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -72,11 +73,9 @@ export default function AAPlatinumPro (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,7 +85,9 @@ export default function AAPlatinumPro (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -94,46 +95,46 @@ export default function AAPlatinumPro (props) {
           <Typography variant="body2" color="textSecondary">
                 <List>
                     <ListItem>
-                        &#45; Qualify by achieving either <br />
-                        &#32;&#42; Flying 75,000 Elite Qualifying Miles (EQM) <br />
-                        &#32;&#42; Flying 90 Elite Qualifying Segments (EQS) <br />
-                        &#32;&#32;&#176; And also spending $9,000 in Elite Qualifying Dollars (EQD)
+                          Qualify by achieving either <br />
+                        &#176; Flying 75,000 Elite Qualifying Miles (EQM) <br />
+                        &#176; Flying 90 Elite Qualifying Segments (EQS) <br />
+                        &#176; And also spending $9,000 in Elite Qualifying Dollars (EQD)
                     </ListItem>
                     <ListItem>
-                        &#45; Unlimited upgrades for flights that are 500 miles or less for you and a companion
+                         Unlimited upgrades for flights that are 500 miles or less for you and a companion
                     </ListItem>
                     <ListItem>
-                        &#45; Unlimited upgrades for flights that are over 500 miles
+                         Unlimited upgrades for flights that are over 500 miles
                     </ListItem>
                     <ListItem>
-                        &#45; Upgrades confirmed 72 hours prior to departure
+                         Upgrades confirmed 72 hours prior to departure
                     </ListItem>
                     <ListItem>
-                        &#45; Earn 80% Elite mileage bonus
+                         Earn 80% Elite mileage bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in, security, and boarding
+                         Priority check-in, security, and boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 2 checked bag fees waived
+                         2 checked bag fees waived
                     </ListItem>
                     <ListItem>
-                        &#45; Priority bag delivery
+                         Priority bag delivery
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary same-day standby
+                         Complimentary same-day standby
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary same-day flight change
+                         Complimentary same-day flight change
                     </ListItem>
                     <ListItem>
-                        &#45; Exclusive service desk
+                         Exclusive service desk
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary preferred seats
+                         Complimentary preferred seats
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary Main Cabin Extra seats can be confirmed within 24 hours of departure
+                         Complimentary Main Cabin Extra seats can be confirmed within 24 hours of departure
                     </ListItem>
                 </List>
           </Typography>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import CPGreen from './Cathay/CPGreen.js'
-import UnitedSilver from './United/UnitedSilver.js'
+import CPSilver from './Cathay/CPSilver.js'
 import CPGold from './Cathay/CPGold.js'
 import CPDiamond from './Cathay/CPDiamond.js'
 import image from 'assets/img/presentation-page/CP-LOGO.jpg'
@@ -10,16 +10,26 @@ import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -79,12 +89,13 @@ export default function Cathay(props) {
             </AppBar>
             
             <TabPanel value={value} index={0} className={ualogo.root}>
-                <Row>
+            <Container>
+                    <Row className="justify-content">
                     <Col>
                        <CPGreen />                
                     </Col>
                      <Col>
-                       <UnitedSilver />                
+                       <CPSilver />                
                     </Col>
                     <Col>
                        <CPGold />                
@@ -93,6 +104,32 @@ export default function Cathay(props) {
                        <CPDiamond />                
                     </Col> 
                 </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                                <List component="nav" classname="justify-content-center"> 
+                                    <ListItem>
+                                        <ListItemLink href="www.cathaypacific.com" target="_blank">
+                                             <Fab size="medium" color="primary" variant="fab">
+                                                <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Cathay" />
+                                            </Fab>
+                                        </ListItemLink>
+                                        </ListItem>
+                                        <ListItem>
+                                        <ListItemLink href="tel:tel:800-233-2742" rel="noopener noreferrer">
+                                            <Fab size="medium" color="primary" variant="fab">
+                                                <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-233-2742" />
+                                            </Fab>
+                                        </ListItemLink>
+                                    </ListItem>
+                                </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={ualogo.root}>

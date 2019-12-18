@@ -93,39 +93,39 @@ export default function EmGold (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Personal preferences remembered
+                         Personal preferences remembered
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary seat selection
+                         Complimentary seat selection
                     </ListItem>
                     <ListItem>
-                        &#45; Excess baggage allowances
+                         Excess baggage allowances
                     </ListItem>
                     <ListItem>
-                        &#45; Waitlist priority
+                         Waitlist priority
                     </ListItem>
                     <ListItem>
-                        &#45; Bonus Skywards Miles when flying Emirates
+                         Bonus Skywards Miles when flying Emirates
                     </ListItem>
                     <ListItem>
-                        &#45; Buy instant upgrades with Miles at check-in
+                         Buy instant upgrades with Miles at check-in
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in and boarding
+                         Priority check-in and boarding
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary lounge access
+                         Complimentary lounge access
                     </ListItem>
                     <ListItem>
-                        &#45; Buy instant upgrades with Miles
+                         Buy instant upgrades with Miles
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary or discount Wi-Fi on board
+                         Complimentary or discount Wi-Fi on board
                     </ListItem>
                     <ListItem>
-                        &#45; Guaranteed seats, even on full flights
+                         Guaranteed seats, even on full flights
                     </ListItem>
                 </List>
           </Typography>

@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -18,7 +18,8 @@ import Image from '../../../../assets/img/presentation-page/aaexecpro.jpg';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345,
+    maxWidth: 375,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -66,17 +67,15 @@ export default function AAExecutivePlat (props) {
           </IconButton>
         }
         title="AAdvantage"
-        subheader="Executive Pro"
+        subheader="Executive Platinum"
       />
       <CardMedia
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,7 +85,9 @@ export default function AAExecutivePlat (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -94,16 +95,16 @@ export default function AAExecutivePlat (props) {
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
                     <ListItem>
-                        &#45; Qualify by achieving either <br />
-                        &#32;&#42; Flying 100,000 Elite Qualifying Miles (EQM) <br />
-                        &#32;&#42; Flying 120 Elite Qualifying Segments (EQS) <br />
-                        &#32;&#32;&#176; And also spending $15,000 in Elite Qualifying Dollars (EQD)
+                         Qualify by achieving either <br />
+                        &#176; Flying 100,000 Elite Qualifying Miles (EQM) <br />
+                        &#176; Flying 120 Elite Qualifying Segments (EQS) <br />
+                        &#176; And also spending $15,000 in Elite Qualifying Dollars (EQD)
                     </ListItem>
                     <ListItem>
-                        &#45; Unlimited upgrades for flights that are 500 miles or less for you and a companion
+                         Unlimited upgrades for flights that are 500 miles or less for you and a companion
                     </ListItem>
                     <ListItem>
-                        &#45; Unlimited upgrades for flights that are over 500 miles
+                         Unlimited upgrades for flights that are over 500 miles
                     </ListItem>
                     <ListItem>
                          Upgrades confirmed 100 hours prior to departure
@@ -112,40 +113,40 @@ export default function AAExecutivePlat (props) {
                          Earn 120% Elite mileage bonus
                     </ListItem>
                     <ListItem>
-                        &#45; Priority check-in, security, and boarding
+                         Priority check-in, security, and boarding
                     </ListItem>
                     <ListItem>
-                        &#45; 3 checked bag fees waived
+                         3 checked bag fees waived
                     </ListItem>
                     <ListItem>
-                        &#345; Priority bag delivery
+                        Priority bag delivery
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary same-day standby
+                         Complimentary same-day standby
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary same-day flight change
+                         Complimentary same-day flight change
                     </ListItem>
                     <ListItem>
-                        &#45; Exclusive service desk
+                         Exclusive service desk
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary preferred seats
+                         Complimentary preferred seats
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary Main Cabin Extra seats
+                         Complimentary Main Cabin Extra seats
                     </ListItem>
                     <ListItem>
-                        &#45; Waived ticketing service charge
+                         Waived ticketing service charge
                     </ListItem>
                     <ListItem>
-                        &#45; Guaranteed availability in the Main Cabin
+                         Guaranteed availability in the Main Cabin
                     </ListItem>
                     <ListItem>
-                        &#45; Waitlist priority for purchased First or Business Class
+                         Waitlist priority for purchased First or Business Class
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary alcoholic beverage and snack in the Main Cabin
+                         Complimentary alcoholic beverage and snack in the Main Cabin
                     </ListItem>
                 </List>
           </Typography>

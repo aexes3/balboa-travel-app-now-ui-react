@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import  { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,6 +19,7 @@ import Image from '../../../../assets/img/presentation-page/cpgold.jpg';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -35,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#d5a452',
   },
   root: {
     width: '100%',
@@ -72,11 +73,9 @@ export default function CPGold (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,25 +85,54 @@ export default function CPGold (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 2 complimentary checked bags (70 lbs./32 kg)
+                    Earn status after earning 600 club points
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus at booking
+                    No charge for extra-legroom seats
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Gold Status
+                    Advanced seat reservation
                     </ListItem>
                     <ListItem>
-                        &#45; 8x miles earned on every flight
+                    Priority waitlisting
+                    </ListItem>
+                    <ListItem>
+                    Guaranteed economy class seat as long as booked 72 hours prior to departure
+                    </ListItem>
+                    <ListItem>
+                    Can check-in at First or Business Class counters
+                    </ListItem>
+                    <ListItem>
+                    Priority boarding
+                    </ListItem>
+                    <ListItem>
+                    15 kg additional checked baggage allowance for most flights
+                    </ListItem>
+                    <ListItem>
+                    Up to 3 pieces when travelling in Economy, Premium Economy, or Business Class.  Up to 4 pieces when travelling in First Class.
+                    </ListItem>
+                    <ListItem>
+                    Priority baggage handling
+                    </ListItem>
+                    <ListItem>
+                    Cathay Pacific and Cathay Dragon Business Class Lounge access
+                    </ListItem>
+                    <ListItem>
+                    2 business class lounge passes for a travel companion or Redemption Group member after earning 800 club points
+                    </ListItem>
+                    <ListItem>
+                    4 bookable upgrades after earning 1000 club points
                     </ListItem>
                 </List>
           </Typography>

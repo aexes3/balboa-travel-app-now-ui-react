@@ -7,18 +7,19 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import  { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/uagold.jpeg';
+import Image from '../../../../assets/img/presentation-page/cpsilver.png';
 
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -35,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#8b8f8f',
   },
   root: {
     width: '100%',
@@ -65,18 +66,16 @@ export default function UnitedGold (props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="United"
-        subheader="Premier Gold"
+        title="Cathay Pacific"
+        subheader="Silver"
       />
       <CardMedia
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,25 +85,39 @@ export default function UnitedGold (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+          </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 2 complimentary checked bags (70 lbs./32 kg)
+                    Earn status after earning 300 club points
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus at booking
+                    no charge for extra-legroom seats
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Gold Status
+                    advanced seat reservation
                     </ListItem>
                     <ListItem>
-                        &#45; 8x miles earned on every flight
+                    priority waitlisting
+                    </ListItem>
+                    <ListItem>
+                    10 kg additional checked baggage allowance for most flights
+                    </ListItem>
+                    <ListItem>
+                    Up to 2 free checked bags when traveling in Economy, Premium Economy, or Business Class.  Up to 3 pieces when traveling in First Class
+                    </ListItem>
+                    <ListItem>
+                    Cathay Pacific and Cathay Dragon Business Class Lounge access
+                    </ListItem>
+                    <ListItem>
+                    2 business class lounge passes after earning 450 club points
                     </ListItem>
                 </List>
           </Typography>

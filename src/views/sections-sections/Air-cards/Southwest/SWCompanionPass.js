@@ -94,25 +94,22 @@ export default function SWCompanionPass (props) {
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
                                       
-                <u><b>Overview:</b></u>
+                <u><b>Companion Pass Benefits:</b></u>
                     
                     <ListItem>
-                        &#45; No blackout dates
+                         No blackout dates
                     </ListItem>
                     <ListItem>
-                        &#45; Points do not expire
+                         Points do not expire
                     </ListItem>
                     <ListItem>
-                        &#45; Earning points: The amount and type of fare you choose determines how many points you earn.
-                    </ListItem>
-
-                    <u><b>A-List Benfits:</b></u>
-
-                    <ListItem>
-                        &#45; Friends fly when you do.
+                         Earning points: The amount and type of fare you choose determines how many points you earn.
                     </ListItem>
                     <ListItem>
-                        &#45; Companion Pass is the benefit that allows you to choose one person to 
+                         Friends fly when you do.
+                    </ListItem>
+                    <ListItem>
+                         Companion Pass is the benefit that allows you to choose one person to 
                         fly with you, free of airline charges (does not include taxes and fees from 
                         $5.60 one-way) every time you purchase or redeem points for a flight. To qualify, 
                         simply fly 100 qualifying one-way flights or earn 110,000 qualifying points in 

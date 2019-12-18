@@ -93,18 +93,18 @@ export default function UnitedGold (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 2 complimentary checked bags (70 lbs./32 kg)
+                         2 complimentary checked bags (70 lbs./32 kg)
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus at booking
+                         Complimentary access to Economy Plus at booking
                     </ListItem>
                     <ListItem>
-                        &#45; Star Alliance Gold Status
+                         Star Alliance Gold Status
                     </ListItem>
                     <ListItem>
-                        &#45; 8x miles earned on every flight
+                         8x miles earned on every flight
                     </ListItem>
                 </List>
           </Typography>

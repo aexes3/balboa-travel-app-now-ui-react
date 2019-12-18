@@ -93,18 +93,18 @@ export default function UnitedSilver (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; Complimentary Premier Upgrades
+                         Complimentary Premier Upgrades
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus at check-in
+                         Complimentary access to Economy Plus at check-in
                     </ListItem>
                     <ListItem>
-                        &#45; 1 complimentary checked bag (70 lbs./32 kg)
+                         1 complimentary checked bag (70 lbs./32 kg)
                     </ListItem>
                     <ListItem>
-                        &#45; 7x miles earned on every flight
+                         7x miles earned on every flight
                     </ListItem>
                 </List>
           </Typography>

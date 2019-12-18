@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import image from 'assets/img/presentation-page/AIRLINEBG.jpg'
+// import image from 'assets/img/presentation-page/AIRLINEBG.jpg'
 import JetBlue from '../sections-sections/Air-cards/JetBlue.js'
 import United from '../sections-sections/Air-cards/United.js'
 import Cathay from '../sections-sections/Air-cards/Cathay.js'
@@ -14,26 +14,12 @@ import Lufthansa from '../sections-sections/Air-cards/Lufthansa.js'
 import Emirates from '../sections-sections/Air-cards/Emirates.js'
 import Singapore from '../sections-sections/Air-cards/Singapore.js'
 import {
-    AppBar,
-    Box,
     Grid,
-    Paper,
-    Tab,
-    Tabs,
-    Typography,
 } 
 from '@material-ui/core';
-import {
-    Button,
-    Col,
-    Row,
-}
-    from 'reactstrap';
+
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
 } from "react-router-dom";
 
 
@@ -53,49 +39,46 @@ const useStyles = makeStyles(theme => ({
     },  
   }));
 
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <Typography
-            component="div"
-            role="tabpanel"
-            hidden={value !== index}
-            id={`scrollable-auto-tabpanel-${index}`}
-            aria-labelledby={`scrollable-auto-tab-${index}`}
-            {...other}
-    >
-            {value === index && <Box p={3}>{children}</Box>}
-        </Typography>
-    );
-}
-
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.any.isRequired,
-    value: PropTypes.any.isRequired,
-};
-
-function a11yProps(index) {
-    return {
-      id: `scrollable-auto-tab-${index}`,
-      'aria-controls': `scrollable-auto-tabpanel-${index}`,
-    };
-  }
 
 export default function Airlines(props) {
-    // const [collapses, setCollapses] = React.useState([1]);
-    // const changeCollapse = collapse => {
-    //     if (collapses.includes(collapse)) {
-    //         setCollapses(collapses.filter(prop => prop !== collapse));
-    //     } else {
-    //         setCollapses([...collapses, collapse]);
-    //     }
-    // };
-    // const [value, setValue] = React.useState(0);
-    // const handleChange = (event, newValue) => {
-    //     setValue(newValue);
-    // };
+    const [airline, setAirline] = React.useState("");
+
+    function handleChange(newAirline) {
+        if(airline === newAirline) {
+            setAirline('');
+        } else {
+            setAirline(newAirline);
+        }
+    }
+    function renderAirline(param) {
+        switch(param) {
+            case 'american':
+                return (<div><American /></div>)
+            case 'delta':
+                return(<div><Delta /></div>)
+            case 'southwest':
+                return(<div><Southwest /></div>)
+            case 'alaska':
+                return (<div><Alaska /></div>)
+            case 'virgin':
+                return (<div><Virgin /></div>)
+            case 'jetblue':
+                return (<div><JetBlue /></div>)
+            case 'united':
+                return (<div><United /></div>)
+            case 'cathay':
+                return (<div><Cathay /></div>)
+            case 'lufthansa':
+                return (<div><Lufthansa /></div>)
+            case 'emirates':
+                return (<div><Emirates /></div>)
+            case 'singapore':
+                    return (<div><Singapore /></div>)
+            default:
+                return (<div>
+                </div>)
+        }
+    }
     const classes = useStyles();
     return (
         <Router>
@@ -111,119 +94,74 @@ export default function Airlines(props) {
                                 </Paper>
                             </Grid> */}
                             <Grid item xs={4} spacing={2}>
-                                <Link to='/american' component={Link} {...a11yProps(0)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/aalogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/aalogo.png")} 
+                                    onClick={() => handleChange("american")} />
                             </Grid>
                             <Grid item xs={4}>
-                                <Link to='/delta' component={Link} {...a11yProps(1)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/dalogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/dalogo.png")}
+                                    onClick={() => handleChange("delta")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/southwest' component={Link} {...a11yProps(2)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/swlogo.jpg")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/swlogo.jpg")}
+                                    onClick={() => handleChange("southwest")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/alaska' component={Link} {...a11yProps(3)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/allogo.jpg")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/allogo.jpg")}
+                                    onClick={() => handleChange("alaska")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/virgin' component={Link} {...a11yProps(4)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/valogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/valogo.png")}
+                                    onClick={() => handleChange("virgin")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/jetblue' component={Link} {...a11yProps(5)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/jblogo.JPG")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/jblogo.JPG")} 
+                                    onClick={() => handleChange("jetblue")}/>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/united' component={Link} {...a11yProps(6)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/ualogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/ualogo.png")}
+                                    onClick={() => handleChange("united")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/cathay' component={Link} {...a11yProps(7)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/cplogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/cplogo.png")}
+                                    onClick={() => handleChange("cathay")} />
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/lufthansa' component={Link} {...a11yProps(8)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/lflogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/lflogo.png")} 
+                                    onClick={() => handleChange("lufthansa")}/>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/emirates' component={Link} {...a11yProps(9)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/emlogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/emlogo.png")} 
+                                    onClick={() => handleChange("emirates")}/>
                             </Grid>
                             <Grid item xs={4}>
-                            <Link to='/singapore' component={Link} {...a11yProps(10)}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/sglogo.png")} />
-                                </Link>
+                                    src={require("assets/img/presentation-page/sglogo.png")} 
+                                    onClick={() => handleChange("singapore")}/>
                             </Grid>
                         </Grid>
 
-                <Switch>
-                    <Route path="/american">
-                        <American />
-                    </Route>
-                    <Route path="/delta">
-                        <Delta />
-                    </Route>
-                    <Route path="/southwest">
-                        <Southwest />
-                    </Route>
-                    <Route path="/alaska">
-                        <Alaska />
-                    </Route>
-                    <Route path="/virgin">
-                        <Virgin />
-                    </Route>
-                    <Route path="/jetblue">
-                        <JetBlue />
-                    </Route>
-                    <Route path="/united">
-                        <United />
-                    </Route>
-                    <Route path="/cathay">
-                        <Cathay />
-                    </Route>
-                    <Route path="/lufthansa">
-                        <Lufthansa />
-                    </Route>
-                    <Route path="/emirates">
-                        <Emirates />
-                    </Route>
-                    <Route path="/singapore">
-                        <Singapore />
-                    </Route>
-                </Switch>
+                {renderAirline(airline)}
             </div>
         </Router>
     );

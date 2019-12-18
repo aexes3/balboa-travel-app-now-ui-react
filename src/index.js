@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "assets/scss/now-ui-kit.scss";
 import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
@@ -19,7 +20,7 @@ ReactDOM.render(
       <Route path="/nucleo-icons" render={props => <NucleoIcons {...props} />} />
       <Route path="/presentation" render={props => <Presentation {...props} />} />
       <Route path="/sections" render={props => <Sections {...props} />} />
-      <Redirect to="/sections#headers" />
+      <Redirect to="/sections" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

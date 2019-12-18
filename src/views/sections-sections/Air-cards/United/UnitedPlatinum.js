@@ -66,7 +66,7 @@ export default function UnitedPlatinum (props) {
           </IconButton>
         }
         title="United"
-        subheader="Premier Gold"
+        subheader="Premier Platinum"
       />
       <CardMedia
         className={classes.media}
@@ -93,19 +93,19 @@ export default function UnitedPlatinum (props) {
         <CardContent>
           <Typography variant="body2" color="textSecondary">
                 <List className="MuiListItem-gutters">
-                    <u><b>Benfits:</b></u>
+                    <u><b>Benefits:</b></u>
                     <ListItem>
-                        &#45; 2 Regional premier upgrades
-                        &#42; Upgrades changing to PlusPoints in December 2019 - equivalent is 40 PlusPoints
+                         2 Regional premier upgrades
+                        &#176; Upgrades changing to PlusPoints in December 2019 - equivalent is 40 PlusPoints
                     </ListItem>
                     <ListItem>
-                        &#45; Complimentary access to Economy Plus for you plus 8 companions
+                         Complimentary access to Economy Plus for you plus 8 companions
                     </ListItem>
                     <ListItem>
-                        &#45; 3 complimentary checked bags (70 lbs./32 kg)
+                         3 complimentary checked bags (70 lbs./32 kg)
                     </ListItem>
                     <ListItem>
-                        &#45; 9x miles earned on every flight
+                         9x miles earned on every flight
                     </ListItem>
                 </List>
           </Typography>

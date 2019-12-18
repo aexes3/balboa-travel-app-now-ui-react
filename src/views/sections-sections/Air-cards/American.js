@@ -12,16 +12,26 @@ import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -89,20 +99,47 @@ export default function American() {
             </AppBar>
             
             <TabPanel value={value} index={0} className={aalogo.root}>
-              <Row>
-                <Col>
+            <Container>
+                    <Row className="justify-content-center">
+                <Col lg="3" md="6" sm="6">
                     <AAGold />                
                 </Col>
-                <Col>
+                <Col lg="3" md="6" sm="6">
                     <AAPlatinum />
                 </Col >
-                <Col>
+                <Col lg="3" md="6" sm="6">
                     <AAPlatinumPro />
                 </Col>
-                <Col>
+                <Col lg="3" md="6" sm="6">
                     <AAExecutivePlat />
                 </Col>
                 </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                                <List component="nav" classname="justify-content-center"> 
+                                    <ListItem>
+                                        <ListItemLink href="https://www.aa.com/reservation/flightCheckInViewReservationsAccess.do?anchorLocation=DirectURL&title=check-in" rel="noopener noreferrer" target="_blank">
+                                             <Fab size="medium" color="primary" variant="fab">
+                                                <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Check-In" />
+                                            </Fab>
+                                        </ListItemLink>
+                                        </ListItem>
+                                        <ListItem>
+                                        <ListItemLink href="tel:tel:800-433-7300" rel="noopener noreferrer">
+                                            <Fab size="medium" color="primary" variant="fab">
+                                                <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-433-7300" />
+                                            </Fab>
+                                        </ListItemLink>
+                                    </ListItem>
+                                </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={aalogo.root}>

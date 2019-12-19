@@ -119,7 +119,7 @@ export default function Cathay(props) {
                                         </ListItemLink>
                                         </ListItem>
                                         <ListItem>
-                                        <ListItemLink href="tel:tel:800-233-2742" rel="noopener noreferrer">
+                                        <ListItemLink href="tel:800-233-2742" rel="noopener noreferrer">
                                             <Fab size="medium" color="primary" variant="fab">
                                                 <PhoneIcon />
                                             <ListItemText primary=" &nbsp; 800-233-2742" />

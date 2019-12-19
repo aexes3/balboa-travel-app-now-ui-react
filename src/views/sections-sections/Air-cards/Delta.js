@@ -121,7 +121,7 @@ export default function Delta() {
                                         </ListItemLink>
                                         </ListItem>
                                         <ListItem>
-                                        <ListItemLink href="tel:tel:800-323-2323" rel="noopener noreferrer">
+                                        <ListItemLink href="tel:800-323-2323" rel="noopener noreferrer">
                                             <Fab size="medium" color="primary" variant="fab">
                                                 <PhoneIcon />
                                             <ListItemText primary=" &nbsp; 800-323-2323" />

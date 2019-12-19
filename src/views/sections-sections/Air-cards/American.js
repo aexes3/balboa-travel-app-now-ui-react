@@ -129,7 +129,7 @@ export default function American() {
                                         </ListItemLink>
                                         </ListItem>
                                         <ListItem>
-                                        <ListItemLink href="tel:tel:800-433-7300" rel="noopener noreferrer">
+                                        <ListItemLink href="tel:800-433-7300" rel="noopener noreferrer">
                                             <Fab size="medium" color="primary" variant="fab">
                                                 <PhoneIcon />
                                             <ListItemText primary=" &nbsp; 800-433-7300" />

@@ -126,7 +126,7 @@ export default function Alaska() {
                                         </ListItemLink>
                                         </ListItem>
                                         <ListItem>
-                                        <ListItemLink href="tel:tel:800-252-7522" rel="noopener noreferrer">
+                                        <ListItemLink href="tel:800-252-7522" rel="noopener noreferrer">
                                             <Fab size="medium" color="primary" variant="fab">
                                                 <PhoneIcon />
                                             <ListItemText primary=" &nbsp; 800-252-7522" />

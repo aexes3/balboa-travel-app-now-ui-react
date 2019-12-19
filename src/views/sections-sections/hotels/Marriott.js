@@ -144,10 +144,10 @@ export default function Marriott() {
                                         </ListItemLink>
                                         </ListItem>
                                         <ListItem>
-                                        <ListItemLink href="tel:tel:888-236-2427" rel="noopener noreferrer">
+                                        <ListItemLink href="tel:888-236-2427" rel="noopener noreferrer">
                                             <Fab size="medium" color="primary" variant="fab">
                                                 <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 888-236-2427" />
+                                            <ListItemText primary="&nbsp;888-236-2427" />
                                             </Fab>
                                         </ListItemLink>
                                     </ListItem>

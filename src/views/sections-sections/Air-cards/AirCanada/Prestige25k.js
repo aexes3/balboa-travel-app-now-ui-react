@@ -14,7 +14,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/emsilver.jpg';
+import Image from '../../../../assets/img/presentation-page/ac25k.png';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function EmSilver (props) {
+export default function Prestige25k (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -58,7 +58,7 @@ export default function EmSilver (props) {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            S
+            B
           </Avatar>
         }
         action={
@@ -66,8 +66,8 @@ export default function EmSilver (props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Emirates"
-        subheader="Silver"
+        title="Air Canada"
+        subheader="Prestige 25k"
       />
       <CardMedia
         className={classes.media}
@@ -85,9 +85,9 @@ export default function EmSilver (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <Fab size="small" color="primary" variant="fab">
-           <ExpandMoreIcon />
-         </Fab>
+        <Fab size="small" color="primary" variant="fab">
+             <ExpandMoreIcon />
+        </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -96,34 +96,40 @@ export default function EmSilver (props) {
                 <List className="MuiListItem-gutters">
                     <u><b>Benefits:</b></u>
                     <ListItem>
-                         Personal preferences remembered
+                    Priority Waitlist
                     </ListItem>
                     <ListItem>
-                         Complimentary seat selection
+                    Priority Seat Selection
                     </ListItem>
                     <ListItem>
-                         Excess baggage allowances
+                    50% Discount on Preferred Seats
                     </ListItem>
                     <ListItem>
-                         Waitlist priority
+                    Priority Airport Check-in
                     </ListItem>
                     <ListItem>
-                         Bonus Skywards Miles when flying Emirates
+                    Priority Airport Standby
                     </ListItem>
                     <ListItem>
-                         Buy instant upgrades with Miles at check-in
+                    Complimentary 2 Checked Baggage Allowance, up to 23 kg each
                     </ListItem>
                     <ListItem>
-                         Priority check-in and boarding
+                    Complimentary Sports Equipment Handling
                     </ListItem>
                     <ListItem>
-                         Complimentary lounge access
+                    Zone 3 Advanced Boarding
                     </ListItem>
                     <ListItem>
-                         Buy instant upgrades with Miles
+                    2 Maple Leaf Lounge Guest Passes
                     </ListItem>
                     <ListItem>
-                         Complimentary or discount Wi-Fi on board
+                    20 eUpgrade Credits
+                    </ListItem>
+                    <ListItem>
+                    25% Altitude Bonus with Air Canada and select airline partners
+                    </ListItem>
+                    <ListItem>
+                    Star Alliance Silver Status
                     </ListItem>
                 </List>
           </Typography>

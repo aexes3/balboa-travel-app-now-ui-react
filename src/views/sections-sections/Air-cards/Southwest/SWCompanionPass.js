@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+import { Avatar, Fab } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -19,6 +19,7 @@ import Image from '../../../../assets/img/presentation-page/swcpass.png';
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
+    margin: '5px',
   },
   media: {
     height: 0,
@@ -72,11 +73,9 @@ export default function SWCompanionPass (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary">
-          Lorum ipsum
-        </Typography>
-      </CardContent>
+      {/* <CardContent>
+        
+      </CardContent> */}
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -86,7 +85,9 @@ export default function SWCompanionPass (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+           <ExpandMoreIcon />
+         </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -96,15 +97,6 @@ export default function SWCompanionPass (props) {
                                       
                 <u><b>Companion Pass Benefits:</b></u>
                     
-                    <ListItem>
-                         No blackout dates
-                    </ListItem>
-                    <ListItem>
-                         Points do not expire
-                    </ListItem>
-                    <ListItem>
-                         Earning points: The amount and type of fare you choose determines how many points you earn.
-                    </ListItem>
                     <ListItem>
                          Friends fly when you do.
                     </ListItem>
@@ -118,7 +110,6 @@ export default function SWCompanionPass (props) {
                         simply fly 100 qualifying one-way flights or earn 125,000 qualifying points* in 
                         a calendar year to earn Companion Pass.
                     </ListItem>
-                    
                 </List>
           </Typography>
            

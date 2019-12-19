@@ -11,16 +11,26 @@ import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -80,17 +90,44 @@ export default function Southwest() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={swlogo.root}>
-                <Row>
-                    <Col>
-                        <SWAList />                
-                    </Col>
-                    <Col>
-                        <SWAListPreferred />
-                    </Col>
-                    <Col>
-                        <SWCompanionPass />
-                    </Col>
-                </Row>
+                <Container>
+                    <Row>
+                        <Col md="4">
+                            <SWAList />                
+                        </Col>
+                        <Col md="4">
+                            <SWAListPreferred />
+                        </Col>
+                        <Col md="4">
+                            <SWCompanionPass />
+                        </Col>
+                    </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <ListItemLink href="https://www.southwest.com" rel="noopener noreferrer" target="_blank">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Southwest" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemLink href="tel: 800-435-9792" rel="noopener noreferrer">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-435-9792" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={swlogo.root}>

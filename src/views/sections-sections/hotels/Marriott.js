@@ -107,7 +107,7 @@ export default function Marriott() {
             <TabPanel value={value} index={0} className={styles.root}>
 
                 <Container>
-                    <Row className="justify-content-md-center">
+                    <Row>
                         <Col md="4">
                             <Marrstatus />
                         </Col>

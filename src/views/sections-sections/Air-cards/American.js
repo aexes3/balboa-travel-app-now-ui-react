@@ -100,7 +100,7 @@ export default function American() {
             
             <TabPanel value={value} index={0} className={aalogo.root}>
             <Container>
-                    <Row className="justify-content-center">
+                    <Row>
                 <Col lg="3" md="6" sm="6">
                     <AAGold />                
                 </Col>

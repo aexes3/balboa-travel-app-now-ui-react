@@ -13,6 +13,7 @@ import Virgin from '../sections-sections/Air-cards/Virgin.js'
 import Lufthansa from '../sections-sections/Air-cards/Lufthansa.js'
 import Emirates from '../sections-sections/Air-cards/Emirates.js'
 import Singapore from '../sections-sections/Air-cards/Singapore.js'
+import AirCanada from '../sections-sections/Air-cards/AirCanada.js'
 import {
     Grid,
 } 
@@ -74,6 +75,8 @@ export default function Airlines(props) {
                 return (<div><Emirates /></div>)
             case 'singapore':
                     return (<div><Singapore /></div>)
+            case 'aircananda':
+                    return (<div><AirCanada /></div>)
             default:
                 return (<div>
                 </div>)
@@ -89,27 +92,15 @@ export default function Airlines(props) {
                             {/* <Grid item xs={12}>
                                 <Paper className={classes.paper}>
                                     <Typography variant="h5" component="h3">
-                                        Air Travel
+                                    Air Travel
                                     </Typography>
-                                </Paper>
-                            </Grid> */}
-                            <Grid item xs={4} spacing={2}>
-                                    <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/aalogo.png")} 
-                                    onClick={() => handleChange("american")} />
-                            </Grid>
+                                    </Paper>
+                                </Grid> */}
                             <Grid item xs={4}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/dalogo.png")}
-                                    onClick={() => handleChange("delta")} />
-                            </Grid>
-                            <Grid item xs={4}>
-                                    <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/swlogo.jpg")}
-                                    onClick={() => handleChange("southwest")} />
+                                    src={require("assets/img/presentation-page/aclogo.png")}
+                                    onClick={() => handleChange("aircananda")} />
                             </Grid>
                             <Grid item xs={4}>
                                     <img
@@ -117,23 +108,11 @@ export default function Airlines(props) {
                                     src={require("assets/img/presentation-page/allogo.jpg")}
                                     onClick={() => handleChange("alaska")} />
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={4} spacing={2}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/valogo.png")}
-                                    onClick={() => handleChange("virgin")} />
-                            </Grid>
-                            <Grid item xs={4}>
-                                    <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/jblogo.JPG")} 
-                                    onClick={() => handleChange("jetblue")}/>
-                            </Grid>
-                            <Grid item xs={4}>
-                                    <img
-                                    alt="..."
-                                    src={require("assets/img/presentation-page/ualogo.png")}
-                                    onClick={() => handleChange("united")} />
+                                    src={require("assets/img/presentation-page/aalogo.png")} 
+                                    onClick={() => handleChange("american")} />
                             </Grid>
                             <Grid item xs={4}>
                                     <img
@@ -144,8 +123,8 @@ export default function Airlines(props) {
                             <Grid item xs={4}>
                                     <img
                                     alt="..."
-                                    src={require("assets/img/presentation-page/lflogo.png")} 
-                                    onClick={() => handleChange("lufthansa")}/>
+                                    src={require("assets/img/presentation-page/dalogo.png")}
+                                    onClick={() => handleChange("delta")} />
                             </Grid>
                             <Grid item xs={4}>
                                     <img
@@ -156,8 +135,38 @@ export default function Airlines(props) {
                             <Grid item xs={4}>
                                     <img
                                     alt="..."
+                                    src={require("assets/img/presentation-page/jblogo.JPG")} 
+                                    onClick={() => handleChange("jetblue")}/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/lflogo.png")} 
+                                    onClick={() => handleChange("lufthansa")}/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                    <img
+                                    alt="..."
                                     src={require("assets/img/presentation-page/sglogo.png")} 
                                     onClick={() => handleChange("singapore")}/>
+                            </Grid>
+                            <Grid item xs={4}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/swlogo.jpg")}
+                                    onClick={() => handleChange("southwest")} />
+                            </Grid>
+                            <Grid item xs={4}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/ualogo.png")}
+                                    onClick={() => handleChange("united")} />
+                            </Grid>
+                            <Grid item xs={4}>
+                                    <img
+                                    alt="..."
+                                    src={require("assets/img/presentation-page/valogo.png")}
+                                    onClick={() => handleChange("virgin")} />
                             </Grid>
                         </Grid>
 

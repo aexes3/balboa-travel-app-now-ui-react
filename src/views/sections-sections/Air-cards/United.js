@@ -10,16 +10,26 @@ import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -79,20 +89,47 @@ export default function United(props) {
             </AppBar>
             
             <TabPanel value={value} index={0} className={ualogo.root}>
-                <Row>
-                    <Col>
-                       <UnitedSilver />                
-                    </Col>
-                     <Col>
-                       <UnitedGold />                
-                    </Col>
-                    <Col>
-                       <UnitedPlatinum />                
-                    </Col>
-                    <Col>
-                       <UnitedPremier />                
-                    </Col> 
-                </Row>
+                <Container>
+                    <Row>
+                        <Col lg="3" md="6" sm="6">
+                            <UnitedSilver />                
+                        </Col>
+                        <Col lg="3" md="6" sm="6">
+                            <UnitedGold />                
+                        </Col>
+                        <Col lg="3" md="6" sm="6">
+                            <UnitedPlatinum />                
+                        </Col>
+                        <Col lg="3" md="6" sm="6">
+                            <UnitedPremier />                
+                        </Col> 
+                    </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <ListItemLink href="https://www.united.com/web/en-US/content/mileageplus/default.aspx" rel="noopener noreferrer" target="_blank">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Log In" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemLink href="tel:800-864-8331" rel="noopener noreferrer">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-864-8331" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={ualogo.root}>

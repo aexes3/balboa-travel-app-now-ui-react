@@ -90,17 +90,17 @@ export default function Cathay(props) {
             
             <TabPanel value={value} index={0} className={ualogo.root}>
             <Container>
-                    <Row className="justify-content">
-                    <Col>
+                    <Row>
+                    <Col lg="3" md="6" sm="6">
                        <CPGreen />                
                     </Col>
-                     <Col>
+                     <Col lg="3" md="6" sm="6">
                        <CPSilver />                
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="6">
                        <CPGold />                
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="6">
                        <CPDiamond />                
                     </Col> 
                 </Row>
@@ -109,24 +109,24 @@ export default function Cathay(props) {
                 <Container>
                     <Row className="justify-content-md-center">
                         <Col md="4">
-                                <List component="nav" classname="justify-content-center"> 
-                                    <ListItem>
-                                        <ListItemLink href="www.cathaypacific.com" target="_blank">
-                                             <Fab size="medium" color="primary" variant="fab">
-                                                <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Cathay" />
-                                            </Fab>
-                                        </ListItemLink>
-                                        </ListItem>
-                                        <ListItem>
-                                        <ListItemLink href="tel:800-233-2742" rel="noopener noreferrer">
+                            <List component="nav" classname="justify-content-center"> 
+                                <ListItem>
+                                    <ListItemLink href="www.cathaypacific.com" target="_blank">
                                             <Fab size="medium" color="primary" variant="fab">
-                                                <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-233-2742" />
-                                            </Fab>
-                                        </ListItemLink>
+                                            <ComputerIcon />
+                                        <ListItemText primary=" &nbsp; Cathay" />
+                                        </Fab>
+                                    </ListItemLink>
                                     </ListItem>
-                                </List>
+                                    <ListItem>
+                                    <ListItemLink href="tel:800-233-2742" rel="noopener noreferrer">
+                                        <Fab size="medium" color="primary" variant="fab">
+                                            <PhoneIcon />
+                                        <ListItemText primary=" &nbsp; 800-233-2742" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                            </List>
                         </Col>
                     </Row>
                 </Container>

@@ -100,14 +100,14 @@ export default function Alaska() {
 
             <TabPanel value={value} index={0} className={allogo.root}>
             <Container>
-                    <Row className="justify-content-md-center">
-                    <Col md="4" sm="6">
+                    <Row>
+                    <Col lg="4" md="6" sm="6">
                         <Almvp />                
                     </Col>
-                    <Col md="4" sm="6">
+                    <Col lg="4"  md="6" sm="6">
                         <AlmvpGold />
                     </Col>
-                    <Col md="4" sm="6">
+                    <Col lg="4" md="6" sm="6">
                         <AlmvpGold75k />
                     </Col>
                 </Row>
@@ -121,7 +121,7 @@ export default function Alaska() {
                                         <ListItemLink href="www.alaskaair.com" rel="noopener noreferrer" target="_blank">
                                              <Fab size="medium" color="primary" variant="fab">
                                                 <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Find our More" />
+                                            <ListItemText primary=" &nbsp; Find Out More" />
                                             </Fab>
                                         </ListItemLink>
                                         </ListItem>

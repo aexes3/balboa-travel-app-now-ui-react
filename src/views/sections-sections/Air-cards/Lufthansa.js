@@ -4,22 +4,33 @@ import { makeStyles } from '@material-ui/core/styles';
 import LufFrequent from './Lufthansa/LufFrequent.js';
 import LufSenator from './Lufthansa/LufSenator.js';
 import LufHon from './Lufthansa/LufHon';
-import image from 'assets/img/presentation-page/LF-LOGO.gif'
+import image from 'assets/img/presentation-page/LF-LOGO.jpg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -80,17 +91,44 @@ export default function Lufthansa() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={lflogo.root}>
-                <Row>
-                    <Col>
-                        <LufFrequent />                
-                    </Col>
-                    <Col>
-                        <LufSenator />
-                    </Col>
-                    <Col>
-                        <LufHon />
-                    </Col>
-                </Row>
+                <Container>
+                    <Row>
+                        <Col md="4">
+                            <LufFrequent />                
+                        </Col>
+                        <Col md="4">
+                            <LufSenator />
+                        </Col>
+                        <Col md="4">
+                            <LufHon />
+                        </Col>
+                    </Row>
+                </Container>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <ListItemLink href="https://www.miles-and-more.com/row/en.html" rel="noopener noreferrer" target="_blank">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; Login" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemLink href="tel:800-645-3880" rel="noopener noreferrer">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-645-3880" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={lflogo.root}>

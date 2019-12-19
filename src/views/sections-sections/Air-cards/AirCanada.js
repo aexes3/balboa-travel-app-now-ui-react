@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import EmBlue from './Emirates/EmBlue';
-import EmSilver from './Emirates/EmSilver.js';
-import EmGold from './Emirates/EmGold.js';
-import EmPlatinum from './Emirates/EmPlatinum.js';
-import image from 'assets/img/presentation-page/EM-LOGO.jpg'
+import Prestige25k from './AirCanada/Prestige25k';
+import Elite35k from './AirCanada/Elite35k.js';
+import Elite50k from './AirCanada/Elite50k.js';
+import Elite75k from './AirCanada/Elite75k.js';
+import SuperElite100k from './AirCanada/SuperElite100k.js'
+import image from 'assets/img/presentation-page/AC-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
@@ -72,7 +73,7 @@ const swStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Emirates() {
+export default function AirCanada() {
     const swlogo = swStyles();
     const [value, setValue] = React.useState(0);
 
@@ -92,18 +93,21 @@ export default function Emirates() {
 
             <TabPanel value={value} index={0} className={swlogo.root}>
                 <Container>
-                    <Row>
-                        <Col lg="3" md="6" sm="6">
-                            <EmBlue />
+                    <Row >
+                        <Col lg="4" md="6" sm="6">
+                            <Prestige25k />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
-                            <EmSilver />
+                        <Col lg="4" md="6" sm="6">
+                            <Elite35k />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
-                            <EmGold />
+                        <Col lg="4" md="6" sm="6">
+                            <Elite50k />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
-                            <EmPlatinum />
+                        <Col lg="4" md="6" sm="6">
+                            <Elite75k />
+                        </Col>
+                        <Col lg="8" md="6" sm="6">
+                            <SuperElite100k />
                         </Col>
                     </Row>
                 </Container>
@@ -113,18 +117,18 @@ export default function Emirates() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="https://www.emirates.com" rel="noopener noreferrer" target="_blank">
+                                    <ListItemLink href="www.aircanada.com" rel="noopener noreferrer" target="_blank">
                                         <Fab size="large" color="primary" variant="fab">
                                             <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Emirates" />
+                                            <ListItemText primary=" &nbsp; More Info" />
                                         </Fab>
                                     </ListItemLink>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemLink href="tel:800-777-3999" rel="noopener noreferrer">
+                                    <ListItemLink href="tel:888-247-2262" rel="noopener noreferrer">
                                         <Fab size="large" color="primary" variant="fab">
                                             <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-777-3999" />
+                                            <ListItemText primary=" &nbsp; 888-247-2262" />
                                         </Fab>
                                     </ListItemLink>
                                 </ListItem>

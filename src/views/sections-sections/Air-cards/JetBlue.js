@@ -7,17 +7,26 @@ import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
+    ListItemText,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
 
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -63,7 +72,7 @@ export default function Jetblue(props) {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-    
+
     return (
         <div className={jblogo.root}>
             <AppBar position="static" className="text-center">
@@ -74,16 +83,40 @@ export default function Jetblue(props) {
                     <Tab label="Promotions" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
-            
+
             <TabPanel value={value} index={0} className={jblogo.root} display="flex" alignItems="center">
-                <Row>
-                    
-                    <Col className="jbcol">
-                       <JBTrueBlue />                
-                    </Col>
-                    
-                   
-                </Row>
+                <Container>
+                    <Row>
+                        <Col className="jbcol">
+                            <JBTrueBlue />
+                        </Col>
+                    </Row>
+                </Container>    
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <ListItemLink href="https://www.jetblue.com" rel="noopener noreferrer" target="_blank">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <ComputerIcon />
+                                            <ListItemText primary=" &nbsp; JetBlue" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemLink href="tel:800-538-2583" rel="noopener noreferrer">
+                                        <Fab size="large" color="primary" variant="fab">
+                                            <PhoneIcon />
+                                            <ListItemText primary=" &nbsp; 800-538-2583" />
+                                        </Fab>
+                                    </ListItemLink>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={jblogo.root}>
@@ -141,11 +174,11 @@ export default function Jetblue(props) {
             </TabPanel>
 
             <TabPanel value={value} index={3} className={jblogo.root}>
-            <Row>
-                <Col>
-                    <PromotionOne />                
-                </Col>
-                {/* <Col>
+                <Row>
+                    <Col>
+                        <PromotionOne />
+                    </Col>
+                    {/* <Col>
                     <PromotionTwo />
                 </Col>
                 <Col>
@@ -154,7 +187,7 @@ export default function Jetblue(props) {
                 <Col>
                     <PromotionOne />
                 </Col> */}
-              </Row>
+                </Row>
             </TabPanel>
         </div>
     );

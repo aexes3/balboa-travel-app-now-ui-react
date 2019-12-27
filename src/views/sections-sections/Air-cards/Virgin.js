@@ -14,12 +14,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -28,9 +26,9 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -107,13 +105,13 @@ export default function Virgin() {
             <TabPanel value={value} index={0} className={valogo.root}>
                <Container>
                     <Row>
-                        <Col lg="4" sm="6">
+                        <Col lg="4" sm="12">
                             <Vred />                
                         </Col>
-                        <Col lg="4" sm="6">
+                        <Col lg="4" sm="12">
                             <Vsilver />
                         </Col>
-                        <Col lg="4" sm="6">
+                        <Col lg="4" sm="12">
                             <Vgold />
                         </Col>
                     </Row>
@@ -124,20 +122,15 @@ export default function Virgin() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="https://www.virginatlantic.com/profile/enrolllanding.action" rel="noopener noreferrer" target="_blank">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Join" />
-                                        </Fab>
-                                    </ListItemLink>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemLink href="tel:800-862-8621" rel="noopener noreferrer">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-862-8621" />
-                                        </Fab>
-                                    </ListItemLink>
+                                    <Fab 
+                                        href="https://www.virginatlantic.com/profile/enrolllanding.action" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; Join
+                                    </Fab>
                                 </ListItem>
                             </List>
                         </Col>

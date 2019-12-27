@@ -7,14 +7,25 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import {Avatar, Fab} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import PhoneIcon from '@material-ui/icons/Phone';
 import Image from '../../../../assets/img/presentation-page/marrsilverstatus.jpg';
+import {
+  Avatar,
+  Fab,
+  List,
+  ListItem,
+  Typography
+} 
+from '@material-ui/core';
+import {
+  Container,
+  Col,
+  Row,
+} 
+from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -36,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#8e828c',
   },
   root: {
     width: '100%',
@@ -44,10 +55,9 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     
   },
-  text: {
-      align: "center",
-      textAlign: "center",
-  }
+  button: {
+    padding: '0px',
+  },
 }));
 
 export default function MarrSilverStatus (props) {
@@ -78,9 +88,23 @@ export default function MarrSilverStatus (props) {
         className={classes.media}
         image={Image}
       />
-      {/* <CardContent>
-       
-      </CardContent> */}
+     <CardContent className={classes.button}>
+        <Typography variant="body2" color="textSecondary"  >
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col>
+                <List component="nav" classname="justify-content-center">
+                  <ListItem className={classes.button}>
+                    <Fab href="tel:888-236-2427" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 888-236-2427
+                    </Fab>
+                  </ListItem>
+                </List>
+              </Col>
+            </Row>
+          </Container>
+        </Typography>
+      </CardContent>
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -96,9 +120,9 @@ export default function MarrSilverStatus (props) {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent className={classes.button}>
           <Typography variant="body2" color="textSecondary" >
-                <List className="MuiListItem-gutters" >
+                <List className={classes.button} >
                     
                     <u><b>Overview:</b></u>
                     
@@ -107,7 +131,11 @@ export default function MarrSilverStatus (props) {
                     </ListItem>
                     <ListItem>
                     Find info about all of the brands  &nbsp;
-                        <a href="https://www.marriott.com/marriott-brands.mi" target="_blank" rel="noopener noreferrer" >here</a>
+                        <a 
+                        href="https://www.marriott.com/marriott-brands.mi" 
+                        target="_blank" 
+                        rel="noopener noreferrer" >
+                          here</a>
                     </ListItem>
 
                     <u><b>Benefits:</b></u>

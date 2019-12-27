@@ -16,12 +16,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -30,9 +28,9 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -94,19 +92,19 @@ export default function AirCanada() {
             <TabPanel value={value} index={0} className={swlogo.root}>
                 <Container>
                     <Row >
-                        <Col lg="4" md="6" sm="6">
+                        <Col lg="4" md="6" sm="12">
                             <Prestige25k />
                         </Col>
-                        <Col lg="4" md="6" sm="6">
+                        <Col lg="4" md="6" sm="12">
                             <Elite35k />
                         </Col>
-                        <Col lg="4" md="6" sm="6">
+                        <Col lg="4" md="6" sm="12">
                             <Elite50k />
                         </Col>
-                        <Col lg="4" md="6" sm="6">
+                        <Col lg="4" md="6" sm="12">
                             <Elite75k />
                         </Col>
-                        <Col lg="8" md="6" sm="6">
+                        <Col lg="4" md="6" sm="12">
                             <SuperElite100k />
                         </Col>
                     </Row>
@@ -117,20 +115,9 @@ export default function AirCanada() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="www.aircanada.com" rel="noopener noreferrer" target="_blank">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; More Info" />
+                                        <Fab href="https://www.aircanada.com" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                            <ComputerIcon /> &nbsp; More Info
                                         </Fab>
-                                    </ListItemLink>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemLink href="tel:888-247-2262" rel="noopener noreferrer">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 888-247-2262" />
-                                        </Fab>
-                                    </ListItemLink>
                                 </ListItem>
                             </List>
                         </Col>

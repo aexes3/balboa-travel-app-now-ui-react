@@ -7,14 +7,23 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import {Avatar, Fab} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 import Image from '../../../../assets/img/presentation-page/almvp2.png';
+import {
+  Avatar,
+  Fab,
+  List,
+  ListItem,
+  Typography
+} from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
+import {
+  Container,
+  Col,
+  Row,
+} from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -43,6 +52,9 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
+  button: {
+    padding: '0px',
+  }
 }));
 
 export default function SWAListPreferred (props) {
@@ -73,9 +85,23 @@ export default function SWAListPreferred (props) {
         className={classes.media}
         image={Image}
       />
-      {/* <CardContent>
-        
-      </CardContent> */}
+      <CardContent className={classes.button}>
+      <Typography variant="body2" color="textSecondary" >
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col>
+                <List component="nav" classname="justify-content-center">
+                  <ListItem className={classes.button}>
+                    <Fab href="tel:800-252-7522" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 800-252-7522
+                    </Fab>
+                  </ListItem>
+                </List>
+              </Col>
+            </Row>
+          </Container>
+        </Typography>
+      </CardContent>
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -91,9 +117,9 @@ export default function SWAListPreferred (props) {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent className={classes.button}>
           <Typography variant="body2" color="textSecondary">
-                <List className="MuiListItem-gutters">
+                <List className={classes.button}>
                     
                     <u><b>Mileage Plan:</b></u>
                     

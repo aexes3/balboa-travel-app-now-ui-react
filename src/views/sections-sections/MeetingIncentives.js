@@ -25,7 +25,7 @@ function MeetingIncentives() {
                 Travel Programs, Product Launches, etc. 
 
                 <hr />
-                <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank">
+                <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank" rel="noopener noreferrer">
                 Meeting Request Form
                 </a>
                   <div onClick={ e => window.location.href = `mailto: meeting&eventsolutions@balboa.com`}>

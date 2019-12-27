@@ -14,12 +14,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -28,9 +26,9 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -110,20 +108,15 @@ export default function Lufthansa() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="https://www.miles-and-more.com/row/en.html" rel="noopener noreferrer" target="_blank">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Login" />
-                                        </Fab>
-                                    </ListItemLink>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemLink href="tel:800-645-3880" rel="noopener noreferrer">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-645-3880" />
-                                        </Fab>
-                                    </ListItemLink>
+                                    <Fab 
+                                        href="https://www.miles-and-more.com/row/en.html" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; Log In
+                                    </Fab>
                                 </ListItem>
                             </List>
                         </Col>

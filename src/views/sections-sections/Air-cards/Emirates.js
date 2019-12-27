@@ -15,12 +15,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -29,9 +27,9 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -93,16 +91,16 @@ export default function Emirates() {
             <TabPanel value={value} index={0} className={swlogo.root}>
                 <Container>
                     <Row>
-                        <Col lg="3" md="6" sm="6">
+                        <Col lg="3" md="6" sm="12">
                             <EmBlue />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
+                        <Col lg="3" md="6" sm="12">
                             <EmSilver />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
+                        <Col lg="3" md="6" sm="12">
                             <EmGold />
                         </Col>
-                        <Col lg="3" md="6" sm="6">
+                        <Col lg="3" md="6" sm="12">
                             <EmPlatinum />
                         </Col>
                     </Row>
@@ -113,21 +111,16 @@ export default function Emirates() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="https://www.emirates.com" rel="noopener noreferrer" target="_blank">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Emirates" />
+                                        <Fab 
+                                            href="https://www.emirates.com" 
+                                            rel="noopener noreferrer" 
+                                            target="_blank" 
+                                            size="large" 
+                                            color="default" 
+                                            variant="fab">
+                                                <ComputerIcon /> &nbsp; More Info
                                         </Fab>
-                                    </ListItemLink>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemLink href="tel:800-777-3999" rel="noopener noreferrer">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-777-3999" />
-                                        </Fab>
-                                    </ListItemLink>
-                                </ListItem>
+                                    </ListItem>
                             </List>
                         </Col>
                     </Row>

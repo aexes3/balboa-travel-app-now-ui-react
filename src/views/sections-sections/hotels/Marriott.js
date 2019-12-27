@@ -7,7 +7,7 @@ import MarrGoldStatus from './marriott/MarrGoldStatus.js';
 import MarrPlatStatus from './marriott/MarrPlatStatus.js';
 import MarrTitanStatus from './marriott/MarrTitanStatus.js';
 import MarrAmbassStatus from './marriott/MarrAmbassStatus.js'
-import image from 'assets/img/presentation-page/MARR-LOGO.png'
+// import image from 'assets/img/presentation-page/MARR-LOGO.png'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
@@ -17,12 +17,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -31,9 +29,6 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -68,21 +63,11 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         color: 'white',
-    },
-    paper: {
-        padding: theme.spacing(3, 2),
-        maxWidth: 345,
-        display: 'inline',
-        // flex: 1
-        // backgroundImage: `url(${image3})`,
-    },
-    align: {
-        textAlign: 'center',
     },
 }));
 
@@ -100,7 +85,6 @@ export default function Marriott() {
                     <Tab label="Loyalty" {...a11yProps(0)} />
                     <Tab label="Misc" {...a11yProps(1)} />
                     <Tab label="Promotions" {...a11yProps(2)} />
-                    {/* <Tab label="Misc" {...a11yProps(3)} /> */}
                 </Tabs>
             </AppBar>
 
@@ -108,24 +92,24 @@ export default function Marriott() {
 
                 <Container>
                     <Row>
-                        <Col md="4">
+                        <Col lg="4" md="6" sm="12">
                             <Marrstatus />
                         </Col>
-                        <Col md="4">
+                        <Col lg="4" md="6" sm="12">
                             <MarrSilverStatus />
                         </Col>
-                        <Col md="4">
+                        <Col lg="4" md="6" sm="12">
                             <MarrGoldStatus />
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col md="4">
+                    {/* </Row>
+                    <Row> */}
+                        <Col lg="4" md="6" sm="12">
                             <MarrPlatStatus />
                         </Col>
-                        <Col md="4">
+                        <Col lg="4" md="6" sm="12">
                             <MarrTitanStatus />
                         </Col>
-                        <Col md="4">
+                        <Col lg="4" md="6" sm="12">
                             <MarrAmbassStatus />
                         </Col>
                     </Row>
@@ -134,24 +118,19 @@ export default function Marriott() {
                 <Container>
                     <Row className="justify-content-md-center">
                         <Col md="4">
-                                <List component="nav" classname="justify-content-center"> 
-                                    <ListItem>
-                                        <ListItemLink href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi" rel="noopener noreferrer" target="_blank">
-                                             <Fab size="medium" color="primary" variant="fab">
-                                                <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Sign-up Online" />
-                                            </Fab>
-                                        </ListItemLink>
-                                        </ListItem>
-                                        <ListItem>
-                                        <ListItemLink href="tel:888-236-2427" rel="noopener noreferrer">
-                                            <Fab size="medium" color="primary" variant="fab">
-                                                <PhoneIcon />
-                                            <ListItemText primary="&nbsp;888-236-2427" />
-                                            </Fab>
-                                        </ListItemLink>
-                                    </ListItem>
-                                </List>
+                            <List component="nav" classname="justify-content-center"> 
+                                <ListItem>
+                                    <Fab 
+                                        href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; Sign-Up
+                                    </Fab>
+                                </ListItem>
+                            </List>
                         </Col>
                     </Row>
                 </Container>

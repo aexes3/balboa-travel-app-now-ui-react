@@ -10,12 +10,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -24,9 +22,10 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
+
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -98,20 +97,15 @@ export default function Jetblue(props) {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <ListItemLink href="https://www.jetblue.com" rel="noopener noreferrer" target="_blank">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; JetBlue" />
-                                        </Fab>
-                                    </ListItemLink>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemLink href="tel:800-538-2583" rel="noopener noreferrer">
-                                        <Fab size="large" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-538-2583" />
-                                        </Fab>
-                                    </ListItemLink>
+                                    <Fab 
+                                        href="https://www.jetblue.com" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; More Info
+                                    </Fab>
                                 </ListItem>
                             </List>
                         </Col>

@@ -13,12 +13,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -27,9 +25,9 @@ import {
     Row,
 } from 'react-bootstrap';
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -91,16 +89,16 @@ export default function Cathay(props) {
             <TabPanel value={value} index={0} className={ualogo.root}>
             <Container>
                     <Row>
-                    <Col lg="3" md="6" sm="6">
+                    <Col lg="3" md="6" sm="12">
                        <CPGreen />                
                     </Col>
-                     <Col lg="3" md="6" sm="6">
+                     <Col lg="3" md="6" sm="12">
                        <CPSilver />                
                     </Col>
-                    <Col lg="3" md="6" sm="6">
+                    <Col lg="3" md="6" sm="12">
                        <CPGold />                
                     </Col>
-                    <Col lg="3" md="6" sm="6">
+                    <Col lg="3" md="6" sm="12">
                        <CPDiamond />                
                     </Col> 
                 </Row>
@@ -111,20 +109,15 @@ export default function Cathay(props) {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
-                                    <ListItemLink href="www.cathaypacific.com" target="_blank">
-                                            <Fab size="medium" color="primary" variant="fab">
-                                            <ComputerIcon />
-                                        <ListItemText primary=" &nbsp; Cathay" />
-                                        </Fab>
-                                    </ListItemLink>
-                                    </ListItem>
-                                    <ListItem>
-                                    <ListItemLink href="tel:800-233-2742" rel="noopener noreferrer">
-                                        <Fab size="medium" color="primary" variant="fab">
-                                            <PhoneIcon />
-                                        <ListItemText primary=" &nbsp; 800-233-2742" />
-                                        </Fab>
-                                    </ListItemLink>
+                                    <Fab 
+                                        href="https://www.cathaypacific.com" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                        <ComputerIcon /> &nbsp; More Info
+                                    </Fab>
                                 </ListItem>
                             </List>
                         </Col>

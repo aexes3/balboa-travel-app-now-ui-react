@@ -7,14 +7,25 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Image from '../../../../assets/img/presentation-page/hiltmember.png';
+import PhoneIcon from '@material-ui/icons/Phone';
+import Image from '../../../../assets/img/presentation-page/hiltdiamondmember.png';
+import {
+  Avatar,
+  Fab,
+  List,
+  ListItem,
+  Typography
+} 
+from '@material-ui/core';
+import {
+  Container,
+  Col,
+  Row,
+} 
+from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -36,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#9d7a9a',
   },
   root: {
     width: '100%',
@@ -44,13 +55,12 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     
   },
-  text: {
-      align: "center",
-      textAlign: "center",
-  }
+  button: {
+    padding: '0px',
+  },
 }));
 
-export default function HiltMember (props) {
+export default function HiltDiamondMember (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -63,7 +73,7 @@ export default function HiltMember (props) {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            MS
+            DS
           </Avatar>
         }
         action={
@@ -78,37 +88,21 @@ export default function HiltMember (props) {
         className={classes.media}
         image={Image}
       />
-      <CardContent>
-        <Typography variant="caption" color="textSecondary">
-            <div className="info info-horizontal">
-                  <a href="https://www.hilton.com/en/hilton-honors/join/?OCODE=MEHJW"
-                     rel="noopener noreferrer"
-                     target="_blank"
-                    >
-                      <div className="icon">
-                      <i className="fa fa-laptop"></i>
-                    </div>
-                  </a>
-                    <div className="description">
-                    <a href="https://www.hilton.com/en/hilton-honors/join/?OCODE=MEHJW"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <h5 className="info-title">Join Now</h5>
-                    </a>
-                    </div>
-
-                    <a href="tel:1-800-446-6677" >
-                    <div className="icon description">
-                      <i className="fas fa-phone"></i>
-                    </div>
-                    </a>
-                    <div className="description">
-                        <a href="tel:1-800-446-6677">
-                            <h5 className="info-title">1-800-4HONORS</h5>
-                        </a>
-                    </div>
-                  </div>
+      <CardContent className={classes.button}>
+        <Typography variant="body2" color="textSecondary"  >
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col>
+                <List component="nav" classname="justify-content-center">
+                  <ListItem className={classes.button}>
+                    <Fab href="tel:800-446-6677" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 800-446-6677
+                    </Fab>
+                  </ListItem>
+                </List>
+              </Col>
+            </Row>
+          </Container>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -120,13 +114,15 @@ export default function HiltMember (props) {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <Fab size="small" color="primary" variant="fab">
+           <ExpandMoreIcon />
+         </Fab>
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent className={classes.button}>
           <Typography variant="body2" color="textSecondary" >
-                <List className="MuiListItem-gutters" >
+                <List className={classes.button} >
                     
                     <u><b>Overview:</b></u>
                     

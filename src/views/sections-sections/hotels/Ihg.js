@@ -5,23 +5,27 @@ import IhgClub from './ihg/IhgClub.js';
 import IhgGold from './ihg/IhgGold.js';
 import IhgPlatinum from './ihg/IhgPlatinum';
 import IhgSpire from './ihg/IhgSpire.js';
-import image from 'assets/img/presentation-page/IHG-LOGO.jpeg'
+// import image from 'assets/img/presentation-page/IHG-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -53,25 +57,11 @@ function a11yProps(index) {
     };
 }
 
-// const alStyles = makeStyles(theme => ({
-//     root: {
-//         backgroundImage: `url(${image})`,
-//         color: 'white',
-//         backgroundRepeat: 'no-repeat',
-//         backgroundSize: 'cover',
-//     }
-// }));
-
-const vaStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
-          flexGrow: 1,
-        backgroundImage: `url(${image})`,
-        // backgroundColor: "#e32121",
-    /* Full height */
-        height: '100%', 
-
-    /* Center and scale the image nicely */
-        //  backgroundPosition: 'center',
+        flexGrow: 1,
+        // backgroundImage: `url(${image})`,
+        height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         color: 'white',
@@ -79,14 +69,14 @@ const vaStyles = makeStyles(theme => ({
 }));
 
 export default function Ihg() {
-    const valogo = vaStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={valogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
@@ -96,25 +86,44 @@ export default function Ihg() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={valogo.root}>
+            <TabPanel value={value} index={0} className={classes.root}>
                 <Row>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <IhgClub /> 
-                                     
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <IhgGold />   
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <IhgPlatinum />   
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <IhgSpire />                
                     </Col>
                 </Row>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center"> 
+                                <ListItem>
+                                    <Fab 
+                                        href="https://www.ihg.com" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; More Info
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={valogo.root}>
+            <TabPanel value={value} index={1} className={classes.root}>
                 Qualify:
                   <ul>
                     <li>Elite Qualifying Miles (EQM) 25000</li>
@@ -140,7 +149,7 @@ export default function Ihg() {
             </TabPanel>
 
 
-            <TabPanel value={value} index={2} className={valogo.root}>
+            <TabPanel value={value} index={2} className={classes.root}>
             <Row>
                 <Col>
                     <PromotionOne />                
@@ -157,10 +166,6 @@ export default function Ihg() {
               </Row>
             </TabPanel>
 
-
-            {/* <TabPanel value={value} index={3} className={valogo.root}>
-              
-            </TabPanel> */}
         </div>
     );
 }

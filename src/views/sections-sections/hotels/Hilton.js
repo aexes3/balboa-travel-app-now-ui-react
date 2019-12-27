@@ -5,23 +5,27 @@ import HiltMember from './hilton/HiltMember.js';
 import HiltSilverMember from './hilton/HiltSilverMember.js';
 import HiltGoldMember from './hilton/HiltGoldMember.js';
 import HiltDiamondMember from './hilton/HiltDiamondMember.js';
-import image from 'assets/img/presentation-page/HILT-LOGO.jpeg'
+// import image from 'assets/img/presentation-page/HILT-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -65,7 +69,7 @@ function a11yProps(index) {
 const vaStyles = makeStyles(theme => ({
     root: {
           flexGrow: 1,
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         // backgroundColor: "#e32121",
     /* Full height */
         height: '100%', 
@@ -98,20 +102,40 @@ export default function Hilton() {
 
             <TabPanel value={value} index={0} className={valogo.root}>
                 <Row>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <HiltMember /> 
                                      
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <HiltSilverMember />   
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <HiltGoldMember />   
                     </Col>
-                    <Col>
+                    <Col lg="3" md="6" sm="12">
                         <HiltDiamondMember />                
                     </Col>
                 </Row>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center"> 
+                                <ListItem>
+                                    <Fab 
+                                        href="https://www.hilton.com/en/hilton-honors/join/?OCODE=MEHJW" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; Join
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1} className={valogo.root}>

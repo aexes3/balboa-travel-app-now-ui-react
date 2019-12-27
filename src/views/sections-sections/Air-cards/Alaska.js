@@ -14,12 +14,10 @@ import {
     Fab,
     List,
     ListItem,
-    ListItemText,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
-import PhoneIcon from '@material-ui/icons/Phone';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
@@ -58,9 +56,9 @@ function a11yProps(index) {
     };
 }
 
-function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-}
+// function ListItemLink(props) {
+//     return <ListItem button component="a" {...props} />;
+// }
 
 const alStyles = makeStyles(theme => ({
     root: {
@@ -101,13 +99,13 @@ export default function Alaska() {
             <TabPanel value={value} index={0} className={allogo.root}>
             <Container>
                     <Row>
-                    <Col lg="4" md="6" sm="6">
+                    <Col lg="4" md="6" sm="12">
                         <Almvp />                
                     </Col>
-                    <Col lg="4"  md="6" sm="6">
+                    <Col lg="4"  md="6" sm="12">
                         <AlmvpGold />
                     </Col>
-                    <Col lg="4" md="6" sm="6">
+                    <Col lg="4" md="6" sm="12">
                         <AlmvpGold75k />
                     </Col>
                 </Row>
@@ -116,24 +114,13 @@ export default function Alaska() {
                 <Container>
                     <Row className="justify-content-md-center">
                         <Col md="4">
-                                <List component="nav" classname="justify-content-center"> 
-                                    <ListItem>
-                                        <ListItemLink href="www.alaskaair.com" rel="noopener noreferrer" target="_blank">
-                                             <Fab size="medium" color="primary" variant="fab">
-                                                <ComputerIcon />
-                                            <ListItemText primary=" &nbsp; Find Out More" />
-                                            </Fab>
-                                        </ListItemLink>
-                                        </ListItem>
-                                        <ListItem>
-                                        <ListItemLink href="tel:800-252-7522" rel="noopener noreferrer">
-                                            <Fab size="medium" color="primary" variant="fab">
-                                                <PhoneIcon />
-                                            <ListItemText primary=" &nbsp; 800-252-7522" />
-                                            </Fab>
-                                        </ListItemLink>
-                                    </ListItem>
-                                </List>
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <Fab href="https://www.alaskaair.com" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; More Info
+                                    </Fab>
+                                </ListItem>
+                            </List>
                         </Col>
                     </Row>
                 </Container>

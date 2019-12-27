@@ -1,27 +1,31 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import IhgClub from './ihg/IhgClub.js';
-import IhgGold from './ihg/IhgGold.js';
-import IhgPlatinum from './ihg/IhgPlatinum';
-import IhgSpire from './ihg/IhgSpire.js';
-import image from 'assets/img/presentation-page/IHG-LOGO.jpeg'
+import RadClub from './radisson/RadClub.js';
+import RadSilver from './radisson/RadSilver.js';
+import RadGold from './radisson/RadGold';
+import RadPlatinum from './radisson/RadPlatinum.js';
+// import image from 'assets/img/presentation-page/IHG-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
+    Fab,
+    List,
+    ListItem,
     Tab,
     Tabs,
     Typography
-}   from '@material-ui/core';
-
+} from '@material-ui/core';
+import ComputerIcon from '@material-ui/icons/Computer';
 import {
     Button,
+    Container,
     Col,
     Row,
-}   from 'reactstrap';
+} from 'react-bootstrap';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -53,25 +57,11 @@ function a11yProps(index) {
     };
 }
 
-// const alStyles = makeStyles(theme => ({
-//     root: {
-//         backgroundImage: `url(${image})`,
-//         color: 'white',
-//         backgroundRepeat: 'no-repeat',
-//         backgroundSize: 'cover',
-//     }
-// }));
-
-const vaStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
-          flexGrow: 1,
-        backgroundImage: `url(${image})`,
-        // backgroundColor: "#e32121",
-    /* Full height */
-        height: '100%', 
-
-    /* Center and scale the image nicely */
-        //  backgroundPosition: 'center',
+        flexGrow: 1,
+        // backgroundImage: `url(${image})`,
+        height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         color: 'white',
@@ -79,14 +69,14 @@ const vaStyles = makeStyles(theme => ({
 }));
 
 export default function Radisson() {
-    const valogo = vaStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={valogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
@@ -96,25 +86,45 @@ export default function Radisson() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={valogo.root}>
+            <TabPanel value={value} index={0} className={classes.root}>
                 <Row>
-                    <Col>
-                        <IhgClub /> 
+                    <Col lg="3" md="6" sm="12">
+                        <RadClub /> 
                                      
                     </Col>
-                    <Col>
-                        <IhgGold />   
+                    <Col lg="3"  md="6" sm="12">
+                        <RadSilver />   
                     </Col>
-                    <Col>
-                        <IhgPlatinum />   
+                    <Col lg="3"  md="6" sm="12">
+                        <RadGold />   
                     </Col>
-                    <Col>
-                        <IhgSpire />                
+                    <Col lg="3" md="6" sm="12">
+                        <RadPlatinum />                
                     </Col>
                 </Row>
+
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center"> 
+                                <ListItem>
+                                    <Fab 
+                                        href="https://www.radissonhotels.com/en-us/radisson-rewards/join" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; Sign Up
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={valogo.root}>
+            <TabPanel value={value} index={1} className={classes.root}>
                 Qualify:
                   <ul>
                     <li>Elite Qualifying Miles (EQM) 25000</li>
@@ -140,7 +150,7 @@ export default function Radisson() {
             </TabPanel>
 
 
-            <TabPanel value={value} index={2} className={valogo.root}>
+            <TabPanel value={value} index={2} className={classes.root}>
             <Row>
                 <Col>
                     <PromotionOne />                
@@ -158,7 +168,7 @@ export default function Radisson() {
             </TabPanel>
 
 
-            {/* <TabPanel value={value} index={3} className={valogo.root}>
+            {/* <TabPanel value={value} index={3} className={classes.root}>
               
             </TabPanel> */}
         </div>

@@ -24,7 +24,7 @@ import Airlines from "./sections-sections/Airlines.js";
 import GroundTravel from "./sections-sections/GroundTravel.js";
 import Hotel from "./sections-sections/Hotel.js";
 import Widgets from "./sections-sections/Widgets.js";
-import { isProperty } from "@babel/types";
+// import { isProperty } from "@babel/types";
 
 function Sections() {
   React.useEffect(() => {

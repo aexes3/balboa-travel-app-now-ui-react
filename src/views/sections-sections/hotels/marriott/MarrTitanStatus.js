@@ -7,14 +7,25 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import {Avatar, Fab} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+import PhoneIcon from '@material-ui/icons/Phone';
 import Image from '../../../../assets/img/presentation-page/marrtitanstatus.jpg';
+import {
+  Avatar,
+  Fab,
+  List,
+  ListItem,
+  Typography
+} 
+from '@material-ui/core';
+import {
+  Container,
+  Col,
+  Row,
+} 
+from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -36,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: '#83cfe0',
+    backgroundColor: '#413c42',
   },
   root: {
     width: '100%',
@@ -44,10 +55,9 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     
   },
-  text: {
-      align: "center",
-      textAlign: "center",
-  }
+  button: {
+    padding: '0px',
+  },
 }));
 
 export default function MarrTitanStatus (props) {
@@ -78,39 +88,23 @@ export default function MarrTitanStatus (props) {
         className={classes.media}
         image={Image}
       />
-      {/* <CardContent>
-        <Typography variant="caption" color="textSecondary">
-        <div className="info info-horizontal">
-                  <a href="https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
-                     rel="noopener noreferrer"
-                     target="_blank"
-                    >
-                      <div className="icon">
-                      <i className="fa fa-laptop"></i>
-                    </div>
-                  </a>
-                    <div className="description">
-                    <a href=" https://www.marriott.com/loyalty/createAccount/createAccountPage1.mi"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <h5 className="info-title">Sign-up Online</h5>
-                    </a>
-                    </div>
-
-                    <a href="tel:888-236-2427" >
-                    <div className="icon description">
-                      <i className="fas fa-phone"></i>
-                    </div>
-                    </a>
-                    <div className="description">
-                        <a href="tel: 888-236-2427">
-                            <h5 className="info-title">888-236-2427</h5>
-                        </a>
-                    </div>
-                  </div>   
+      <CardContent className={classes.button}>
+        <Typography variant="body2" color="textSecondary"  >
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col>
+                <List component="nav" classname="justify-content-center">
+                  <ListItem className={classes.button}>
+                    <Fab href="tel:888-236-2427" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 888-236-2427
+                    </Fab>
+                  </ListItem>
+                </List>
+              </Col>
+            </Row>
+          </Container>
         </Typography>
-      </CardContent> */}
+      </CardContent>
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
@@ -127,9 +121,9 @@ export default function MarrTitanStatus (props) {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent  className={classes.button} >
           <Typography variant="body2" color="textSecondary" >
-                <List className="MuiListItem-gutters" >
+                <List className={classes.button} >
                     
                     <u><b>Overview:</b></u>
                     

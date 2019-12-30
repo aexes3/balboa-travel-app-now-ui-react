@@ -54,9 +54,10 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
-  button:{
+  button: {
     padding: '0px',
-  }
+    textAlign: 'center',
+  },
 }));
 
 export default function CPGreen (props) {

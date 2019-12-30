@@ -56,7 +56,8 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     padding: '0px',
-  }
+    textAlign: 'center',
+  },
 }));
 
 export default function SWAListPreferred (props) {

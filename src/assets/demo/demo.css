@@ -1810,3 +1810,7 @@
   display: block;
   border: none;
 }
+
+.fabHover:hover {
+  color: '#000'
+}

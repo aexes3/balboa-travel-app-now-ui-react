@@ -57,6 +57,7 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     padding: '0px',
+    textAlign: 'center',
   },
 }));
 
@@ -141,7 +142,7 @@ export default function MarrSilverStatus (props) {
                     <u><b>Benefits:</b></u>
 
                     <ListItem>
-                    Stay 10 or more nights/yea
+                    Stay 10 or more nights/year
                     </ListItem>
                     <ListItem>
                         10% Bonus Points on Stays  

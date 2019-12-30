@@ -56,10 +56,11 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     padding: '0px',
+    textAlign: 'center',
   },
 }));
 
-export default function UnitedGold (props) {
+export default function SGSilver (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 

@@ -57,6 +57,7 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     padding: '0px',
+    textAlign: 'center',
   },
 }));
 
@@ -137,9 +138,6 @@ export default function Marrstatus (props) {
 
                     <u><b>Benefits:</b></u>
 
-                    <ListItem>
-                    Stay 0-9 nights/year
-                    </ListItem>
                     <ListItem>
                     Stay 0-9 nights/year
                     </ListItem>

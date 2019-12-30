@@ -109,8 +109,8 @@ export default function Hotel(props) {
                     </Grid>
                 </Grid>
 
-            </div>
                 {renderHotel(hotel)}
+            </div>
         </Router>
     );
 }

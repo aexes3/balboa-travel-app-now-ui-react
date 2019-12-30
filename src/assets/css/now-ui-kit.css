@@ -2763,16 +2763,16 @@ Created using IcoMoon - icomoon.io
 .badge-primary,
 .badge-primary[href]:focus,
 .badge-primary[href]:hover {
-  border-color: #f96332;
-  background-color: #f96332;
+  border-color: #49f932;
+  background-color: #dbf932;
   color: #FFFFFF;
 }
 
 .badge-info,
 .badge-info[href]:focus,
 .badge-info[href]:hover {
-  border-color: #2CA8FF;
-  background-color: #2CA8FF;
+  border-color: rgb(255, 44, 220);
+  background-color: rgb(255, 44, 44);
   color: #FFFFFF;
 }
 
@@ -2949,7 +2949,7 @@ small {
 }
 
 a {
-  color: #f96332;
+  color: #3f51b5;
 }
 
 a:hover,

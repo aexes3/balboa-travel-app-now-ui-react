@@ -54,10 +54,11 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+  }, 
+   button: {
+    padding: '0px',
+    textAlign: 'center',
   },
-  button: {
-    padding: '0px'
-  }
 }));
 
 export default function Elite35k (props) {

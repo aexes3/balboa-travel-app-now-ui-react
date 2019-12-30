@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import JBTrueBlue from './JetBlue/JBTrueBlue'
-import image from 'assets/img/presentation-page/JB-LOGO.jpg'
+// import image from 'assets/img/presentation-page/JB-LOGO.jpg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
@@ -58,7 +58,7 @@ function a11yProps(index) {
 
 const jbStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

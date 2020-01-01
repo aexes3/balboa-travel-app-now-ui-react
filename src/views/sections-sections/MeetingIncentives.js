@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 
 function MeetingIncentives() {
@@ -28,9 +28,10 @@ function MeetingIncentives() {
                 <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank" rel="noopener noreferrer">
                 Meeting Request Form
                 </a>
-                  <div onClick={ e => window.location.href = `mailto: meeting&eventsolutions@balboa.com`}>
-                    <i className="fas fa-envelope" /> : meeting&amp;eventsolutions@balboa.com
-                  </div>
+                <br />
+                  <Button onClick={ e => window.location.href=`mailto:meeting&eventsolutions@balboa.com`}>
+                    <i className="fas fa-envelope" /> - meeting&amp;eventsolutions@balboa.com
+                  </Button>
                 </h4>
               </Col>
             </Row>

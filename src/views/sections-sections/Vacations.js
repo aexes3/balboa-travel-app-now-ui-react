@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
-
+import PhoneIcon from '@material-ui/icons/Phone';
+import { Button, Container, Row, Col } from "reactstrap";
+import { Fab, List, ListItem, } from '@material-ui/core';
 
 function Vacations() {
   return (
@@ -22,12 +23,13 @@ function Vacations() {
                 Let Balboa’s Vacation experts help plan your next trip abroad! Take advantage of exclusive leisure
                 discounts and offer credits for your upcoming vacation.
                 <hr />
-                  <div href="mailto:vacations@balboa.com" target="_blank">
-                    <i className="fas fa-envelope" /> : vacations@balboa.com
-                  </div>
-                  <div href="tel:800-359-8576" target="_blank">
-                    <i className="fas fa-phone" /> : 800-359-8576
-                  </div>
+                  <Fab onClick={ e => window.location.href=`mailto:vacations@balboa.com`} target="_blank"size="large" color="default" variant="fab">
+                    <i className="fas fa-envelope" />&nbsp; - vacations@balboa.com
+                  </Fab>
+                  <br /><br />
+                  <Fab href="tel:800-359-8576" target="_blank" size="large" color="default" variant="fab">
+                    <PhoneIcon />&nbsp; - 800-359-8576
+                  </Fab>
                 </h4>
               </Col>
             </Row>

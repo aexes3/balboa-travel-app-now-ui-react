@@ -119,6 +119,16 @@ export default function Hyatt() {
                                             <ComputerIcon /> &nbsp; More Info
                                     </Fab>
                                 </ListItem>
+                                <ListItem>
+                                    <Fab 
+                                        href="tel:844-382-6875" 
+                                        rel="noopener noreferrer" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
+                                            <ComputerIcon /> &nbsp; More Info
+                                    </Fab>
+                                </ListItem>
                             </List>
                         </Col>
                     </Row>

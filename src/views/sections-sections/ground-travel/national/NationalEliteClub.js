@@ -134,7 +134,7 @@ export default function NationalEliteClub (props) {
                     &#176; Free rental = 5 credits
                     </ListItem>
                     <ListItem>
-                    Guaranteed Vehicle: a guaranteed card (up to Fullsize) with 24-hour notice when 
+                    Guaranteed Vehicle: a guaranteed car (up to Fullsize) with 24-hour notice when 
                     reserving using the Midsize rate (in US and Canada)
                     </ListItem>
                     <ListItem>

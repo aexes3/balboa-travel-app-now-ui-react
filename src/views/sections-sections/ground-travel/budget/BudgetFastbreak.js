@@ -144,7 +144,7 @@ export default function BudgetFastbreak (props) {
                     <hr />
                     <u><b>Rewards:</b></u>
                     <ListItem>
-                    Current promotion going thru December 31, 2019.  Rent twice and receive $25 in Budget
+                    Current promotion going thru December 31, 2020.  Rent twice and receive $25 in Budget
                     </ListItem>
                     <hr />
                     <u><b>Bucks:</b></u>

@@ -49,14 +49,6 @@ export default function Airlines(props) {
         }
     }
 
-    // function handleAmerican(newAmerican){
-    //     if(american === newAmerican){
-    //         setAmerican('');
-    //     }
-    //     else{
-    //         setAmerican (newAmerican);
-    //     }
-    // }
 
     function renderAirline(param) {
         switch (param) {
@@ -177,9 +169,9 @@ export default function Airlines(props) {
                             onClick={() => handleChange("virgin")} />
                     </Grid>
                 </Grid>
+            {renderAirline(airline)}
             </div>
 
-            {renderAirline(airline)}
             
         </Router>
     );

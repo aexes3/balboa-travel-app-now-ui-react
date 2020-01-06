@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-// import CardMedia from '@material-ui/core/CardMedia';
+import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import PhoneIcon from '@material-ui/icons/Phone';
-// import Image from '../../../../assets/img/presentation-page/jbtrueblue.jpg';
+import Image from '../../../../assets/img/presentation-page/alamlogo.jpg';
 import {
   Avatar,
   Fab,
@@ -84,10 +84,10 @@ export default function AlamoInsider (props) {
         title="Alamo"
         subheader="Insiders"
       />
-      {/* <CardMedia
+      <CardMedia
         className={classes.media}
         image={Image}
-      /> */}
+      />
 <CardContent className={classes.button}>
         <Typography variant="body2" color="textSecondary"  >
           <Container>

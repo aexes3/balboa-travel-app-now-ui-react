@@ -15,7 +15,7 @@ function IndexHeader() {
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/nuk-pro-back-sky.jpg") +
+                require("assets/img/presentation-page/test1.png") +
                 ")"
             }}
           ></div>
@@ -29,7 +29,7 @@ function IndexHeader() {
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/nuk-pro-buildings.png") +
+                require("assets/img/presentation-page/test.jpg") +
                 ")"
             }}
           ></div>

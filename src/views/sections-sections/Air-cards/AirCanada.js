@@ -6,7 +6,7 @@ import Elite35k from './AirCanada/Elite35k.js';
 import Elite50k from './AirCanada/Elite50k.js';
 import Elite75k from './AirCanada/Elite75k.js';
 import SuperElite100k from './AirCanada/SuperElite100k.js'
-import image from 'assets/img/presentation-page/AC-LOGO.jpeg'
+// import image from 'assets/img/presentation-page/AC-LOGO.jpeg'
 import PromotionOne from '../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../Promotions/American-Airlines/PromotionThree';
@@ -64,7 +64,7 @@ function a11yProps(index) {
 
 const swStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

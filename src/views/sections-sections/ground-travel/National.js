@@ -126,7 +126,7 @@ export default function Hyatt() {
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; 844-382-6875
                                     </Fab>
                                 </ListItem>
                             </List>

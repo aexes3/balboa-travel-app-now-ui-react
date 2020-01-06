@@ -1805,12 +1805,15 @@
     padding-left: 15px;
     text-align: -webkit-center;
 }
-
-.flightaware {
-  display: block;
-  border: none;
+.flightawarecol {
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  /* display: table-cell; */
 }
-
-.fabHover:hover {
-  color: '#000'
+.flightaware {
+  border: none;
+  display: table;
+ 
 }

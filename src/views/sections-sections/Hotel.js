@@ -26,6 +26,12 @@ const useStyles = makeStyles(theme => ({
         // backgroundImage: `url(${image})`,
         // color: "white",
     },
+    img:{
+        transition: "all 0.2s",
+        "&:hover": {
+            transform: "scale(1.15)",
+        }
+    }
 }));
 
 
@@ -75,37 +81,43 @@ export default function Hotel(props) {
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/fairlogo.jpg")}
-                            onClick={() => handleChange("fairmont")} />
+                            onClick={() => handleChange("fairmont")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hiltlogo.JPG")}
-                            onClick={() => handleChange("hilton")} />
+                            onClick={() => handleChange("hilton")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hyatlogo.png")}
-                            onClick={() => handleChange("hyatt")} />
+                            onClick={() => handleChange("hyatt")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/interlogo.jpg")}
-                            onClick={() => handleChange("ihg")} />
+                            onClick={() => handleChange("ihg")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} spacing={2}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/marrlogo.JPG")}
-                            onClick={() => handleChange("marriott")} />
+                            onClick={() => handleChange("marriott")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/radilogo.png")}
-                            onClick={() => handleChange("radisson")} />
+                            onClick={() => handleChange("radisson")}
+                            className={classes.img} />
                     </Grid>
                 </Grid>
 

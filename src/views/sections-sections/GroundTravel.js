@@ -12,19 +12,26 @@ import Enterprise from '../sections-sections/ground-travel/Enterprise.js'
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1,
-        height: '100%',
+        // flexGrow: 1,
+        // height: '100%',
         backgroundImage: `url(${image})`,
         backgroundColor: '#d9dee1',
         textAlign: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        transition: "all 2s",
     },
     paper: {
         padding: theme.spacing(2, 1),
         // backgroundImage: `url(${image})`,
         // color: "white",
     },
+    img:{
+        transition: "all 0.2s",
+        "&:hover": {
+            transform: "scale(1.15)",
+        }
+    }
 }));
 
 
@@ -77,37 +84,43 @@ export default function GroundTravel(props) {
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/alamlogo.png")}
-                            onClick={() => handleChange("alamo")} />
+                            onClick={() => handleChange("alamo")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/avislogo.png")}
-                            onClick={() => handleChange("avis")} />
+                            onClick={() => handleChange("avis")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/budglogo.png")}
-                            onClick={() => handleChange("budget")} />
+                            onClick={() => handleChange("budget")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/entelogo.jpg")}
-                            onClick={() => handleChange("enterprise")} />
+                            onClick={() => handleChange("enterprise")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hertlogo.jpg")}
-                            onClick={() => handleChange("hertz")} />
+                            onClick={() => handleChange("hertz")}
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/natilogo.jpg")}
-                            onClick={() => handleChange("national")} />
+                            onClick={() => handleChange("national")}
+                            className={classes.img} />
                     </Grid>
                 </Grid>
 

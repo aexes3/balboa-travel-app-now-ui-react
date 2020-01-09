@@ -20,13 +20,13 @@ import Virgin from '../sections-sections/Air-cards/Virgin.js'
 
 const useStyles = makeStyles(theme => ({
     root: {
-    //     flexGrow: 1,
-    //     height: '100%',
-    //     // backgroundImage: `url(${image})`,
-    //     // backgroundColor: '#d9dee1',
+        flexGrow: 1,
+        height: '100%',
+        // backgroundImage: `url(${image})`,
+        // backgroundColor: '#d9dee1',
         textAlign: 'center',
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
     paper: {
         padding: theme.spacing(2, 1),
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export default function Airlines(props) {
+export default function Airlines2 (props) {
     // const [american, setAmerican] = React.useState("");
     const [airline, setAirline] = React.useState("");
     const classes = useStyles();
@@ -90,98 +90,96 @@ export default function Airlines(props) {
 
     return (
         <Router>
-            <div
-             className={classes.root}
-             >
+            <div className={classes.root}>
 
 
                 <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                         <Paper className={classes.paper}>
                             <Typography variant="h5" component="h3">
                                 Air Travel
-                            </Typography>
+                                    </Typography>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/aclogo.png")}
-                            onClick={() => handleChange("aircananda")} 
-                            className={classes.img}/>
+                            onClick={() => handleChange("aircananda")} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/allogo.jpg")}
-                            onClick={() => handleChange("alaska")} 
-                            className={classes.img}/>
+                            onClick={() => handleChange("alaska")} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/aalogo.png")}
-                            onClick={() => handleChange("american")} 
-                            className={classes.img}/>
+                            onClick={() => handleChange("american")} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/cplogo.png")}
-                            onClick={() => handleChange("cathay")} 
-                            className={classes.img}/>
+                            onClick={() => handleChange("cathay")} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/dalogo.png")}
-                            onClick={() => handleChange("delta")} 
-                            className={classes.img}/>
+                            onClick={() => handleChange("delta")} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/emlogo.png")}
-                            onClick={() => handleChange("emirates")} 
-                            className={classes.img}/>
-                    </Grid>
-                    {/* <Grid item xs={12} sm={6} md={4}>
+                            onClick={() => handleChange("emirates")} />
+                    </Grid> */}
+                    <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/jblogo.JPG")}
-                            onClick={() => handleChange("jetblue")} />
+                            onClick={() => handleChange("jetblue")} 
+                            className={classes.img}/>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/lflogo.png")}
-                            onClick={() => handleChange("lufthansa")} />
+                            onClick={() => handleChange("lufthansa")} 
+                            className={classes.img}/>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/sglogo.png")}
-                            onClick={() => handleChange("singapore")} />
+                            onClick={() => handleChange("singapore")} 
+                            className={classes.img}/>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/swlogo.jpg")}
-                            onClick={() => handleChange("southwest")} />
+                            onClick={() => handleChange("southwest")} 
+                            className={classes.img}/>
                     </Grid>
 
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/ualogo.png")}
-                            onClick={() => handleChange("united")} />
+                            onClick={() => handleChange("united")} 
+                            className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/valogo.png")}
-                            onClick={() => handleChange("virgin")} />
-                    </Grid> */}
+                            onClick={() => handleChange("virgin")} 
+                            className={classes.img} />
+                    </Grid>
                 </Grid>
             {renderAirline(airline)}
             </div>

@@ -92,22 +92,7 @@ export default function Avis() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={classes.root}>
-            
-                <p className={classes.paper}><u>Avis Preferred Points:</u> <br />
-                    Redeem points for rental day rewards, upgrades and accessories.<br /><br /></p>
-                
-                    Rental day rewards start at just 700 points with no blackout dates. <br />
-                    
-                    Accessories including SiriusXM Radio®, GPS, Child Safety Seats,
-                    and Roadside Assistance are now just 250 points per day. <br />
-
-                    <p className={classes.paper}>EARNING IS EASY <br /><br /> </p>
-
-                    Earn 100 bonus points when you opt into Avis Preferred Points 
-                    and rent once within three months.<br /> 
-
-                    Every rental earns a minimum of 100 points. <br /> 
-
+        
                 <Container>
                     <Row className="jbcol">
                         <Col lg="6" md="6" sm="12">

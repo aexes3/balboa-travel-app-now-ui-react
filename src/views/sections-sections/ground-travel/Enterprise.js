@@ -92,29 +92,7 @@ export default function Hyatt() {
             </AppBar>
 
             <TabPanel value={value} index={0} className={styles.root}>
-                <p className={styles.paper}>
-                    
-                Enterprise Plus: <br />
-                With Enterprise Plus, the more you rent, the more rewards you earn. 
-                For every qualifying rental dollar spent at participating Enterprise 
-                locations worldwide, you earn a point. Points never expire as long as 
-                you remain an active member with at least one qualifying rental every three years. 
-                You can redeem points for free rental days on any available car on any day — with no 
-                blackout dates — at thousands of participating locations worldwide.
-                <br />
-                </p>
-                <br />
-                <Paper>
-                    
-                    Enterprise Plus: <br />
-                    With Enterprise Plus, the more you rent, the more rewards you earn. 
-                    For every qualifying rental dollar spent at participating Enterprise 
-                    locations worldwide, you earn a point. Points never expire as long as 
-                    you remain an active member with at least one qualifying rental every three years. 
-                    You can redeem points for free rental days on any available car on any day — with no 
-                    blackout dates — at thousands of participating locations worldwide.
-                    <br />
-                    </Paper>
+               
                     <Row>
                         <Col lg="3" md="6" sm="12">
                             <EnterPlus />

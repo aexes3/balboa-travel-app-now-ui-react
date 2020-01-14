@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import { Fab, } from '@material-ui/core';
 
 
 function MeetingIncentives() {
@@ -28,51 +29,14 @@ function MeetingIncentives() {
                 <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank" rel="noopener noreferrer">
                 Meeting Request Form
                 </a>
-                <br />
-                  <Button onClick={ e => window.location.href=`mailto:meeting&eventsolutions@balboa.com`}>
-                    <i className="fas fa-envelope" /> - meeting&amp;eventsolutions@balboa.com
-                  </Button>
+                <br /><br />
+                  <Fab onClick={ e => window.location.href=`mailto:vacations@balboa.com`} target="_blank"size="large" color="default" variant="fab">
+                    <i className="fas fa-envelope" />&nbsp; - meeting&amp;eventsolutions@balboa.com
+                  </Fab>
                 </h4>
               </Col>
             </Row>
-            <Row>
-              {/* <Col md="4">
-                <div className="info">
-                  <div className="icon icon-info icon-circle">
-                    <i className="now-ui-icons users_single-02"></i>
-                  </div>
-                  <h4 className="info-title">Work With Any Team</h4>
-                  <p className="description">
-                    Whether it’s for work or even the next family vacation,
-                    Trello helps your team.
-                  </p>
-                </div>
-              </Col>
-              <Col md="4">
-                <div className="info">
-                  <div className="icon icon-danger icon-circle">
-                    <i className="now-ui-icons business_chart-bar-32"></i>
-                  </div>
-                  <h4 className="info-title">A Productivity Platform</h4>
-                  <p className="description">
-                    Integrate the apps your team already uses directly into your
-                    workflow.
-                  </p>
-                </div>
-              </Col>
-              <Col md="4">
-                <div className="info">
-                  <div className="icon icon-warning icon-circle">
-                    <i className="now-ui-icons arrows-1_refresh-69"></i>
-                  </div>
-                  <h4 className="info-title">Always In Sync</h4>
-                  <p className="description">
-                    No matter where you are, Trello stays in sync across all of
-                    your devices.
-                  </p>
-                </div>
-              </Col> */}
-            </Row>
+          
           </Container>
         </div>
         

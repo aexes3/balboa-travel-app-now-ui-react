@@ -21,7 +21,7 @@ export default function Widgets() {
               </Col>
               </Row>
 
-              <Row >
+              {/* <Row >
               <Col sm="12" id="map">
                 <Iframe className="flightaware element"
                   width="100%"
@@ -29,7 +29,7 @@ export default function Widgets() {
                   src="https://embed.flightaware.com/commercial/integrated/web/delay_map.rvt">
                 </Iframe>
               </Col>
-            </Row>
+            </Row> */}
 
             <Row>
               <Col sm="12" id="cibtWidgetLoaderDiv">

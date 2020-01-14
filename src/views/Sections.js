@@ -24,13 +24,14 @@ import Flights from "./sections-sections/Flights";
 import GroundTravel from "./sections-sections/GroundTravel.js";
 import Hotel from "./sections-sections/Hotel.js";
 // import Widgets from "./sections-sections/Widgets.js";
+// import WidgetSky from './sections-sections/WidgetSky';
 // import { isProperty } from "@babel/types";
 
 function Sections() {
   React.useEffect(() => {
-    document.body.classList.add("sections-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
+    // document.body.classList.add("sections-page");
+    // document.body.classList.add("sidebar-collapse");
+    // document.documentElement.classList.remove("nav-open");
     var href = window.location.href.substring(
       window.location.href.lastIndexOf("#/") + 2
     );
@@ -61,7 +62,7 @@ function Sections() {
           center: true
         });
       }, 5000);
-      new Rellax(".rellax-header");
+      // new Rellax(".rellax-header");
       new Rellax(".rellax-text");
     }
 
@@ -93,6 +94,7 @@ function Sections() {
         {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
         {/* <Widgets /> */}
+        {/* <WidgetSky /> */}
         <Faq />
         {/* <Features /> Carousel */}
         <MeetingIncentives />

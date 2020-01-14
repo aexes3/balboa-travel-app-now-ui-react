@@ -102,13 +102,13 @@ function ScrollTransparentNavbar() {
                   <p>Home</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem to="/sections#headers" tag={Link}>
-                    <i className="now-ui-icons shopping_box"></i>
-                  Home
-                  </DropdownItem>
-                  <DropdownItem to="/sections#features" tag={Link}>
+                  <DropdownItem to="/sections#flights" tag={Link}>
                     <i className="now-ui-icons ui-2_settings-90"></i>
                     Travel Locations
+                  </DropdownItem>
+                  <DropdownItem to="/sections#top" tag={Link}>
+                    <i className="now-ui-icons shopping_box"></i>
+                  Home
                   </DropdownItem>
                   {/* <DropdownItem to="/sections#blogs" tag={Link}>
                     <i className="now-ui-icons text_align-left"></i>

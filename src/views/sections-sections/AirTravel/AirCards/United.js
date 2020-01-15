@@ -5,7 +5,7 @@ import UnitedSilver from './United/UnitedSilver.js'
 import UnitedGold from './United/UnitedGold.js'
 import UnitedPlatinum from './United/UnitedPlatinum.js'
 import UnitedPremier from './United/UnitedPremier.js'
-import image from 'assets/img/presentation-page/UA-LOGO.jpg'
+// import image from 'assets/img/presentation-page/UA-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
@@ -61,7 +61,7 @@ function a11yProps(index) {
 
 const uaStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

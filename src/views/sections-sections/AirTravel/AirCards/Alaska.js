@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Almvp from './Alaska/Almvp.js';
 import AlmvpGold from './Alaska/AlmvpGold.js';
 import AlmvpGold75k from './Alaska/AlmvpGold75k';
-import image from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
+// import image from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -63,7 +63,7 @@ function a11yProps(index) {
 const alStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         height: '100%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

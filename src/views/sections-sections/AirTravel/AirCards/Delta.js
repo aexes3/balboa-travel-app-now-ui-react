@@ -5,7 +5,7 @@ import DASilver from './Delta-Airlines/DASilver.js';
 import DAGold from './Delta-Airlines/DAGold.js';
 import DAPlatinum from './Delta-Airlines/DAPlatinum.js';
 import DADiamond from './Delta-Airlines/DADiamond.js'
-import image from 'assets/img/presentation-page/DA-LOGO2.jpg'
+// import image from 'assets/img/presentation-page/DA-LOGO2.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -63,7 +63,7 @@ function a11yProps(index) {
 
 const daStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

@@ -5,7 +5,7 @@ import CPGreen from './Cathay/CPGreen.js'
 import CPSilver from './Cathay/CPSilver.js'
 import CPGold from './Cathay/CPGold.js'
 import CPDiamond from './Cathay/CPDiamond.js'
-import image from 'assets/img/presentation-page/CP-LOGO.jpg'
+// import image from 'assets/img/presentation-page/CP-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
@@ -61,7 +61,7 @@ function a11yProps(index) {
 
 const cpStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

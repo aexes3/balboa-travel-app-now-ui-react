@@ -5,7 +5,7 @@ import EmBlue from './Emirates/EmBlue.js';
 import EmSilver from './Emirates/EmSilver.js';
 import EmGold from './Emirates/EmGold.js';
 import EmPlatinum from './Emirates/EmPlatinum.js';
-import image from 'assets/img/presentation-page/EM-LOGO.jpg'
+// import image from 'assets/img/presentation-page/EM-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -63,7 +63,7 @@ function a11yProps(index) {
 
 const swStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

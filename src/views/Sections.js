@@ -10,9 +10,9 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
 // import Features from "./sections-sections/Features.js";
-import BalbaoVideo from "./presentation-sections/BalbaoVideo.js";
+import BalbaoVideo from "./sections-sections/BalbaoVideo.js";
 import Teams from "./sections-sections/Teams.js";
-import SectionsCards from "./presentation-sections/Sections";
+import SectionsCards from "./sections-sections/SectionsCards";
 import Managers from "./sections-sections/Managers.js";
 // import ContactUs from "./sections-sections/ContactUs.js";
 import Faq from "./sections-sections/Faq.js";

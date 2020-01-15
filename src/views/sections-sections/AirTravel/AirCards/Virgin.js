@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Vred from './Virgin/Vred.js';
 import Vsilver from './Virgin/Vsilver.js';
 import Vgold from './Virgin/Vgold.js';
-import image from 'assets/img/presentation-page/VA-LOGO.jpg'
+// import image from 'assets/img/presentation-page/VA-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -60,19 +60,10 @@ function a11yProps(index) {
     };
 }
 
-// const alStyles = makeStyles(theme => ({
-//     root: {
-//         backgroundImage: `url(${image})`,
-//         color: 'white',
-//         backgroundRepeat: 'no-repeat',
-//         backgroundSize: 'cover',
-//     }
-// }));
-
 const vaStyles = makeStyles(theme => ({
     root: {
           flexGrow: 1,
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
     /* Full height */
         height: '100%', 
 

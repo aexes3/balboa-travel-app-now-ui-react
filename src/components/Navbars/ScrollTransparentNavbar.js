@@ -95,10 +95,10 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i
+                  {/* <i
                     aria-hidden={true}
                     class="fas fa-grip-horizontal"
-                  ></i>
+                  ></i> */}
                   <p> Menu</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
@@ -143,7 +143,7 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i class="fas fa-hand-paper" aria-hidden="true"></i>
+                  {/* <i class="fas fa-hand-paper" aria-hidden="true"></i> */}
                   <p> Get in Touch</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
@@ -180,10 +180,10 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i
+                  {/* <i
                     aria-hidden={true}
                     className="fab fa-staylinked"
-                  ></i>
+                  ></i> */}
                   <p>Quick Links</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>

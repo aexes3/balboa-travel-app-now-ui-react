@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import SGSilver from './Singapore/SGSilver.js';
 import SGGold from './Singapore/SGGold.js';
-import image from 'assets/img/presentation-page/SG-LOGO.jpg'
+// import image from 'assets/img/presentation-page/SG-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -61,7 +61,7 @@ function a11yProps(index) {
 
 const swStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

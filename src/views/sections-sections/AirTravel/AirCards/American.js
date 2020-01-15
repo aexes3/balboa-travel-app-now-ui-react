@@ -5,7 +5,7 @@ import AAGold from './American-Airlines/AAGold';
 import AAPlatinum from './American-Airlines/AAPlatinum.js';
 import AAPlatinumPro from './American-Airlines/AAPlatinumPro.js';
 import AAExecutivePlat from './American-Airlines/AAExecutivePlat.js';
-import image from 'assets/img/presentation-page/AA-LOGO2.jpg'
+// import image from 'assets/img/presentation-page/AA-LOGO2.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -65,7 +65,7 @@ const aaStyles = makeStyles(theme => ({
     root: {
         // flexGrow: 1,
         // width: '100%',
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

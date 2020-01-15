@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import LufFrequent from './Lufthansa/LufFrequent.js';
 import LufSenator from './Lufthansa/LufSenator.js';
 import LufHon from './Lufthansa/LufHon.js';
-import image from 'assets/img/presentation-page/LF-LOGO.jpg'
+// import image from 'assets/img/presentation-page/LF-LOGO.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -62,7 +62,7 @@ function a11yProps(index) {
 
 const lfStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

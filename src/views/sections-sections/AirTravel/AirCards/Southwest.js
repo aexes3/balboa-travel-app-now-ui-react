@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SWAList from './Southwest/SWAList.js';
 import SWAListPreferred from './Southwest/SWAListPreferred.js';
 import SWCompanionPass from './Southwest/SWCompanionPass.js';
-import image from 'assets/img/presentation-page/SW-LOGO2.jpg'
+// import image from 'assets/img/presentation-page/SW-LOGO2.jpg'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -62,7 +62,7 @@ function a11yProps(index) {
 
 const swStyles = makeStyles(theme => ({
     root: {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

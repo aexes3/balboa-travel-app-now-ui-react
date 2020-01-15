@@ -26,7 +26,7 @@ function Teams() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Balboa Travel Managers</h2>
+                <h2 className="title">Balboa Travel Team</h2>
                 <h4 className="description">
                   Lorum ipsumLorum ipsumLorum ipsumLorum ipsumLorum ipsumLorum ipsumLorum ipsumLorum ipsum
                 </h4>
@@ -69,7 +69,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/tracy.jpg")}
+                            src={require("assets/img/AlJohnson.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -98,7 +98,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/andrew.jpg")}
+                            src={require("assets/img/Melanie.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -127,7 +127,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/denise.jpg")}
+                            src={require("assets/img/Sawsan.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -154,7 +154,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/michael.jpg")}
+                            src={require("assets/img/RKorson.jpg")}
                           ></img>
                         </a>
                       </div>
@@ -183,7 +183,7 @@ function Teams() {
                           <img
                             alt="..."
                             className="img"
-                            src={require("assets/img/emily.jpg")}
+                            src={require("assets/img/Red.jpg")}
                           ></img>
                         </a>
                       </div>

@@ -5,12 +5,13 @@ import { Container, Row, Col } from "reactstrap";
 
 // core components
 
-function Clients() {
+function Booking() {
   return (
     <>
       <div className="cd-section" id="features">
 
         <div
+          id="booking"
           className="features-7 section-image"
           style={{
             backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")"
@@ -108,7 +109,7 @@ function Clients() {
           </Container>
         </div>
 
-        <div className="features-5">
+        <div className="features-5" id="forms">
           <Container>
                 <h2 className="title">Travel Policy Forms</h2>
             <Row>
@@ -198,4 +199,4 @@ function Clients() {
   );
 }
 
-export default Clients;
+export default Booking;

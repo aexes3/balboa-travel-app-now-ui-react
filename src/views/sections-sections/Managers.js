@@ -15,11 +15,11 @@ function Managers() {
     <>
       <div className="cd-section" id="testimonials">
         
-        <div className="testimonials-3">
+        <div className="testimonials-3" >
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="6">
-                <h2 className="title">Balboa Travel Mangagers</h2>
+                <h2 className="title">Balboa Travel Management Team</h2>
               </Col>
             </Row>
             <Row>
@@ -30,7 +30,7 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/denise.jpg")}
+                        src={require("assets/img/Sawsan.jpg")}
                       ></img>
                     </a>
                   </div>
@@ -51,7 +51,7 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/dan.jpg")}
+                        src={require("assets/img/RKorson.jpg")}
                       ></img>
                     </a>
                   </div>
@@ -75,7 +75,70 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/tracy.jpg")}
+                        src={require("assets/img/Melanie.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
+                    <h6 className="category text-info">HR Specialist</h6>
+                    <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/Red.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
+                    <h6 className="category text-info">HR Specialist</h6>
+                    <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/AlJohnson.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
+                    <h6 className="category text-info">HR Specialist</h6>
+                    <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/dan.jpg")}
                       ></img>
                     </a>
                   </div>

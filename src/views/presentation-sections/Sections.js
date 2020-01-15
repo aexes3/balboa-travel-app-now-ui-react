@@ -9,11 +9,11 @@ import { Container, Row, Col } from "reactstrap";
 function Sections() {
   return (
     <>
-      <div className="section section-sections" data-background-color="gray">
-        <Container>
+      <div className="section section-sections" data-background-color="gray" >
+        <Container id="wyat" >
           <Col className="ml-auto mr-auto" md="8">
             <div className="section-description text-center">
-              <h2 className="title">While you are there</h2>
+              <h2 className="title" >While you are there</h2>
               <h5 className="description">
                 Check on important links about your travel desitation and trips along the way.
               </h5>
@@ -108,7 +108,7 @@ function Sections() {
             </Row>
 
 
-            <Row>
+            <Row >
               <Col md="3">
                 {/* <img
                   alt="..."
@@ -125,7 +125,7 @@ function Sections() {
                   src={require("assets/img/presentation-page/opentable.jpg")}
                 ></img> */}
               </Col>
-              <Col md="3">
+              <Col md="3" >
                 {/* <img
                   alt="..."
                   src={require("assets/img/presentation-page/balboa.png")}
@@ -333,7 +333,7 @@ function Sections() {
 
           </div>
         </Container>
-      </div>
+      </div > 
     </>
   );
 }

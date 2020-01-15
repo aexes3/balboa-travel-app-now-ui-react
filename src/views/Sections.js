@@ -16,7 +16,7 @@ import SectionsCards from "./presentation-sections/Sections";
 import Managers from "./sections-sections/Managers.js";
 // import ContactUs from "./sections-sections/ContactUs.js";
 import Faq from "./sections-sections/Faq.js";
-import Clients from './sections-sections/Clients.js';
+import Booking from './sections-sections/Booking.js';
 import NewsFlash from './sections-sections/NewsFlash';
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
@@ -100,7 +100,7 @@ function Sections() {
         <MeetingIncentives />
         <Vacations />
         {/* <BasicComponents /> Ipad with floating images */}
-        <Clients /> {/* Concur login images with ipad(s) */}
+        <Booking /> {/* Concur login images with ipad(s) */}
         <Teams />
         <Managers /> 
         {/* <ContactUs /> */}

@@ -32,7 +32,7 @@ function Faq() {
 
   return (
     <>
-      <div className="cd-section" id="pricing">
+      <div className="cd-section" id="faq">
         <div
           className="pricing-3 section-image"
           id="pricing-3"

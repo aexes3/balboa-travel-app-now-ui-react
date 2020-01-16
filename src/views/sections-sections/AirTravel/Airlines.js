@@ -37,8 +37,9 @@ const useStyles = makeStyles(theme => ({
         transition: "all 0.2s",
         "&:hover": {
             transform: "scale(1.15)",
-        }
-    }
+        },
+        borderRadius: "15px",
+    },
 }));
 
 
@@ -93,7 +94,7 @@ export default function Airlines(props) {
             <div className={classes.root}>
 
 
-                <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                <Grid container spacing={3}> {/*Spacing is from 0-10 ex. spacing={3} is 16px wide gap. ea. space = 8px */}
                     <Grid item xs={12}>
                         <Paper className={classes.paper}>
                             <Typography variant="h5" component="h3">
@@ -101,21 +102,21 @@ export default function Airlines(props) {
                             </Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/aclogo.png")}
                             onClick={() => handleChange("aircananda")} 
                             className={classes.img}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/allogo.jpg")}
                             onClick={() => handleChange("alaska")} 
                             className={classes.img}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/aalogo.png")}

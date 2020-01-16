@@ -32,7 +32,7 @@ function Headers() {
         </div>
         <div className="rellax-text-container rellax-text">
           <h1 className="h1-seo" data-rellax-speed="-1">
-            Balboa
+            Balboa 1
           </h1>
           
         </div>

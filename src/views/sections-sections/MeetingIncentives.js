@@ -30,7 +30,7 @@ function MeetingIncentives() {
                 Meeting Request Form
                 </a>
                 <br /><br />
-                  <Fab onClick={ e => window.location.href=`mailto:meeting&eventsolutions@balboa.com.com`} target="_blank"size="large" color="default" variant="fab">
+                  <Fab onClick={ e => window.location.href=`mailto:meeting&eventsolutions@balboa.com`} target="_blank"size="large" color="default" variant="fab">
                     <i className="fas fa-envelope" />&nbsp; - meeting&amp;eventsolutions@balboa.com
                   </Fab>
                 </h4>

@@ -30,8 +30,9 @@ const useStyles = makeStyles(theme => ({
         transition: "all 0.2s",
         "&:hover": {
             transform: "scale(1.15)",
-        }
-    }
+        },
+        borderRadius: "15px",
+    },
 }));
 
 
@@ -72,7 +73,7 @@ export default function Rentals2(props) {
             <div className={classes.root} >
 
 
-                <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                <Grid container spacing={3}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
                     {/* <Grid item xs={12} sm={6} md={4}>
                         <img
                             alt="..."
@@ -94,21 +95,21 @@ export default function Rentals2(props) {
                             onClick={() => handleChange("budget")}
                             className={classes.img} />
                     </Grid> */}
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/entelogo.jpg")}
                             onClick={() => handleChange("enterprise")}
                             className={classes.img} />
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hertlogo.jpg")}
                             onClick={() => handleChange("hertz")}
                             className={classes.img} />
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/natilogo.jpg")}

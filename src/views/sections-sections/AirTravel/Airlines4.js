@@ -37,8 +37,9 @@ const useStyles = makeStyles(theme => ({
         transition: "all 0.2s",
         "&:hover": {
             transform: "scale(1.15)",
-        }
-    }
+        },
+        borderRadius: "15px",
+    },
 }));
 
 
@@ -158,7 +159,7 @@ export default function Airlines2 (props) {
                             onClick={() => handleChange("singapore")} 
                             className={classes.img}/>
                     </Grid>  */}
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/swlogo.jpg")}
@@ -166,15 +167,15 @@ export default function Airlines2 (props) {
                             className={classes.img}/>
                     </Grid>
 
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/ualogo.png")}
                             onClick={() => handleChange("united")} 
                             className={classes.img} />
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
+                    <Grid item xs={12} sm={12} md={4}>
+                        <img1
                             alt="..."
                             src={require("assets/img/presentation-page/valogo.png")}
                             onClick={() => handleChange("virgin")} 

@@ -1,20 +1,16 @@
 import React from "react";
 import Rellax from "rellax";
 
-// reactstrap components
-
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
-// import Features from "./sections-sections/Features.js";
 import BalbaoVideo from "./sections-sections/BalbaoVideo.js";
 import Teams from "./sections-sections/Teams.js";
 import SectionsCards from "./sections-sections/SectionsCards";
 import Managers from "./sections-sections/Managers.js";
-// import ContactUs from "./sections-sections/ContactUs.js";
 import Faq from "./sections-sections/Faq.js";
 import Booking from './sections-sections/Booking.js';
 import NewsFlash from './sections-sections/NewsFlash';
@@ -23,8 +19,6 @@ import Vacations from "./sections-sections/Vacations.js";
 import Flights from "./sections-sections/Flights";
 import GroundTravel from "./sections-sections/GroundTravel.js";
 import Hotel from "./sections-sections/Hotel.js";
-// import Widgets from "./sections-sections/Widgets.js";
-// import WidgetSky from './sections-sections/WidgetSky';
 // import { isProperty } from "@babel/types";
 
 function Sections() {
@@ -85,25 +79,19 @@ function Sections() {
       <ScrollTransparentNavbar />
       <div className="wrapper">
         <div className="section-space"></div>
-        <Headers /> {/*Large Pic of city */}
-        <BalbaoVideo /> {/*IFrame video news feed*/}
-        <NewsFlash /> {/*This section has the carousel with sicky alerts */}
+        <Headers /> 
+        <BalbaoVideo /> 
+        <NewsFlash /> 
         <Flights />
         <GroundTravel />
         <Hotel />
-        {/* <Components /> 4 pop-up cards */}
         <SectionsCards /> {/*12 card links*/}
-        {/* <Widgets /> */}
-        {/* <WidgetSky /> */}
         <Faq />
-        {/* <Features /> Carousel */}
         <MeetingIncentives />
         <Vacations />
-        {/* <BasicComponents /> Ipad with floating images */}
-        <Booking /> {/* Concur login images with ipad(s) */}
+        <Booking /> {/* Concur login images with ipad */}
         <Teams />
         <Managers /> 
-        {/* <ContactUs /> */}
         <FooterBlack />
       </div>
     </>

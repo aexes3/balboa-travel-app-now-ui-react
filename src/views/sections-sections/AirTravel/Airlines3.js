@@ -37,8 +37,9 @@ const useStyles = makeStyles(theme => ({
         transition: "all 0.2s",
         "&:hover": {
             transform: "scale(1.15)",
-        }
-    }
+        },
+        borderRadius: "15px",
+    },
 }));
 
 
@@ -137,21 +138,21 @@ export default function Airlines2 (props) {
                             src={require("assets/img/presentation-page/emlogo.png")}
                             onClick={() => handleChange("emirates")} />
                     </Grid> */}
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/jblogo.JPG")}
                             onClick={() => handleChange("jetblue")} 
                             className={classes.img}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/lflogo.png")}
                             onClick={() => handleChange("lufthansa")} 
                             className={classes.img}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/sglogo.png")}

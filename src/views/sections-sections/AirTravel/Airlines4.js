@@ -95,70 +95,7 @@ export default function Airlines2 (props) {
 
 
                 <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
-                    {/* <Grid item xs={12}>
-                        <Paper className={classes.paper}>
-                            <Typography variant="h5" component="h3">
-                                Air Travel
-                                    </Typography>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/aclogo.png")}
-                            onClick={() => handleChange("aircananda")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/allogo.jpg")}
-                            onClick={() => handleChange("alaska")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/aalogo.png")}
-                            onClick={() => handleChange("american")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/cplogo.png")}
-                            onClick={() => handleChange("cathay")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/dalogo.png")}
-                            onClick={() => handleChange("delta")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/emlogo.png")}
-                            onClick={() => handleChange("emirates")} />
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/jblogo.JPG")}
-                            onClick={() => handleChange("jetblue")} 
-                            className={classes.img}/>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/lflogo.png")}
-                            onClick={() => handleChange("lufthansa")} 
-                            className={classes.img}/>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <img
-                            alt="..."
-                            src={require("assets/img/presentation-page/sglogo.png")}
-                            onClick={() => handleChange("singapore")} 
-                            className={classes.img}/>
-                    </Grid>  */}
+                    
                     <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
@@ -175,7 +112,7 @@ export default function Airlines2 (props) {
                             className={classes.img} />
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img1
+                        <img
                             alt="..."
                             src={require("assets/img/presentation-page/valogo.png")}
                             onClick={() => handleChange("virgin")} 

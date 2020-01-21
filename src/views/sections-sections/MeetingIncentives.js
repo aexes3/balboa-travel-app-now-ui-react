@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import { Fab, } from '@material-ui/core';
 
 
@@ -30,9 +30,20 @@ function MeetingIncentives() {
                 Meeting Request Form
                 </a>
                 <br /><br />
-                  <Fab onClick={ e => window.location.href=`mailto:meetings&incentives@balboa.com`} target="_blank"size="large" color="default" variant="fab">
-                    <i className="fas fa-envelope" />&nbsp; - meeting&amp;eventsolutions@balboa.com
+                  <Fab onClick={ e => window.location.href=`mailto:meetings%2526eventsolutions@balboa.com`} target="_blank" size="large" color="default" variant="fab">
+                    <i className="fas fa-envelope" />&nbsp; - meeting&amp;eventsolutions@balboa.com %2526
                   </Fab>
+                  <Button onClick={ e => window.location.href=`mailto:meeting&eventsolutions@balboa.com`}>
+                  	                    <i className="fas fa-envelope" /> - meeting&amp;eventsolutions@balboa.com &amp;
+                  </Button>
+                  
+                  <Button onClick={ e => window.location.href=`mailto:meeting%26eventsolutions@balboa.com`}>
+                  	                    <i className="fas fa-envelope" /> - meeting&amp;eventsolutions@balboa.com %26
+                  </Button>
+
+                  <Button onClick={ e => window.location.href=`mailto:meeting%2526eventsolutions@balboa.com`}>
+                  	                    <i className="fas fa-envelope" /> - meeting&amp;eventsolutions@balboa.com %2526
+                  </Button>
                 </h4>
               </Col>
             </Row>

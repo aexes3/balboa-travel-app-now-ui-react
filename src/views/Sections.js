@@ -4,21 +4,20 @@ import Rellax from "rellax";
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
-
 // sections for this page
 import Headers from "./sections-sections/Headers.js";
 import BalbaoVideo from "./sections-sections/BalbaoVideo.js";
-import Teams from "./sections-sections/Teams.js";
-import SectionsCards from "./sections-sections/SectionsCards";
-import Managers from "./sections-sections/Managers.js";
-import Faq from "./sections-sections/Faq.js";
-import Booking from './sections-sections/Booking.js';
 import NewsFlash from './sections-sections/NewsFlash';
-import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
-import Vacations from "./sections-sections/Vacations.js";
 import Flights from "./sections-sections/Flights";
 import GroundTravel from "./sections-sections/GroundTravel.js";
 import Hotel from "./sections-sections/Hotel.js";
+import SectionsCards from "./sections-sections/SectionsCards";
+import Faq from "./sections-sections/Faq.js";
+import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
+import Vacations from "./sections-sections/Vacations.js";
+import Booking from './sections-sections/Booking.js';
+import TeamMembers from "./sections-sections/TeamMembers.js";
+import Managers from "./sections-sections/Managers.js";
 // import { isProperty } from "@babel/types";
 
 function Sections() {
@@ -90,7 +89,7 @@ function Sections() {
         <MeetingIncentives />
         <Vacations />
         <Booking /> {/* Concur login images with ipad */}
-        <Teams />
+        <TeamMembers />
         <Managers /> 
         <FooterBlack />
       </div>

@@ -456,7 +456,30 @@ function Faq() {
                   <ExpansionPanelDetails>
                     <Typography color="textSecondary" align="left" variant='caption'>
                       <p>
-                         - 
+                         - Passed by Congress in 2005, the REAL ID Act enacted the 9/11 Commission's recommendation that 
+                         the Federal Government “set standards for the issuance of sources of identification, such as driver's 
+                         licenses.” The Act established minimum security standards for state-issued driver's licenses and 
+                         identification cards and prohibits Federal agencies from accepting for official purposes licenses 
+                         and identification cards from states that do not meet these standards. <br />
+                         These purposes are: <br />
+                         &#176; Accessing Federal facilities <br />
+                          &#176; Boarding federally regulated commercial aircraft <br />
+                          &#176; Entering nuclear power plants
+                      </p>
+                      <p>
+                        - The final enforcement deadline is October 1, 2020. By this date, not only must all states be issuing 
+                        Real ID-compliant licenses or IDs, but individuals must also have visited their state’s driver’s 
+                        licensing agency and obtained a REAL ID compliant card, or acceptable alternative such as a U.S. 
+                        passport, if they wish to fly on commercial aircraft or access federal facilities.
+                      </p>
+                      <p>
+                        - Federal agencies, including DHS and TSA, may only accept state-issued driver’s licenses and 
+                        identification cards as identification for purposes of accessing federal facilities - including TSA 
+                        airport security checkpoints - if the license or card was issued by a REAL ID compliant state in 
+                        accordance with the REAL ID security standards (meaning the license or card must include the REAL ID 
+                        compliant star marking). Enhanced Driver’s Licenses (EDL) issued by Washington, Michigan, Minnesota, 
+                        New York, and Vermont are considered acceptable alternatives to REAL ID-compliant cards and will also 
+                        be accepted for official REAL ID purposes. Most EDLs do not contain the star marking and this is acceptable.
                       </p>
                     </Typography>
                   </ExpansionPanelDetails>

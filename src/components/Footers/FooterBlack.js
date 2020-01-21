@@ -78,9 +78,6 @@ function FooterBlack() {
               <p>
                 <a href="https://www.balboa.com/balboa-vacations">Balboa Vacation</a>
               </p>
-              <p>
-                <a href="https://www.balboa.com/travelbreaks">Travelbreaks</a>
-              </p>
             </Col>
             <hr className="w-100 clearfix d-md-none" />
             <Col md="3" lg="2" xl="2" className="mx-auto mt-3">

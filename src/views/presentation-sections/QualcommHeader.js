@@ -1,17 +1,21 @@
+/*eslint-disable*/
 import React from "react";
 
-function Headers() {
+// reactstrap components
+
+// core components
+
+function QualcommHeader() {
   return (
     <>
-      <div className="cd-section" id="top">
-      <div className="page-header clear-filter">
+      <div className="page-header clear-filter" id="qtop">
         <div className="rellax-header rellax-header-sky" data-rellax-speed="-4">
           <div
             className="page-header-image"
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/sky.jpg") +
+                require("assets/img/presentation-page/water.png") +
                 ")"
             }}
           ></div>
@@ -25,25 +29,22 @@ function Headers() {
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/buildings.png") +
+                require("assets/img/presentation-page/sand.png") +
                 ")"
             }}
           ></div>
         </div>
         <div className="rellax-text-container rellax-text">
           <h1 className="h1-seo" data-rellax-speed="-1">
-            Balboa 1
+            Qualcomm
           </h1>
-          
         </div>
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-          A Travel Agency
+          Nothing But Tech
         </h3>
-      </div>        
-     
       </div>
     </>
   );
 }
 
-export default Headers;
+export default QualcommHeader;

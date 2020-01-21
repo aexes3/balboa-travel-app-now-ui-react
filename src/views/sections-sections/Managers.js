@@ -30,17 +30,17 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/Sawsan.jpg")}
+                        src={require("assets/img/presentation-page/team-members/DIR_SawsanAsad.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h3">Denise Jackson</CardTitle>
-                    <h6 className="category text-info">Loan Counselor</h6>
-                    <p className="card-description">
+                    <CardTitle tag="h3">Sawsan Asad</CardTitle>
+                    <h6 className="category text-info">Director Of Operations</h6>
+                    {/* <p className="card-description">
                       "Do not go where the path may lead, go instead where there
                       is no path and leave a trail."
-                    </p>
+                    </p> */}
                   </CardBody>
                 </Card>
               </Col>
@@ -51,20 +51,20 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/RKorson.jpg")}
+                        src={require("assets/img/presentation-page/team-members/MGR_MelanieHanson.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h4">Dan Wise</CardTitle>
+                    <CardTitle tag="h4">Melanie Hanson</CardTitle>
                     <h6 className="category text-info">
-                      Interpreter OR Translator
+                      VIP Team Supervisor
                     </h6>
-                    <p className="card-description">
+                    {/* <p className="card-description">
                       "Don't walk behind me; I may not lead. Don't walk in front
                       of me; I may not follow. Just walk beside me and be my
                       friend."
-                    </p>
+                    </p> */}
                   </CardBody>
                 </Card>
               </Col>
@@ -75,13 +75,34 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/Melanie.jpg")}
+                        src={require("assets/img/presentation-page/team-members/MGR_RedWalker.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
-                    <h6 className="category text-info">HR Specialist</h6>
+                    <CardTitle tag="h4">Red Walker</CardTitle>
+                    <h6 className="category text-info">Team Supervisor</h6>
+                    {/* <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p> */}
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/presentation-page/team-members/VIP_AlJohnson.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Al Johnson</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
                     <p className="card-description">
                       "The pessimist complains about the wind; the optimist
                       expects it to change; the realist adjusts the sails."
@@ -96,13 +117,13 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/Red.jpg")}
+                        src={require("assets/img/presentation-page/team-members/VIP_BethThomas.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
-                    <h6 className="category text-info">HR Specialist</h6>
+                    <CardTitle tag="h4">Beth Thomas</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
                     <p className="card-description">
                       "The pessimist complains about the wind; the optimist
                       expects it to change; the realist adjusts the sails."
@@ -117,13 +138,13 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/AlJohnson.jpg")}
+                        src={require("assets/img/presentation-page/team-members/VIP_JaimeCurry.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
-                    <h6 className="category text-info">HR Specialist</h6>
+                    <CardTitle tag="h4">Jaime Curry</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
                     <p className="card-description">
                       "The pessimist complains about the wind; the optimist
                       expects it to change; the realist adjusts the sails."
@@ -138,17 +159,59 @@ function Managers() {
                       <img
                         alt="..."
                         className="img img-raised rounded"
-                        src={require("assets/img/dan.jpg")}
+                        src={require("assets/img/presentation-page/team-members/VIP_LavinaD_Souza.jpg")}
                       ></img>
                     </a>
                   </div>
                   <CardBody>
-                    <CardTitle tag="h4">Tracy Yamell</CardTitle>
-                    <h6 className="category text-info">HR Specialist</h6>
+                    <CardTitle tag="h4">Lavina D' Souza</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
+                    {/* <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p> */}
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/presentation-page/team-members/VIP_RachelleKorson.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Rachelle Korson</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
                     <p className="card-description">
                       "The pessimist complains about the wind; the optimist
                       expects it to change; the realist adjusts the sails."
                     </p>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md="4">
+                <Card className="card-testimonial card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        className="img img-raised rounded"
+                        src={require("assets/img/presentation-page/team-members/VIP_DanaBoyce.jpg")}
+                      ></img>
+                    </a>
+                  </div>
+                  <CardBody>
+                    <CardTitle tag="h4">Dana Boyce</CardTitle>
+                    <h6 className="category text-info">Executive Travel Desk</h6>
+                    {/* <p className="card-description">
+                      "The pessimist complains about the wind; the optimist
+                      expects it to change; the realist adjusts the sails."
+                    </p> */}
                   </CardBody>
                 </Card>
               </Col>

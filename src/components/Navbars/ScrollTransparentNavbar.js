@@ -151,11 +151,11 @@ function ScrollTransparentNavbar() {
                      <i className="fa fa-comment"></i>
                      Chat
                   </DropdownItem>
-                  <DropdownItem>
+                  <DropdownItem href="sms:858-240-1171" target="_blank">
                     <i className="fa fa-sms"></i>
-                    Send a Text
+                    Text - 858-240-1171
                   </DropdownItem>
-                  <DropdownItem href="tel:858-678-3300" target="_blank">
+                  <DropdownItem href="sms:858-678-3300" target="_blank">
                       <i className="fa fa-phone"></i>
                       858-678-3300 M-F 6a - 6p
                     </DropdownItem>

@@ -138,10 +138,6 @@ export default function AirCanada() {
                         alt="..."
                         src={require("assets/img/presentation-page/promotions/promo2.png")}
                     />
-                    {/* <img
-                        alt="..."
-                        src={require("assets/img/presentation-page/promotions/promo1.png")}
-                    /> */}
             </TabPanel>
 
             <TabPanel value={value} index={3} className={classes.root}>

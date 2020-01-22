@@ -150,16 +150,12 @@ export default function American() {
             </TabPanel>
 
             <TabPanel value={value} index={2} >
-                    {/* <img
-                        className="promotions1"
-                        alt="..."
-                        src={require("assets/img/presentation-page/promotions/promo1.png")}
-                    /> */}
+                    <a href="https://www.aa.com/loyalty/enrollment/enroll" target="_blank" rel="noopener noreferrer">
                     <img
-                        className="promotions2"
                         alt="..."
                         src={require("assets/img/presentation-page/promotions/promo2.png")}
                     />
+                    </a>
             </TabPanel>
 
             <TabPanel value={value} index={3} className={aalogo.root}>

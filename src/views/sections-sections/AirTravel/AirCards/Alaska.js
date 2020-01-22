@@ -136,11 +136,11 @@ export default function Alaska() {
                         alt="..."
                         src={require("assets/img/presentation-page/promotions/promo2.png")}
                     />
-                    <img
+                    {/* <img
                         className="promotions2"
                         alt="..."
                         src={require("assets/img/presentation-page/promotions/promo1.png")}
-                    />
+                    /> */}
             </TabPanel>
 
 

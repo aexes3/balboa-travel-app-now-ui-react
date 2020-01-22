@@ -95,7 +95,7 @@ function Faq() {
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                   >
-                    <Typography className={classes.heading}>Flyer Programs</Typography>
+                    <Typography className={classes.heading}>Frequent Flyer Programs</Typography>
                     <Typography className={classes.secondaryHeading}>
                     What frequent flyer program(s) should I join?
                     </Typography>
@@ -272,7 +272,7 @@ function Faq() {
                   >
                     <Typography className={classes.heading}>Check-in</Typography>
                     <Typography className={classes.secondaryHeading}> 
-                    When is early check-in?
+                    How to request an early check-in?
                     </Typography>
                   </ExpansionPanelSummary>
                   <ExpansionPanelDetails>
@@ -303,7 +303,7 @@ function Faq() {
                   >
                     <Typography className={classes.heading}>Check-out</Typography>
                     <Typography className={classes.secondaryHeading}>
-                    When is late check-out?
+                    How to request a late check-out
                     </Typography>
                   </ExpansionPanelSummary>
                   <ExpansionPanelDetails>

@@ -85,9 +85,8 @@ export default function Avis() {
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Check-in" {...a11yProps(1)} />
-                    <Tab label="Promotions" {...a11yProps(2)} />
-                    <Tab label="Misc" {...a11yProps(3)} />
+                    <Tab label="Promotions" {...a11yProps(1)} />
+                    <Tab label="Misc" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
 

@@ -6,6 +6,7 @@ import AAPlatinum from './American-Airlines/AAPlatinum.js';
 import AAPlatinumPro from './American-Airlines/AAPlatinumPro.js';
 import AAExecutivePlat from './American-Airlines/AAExecutivePlat.js';
 // import image from 'assets/img/presentation-page/AA-LOGO2.jpg'
+import promo1 from 'assets/img/presentation-page/promotions/promo1.png'
 import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
 import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
@@ -62,13 +63,18 @@ function a11yProps(index) {
 }
 
 const aaStyles = makeStyles(theme => ({
-    root: {
+    promotion: {
         // flexGrow: 1,
-        // width: '100%',
-        // backgroundImage: `url(${image})`,
-        color: 'white',
+        width: '100%',
+        // backgroundImage: `url(${promo1})`,
+        // color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        // height: '225px',
+        // width: '850px',
+    },
+    misc: {
+
     }
 }));
 
@@ -86,17 +92,19 @@ export default function American() {
     //   setExpanded(!expanded);
     // };
     return (
-        <div className={aalogo.root}>
+        <div
+        // className={aalogo.root}
+        >
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Check-In" {...a11yProps(1)} />
-                    <Tab label="Misc" {...a11yProps(2)} />
-                    <Tab label="Promotions" {...a11yProps(3)} />
+                <Tab label="Loyalty" {...a11yProps(0)} />
+                    <Tab label="Check In" {...a11yProps(1)} />
+                    <Tab label="Promotions" {...a11yProps(2)} />
+                    <Tab label="Misc" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
             
-            <TabPanel value={value} index={0} className={aalogo.root}>
+            <TabPanel value={value} index={0}>
             
                 <Row>
                     <Col lg="3" md="6" sm="12">
@@ -137,58 +145,21 @@ export default function American() {
                 </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={aalogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={1}>
+                
             </TabPanel>
 
-            <TabPanel value={value} index={2} className={aalogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={2} >
+                    <img
+                        className="promotions1"
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo1.png")}
+                    />
+                    <img
+                        className="promotions2"
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    />
             </TabPanel>
 
             <TabPanel value={value} index={3} className={aalogo.root}>

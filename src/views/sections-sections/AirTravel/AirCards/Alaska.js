@@ -89,8 +89,8 @@ export default function Alaska() {
         <div className={allogo.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Check-in" {...a11yProps(1)} />
+                <Tab label="Loyalty" {...a11yProps(0)} />
+                    <Tab label="Check In" {...a11yProps(1)} />
                     <Tab label="Promotions" {...a11yProps(2)} />
                     <Tab label="Misc" {...a11yProps(3)} />
                 </Tabs>
@@ -127,47 +127,23 @@ export default function Alaska() {
             </TabPanel>
 
             <TabPanel value={value} index={1} className={allogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+               
             </TabPanel>
-            <TabPanel value={value} index={2} className={allogo.root}>
-            
-            <Row>
-                <Col>
-                    <PromotionOne />                
-                </Col>
-                <Col>
-                    <PromotionTwo />
-                </Col>
-                <Col>
-                    <PromotionThree />
-                </Col>
-                {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-              </Row>
-            
+
+            <TabPanel value={value} index={2} >
+                    <img
+                        className="promotions1"
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    />
+                    <img
+                        className="promotions2"
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo1.png")}
+                    />
             </TabPanel>
+
+
             <TabPanel value={value} index={3} className={allogo.root}>
               
             </TabPanel>

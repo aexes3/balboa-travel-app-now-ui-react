@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Prestige25k from './AirCanada/Prestige25k.js';
@@ -68,28 +69,31 @@ const swStyles = makeStyles(theme => ({
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-    }
+    },
+    background: {
+        backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    },
 }));
 
 export default function AirCanada() {
-    const swlogo = swStyles();
+    const classes = swStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={swlogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Check-in" {...a11yProps(1)} />
+                    <Tab label="Check In" {...a11yProps(1)}><a href="http://balboa.com/travelbreaks" /></Tab>
                     <Tab label="Promotions" {...a11yProps(2)} />
                     <Tab label="Misc" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={swlogo.root}>
+            <TabPanel value={value} index={0} className={classes.root}>
                 <Container>
                     <Row >
                         <Col lg="4" md="6" sm="12">
@@ -125,49 +129,22 @@ export default function AirCanada() {
                 </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={swlogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
-            </TabPanel>
-            <TabPanel value={value} index={2} className={swlogo.root}>
+            <TabPanel value={value} index={1} ></TabPanel>
 
-                <Row>
-                    <Col>
-                        <PromotionOne />
-                    </Col>
-                    <Col>
-                        <PromotionTwo />
-                    </Col>
-                    <Col>
-                        <PromotionThree />
-                    </Col>
-                    {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-                </Row>
 
+
+            <TabPanel value={value} index={2} className={classes.background}>
+                    <img
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    />
+                    <img
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo1.png")}
+                    />
             </TabPanel>
-            <TabPanel value={value} index={3} className={swlogo.root}>
+
+            <TabPanel value={value} index={3} className={classes.root}>
 
             </TabPanel>
         </div>

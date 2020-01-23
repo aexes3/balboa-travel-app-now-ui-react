@@ -32,12 +32,12 @@ function Headers() {
         </div>
         <div className="rellax-text-container rellax-text">
           <h1 className="h1-seo" data-rellax-speed="-1">
-            Balboa 1
+            Balboa
           </h1>
           
         </div>
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-          A Travel Agency
+        Corporate Travel Specialists
         </h3>
       </div>        
      

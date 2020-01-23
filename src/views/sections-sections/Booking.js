@@ -18,12 +18,9 @@ function Booking() {
           }}
         >
           <Col className="mr-auto ml-auto text-center" md="8">
-            <h2 className="title">Concur Login</h2>
+            <h2 className="title">Online Booking Tool</h2>
             <h4 className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.
+            Stay in compliance by booking your next trip through Balboa’s online booking platform.
             </h4>
           </Col>
           <Container fluid>
@@ -31,9 +28,9 @@ function Booking() {
               <Col className="px-0" md="6">
                 <Col sm="12">
                   <div className="info info-horizontal">
-                  <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                  <a href="https://www.concursolutions.com/nui/signin"
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <div className="icon">
                       <i className="fa fa-calendar"></i>
@@ -47,49 +44,64 @@ function Booking() {
                       <h5 className="info-title">Online Booking Tool Login</h5>
                     </a>
                       <p className="description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      When you booking online through your company’s approved booking platform, 
+                      you will save time, while saving your company money.
                       </p>
                     </div>
                   </div>
                   <div className="info info-horizontal">
-                  <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                    <a href="https://www.concurtraining.com/en-us/pr/travel"
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
-                      <div className="icon">
-                      <i className="fa fa-laptop"></i>
-                    </div>
-                    </a>
+                        <div className="icon">
+                        <i className="fa fa-laptop"></i>
+                        </div>
+                      </a>
                     <div className="description">
-                    <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                    <a href="https://www.concurtraining.com/en-us/pr/travel"
+                     rel="noopener noreferrer"
+                     target="_blank"
                     >
                       <h5 className="info-title">Online Tool Training</h5>
                     </a>
                       <p className="description">
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                      Update verbiage under Online Tool Training to: 
+                      Learn how to use Concur Travel to book a flight, 
+                      rail, car, and/or hotel reservations.
                       </p>
                     </div>
                   </div>
                   <div className="info info-horizontal">
-                    <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                    <a href="https://www.concurtraining.com/pr/mobile"
+                     rel="noopener noreferrer"
+                     target="_blank"
                     >
                     <div className="icon">
                       <i className="fas fa-mobile-alt"></i>
                     </div>
                     </a>
                     <div className="description">
-                    <a href="#pablo"
-                     onClick={e => {
-                      e.preventDefault();}}
+                    <a href="https://www.concurtraining.com/pr/mobile"
+                     rel="noopener noreferrer"
+                     target="_blank"
                     >
                       <h5 className="info-title">Concur Mobile</h5>
                     </a>
                       <p className="description">
-                      Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                        <a href="https://apps.apple.com/us/app/sap-concur/id335023774"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          color="primary">
+                            iPhone
+                        </a>
+                        <br />
+                        <a href="https://play.google.com/store/apps/details?id=com.concur.breeze&hl=en_US"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          color="primary">
+                            Android
+                        </a>
                       </p>
                     </div>
                   </div>

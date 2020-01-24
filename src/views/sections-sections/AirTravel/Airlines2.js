@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid,} from '@material-ui/core';
-import { BrowserRouter as Router, } from "react-router-dom";
 import Cathay from './AirCards/Cathay.js'
 import Delta from './AirCards/Delta.js'
 import Emirates from './AirCards/Emirates.js'
@@ -19,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Airlines(props) {
+export default function Airlines2 (props) {
     const [airline, setAirline] = React.useState("");
     const classes = useStyles();
 
@@ -46,9 +45,8 @@ export default function Airlines(props) {
     }
 
     return (
-        <Router>
             <div className={classes.root}>
-                <Grid container spacing={3}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
                     <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."
@@ -74,6 +72,5 @@ export default function Airlines(props) {
             {renderAirline(airline)}
             </div>
             
-        </Router>
     );
 }

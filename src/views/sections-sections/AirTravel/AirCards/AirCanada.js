@@ -61,6 +61,7 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        marginBottom: '20px',
     },
 }));
 
@@ -124,7 +125,7 @@ export default function AirCanada() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <Fab onClick={e => e.preventDefault()} href="#pablo" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                    <Fab href="https://res.aircanada.com/oci/start?_flowExecutionKey=_c70ECBD98-1119-8DB0-34F4-31672B945195_k29533F76-FE0E-7D4A-9BF1-41AB7303C459" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
                                         <ComputerIcon /> &nbsp; Check in for your flight now
                                     </Fab>
                                 </ListItem>

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-// import { Grid, Paper, Typography, } from '@material-ui/core';
+import { Grid, Paper, Typography, } from '@material-ui/core';
 import image from 'assets/img/presentation-page/SMOKE1.jpg'
 import Airlines from "./AirTravel/Airlines.js";
 import Airlines2 from "./AirTravel/Airlines2.js";
@@ -18,9 +18,12 @@ const useStyles = makeStyles(theme => ({
         backgroundSize: 'cover',
     },
     paper: {
-        padding: theme.spacing(2, 1),
-        // backgroundImage: `url(${image})`,
+        // padding: theme.spacing(2, 1),
+        backgroundImage: `url(${image})`,
     },
+    content:{
+        paddingBottom: '1em',
+    }
 }));
 
 export default function Flights (){
@@ -28,18 +31,26 @@ export default function Flights (){
 
     return(
         <div className={classes.root} id="flights">
-            {/* <Grid item xs={12}>
+            <Grid item xs={12}>
                 <Paper className={classes.paper}>
-                    <Typography variant="h5" component="h3">
+                    {/* <Typography variant="h5" component="h3">
                         Air Travel
-                    </Typography>
+                    </Typography> */}
                 </Paper>
-            </Grid> */}
+            </Grid>
             <div className="features-2">
-                <Airlines />
-                <Airlines2 />
-                <Airlines3 />
-                <Airlines4 />
+                <div className={classes.content}>
+                    <Airlines />
+                </div>  
+                <div className={classes.content}>
+                    <Airlines2 />
+                </div>
+                <div className={classes.content}>
+                    <Airlines3 />
+                </div>
+                <div className={classes.content}>
+                    <Airlines4 />
+                </div>
             </div>
         </div>
     )

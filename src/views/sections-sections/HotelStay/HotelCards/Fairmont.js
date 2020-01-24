@@ -60,18 +60,19 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        marginBottom: '20px',
     },
 }));
 
 export default function Fairmont() {
-    const styles = useStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={styles.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
@@ -80,7 +81,7 @@ export default function Fairmont() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={styles.root}>
+            <TabPanel value={value} index={0} className={classes.root}>
 
                     <Row>
                         <Col lg="3" md="6" sm="12">

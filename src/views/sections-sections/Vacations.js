@@ -24,11 +24,11 @@ function Vacations() {
                 discounts and offer credits for your upcoming vacation.
                 <hr />
                   <Fab onClick={ e => window.location.href=`mailto:vacations@balboa.com`} target="_blank"size="large" color="default" variant="fab">
-                    <i className="fas fa-envelope" />&nbsp; - vacations@balboa.com
+                    <i className="fas fa-envelope" />&nbsp; vacations@balboa.com
                   </Fab>
                   <br /><br />
                   <Fab href="tel:800-359-8576" target="_blank" size="large" color="default" variant="fab">
-                    <PhoneIcon />&nbsp; - 800-359-8576
+                    <PhoneIcon />&nbsp; 800-359-8576
                   </Fab>
                 </h4>
               </Col>

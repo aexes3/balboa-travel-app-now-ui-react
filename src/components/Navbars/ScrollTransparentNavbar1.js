@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Image from '../../assets/img/presentation-page/balboalogo.png';
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -11,7 +10,6 @@ import {
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
   Nav,
   Container,
   UncontrolledTooltip
@@ -24,7 +22,7 @@ function ScrollTransparentNavbar() {
       ? ""
       : " navbar-transparent"
   );
-  const [buyButtonColor, setBuyButtonColor] = React.useState(
+  const [ , setBuyButtonColor] = React.useState(
     (document.documentElement.scrollTop > 499 || document.body.scrollTop) > 499
       ? "info"
       : "neutral"
@@ -231,16 +229,6 @@ function ScrollTransparentNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-default"
-                  color={buyButtonColor}
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
-                  target="_blank"
-                >
-                  <p>Buy Now</p>
-                </Button>
-              </NavItem>
             </Nav>
           </Collapse>
         </Container>

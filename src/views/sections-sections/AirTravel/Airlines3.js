@@ -1,14 +1,13 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, } from '@material-ui/core';
-import { BrowserRouter as Router, } from "react-router-dom";
 import JetBlue from './AirCards/JetBlue.js'
 import Lufthansa from './AirCards/Lufthansa.js'
 import Singapore from './AirCards/Singapore.js'
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1,
+        textAlign: 'center',
     },
     img:{
         transition: "all 0.2s",
@@ -19,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Airlines2 (props) {
+export default function Airlines3 (props) {
     const [airline, setAirline] = React.useState("");
     const classes = useStyles();
 
@@ -46,7 +45,6 @@ export default function Airlines2 (props) {
     }
 
     return (
-        <Router>
             <div className={classes.root}>
                 <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
                     <Grid item xs={12} sm={12} md={4}>
@@ -74,6 +72,5 @@ export default function Airlines2 (props) {
             {renderAirline(airline)}
             </div>
 
-        </Router>
     );
 }

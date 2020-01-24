@@ -16,7 +16,7 @@ import Faq from "./sections-sections/Faq.js";
 import MeetingIncentives from "./sections-sections/MeetingIncentives.js";
 import Vacations from "./sections-sections/Vacations.js";
 import Booking from './sections-sections/Booking.js';
-import TeamMembers from "./sections-sections/TeamMembers.js";
+// import TeamMembers from "./sections-sections/TeamMembers.js";
 import Managers from "./sections-sections/Managers.js";
 // import { isProperty } from "@babel/types";
 
@@ -84,12 +84,12 @@ function Sections() {
         <Flights />
         <GroundTravel />
         <Hotel />
-        <SectionsCards /> {/*12 card links*/}
+        <SectionsCards />
         <Faq />
         <MeetingIncentives />
         <Vacations />
         <Booking /> {/* Concur login images with ipad */}
-        <TeamMembers />
+        {/* <TeamMembers /> */}
         <Managers /> 
         <FooterBlack />
       </div>

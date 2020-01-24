@@ -48,7 +48,7 @@ export default function Rentals2(props) {
     return (
         <Router>
             <div className={classes.root} >
-                <Grid container spacing={3}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
+                <Grid container spacing={2}> {/*Spacing is from 0-10 ex. spacing={2} is 16px wide gap. ea. space = 8px */}
                     <Grid item xs={12} sm={12} md={4}>
                         <img
                             alt="..."

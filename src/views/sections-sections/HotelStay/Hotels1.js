@@ -16,6 +16,9 @@ const useStyles = makeStyles(theme => ({
         "&:hover": {
             transform: "scale(1.15)",
         },
+    },
+    img2:{
+        marginBottom: '.5em',
         borderRadius: "15px",
     },
 }));
@@ -31,6 +34,7 @@ export default function Hotel(props) {
             setHotel(newHotel);
         }
     }
+
     function renderHotel(param) {
         switch (param) {
             case 'fairmont':
@@ -44,6 +48,7 @@ export default function Hotel(props) {
                 </div>)
         }
     }
+
     return (
         <Router>
             <div className={classes.root}>
@@ -53,21 +58,21 @@ export default function Hotel(props) {
                             alt="..."
                             src={require("assets/img/presentation-page/fairlogo.jpg")}
                             onClick={() => handleChange("fairmont")}
-                            className={classes.img} />
+                            className={classes.img2} />
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} className={classes.img}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hiltlogo.JPG")}
                             onClick={() => handleChange("hilton")}
-                            className={classes.img} />
+                            className={classes.img2} />
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} className={classes.img}>
                         <img
                             alt="..."
                             src={require("assets/img/presentation-page/hyatlogo.png")}
                             onClick={() => handleChange("hyatt")}
-                            className={classes.img} />
+                            className={classes.img2} />
                     </Grid>
                 </Grid>
                 {renderHotel(hotel)}

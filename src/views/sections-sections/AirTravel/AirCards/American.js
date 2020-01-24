@@ -5,11 +5,6 @@ import AAGold from './American-Airlines/AAGold';
 import AAPlatinum from './American-Airlines/AAPlatinum.js';
 import AAPlatinumPro from './American-Airlines/AAPlatinumPro.js';
 import AAExecutivePlat from './American-Airlines/AAExecutivePlat.js';
-// import image from 'assets/img/presentation-page/AA-LOGO2.jpg'
-import promo1 from 'assets/img/presentation-page/promotions/promo1.png'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
-import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
-import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
@@ -22,15 +17,10 @@ import {
 } from '@material-ui/core';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
-    Button,
     Container,
     Col,
     Row,
 } from 'react-bootstrap';
-
-// function ListItemLink(props) {
-//     return <ListItem button component="a" {...props} />;
-// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -62,53 +52,40 @@ function a11yProps(index) {
     };
 }
 
-const aaStyles = makeStyles(theme => ({
-    promotion: {
-        // flexGrow: 1,
-        width: '100%',
-        // backgroundImage: `url(${promo1})`,
-        // color: 'white',
+const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1,
+        // backgroundImage: `url(${image})`,
+        color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        // height: '225px',
-        // width: '850px',
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
     },
-    misc: {
-
-    }
 }));
 
-
 export default function American() {
-    const aalogo = aaStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-    // const classes = useStyles();
-    // const [expanded, setExpanded] = React.useState(false);
-  
-    // const handleExpandClick = () => {
-    //   setExpanded(!expanded);
-    // };
     return (
         <div
-        // className={aalogo.root}
+            className={classes.root}
         >
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
-                <Tab label="Loyalty" {...a11yProps(0)} />
+                    <Tab label="Loyalty" {...a11yProps(0)} />
                     <Tab label="Check In" {...a11yProps(1)} />
                     <Tab label="Promotions" {...a11yProps(2)} />
                     <Tab label="Misc" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
-            
+
             <TabPanel value={value} index={0}>
-            
                 <Row>
                     <Col lg="3" md="6" sm="12">
-                        <AAGold />                
+                        <AAGold />
                     </Col>
                     <Col lg="3" md="6" sm="12">
                         <AAPlatinum />
@@ -120,59 +97,62 @@ export default function American() {
                         <AAExecutivePlat />
                     </Col>
                 </Row>
-                
 
                 <Container>
                     <Row className="justify-content-md-center">
                         <Col md="4">
-                                <List component="nav" classname="justify-content-center"> 
-                                        <List component="nav" classname="justify-content-center">
-                                            <ListItem>
-                                                <Fab 
-                                                    href="https://www.aa.com/reservation/flightCheckInViewReservationsAccess.do?anchorLocation=DirectURL&title=check-in" 
-                                                    rel="noopener noreferrer" 
-                                                    target="_blank" 
-                                                    size="large" 
-                                                    color="default" 
-                                                    variant="fab">
-                                                    <ComputerIcon /> &nbsp; Check In
-                                                </Fab>
-                                            </ListItem>
-                                        </List>
+                            <List component="nav" classname="justify-content-center">
+                                <List component="nav" classname="justify-content-center">
+                                    <ListItem>
+                                        <Fab
+                                            href="https://www.aa.com/reservation/flightCheckInViewReservationsAccess.do?anchorLocation=DirectURL&title=check-in"
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                            size="large"
+                                            color="default"
+                                            variant="fab">
+                                            <ComputerIcon /> &nbsp; Check In
+                                        </Fab>
+                                    </ListItem>
                                 </List>
+                            </List>
                         </Col>
                     </Row>
                 </Container>
             </TabPanel>
 
             <TabPanel value={value} index={1}>
-                
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <Fab href="https://www.aa.com/reservation/flightCheckInViewReservationsAccess.do" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
             <TabPanel value={value} index={2} >
-                    <a href="https://www.aa.com/loyalty/enrollment/enroll" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.aa.com/loyalty/enrollment/enroll" target="_blank" rel="noopener noreferrer">
                     <img
                         alt="..."
                         src={require("assets/img/presentation-page/promotions/promo2.png")}
                     />
-                    </a>
+                </a>
             </TabPanel>
 
-            <TabPanel value={value} index={3} className={aalogo.root}>
-            <Row>
-                <Col>
-                    <PromotionOne />                
-                </Col>
-                <Col>
-                    <PromotionTwo />
-                </Col>
-                <Col>
-                    <PromotionThree />
-                </Col>
-                {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-              </Row>
+            <TabPanel value={value} index={3} >
+                <a href="https://www.aa.com/loyalty/enrollment/enroll" target="_blank" rel="noopener noreferrer">
+                    <img
+                        alt="..."
+                        src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    />
+                </a>
             </TabPanel>
         </div>
     );

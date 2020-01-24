@@ -29,7 +29,7 @@ from 'react-bootstrap';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 550,
+    maxWidth: 345,
     textAlign: "center",
   },
   media: {

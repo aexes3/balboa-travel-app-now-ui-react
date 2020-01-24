@@ -5,10 +5,6 @@ import EnterPlus from './enterprise/EnterPlus';
 import EnterSilver from './enterprise/EnterSilver';
 import EnterGold from './enterprise/EnterGold';
 import EnterPlatinum from './enterprise/EnterPlatinum';
-// import image from 'assets/img/presentation-page/MARR-LOGO.png'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
-import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
-import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
     AppBar,
@@ -16,18 +12,15 @@ import {
     Fab,
     List,
     ListItem,
-    Paper,
     Tab,
     Tabs,
     Typography
 } from '@material-ui/core';
 import {
-    Button,
     Container,
     Col,
     Row,
 } from 'react-bootstrap';
-
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -63,36 +56,31 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         // backgroundImage: `url(${image})`,
-        height: '100%',
+        color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        color: 'white',
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
     },
-    paper: {
-        backgroundColor: '#f4f4f400',
-        color: 'white',
-    }
 }));
 
 export default function Hyatt() {
-    const styles = useStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={styles.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Misc" {...a11yProps(1)} />
-                    <Tab label="Promotions" {...a11yProps(2)} />
+                    <Tab label="Promotion" {...a11yProps(1)} />
+                    <Tab label="MISC" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={styles.root}>
-               
+            <TabPanel value={value} index={0}>
                     <Row>
                         <Col lg="3" md="6" sm="12">
                             <EnterPlus />
@@ -107,7 +95,6 @@ export default function Hyatt() {
                             <EnterPlatinum />
                         </Col>
                     </Row>
-                
 
                 <Container>
                     <Row className="justify-content-md-center">
@@ -128,56 +115,21 @@ export default function Hyatt() {
                         </Col>
                     </Row>
                 </Container>
-
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={styles.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={1} >
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
 
-
-            <TabPanel value={value} index={2} className={styles.root}>
-                <Row>
-                    <Col>
-                        <PromotionOne />
-                    </Col>
-                    <Col>
-                        <PromotionTwo />
-                    </Col>
-                    <Col>
-                        <PromotionThree />
-                    </Col>
-                    {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-                </Row>
+            <TabPanel value={value} index={2}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
-
-
-            {/* <TabPanel value={value} index={3} className={styles.root}>
-              
-            </TabPanel> */}
         </div>
     );
 }

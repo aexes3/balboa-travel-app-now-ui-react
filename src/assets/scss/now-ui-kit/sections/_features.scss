@@ -53,7 +53,7 @@
 .features-7,
 .features-2,
 .features-8{
-    position: relative;
+    // position: relative;
 
     &:after{
         display: block;
@@ -64,7 +64,7 @@
         top: 0;
         left: 0;
         z-index: 1;
-        background-color: rgba(0,0,0,.5);
+        // background-color: rgba(0,0,0,.5);
     }
 
     .container,

@@ -4,10 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Almvp from './Alaska/Almvp.js';
 import AlmvpGold from './Alaska/AlmvpGold.js';
 import AlmvpGold75k from './Alaska/AlmvpGold75k';
-// import image from 'assets/img/presentation-page/ALASKA-LOGO2.jpg'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
-import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
-import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
@@ -20,7 +16,7 @@ import {
 } from '@material-ui/core';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
-    Button,
+
     Container,
     Col,
     Row,
@@ -56,37 +52,26 @@ function a11yProps(index) {
     };
 }
 
-// function ListItemLink(props) {
-//     return <ListItem button component="a" {...props} />;
-// }
-
-const alStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         // backgroundImage: `url(${image})`,
-        height: '100%',
+        color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        color: 'white',
-    },
-    paper: {
-        padding: theme.spacing(3, 2),
-        maxWidth: 345,
-        display: 'inline',
-        // flex: 1
-        // backgroundImage: `url(${image3})`,
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
     },
 }));
 
 export default function Alaska() {
-    const allogo = alStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={allogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                 <Tab label="Loyalty" {...a11yProps(0)} />
@@ -96,7 +81,7 @@ export default function Alaska() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={allogo.root}>
+            <TabPanel value={value} index={0}>
             <Container>
                     <Row>
                     <Col lg="4" md="6" sm="12">
@@ -126,21 +111,34 @@ export default function Alaska() {
                 </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={allogo.root}>
-               
+            <TabPanel value={value} index={1} >
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <Fab href="https://webselfservice.alaskaair.com/checkinweb/(1uf1upzdftwdobjwqnpeyi45)/default.aspx?language=" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={2} >
-                    <img
-                        alt="..."
-                        src={require("assets/img/presentation-page/promotions/promo2.png")}
-                    />
-                 
+            <TabPanel value={value} index={2}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
 
-
-            <TabPanel value={value} index={3} className={allogo.root}>
-              
+            <TabPanel value={value} index={3}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
         </div>
     );

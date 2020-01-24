@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
+// import { Grid, Paper, Typography, } from '@material-ui/core';
+import image from 'assets/img/presentation-page/SMOKE3.jpg'
 import Hotels1 from "./HotelStay/Hotels1";
 import Hotels2 from "./HotelStay/Hotels2.js";
 
@@ -14,6 +15,10 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     },
+    paper: {
+        padding: theme.spacing(2, 1),
+        // backgroundImage: `url(${image})`,
+    },
 }));
 
 export default function Hotel (){
@@ -21,8 +26,17 @@ export default function Hotel (){
 
     return(
         <div className={classes.root} >
-            <Hotels1 />
-            <Hotels2 />
+            <div className="features-2">
+                {/* <Grid item xs={12}>
+                    <Paper className={classes.paper}>
+                        <Typography variant="h5" component="h3">
+                            Hotel Stay
+                        </Typography>
+                    </Paper>
+                </Grid> */}
+                <Hotels1 />
+                <Hotels2 />
+            </div>
         </div>
     )
 }

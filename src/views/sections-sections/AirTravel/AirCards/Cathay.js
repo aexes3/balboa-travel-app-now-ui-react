@@ -5,8 +5,6 @@ import CPGreen from './Cathay/CPGreen.js'
 import CPSilver from './Cathay/CPSilver.js'
 import CPGold from './Cathay/CPGold.js'
 import CPDiamond from './Cathay/CPDiamond.js'
-// import image from 'assets/img/presentation-page/CP-LOGO.jpg'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
 import {
     AppBar,
     Box,
@@ -19,15 +17,10 @@ import {
 } from '@material-ui/core';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
-    Button,
     Container,
     Col,
     Row,
 } from 'react-bootstrap';
-
-// function ListItemLink(props) {
-//     return <ListItem button component="a" {...props} />;
-// }
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -59,24 +52,26 @@ function a11yProps(index) {
     };
 }
 
-const cpStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
+        flexGrow: 1,
         // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-    }
-}))
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    },
+}));
 
 export default function Cathay(props) {
-    const ualogo = cpStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     
     return (
-        <div className={ualogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                 <Tab label="Loyalty" {...a11yProps(0)} />
@@ -86,7 +81,7 @@ export default function Cathay(props) {
                 </Tabs>
             </AppBar>
             
-            <TabPanel value={value} index={0} className={ualogo.root}>
+            <TabPanel value={value} index={0} className={classes.root}>
                     <Row>
                     <Col lg="3" md="6" sm="12">
                        <CPGreen />                
@@ -123,75 +118,34 @@ export default function Cathay(props) {
                 </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={ualogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={1} >
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <Fab href="https://www.cathaypacific.com/olci/#/en_HK/login" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={2} className={ualogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                    <li>Elite Qualifying Segments (EQS) 30</li>
-                    <li>Elite Qualifying Dollars (EQD) $3000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary Space Available Upgrades for flights 500 miles or less 24 hours before departure</li>
-                    <li>Earn/Purchase 500 mile upgrades</li>
-                    <li>40% Elite Mile Bonus</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={2}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
 
-            <TabPanel value={value} index={3} className={ualogo.root}>
-            <Row>
-                <Col>
-                    <PromotionOne />                
-                </Col>
-                {/* <Col>
-                    <PromotionTwo />
-                </Col>
-                <Col>
-                    <PromotionThree />
-                </Col>
-                <Col>
-                    <PromotionOne />
-                </Col> */}
-              </Row>
+            <TabPanel value={value} index={3}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
         </div>
     );

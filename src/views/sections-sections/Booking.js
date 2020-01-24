@@ -44,7 +44,7 @@ function Booking() {
                       <h5 className="info-title">Online Booking Tool Login</h5>
                     </a>
                       <p className="description">
-                      When you booking online through your company’s approved booking platform, 
+                      When you book online through your company’s approved booking platform, 
                       you will save time, while saving your company money.
                       </p>
                     </div>
@@ -66,7 +66,6 @@ function Booking() {
                       <h5 className="info-title">Online Tool Training</h5>
                     </a>
                       <p className="description">
-                      Update verbiage under Online Tool Training to: 
                       Learn how to use Concur Travel to book a flight, 
                       rail, car, and/or hotel reservations.
                       </p>
@@ -86,7 +85,7 @@ function Booking() {
                      rel="noopener noreferrer"
                      target="_blank"
                     >
-                      <h5 className="info-title">Concur Mobile</h5>
+                      <h5 className="info-title">Mobile Booking App</h5>
                     </a>
                       <p className="description">
                         <a href="https://apps.apple.com/us/app/sap-concur/id335023774"

@@ -5,10 +5,6 @@ import FairClassic from './fairmont/FairClassic';
 import FairSilver from './fairmont/FairSilver';
 import FairGold from './fairmont/FairGold';
 import FairPlatinum from './fairmont/FairPlatinum';
-// import image from 'assets/img/presentation-page/MARR-LOGO.png'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
-import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
-import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
@@ -21,12 +17,10 @@ import {
 } from '@material-ui/core';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
-    Button,
     Container,
     Col,
     Row,
 } from 'react-bootstrap';
-
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -62,10 +56,10 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
         // backgroundImage: `url(${image})`,
-        height: '100%',
+        color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        color: 'white',
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
     },
 }));
 
@@ -81,8 +75,8 @@ export default function Fairmont() {
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
-                    <Tab label="Misc" {...a11yProps(1)} />
-                    <Tab label="Promotions" {...a11yProps(2)} />
+                    <Tab label="Promotion" {...a11yProps(1)} />
+                    <Tab label="MISC" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
 
@@ -126,53 +120,19 @@ export default function Fairmont() {
 
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={styles.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={1} >
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
 
-
-            <TabPanel value={value} index={2} className={styles.root}>
-                <Row>
-                    <Col>
-                        <PromotionOne />
-                    </Col>
-                    <Col>
-                        <PromotionTwo />
-                    </Col>
-                    <Col>
-                        <PromotionThree />
-                    </Col>
-                    {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-                </Row>
+            <TabPanel value={value} index={2}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
-
-
-            {/* <TabPanel value={value} index={3} className={styles.root}>
-              
-            </TabPanel> */}
         </div>
     );
 }

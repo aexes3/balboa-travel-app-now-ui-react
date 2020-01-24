@@ -5,10 +5,6 @@ import EmBlue from './Emirates/EmBlue.js';
 import EmSilver from './Emirates/EmSilver.js';
 import EmGold from './Emirates/EmGold.js';
 import EmPlatinum from './Emirates/EmPlatinum.js';
-// import image from 'assets/img/presentation-page/EM-LOGO.jpg'
-import PromotionOne from '../../Promotions/American-Airlines/PromotionOne';
-import PromotionTwo from '../../Promotions/American-Airlines/PromotionTwo';
-import PromotionThree from '../../Promotions/American-Airlines/PromotionThree';
 import {
     AppBar,
     Box,
@@ -21,7 +17,6 @@ import {
 } from '@material-ui/core';
 import ComputerIcon from '@material-ui/icons/Computer';
 import {
-    Button,
     Container,
     Col,
     Row,
@@ -61,24 +56,26 @@ function a11yProps(index) {
     };
 }
 
-const swStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     root: {
+        flexGrow: 1,
         // backgroundImage: `url(${image})`,
         color: 'white',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-    }
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    },
 }));
 
 export default function Emirates() {
-    const swlogo = swStyles();
+    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
-        <div className={swlogo.root}>
+        <div className={classes.root}>
             <AppBar position="static" className="text-center">
                 <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="simple tabs example">
                     <Tab label="Loyalty" {...a11yProps(0)} />
@@ -88,7 +85,7 @@ export default function Emirates() {
                 </Tabs>
             </AppBar>
 
-            <TabPanel value={value} index={0} className={swlogo.root}>
+            <TabPanel value={value} index={0}>
                     <Row>
                         <Col lg="3" md="6" sm="12">
                             <EmBlue />
@@ -125,50 +122,34 @@ export default function Emirates() {
                 </Container>
             </TabPanel>
 
-            <TabPanel value={value} index={1} className={swlogo.root}>
-                Qualify:
-                  <ul>
-                    <li>Elite Qualifying Miles (EQM) 25000</li>
-                </ul>
-                Benefits:
-                  <ul>
-                    <li>Complimentary same day standby</li>
-                    <li>Exclusive Service desk
-                    <Button
-                            className="btn-round ml-1"
-                            color="linkedin"
-                            href="tel:877-208-1396"
-                            // onClick={e => e.preventDefault()}
-                            size="sm"
-                        >
-                            <i className="fa fa-phone"></i>
-                        </Button>
-                    </li>
-                    <li>Preferred Seating</li>
-                    <li>Complimentary Main Cabin Extra 24 hours before departure</li>
-                    <li> Award processing change waived</li>
-                </ul>
+            <TabPanel value={value} index={1} >
+            <Container>
+                    <Row className="justify-content-md-center">
+                        <Col md="4">
+                            <List component="nav" classname="justify-content-center">
+                                <ListItem>
+                                    <Fab href="https://www.emirates.com/us/english/manage-booking/online-check-in.aspx" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                    </Fab>
+                                </ListItem>
+                            </List>
+                        </Col>
+                    </Row>
+                </Container>
             </TabPanel>
-            <TabPanel value={value} index={2} className={swlogo.root}>
 
-                <Row>
-                    <Col>
-                        <PromotionOne />
-                    </Col>
-                    <Col>
-                        <PromotionTwo />
-                    </Col>
-                    <Col>
-                        <PromotionThree />
-                    </Col>
-                    {/* <Col>
-                    <PromotionOne />
-                </Col> */}
-                </Row>
-
+            <TabPanel value={value} index={2}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
-            <TabPanel value={value} index={3} className={swlogo.root}>
 
+            <TabPanel value={value} index={3}>
+                <img
+                    alt="..."
+                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                />
             </TabPanel>
         </div>
     );

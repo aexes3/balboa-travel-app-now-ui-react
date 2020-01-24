@@ -11,7 +11,6 @@ import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import PhoneIcon from '@material-ui/icons/Phone';
-import Image from '../../../../../assets/img/presentation-page/avisprefplus.jpg';
 import {
   Avatar,
   Fab,

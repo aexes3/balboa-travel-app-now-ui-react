@@ -10,7 +10,6 @@ import {
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
   Nav,
   Container,
   UncontrolledTooltip
@@ -106,27 +105,27 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-home"></i>
                     Home
                   </DropdownItem>
-                  <DropdownItem to="/sections#flights" tag={Link}>
+                  <DropdownItem to="/balboa#flights" tag={Link}>
                     <i class="fa fa-users" aria-hidden="true"></i>
                   Travel Suppliers
                   </DropdownItem>
-                  <DropdownItem to="/sections#wyat" tag={Link}>
+                  <DropdownItem to="/balboa#wyat" tag={Link}>
                     <i className="fa fa-location-arrow"></i>
                     While you are there
                   </DropdownItem>
-                  <DropdownItem to="/sections#faq" tag={Link}>
+                  <DropdownItem to="/balboa#faq" tag={Link}>
                     <i className="fa fa-question-circle"></i>
                     FAQ
                   </DropdownItem>
-                  <DropdownItem to="/sections#booking" tag={Link}>
+                  <DropdownItem to="/balboa#booking" tag={Link}>
                     <i className="	fa fa-bookmark"></i>
                     Online Booking
                   </DropdownItem>
-                  <DropdownItem to="/sections#forms" tag={Link}>
+                  <DropdownItem to="/balboa#forms" tag={Link}>
                     <i className="	fa fa-file-word"></i>
                     Travel Policy Forms
                   </DropdownItem>
-                  <DropdownItem to="/sections#teams" tag={Link}>
+                  <DropdownItem to="/balboa#headers" tag={Link}>
                     <i className="fa fa-address-card"></i>
                     Balboa Team
                   </DropdownItem>
@@ -155,13 +154,13 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-sms"></i>
                     Text - 858-240-1171
                   </DropdownItem>
-                  <DropdownItem href="sms:858-678-3300" target="_blank">
+                  <DropdownItem href="tel:858-678-3300" target="_blank">
                       <i className="fa fa-phone"></i>
                       858-678-3300 M-F 6a - 6p
                     </DropdownItem>
-                    <DropdownItem href="tel:888-888-8888" target="_blank">
+                    <DropdownItem href="tel:800-359-8773" target="_blank">
                       <i className="fa fa-phone"></i>
-                      800-800-8888 Afterhours
+                      800-359-8773 Afterhours
                     </DropdownItem>
                     <DropdownItem href="mailto:travel@balboa.com" target="_blank">
                       <i className="fa fa-envelope"></i>
@@ -203,7 +202,7 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-map-marker-alt"></i>
                     Online Check-In
                   </DropdownItem>
-                  <DropdownItem href="#!" target="_blank">
+                  <DropdownItem >
                     <i className="fa fa-question-circle"></i>
                     General Questions
                   </DropdownItem>
@@ -222,16 +221,6 @@ function ScrollTransparentNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
 
-              <NavItem>
-                {/* <Button
-                  className="nav-link btn-default"
-                  color={buyButtonColor}
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
-                  target="_blank"
-                >
-                  <p>Buy Now</p>
-                </Button> */}
-              </NavItem>
             </Nav>
           </Collapse>
         </Container>

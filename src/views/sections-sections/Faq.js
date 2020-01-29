@@ -272,7 +272,7 @@ function Faq() {
                   >
                     <Typography className={classes.heading}>Check-in</Typography>
                     <Typography className={classes.secondaryHeading}> 
-                    How to request an early check-in?
+                    How to request an early check-in
                     </Typography>
                   </ExpansionPanelSummary>
                   <ExpansionPanelDetails>

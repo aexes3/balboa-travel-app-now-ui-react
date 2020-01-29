@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function UnitedPlatinum (props) {
+export default function UnitedPremier (props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -125,8 +125,7 @@ export default function UnitedPlatinum (props) {
                 <List className={classes.button}>
                     <u><b>Benefits:</b></u>
                     <ListItem>
-                         6 Global Premier Upgrades and 2 Regional Premier Upgrades
-                        &#176; Upgrades changing to PlusPoints in December 2019 - equivalent is 280 PlusPoints
+                        280 PlusPoints
                     </ListItem>
                     <ListItem>
                          Pre-boarding

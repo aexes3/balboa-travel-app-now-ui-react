@@ -129,7 +129,7 @@ export default function SuperElite100k (props) {
                     Priority Seat Selection
                     </ListItem>
                     <ListItem>
-                    Complimentary Preferred Seats with North America
+                    Complimentary Preferred Seats within North America
                     </ListItem>
                     <ListItem>
                     Guaranteed Reservations in Economy Class

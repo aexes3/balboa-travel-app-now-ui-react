@@ -130,14 +130,11 @@ export default function SWCompanionPass (props) {
                          Friends fly when you do.
                     </ListItem>
                     <ListItem>
-                         Companion Pass is the benefit that allows you to choose one person to 
-                        fly with you, free of airline charges (does not include taxes and fees from 
-                        $5.60 one-way) every time you purchase or redeem points for a flight. To qualify, 
-                        simply fly 100 qualifying one-way flights or earn 110,000 qualifying points in 
-                        a calendar year, and you’ll earn Companion Pass for the following full calendar year, 
-                        plus the remainder of the year in which you earned it. Starting January 1, 2020, 
-                        simply fly 100 qualifying one-way flights or earn 125,000 qualifying points* in 
-                        a calendar year to earn Companion Pass.
+                    Companion Pass is the benefit that allows you to choose one person to fly with you, 
+                    free of airline charges (does not include taxes and fees from $5.60 one-way) 
+                    every time you purchase or redeem points for a flight. To qualify, simply fly 100 qualifying one-way 
+                    flights or earn 125,000 qualifying points* in a calendar year, and you’ll earn Companion Pass 
+                    for the following full calendar year, plus the remainder of the year in which you earned it.
                     </ListItem>
                 </List>
           </Typography>

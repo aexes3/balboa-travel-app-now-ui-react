@@ -132,7 +132,7 @@ export default function JBTrueBlue (props) {
                          Use points whenever, wherever.  Points do not expire and can be redeemed for any seat, any time (no blackout dates.)
                     </ListItem>
                     <ListItem>
-                         Pool points with other.  Earn and share points with friends and family with Points Pooling.
+                         Pool points with others.  Earn and share points with friends and family with Points Pooling.
                     </ListItem>
                   <u><b>True Blue Mosaic Status:</b></u>
                     <ListItem>

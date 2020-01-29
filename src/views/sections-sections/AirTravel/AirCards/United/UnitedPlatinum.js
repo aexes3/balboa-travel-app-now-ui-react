@@ -125,8 +125,7 @@ export default function UnitedPlatinum (props) {
                 <List className={classes.button}>
                     <u><b>Benefits:</b></u>
                     <ListItem>
-                         2 Regional premier upgrades
-                        &#176; Upgrades changing to PlusPoints in December 2019 - equivalent is 40 PlusPoints
+                        40 PlusPoints
                     </ListItem>
                     <ListItem>
                          Complimentary access to Economy Plus for you plus 8 companions

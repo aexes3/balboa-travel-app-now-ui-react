@@ -143,7 +143,7 @@ export default function SWAListPreferred (props) {
                                 A-List benefits and the added benefits listed below.
                     </ListItem>
                     <ListItem>
-                         Fly 50 qualifying one-way flights or earn 70,000 tier qualifying points* in one calendar year.
+                         Fly 50 qualifying one-way flights or earn 70,000 tier qualifying points in one calendar year.
                     </ListItem>
                     <ListItem>
                          Priority boarding

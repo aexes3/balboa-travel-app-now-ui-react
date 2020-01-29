@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, } from '@material-ui/core';
 import { BrowserRouter as Router, } from "react-router-dom";
-import Marriott from './HotelCards/Fairmont.js'
+import Marriott from './HotelCards/Marriott.js'
 import Ihg from './HotelCards/Ihg.js'
 import Radisson from './HotelCards/Radisson.js'
 

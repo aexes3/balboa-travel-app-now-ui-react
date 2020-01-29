@@ -81,14 +81,14 @@ function Sections() {
         <Headers /> 
         <BalbaoVideo /> 
         <NewsFlash /> 
+        <Booking /> {/* Concur login images with ipad */}
+        <SectionsCards />
         <Flights />
         <GroundTravel />
         <Hotel />
-        <SectionsCards />
-        <Faq />
         <MeetingIncentives />
         <Vacations />
-        <Booking /> {/* Concur login images with ipad */}
+        <Faq />
         {/* <TeamMembers /> */}
         <Managers /> 
         <FooterBlack />

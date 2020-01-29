@@ -139,12 +139,12 @@ export default function BudgetFastbreak (props) {
                     Allows for quick pickup of vehicle.  Show drivers license to pick up the car keys.
                     </ListItem>
                     <ListItem>
-                    Exclusive deals that save you time and money
+                    Exclusive deals that save you time and money.
                     </ListItem>
                     <hr />
                     <u><b>Rewards:</b></u>
                     <ListItem>
-                    Current promotion going thru December 31, 2020.  Rent twice and receive $25 in Budget
+                    Current promotion going thru December 31, 2020.  Rent twice and receive $25 in Budget Bucks.
                     </ListItem>
                     <hr />
                     <u><b>Bucks:</b></u>

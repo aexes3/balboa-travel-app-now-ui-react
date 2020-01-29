@@ -134,7 +134,7 @@ export default function FairClassic (props) {
                     Benefits with more than 50 partners
                     </ListItem>
 
-                    <u><b>Classics:</b></u>
+                    <u><b>Classic:</b></u>
                     <ListItem>
                     Achieve this status upon joining the program
                     </ListItem>

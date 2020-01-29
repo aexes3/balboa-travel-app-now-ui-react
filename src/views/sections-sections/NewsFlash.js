@@ -7,80 +7,46 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
+  Row,
+  Col,
 } from "reactstrap";
 
 const items = [
   {
     
     content: (
-      <Card className="blockquote">
-      <CardBody>
-        <h6 className="category text-danger">
-          <i className="fa fa-info-circle"></i>
-          &nbsp;Alert!
-        </h6>
-        <CardTitle>
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            Lack of transportation in New York
-          </a>
-
-        </CardTitle>
-        <p className="card-description">
-          We're as confused as anyone. New York has run out of taxi's and busses..
-          By foot is the only means of transportation at this time. 
-        </p>
-        
-      </CardBody>
-    </Card>
+      <Row>
+        <Col className="ml-auto mr-auto text-center" md="8">
+          <img
+            alt="..."
+            src={require("assets/img/presentation-page/alerts/idReqs.jpg")}
+          />
+        </Col>
+      </Row>
     ),
-    altText: "",
-    caption: ""
   },
   {
     content: (
-      <Card className="blockquote">
-      <CardBody>
-        <h6 className="category text-danger">
-          <i className="fa fa-info-circle"></i>
-          &nbsp;Alert!
-        </h6>
-        <CardTitle>
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            Here Be Dragons
-          </a>
-        </CardTitle>
-        <p className="card-description">
-          An immersive production studio focused on virtual reality content,
-          has closed a $10 million Series A round led by Discovery
-          Communications
-        </p>
-        
-      </CardBody>
-    </Card>
+      <Row>
+        <Col className="ml-auto mr-auto text-center" md="8">
+          <img
+            alt="..."
+            src={require("assets/img/presentation-page/alerts/passport.jpg")}
+          />
+        </Col>
+      </Row>
     )
   },
   {
-    
     content: (
-      <Card className="blockquote">
-      <CardBody>
-        <h6 className="category text-danger">
-          <i className="fa fa-info-circle"></i>
-          &nbsp;Alert!
-        </h6>
-        <CardTitle>
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            Stay tuned
-          </a>
-        </CardTitle>
-        <p className="card-description">
-          Snowy weather is happing in Austin, Tx. The whole city is shut down due to
-          unfamiliarity with these conditions and proper driving lessons. Austin is 
-          already known for their bad drivers, and this isn't helping!
-        </p>
-        
-      </CardBody>
-    </Card>
+      <Row>
+        <Col className="ml-auto mr-auto text-center" md="8">
+          <img
+            alt="..."
+            src={require("assets/img/presentation-page/alerts/safteyPrioity.jpg")}
+          />
+        </Col>
+      </Row>
     ),
     altText: "",
     caption: ""

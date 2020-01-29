@@ -148,7 +148,7 @@ export default function SGSilver (props) {
                          Star Alliance Silver Status
                     </ListItem>
                     <ListItem>
-                         Complimentary Standard Seats when you fly in in Economy Class
+                         Complimentary Standard Seats when you fly in Economy Class
                     </ListItem>
                     <ListItem>
                          Priority waitlists and standby

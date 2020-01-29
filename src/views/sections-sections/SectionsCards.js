@@ -34,7 +34,7 @@ function Sections() {
 
             <Row>
               <Col md="3">
-                <a href="https://www.cbp.gov/">
+                <a href="https://www.cbp.gov/" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/customs.jpg")}
@@ -42,7 +42,7 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
-                <a href="https://www.howtocallabroad.com/">
+                <a href="https://www.howtocallabroad.com/" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/internationaltele.jpg")}
@@ -50,7 +50,7 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
-                <a href="https://weather.com/">
+                <a href="https://weather.com/" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/weather.jpg")}
@@ -64,7 +64,7 @@ function Sections() {
                 ></img> */}
               </Col>
               <Col md="3">
-                <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/">
+                <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/travel-warning.jpg")}
@@ -76,7 +76,7 @@ function Sections() {
 
             <Row>
               <Col md="3">
-                <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html">
+                <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/passport.jpg")}
@@ -84,7 +84,7 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
-                <a href="https://countrycode.org/">
+                <a href="https://countrycode.org/" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/international-calling-codes.jpg")}
@@ -92,7 +92,7 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
-                <a href="https://www.cdc.gov">
+                <a href="https://www.cdc.gov" target="_blank" rel="noopener noreferrer">
                   <img
                     alt="..."
                     src={require("assets/img/presentation-page/cdc-travel-health.jpg")}
@@ -100,10 +100,12 @@ function Sections() {
                 </a>
               </Col>
               <Col md="3">
+                <a href="https://www.usembassy.gov/" target="_blank" rel="noopener noreferrer">
                 <img
                   alt="..."
                   src={require("assets/img/presentation-page/embassy.jpg")}
                 ></img>
+                </a>
               </Col>
             </Row>
 

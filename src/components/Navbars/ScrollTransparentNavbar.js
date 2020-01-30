@@ -164,7 +164,7 @@ function ScrollTransparentNavbar() {
                     </DropdownItem>
                     <DropdownItem href="mailto:travel@balboa.com" target="_blank">
                       <i className="fa fa-envelope"></i>
-                      travel@babloa.com
+                      travel@balboa.com
                     </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -202,11 +202,11 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-map-marker-alt"></i>
                     Online Check-In
                   </DropdownItem>
-                  <DropdownItem >
+                 {/*  <DropdownItem >
                     <i className="fa fa-question-circle"></i>
                     General Questions
                   </DropdownItem>
-                  {/* <DropdownItem href="#!" target="_blank">
+                  <DropdownItem href="#!" target="_blank">
                     <i className="now-ui-icons shopping_bag-16"></i>
                     Product Page
                   </DropdownItem>

@@ -103,13 +103,13 @@ export default function Lufthansa() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.miles-and-more.com/row/en.html" 
+                                        href="https://www.miles-and-more.com/row/en/account/enrolment.html" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; Log In
+                                            <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

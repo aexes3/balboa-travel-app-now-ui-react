@@ -104,13 +104,13 @@ export default function Cathay(props) {
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.cathaypacific.com" 
+                                        href="https://www.cathaypacific.com/cx/en_US/frequent-flyers/about-the-club/join-the-club-before-login.html?cxsource=TOP-NAV_MARCO-POLO-CLUB_FEATURE_R_1" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                        <ComputerIcon /> &nbsp; More Info
+                                        <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

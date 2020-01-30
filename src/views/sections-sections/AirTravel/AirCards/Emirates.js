@@ -108,13 +108,13 @@ export default function Emirates() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                         <Fab 
-                                            href="https://www.emirates.com" 
+                                            href="https://www.emirates.com/account/us/english/light-registration/" 
                                             rel="noopener noreferrer" 
                                             target="_blank" 
                                             size="large" 
                                             color="default" 
                                             variant="fab">
-                                                <ComputerIcon /> &nbsp; More Info
+                                                <ComputerIcon /> &nbsp; Join
                                         </Fab>
                                     </ListItem>
                             </List>

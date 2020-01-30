@@ -104,13 +104,13 @@ export default function Delta() {
                                 <List component="nav" classname="justify-content-center"> 
                                     <ListItem>
                                         <Fab 
-                                            href="https://www.delta.com/login/loginPage" 
+                                            href="https://www.delta.com/profile/enrolllanding.action" 
                                             rel="noopener noreferrer" 
                                             target="_blank" 
                                             size="large" 
                                             color="default" 
                                             variant="fab">
-                                                <ComputerIcon /> &nbsp; Log In
+                                                <ComputerIcon /> &nbsp; Join
                                         </Fab>
                                     </ListItem>
                                 </List>

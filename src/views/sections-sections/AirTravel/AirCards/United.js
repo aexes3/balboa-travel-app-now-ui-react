@@ -103,13 +103,13 @@ export default function United(props) {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.united.com/web/en-US/content/mileageplus/default.aspx" 
+                                        href="https://www.united.com/ual/en/us/account/enroll/default?int_source=loy&int_medium=uacom&int_campaign=mphomepage&partner_name=join_now_cta&asset_type=mphome_link&launch_date=2019-12-10" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; Log In
+                                            <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

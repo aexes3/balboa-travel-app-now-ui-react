@@ -109,8 +109,8 @@ export default function AirCanada() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <Fab href="https://www.aircanada.com" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; More Info
+                                    <Fab href="https://www.aeroplan.com/enroll.do#/" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>
@@ -125,7 +125,12 @@ export default function AirCanada() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <Fab href="https://res.aircanada.com/oci/start?_flowExecutionKey=_c70ECBD98-1119-8DB0-34F4-31672B945195_k29533F76-FE0E-7D4A-9BF1-41AB7303C459" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                    <Fab href="https://www.aircanada.com/content/aircanada/us/en/aco/home/plan/check-in-information/how-to-check-in.html" 
+                                        rel="noopener noreferrer" 
+                                        target="_blank" 
+                                        size="large" 
+                                        color="default" 
+                                        variant="fab">
                                         <ComputerIcon /> &nbsp; Check in for your flight now
                                     </Fab>
                                 </ListItem>

@@ -101,13 +101,13 @@ export default function Southwest() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.southwest.com" 
+                                        href="https://www.southwest.com/account/enroll/enroll-member?clk=GSUBNAV-RR-ENROLL&f=zSWARRHPAA1409RRAzz" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

@@ -94,13 +94,13 @@ export default function Jetblue(props) {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.jetblue.com" 
+                                        href="https://trueblue.jetblue.com/enroll/join-us" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

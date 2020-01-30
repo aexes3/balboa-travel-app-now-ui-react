@@ -106,13 +106,13 @@ export default function American() {
                                 <List component="nav" classname="justify-content-center">
                                     <ListItem>
                                         <Fab
-                                            href="https://www.aa.com/reservation/flightCheckInViewReservationsAccess.do?anchorLocation=DirectURL&title=check-in"
+                                            href="https://www.aa.com/loyalty/enrollment/enroll"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             size="large"
                                             color="default"
                                             variant="fab">
-                                            <ComputerIcon /> &nbsp; Check In
+                                            <ComputerIcon /> &nbsp; Join
                                         </Fab>
                                     </ListItem>
                                 </List>

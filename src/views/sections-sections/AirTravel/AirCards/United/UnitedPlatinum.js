@@ -95,8 +95,8 @@ export default function UnitedPlatinum (props) {
               <Col>
                 <List component="nav" classname="justify-content-center">
                   <ListItem className={classes.button}>
-                    <Fab href="tel:800-864-8331" rel="noopener noreferrer" size="large" color="default" variant="fab">
-                      <PhoneIcon /> &nbsp; 800-864-8331
+                    <Fab href="tel:800-225-8900" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 800-225-8900
                     </Fab>
                   </ListItem>
                 </List>

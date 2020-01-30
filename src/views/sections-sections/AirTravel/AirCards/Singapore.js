@@ -98,13 +98,13 @@ export default function Singapore() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.singaporeair.com" 
+                                        href="https://www.singaporeair.com/en_UK/ppsclub-krisflyer/registration-form/" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

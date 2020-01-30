@@ -96,8 +96,8 @@ export default function DASilver (props) {
               <Col>
                 <List component="nav" classname="justify-content-center">
                   <ListItem  className={classes.button}>
-                    <Fab href="tel:800-323-2323" rel="noopener noreferrer" size="large" color="default" variant="fab">
-                      <PhoneIcon /> &nbsp; 800-323-2323
+                    <Fab href="tel:800-325-1551" rel="noopener noreferrer" size="large" color="default" variant="fab">
+                      <PhoneIcon /> &nbsp; 800-325-1551
                     </Fab>
                   </ListItem>
                 </List>

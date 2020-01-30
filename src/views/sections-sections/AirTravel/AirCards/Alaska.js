@@ -102,8 +102,8 @@ export default function Alaska() {
                         <Col md="4">
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
-                                    <Fab href="https://www.alaskaair.com" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; More Info
+                                    <Fab href="https://www.alaskaair.com/account/join-mileage-plan?currentform=UCMPEnrollment&lid=nav:mileage-join&int=AS_NAV_MP_Join_-prodID:MPEnroll" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
+                                        <ComputerIcon /> &nbsp; Join
                                     </Fab>
                                 </ListItem>
                             </List>

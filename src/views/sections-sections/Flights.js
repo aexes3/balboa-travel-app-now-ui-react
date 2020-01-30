@@ -6,6 +6,7 @@ import Airlines from "./AirTravel/Airlines.js";
 import Airlines2 from "./AirTravel/Airlines2.js";
 import Airlines3 from './AirTravel/Airlines3.js';
 import Airlines4 from "./AirTravel/Airlines4";
+import { Row, Col } from "reactstrap";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        color: '#FFF'
     },
     paper: {
         // padding: theme.spacing(2, 1),
@@ -31,13 +33,7 @@ export default function Flights (){
 
     return(
         <div className={classes.root} id="flights">
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    {/* <Typography variant="h5" component="h3">
-                        Air Travel
-                    </Typography> */}
-                </Paper>
-            </Grid>
+        
             <div className="features-2">
                 <div className={classes.content}>
                     <Airlines />

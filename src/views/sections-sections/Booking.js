@@ -13,7 +13,7 @@ function Booking() {
         <div className="features-5" id='forms'>
           <Container>
             <Row>
-              <Col md="5">
+              <Col md="7">
                 <h2 className="title">Company Related Links</h2>
                 <div className="info info-horizontal">
                   <div className="icon icon-info icon-circle">

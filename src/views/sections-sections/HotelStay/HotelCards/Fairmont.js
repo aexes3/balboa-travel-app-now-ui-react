@@ -105,13 +105,13 @@ export default function Fairmont() {
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.fairmont.com" 
+                                        href="https://all.accor.com/authentication/index.en.shtml#/register?context=enroll-loyalty&redirect=https%3A%2F%2Fall.accor.com%2Floyalty-program%2Freasonstojoin%2Findex.en.shtml" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Sign-up
                                     </Fab>
                                 </ListItem>
                             </List>

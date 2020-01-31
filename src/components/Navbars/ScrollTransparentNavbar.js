@@ -198,11 +198,11 @@ function ScrollTransparentNavbar() {
                     <i className="fas fa-plane-departure"></i>
                     Flight Status
                   </DropdownItem>
-                  <DropdownItem href="https://www.balboa.com/airline-online-check-in" target="_blank">
+                  {/*  <DropdownItem href="https://www.balboa.com/airline-online-check-in" target="_blank">
                     <i className="fa fa-map-marker-alt"></i>
                     Online Check-In
                   </DropdownItem>
-                 {/*  <DropdownItem >
+                 <DropdownItem >
                     <i className="fa fa-question-circle"></i>
                     General Questions
                   </DropdownItem>

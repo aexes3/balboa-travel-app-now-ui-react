@@ -102,13 +102,13 @@ export default function Ihg() {
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.ihg.com" 
+                                        href="https://www.ihg.com/rewardsclub/us/en/enrollment/join" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Sign-up
                                     </Fab>
                                 </ListItem>
                             </List>

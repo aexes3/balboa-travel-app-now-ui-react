@@ -93,13 +93,13 @@ export default function Jetblue(props) {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.alamo.com" 
+                                        href="https://www.alamo.com/en_US/car-rental/insider.html" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Sign-up
                                     </Fab>
                                 </ListItem>
                             </List>

@@ -102,13 +102,13 @@ export default function Hyatt() {
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.enterprise.com" 
+                                        href="https://www.enterprise.com/en/enroll.html?icid=footer.enterprise.plus-_-enroll-_-ENUS.NULL" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Sign-up
                                     </Fab>
                                 </ListItem>
                             </List>

@@ -124,7 +124,7 @@ export default function Fairmont() {
             <TabPanel value={value} index={1} >
                 <img
                     alt="..."
-                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    src={require("assets/img/presentation-page/promotions/noPromo.gif")}
                 />
             </TabPanel>
 

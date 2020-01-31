@@ -137,7 +137,7 @@ export default function Lufthansa() {
             <TabPanel value={value} index={2}>
                 <img
                     alt="..."
-                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    src={require("assets/img/presentation-page/promotions/noPromo.gif")}
                 />
             </TabPanel>
 

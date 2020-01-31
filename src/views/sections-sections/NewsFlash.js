@@ -17,10 +17,12 @@ const items = [
     content: (
       <Row>
         <Col className="ml-auto mr-auto text-center" md="8">
-          <img
-            alt="..."
-            src={require("assets/img/presentation-page/alerts/idReqs.jpg")}
-          />
+          <a href="https://www.dhs.gov/real-id" target="_blank" rel="noopener noreferrer">
+            <img
+              alt="..."
+              src={require("assets/img/presentation-page/alerts/idReqs.jpg")}
+            />
+          </a>
         </Col>
       </Row>
     ),
@@ -29,10 +31,12 @@ const items = [
     content: (
       <Row>
         <Col className="ml-auto mr-auto text-center" md="8">
-          <img
-            alt="..."
-            src={require("assets/img/presentation-page/alerts/passport.jpg")}
-          />
+          <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html">
+            <img
+              alt="..."
+              src={require("assets/img/presentation-page/alerts/passport.jpg")}
+            />
+          </a>
         </Col>
       </Row>
     )

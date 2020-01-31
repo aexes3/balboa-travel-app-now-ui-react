@@ -101,13 +101,13 @@ export default function Hyatt() {
                             <List component="nav" classname="justify-content-center"> 
                                 <ListItem>
                                     <Fab 
-                                        href="https://www.hertz.com" 
+                                        href="https://www.hertz.com/rentacar/member/enrollment/skinnyGold/fast" 
                                         rel="noopener noreferrer" 
                                         target="_blank" 
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                            <ComputerIcon /> &nbsp; More Info
+                                            <ComputerIcon /> &nbsp; Sign-up
                                     </Fab>
                                 </ListItem>
                                 <br />
@@ -131,7 +131,7 @@ export default function Hyatt() {
             <TabPanel value={value} index={1} >
                 <img
                     alt="..."
-                    src={require("assets/img/presentation-page/promotions/promo2.png")}
+                    src={require("assets/img/presentation-page/promotions/noPromo.gif")}
                 />
             </TabPanel>
 

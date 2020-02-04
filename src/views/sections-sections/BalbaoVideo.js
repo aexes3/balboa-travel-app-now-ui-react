@@ -1,11 +1,6 @@
 import React from "react";
 import Iframe from 'react-iframe';
 
-// reactstrap components
-// import { Container, Row, Col } from "reactstrap";
-
-// core components
-
 function BalbaoVideo() {
   return (
     <>

@@ -120,7 +120,7 @@ export default function Singapore() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab href="https://www.singaporeair.com/en_UK/plan-and-book/your-booking/checkin/" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                        <ComputerIcon /> &nbsp; Check in now
                                     </Fab>
                                 </ListItem>
                             </List>

@@ -22,11 +22,15 @@ export default function Flights (){
     const classes = useStyles();
 
     return(
-        <div className={classes.root} id="qflights" >
-            <Airlines />
-            <Airlines2 />
-            <Airlines3 />
-            <Airlines4 />
+        
+        <div className="cd-section" id="pricing">
+            <div className={classes.root} id="qflights" >
+                <Airlines />
+                <Airlines2 />
+                <Airlines3 />
+                <Airlines4 />
+            </div>
         </div>
     )
 }
+

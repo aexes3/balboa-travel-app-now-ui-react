@@ -125,7 +125,7 @@ export default function Lufthansa() {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab href="https://www.lufthansa.com/de/en/online-check-in" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                        <ComputerIcon /> &nbsp; Check in now
                                     </Fab>
                                 </ListItem>
                             </List>

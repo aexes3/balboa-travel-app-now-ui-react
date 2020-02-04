@@ -125,7 +125,7 @@ export default function United(props) {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab href="https://www.united.com/travel/checkin/start.aspx?LangCode=en-US" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                        <ComputerIcon /> &nbsp; Check in now
                                     </Fab>
                                 </ListItem>
                             </List>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from '../../assets/img/presentation-page/balboalogo.png';
 // reactstrap components
 import {
+  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -10,6 +10,7 @@ import {
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
+  NavItem,
   Nav,
   Container,
   UncontrolledTooltip
@@ -22,7 +23,7 @@ function ScrollTransparentNavbar() {
       ? ""
       : " navbar-transparent"
   );
-  const [ , setBuyButtonColor] = React.useState(
+  const [buyButtonColor, setBuyButtonColor] = React.useState(
     (document.documentElement.scrollTop > 499 || document.body.scrollTop) > 499
       ? "info"
       : "neutral"
@@ -62,11 +63,11 @@ function ScrollTransparentNavbar() {
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand to="/qualcomm" tag={Link} id="navbar-brand">
-            <img src={Image} alt="balboa logo" />
+            <NavbarBrand to="/" tag={Link} id="navbar-brand">
+              Now Ui Kit PRO React
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
-              Designed by Balboa Travel
+              Designed by Invision. Coded by Creative Tim
             </UncontrolledTooltip>
             <button
               onClick={() => {
@@ -83,7 +84,6 @@ function ScrollTransparentNavbar() {
           </div>
           <Collapse isOpen={collapseOpen} navbar>
             <Nav className="ml-auto" id="ceva" navbar>
-              
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -94,17 +94,17 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons design_bullet-list-67"></i>
+                  <i className="now-ui-icons design_app"></i>
                   <p>Menu</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/qualcomm#qtop" tag={Link}>
-                    <i className="now-ui-icons shopping_shop"></i>
-                    Home
+                  <DropdownItem to="/qualcomm" tag={Link}>
+                    <i className="now-ui-icons design_image"></i>
+                    Presentation
                   </DropdownItem>
-                  <DropdownItem to="/qualcomm#qflights" tag={Link}>
+                  <DropdownItem to="/qflights" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36"></i>
-                    Travel Suppliers
+                    All components
                   </DropdownItem>
                   <DropdownItem
                     href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-scroll-transparent-navbar"
@@ -229,6 +229,16 @@ function ScrollTransparentNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <Button
+                  className="nav-link btn-default"
+                  color={buyButtonColor}
+                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
+                  target="_blank"
+                >
+                  <p>Buy Now</p>
+                </Button>
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>

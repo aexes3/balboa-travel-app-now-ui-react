@@ -118,14 +118,14 @@ function ScrollTransparentNavbar() {
                     FAQ
                   </DropdownItem>
                   <DropdownItem to="/balboa#booking" tag={Link}>
-                    <i className="	fa fa-bookmark"></i>
+                    <i className="fa fa-bookmark"></i>
                     Online Booking
                   </DropdownItem>
-                  <DropdownItem to="/balboa#forms" tag={Link}>
-                    <i className="	fa fa-file-word"></i>
+                  {/* <DropdownItem to="/balboa#forms" tag={Link}>
+                    <i className="fa fa-file-word"></i>
                     Travel Policy Forms
-                  </DropdownItem>
-                  <DropdownItem to="/balboa#headers" tag={Link}>
+                  </DropdownItem> */}
+                  <DropdownItem to="/balboa#teams" tag={Link}>
                     <i className="fa fa-address-card"></i>
                     Balboa Team
                   </DropdownItem>

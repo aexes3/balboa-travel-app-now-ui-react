@@ -131,7 +131,7 @@ export default function AirCanada() {
                                         size="large" 
                                         color="default" 
                                         variant="fab">
-                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                        <ComputerIcon /> &nbsp; Check in now
                                     </Fab>
                                 </ListItem>
                             </List>

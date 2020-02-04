@@ -13,7 +13,7 @@ function Managers() {
 
   return (
     <>
-      <div className="cd-section" id="testimonials">
+      <div className="cd-section" id="teams">
         
         <div className="testimonials-3" >
           <Container>

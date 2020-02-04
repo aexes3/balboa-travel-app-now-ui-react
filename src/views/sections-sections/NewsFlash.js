@@ -31,7 +31,7 @@ const items = [
     content: (
       <Row>
         <Col className="ml-auto mr-auto text-center" md="8">
-          <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html">
+          <a href="https://travel.state.gov/content/travel/en/passports.html/passport_1738.html" target="_blank" rel="noopener noreferrer">
             <img
               alt="..."
               src={require("assets/img/presentation-page/alerts/passport.jpg")}

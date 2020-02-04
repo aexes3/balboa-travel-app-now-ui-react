@@ -126,7 +126,7 @@ export default function Cathay(props) {
                             <List component="nav" classname="justify-content-center">
                                 <ListItem>
                                     <Fab href="https://www.cathaypacific.com/olci/#/en_HK/login" rel="noopener noreferrer" target="_blank" size="large" color="default" variant="fab">
-                                        <ComputerIcon /> &nbsp; Check in for your flight now
+                                        <ComputerIcon /> &nbsp; Check in now
                                     </Fab>
                                 </ListItem>
                             </List>

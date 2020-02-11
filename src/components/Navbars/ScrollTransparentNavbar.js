@@ -186,6 +186,10 @@ function ScrollTransparentNavbar() {
                   <p>Quick Links</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+                <DropdownItem href="https://www.balboa.com" target="_blank">
+                    <i className="fa fa-map-marker-alt"></i>
+                    Balboa
+                  </DropdownItem>
                   <DropdownItem href="https://balboa.graspdata.com//Public/PrintInvoice.aspx?agency=1D71F7ED791B4A05801516457400D2CC&filtermode=booking" target="_blank">
                     <i className="fa fa-print"></i>
                     Print My Invoice
@@ -198,11 +202,8 @@ function ScrollTransparentNavbar() {
                     <i className="fas fa-plane-departure"></i>
                     Flight Status
                   </DropdownItem>
-                  {/*  <DropdownItem href="https://www.balboa.com/airline-online-check-in" target="_blank">
-                    <i className="fa fa-map-marker-alt"></i>
-                    Online Check-In
-                  </DropdownItem>
-                 <DropdownItem >
+                 
+                 {/* <DropdownItem >
                     <i className="fa fa-question-circle"></i>
                     General Questions
                   </DropdownItem>

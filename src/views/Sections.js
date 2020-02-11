@@ -18,6 +18,7 @@ import Vacations from "./sections-sections/Vacations.js";
 import Booking from './sections-sections/Booking.js';
 // import TeamMembers from "./sections-sections/TeamMembers.js";
 import Managers from "./sections-sections/Managers.js";
+import About from "./sections-sections/About.js";
 // import { isProperty } from "@babel/types";
 
 function Sections() {
@@ -75,10 +76,10 @@ function Sections() {
         <Flights />
         <GroundTravel />
         <Hotel />
+        <About />
         <MeetingIncentives />
         <Vacations />
         <Faq />
-        {/* <TeamMembers /> */}
         <Managers /> 
         <FooterBlack />
       </div>

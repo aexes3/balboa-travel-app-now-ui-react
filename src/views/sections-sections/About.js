@@ -26,7 +26,7 @@ function About() {
                 <br />
 
                 Visit us at &nbsp;
-                <a href="https://www.cvent.com/events/SMMForm/MeetingRequest/MeetingMain.aspx?smm_form_stub=2383a84a-af28-4bfc-8594-95477b44d003" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.balboa.com" target="_blank" rel="noopener noreferrer">
                 Balboa.com
                 </a> 
                 &nbsp; to learn more.

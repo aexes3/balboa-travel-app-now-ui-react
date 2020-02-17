@@ -141,17 +141,17 @@ export default function AirCanada() {
             </TabPanel>
 
             <TabPanel value={value} index={2}>
-                <img
+               {/* <img
                     alt="..."
                     src={require("assets/img/presentation-page/promotions/noPromo.gif")}
-                />
+                /> */}
             </TabPanel>
 
             <TabPanel value={value} index={3}>
-                <img
+                {/* <img
                     alt="..."
                     src={require("assets/img/presentation-page/promotions/promo2.png")}
-                />
+                /> */}
             </TabPanel>
         </div>
     );

@@ -59,7 +59,6 @@ function Sections() {
       // new Rellax(".rellax-header");
       // new Rellax(".rellax-text");
     }
-
     
   
   });

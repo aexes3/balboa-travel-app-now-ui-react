@@ -3,7 +3,7 @@ import Rellax from "rellax";
 // reactstrap components
 
 // core components
-import ScrollTransparentNavbar1 from "components/Navbars/ScrollTransparentNavbar1.js";
+import QualcommTransparentNavbar from "components/Navbars/QualcommTransparentNavbar.js";
 import QualcommHeader from "./presentation-sections/QualcommHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
@@ -39,24 +39,12 @@ function Qualcomm() {
       new Rellax(".rellax-header");
       new Rellax(".rellax-text");
     }
-
-    // // we need to add a script for the github buttons
-    // let script = document.createElement("script");
-    // script.src = "https://buttons.github.io/buttons.js";
-    // script.id = "github-buttons-script-id";
-    // document.body.appendChild(script);
-
-    // return function cleanup() {
-    //   document.body.classList.remove("presentation-page");
-    //   document.body.classList.remove("sidebar-collapse");
-
-    //   // we need to remove the script when we change the page
-    //   script.parentNode.removeChild(script);
-    // };
   });
+
+    
   return (
     <>
-      <ScrollTransparentNavbar1 />
+      <QualcommTransparentNavbar />
       <div className="wrapper">
         <QualcommHeader />
         <BalbaoVideo /> 
@@ -64,19 +52,6 @@ function Qualcomm() {
         <Flights />
         <GroundTravel />
         <Hotel />
-        {/* <Components /> 
-        <SectionsCards /> 
-        <Widgets />
-        <WidgetSky />
-        <Faq />
-        <Features /> 
-        <MeetingIncentives />
-        <Vacations />
-        <BasicComponents /> 
-        <Booking />
-        <Teams />
-        <Managers /> 
-        <ContactUs /> */}
         <FooterBlack />
       </div>
     </>

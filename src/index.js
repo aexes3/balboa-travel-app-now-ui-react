@@ -10,7 +10,6 @@ import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages
-// import NucleoIcons from "views/NucleoIcons.js";
 import Qualcomm from "views/Qualcomm.js";
 import Sections from "views/Sections.js";
 
@@ -18,7 +17,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/balboa" render={props => <Sections {...props} />} />
-      {/* <Route path="/nucleo-icons" render={props => <NucleoIcons {...props} />} /> */}
       <Route path="/qualcomm" render={props => <Qualcomm {...props} />} />
       <Redirect to="/balboa" />
     </Switch>

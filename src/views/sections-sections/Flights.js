@@ -1,12 +1,10 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Typography, } from '@material-ui/core';
 import image from 'assets/img/presentation-page/SMOKE1.jpg'
 import Airlines from "./AirTravel/Airlines.js";
 import Airlines2 from "./AirTravel/Airlines2.js";
 import Airlines3 from './AirTravel/Airlines3.js';
 import Airlines4 from "./AirTravel/Airlines4";
-import { Row, Col } from "reactstrap";
 
 const useStyles = makeStyles(theme => ({
     root: {

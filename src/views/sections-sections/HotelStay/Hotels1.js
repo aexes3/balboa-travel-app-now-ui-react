@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid,} from '@material-ui/core';
 import { BrowserRouter as Router, } from "react-router-dom";
-// import image from 'assets/img/presentation-page/HOTELSTAY.jpeg'
 import Fairmont from './HotelCards/Fairmont.js'
 import Hilton from './HotelCards/Hilton.js'
 import Hyatt from './HotelCards/Hyatt.js'

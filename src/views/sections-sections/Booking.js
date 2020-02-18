@@ -1,9 +1,6 @@
 import React from "react";
 
-// reactstrap components
 import { Container, Row, Col } from "reactstrap";
-
-// core components
 
 function Booking() {
   return (
@@ -21,11 +18,7 @@ function Booking() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Travel &amp; Expense Policy</h4>
-                    {/* <p>
-                      The moment you use Now UI Kit, you know you’ve never felt
-                      anything like it. With a single use lets you do more than
-                      ever before.
-                    </p> */}
+                   
                   </div>
                 </div>
                 <div className="info info-horizontal">
@@ -34,11 +27,6 @@ function Booking() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Travel Profile Updates</h4>
-                    {/* <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature.
-                    </p> */}
                   </div>
                 </div>
                 <div className="info info-horizontal">
@@ -47,11 +35,6 @@ function Booking() {
                   </div>
                   <div className="description">
                     <h4 className="info-title">Training</h4>
-                    {/* <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature.
-                    </p> */}
                   </div>
                 </div>
               </Col>
@@ -66,7 +49,6 @@ function Booking() {
             </Row>
           </Container>
         </div>
-
 
         <div
           id="booking"

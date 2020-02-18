@@ -1,9 +1,6 @@
 import React from "react";
 import {
-  Card,
-  CardBody,
   Container,
-  CardTitle,
   Carousel,
   CarouselItem,
   CarouselIndicators,

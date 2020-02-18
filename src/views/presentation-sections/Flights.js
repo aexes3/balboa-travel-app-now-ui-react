@@ -23,8 +23,8 @@ export default function Flights (){
 
     return(
         
-        <div className="cd-section" id="pricing">
-            <div className={classes.root} id="qflights" >
+        <div className="cd-section" id="qflights">
+            <div className={classes.root}  >
                 <Airlines />
                 <Airlines2 />
                 <Airlines3 />

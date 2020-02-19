@@ -154,17 +154,17 @@ function ScrollTransparentNavbar() {
                     <i className="fa fa-sms"></i>
                     Text - 858-240-1171
                   </DropdownItem>
-                  <DropdownItem href="tel:858-678-3300" target="_blank">
+                  <DropdownItem href="tel:858-678-3782" target="_blank">
                       <i className="fa fa-phone"></i>
-                      858-678-3300 M-F 6a - 6p
+                      858-678-3782 M-F 6a - 6p
                     </DropdownItem>
                     <DropdownItem href="tel:800-359-8773" target="_blank">
                       <i className="fa fa-phone"></i>
                       800-359-8773 Afterhours
                     </DropdownItem>
-                    <DropdownItem href="mailto:travel@balboa.com" target="_blank">
+                    <DropdownItem href="mailto:corporateaccounts@balboa.com" target="_blank">
                       <i className="fa fa-envelope"></i>
-                      travel@balboa.com
+                       corporateaccounts@balboa.com
                     </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

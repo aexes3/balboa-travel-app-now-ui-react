@@ -106,13 +106,13 @@ function FooterBlack() {
                 <i className="fa fa-home mr-3" /> California Sellers License Number: CST#2013711
             </p>
               <p>
-                <a href="mailto:res54141@balboa.com">
-                  <i className="fa fa-envelope mr-3" /> res54141@balboa.com
+                <a href="mailto:corporateaccounts@balboa.com">
+                  <i className="fa fa-envelope mr-3" /> corporateaccounts@balboa.com
                 </a>
             </p>
               <p>
-                <a href="tel:858-678-3779">
-                  <i className="fa fa-phone mr-3" /> 858-678-3779
+                <a href="tel:858-678-3782">
+                  <i className="fa fa-phone mr-3" /> 858-678-3782
                 </a>
             </p>
               {/* <p>
